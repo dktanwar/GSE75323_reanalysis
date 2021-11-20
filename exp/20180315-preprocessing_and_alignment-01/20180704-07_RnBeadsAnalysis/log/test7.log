@@ -1,0 +1,70 @@
+2018-08-08 19:32:27     1.0  STATUS STARTED Setting up Multicore
+2018-08-08 19:32:27     1.0    INFO     Using 8 cores
+2018-08-08 19:32:27     1.0  STATUS COMPLETED Setting up Multicore
+
+2018-08-08 19:32:32     1.0  STATUS STARTED RnBeads Pipeline
+2018-08-08 19:32:32     1.0    INFO     Initialized report index and saved to index.html
+2018-08-08 19:32:32     1.0  STATUS     STARTED Loading Data
+2018-08-08 19:32:32     1.0    INFO         Number of cores: 8
+2018-08-08 19:32:33     1.0    INFO         Loading data of type "bs.bed.dir"
+2018-08-08 19:32:33     1.0  STATUS         STARTED Performing loading test
+2018-08-08 19:32:33     1.0    INFO             The first 10000 rows will be read from each data file
+2018-08-08 19:32:33     1.0    INFO             No column with file names specified: will try to find one
+2018-08-08 19:32:33     1.0  STATUS             STARTED Loading Data From BED Files
+2018-08-08 19:32:36     1.0  STATUS                 STARTED Automatically parsing the provided sample annotation file
+2018-08-08 19:32:36     1.0  STATUS                     Potential file names found in column 4 of the supplied annotation table
+2018-08-08 19:32:36     1.0  STATUS                 COMPLETED Automatically parsing the provided sample annotation file
+2018-08-08 19:32:36     1.0    INFO                 Reading BED file: ./input/SRX1485695.bismark.cov.gz
+2018-08-08 19:32:36     1.0    INFO                 Reading BED file: ./input/SRX1485696.bismark.cov.gz
+2018-08-08 19:32:36     1.0    INFO                 Reading BED file: ./input/SRX1485697.bismark.cov.gz
+2018-08-08 19:32:36     1.0    INFO                 Reading BED file: ./input/SRX1485698.bismark.cov.gz
+2018-08-08 19:32:36     1.0    INFO                 Reading BED file: ./input/SRX1485699.bismark.cov.gz
+2018-08-08 19:32:37     1.0    INFO                 Reading BED file: ./input/SRX1485700.bismark.cov.gz
+2018-08-08 19:32:37     1.0    INFO                 Reading BED file: ./input/SRX1485701.bismark.cov.gz
+2018-08-08 19:32:38     1.1    INFO                 Reading BED file: ./input/SRX1485702.bismark.cov.gz
+2018-08-08 19:32:38     1.1    INFO                 Reading BED file: ./input/SRX1485703.bismark.cov.gz
+2018-08-08 19:32:38     1.1    INFO                 Reading BED file: ./input/SRX1485704.bismark.cov.gz
+2018-08-08 19:32:38     1.1    INFO                 Reading BED file: ./input/SRX1485705.bismark.cov.gz
+2018-08-08 19:32:38     1.1    INFO                 Reading BED file: ./input/SRX1485706.bismark.cov.gz
+2018-08-08 19:32:38     1.1    INFO                 Reading BED file: ./input/SRX1485707.bismark.cov.gz
+2018-08-08 19:32:38     1.1    INFO                 Reading BED file: ./input/SRX1485708.bismark.cov.gz
+2018-08-08 19:32:38     1.1    INFO                 Reading BED file: ./input/SRX1485709.bismark.cov.gz
+2018-08-08 19:32:39     1.1    INFO                 Reading BED file: ./input/SRX1485710.bismark.cov.gz
+2018-08-08 19:32:39     1.1  STATUS                 Read 16 BED files
+2018-08-08 19:32:39     1.1  STATUS                 Matched chromosomes and strands to annotation
+2018-08-08 19:32:39     1.1  STATUS                 Checked for the presence of sites and coverage
+2018-08-08 19:32:41     1.1  STATUS                 Initialized meth/covg matrices
+2018-08-08 19:32:41     1.1  STATUS                 Combined a data matrix with 137779 sites and 16 samples
+2018-08-08 19:32:41     1.1  STATUS                 Processed all BED files
+2018-08-08 19:32:41     1.1  STATUS                 STARTED Creating RnBiseqSet object
+2018-08-08 19:32:41     1.1    INFO                     Inferring strand information from annotation enabled
+2018-08-08 19:33:58     3.9  STATUS                     Matched 135887 of 137779 methylation sites to the annotation
+2018-08-08 19:33:58     3.9  STATUS                     Checking site coverage
+2018-08-08 19:33:59     3.9  STATUS                     Creating methylation matrix
+2018-08-08 19:34:00     3.9  STATUS                     Creating coverage matrix
+2018-08-08 19:34:00     3.9  STATUS                     Creating object
+2018-08-08 19:34:00     3.9  STATUS                     Summarizing strand methylation
+2018-08-08 19:34:56     4.0  STATUS                     Summarizing tiling methylation
+2018-08-08 19:34:59     4.0  STATUS                     Summarizing genes methylation
+2018-08-08 19:35:00     4.0  STATUS                     Summarizing promoters methylation
+2018-08-08 19:35:01     4.0  STATUS                     Summarizing cpgislands methylation
+2018-08-08 19:35:01     4.0  STATUS                 COMPLETED Creating RnBiseqSet object
+2018-08-08 19:35:01     4.0  STATUS             COMPLETED Loading Data From BED Files
+2018-08-08 19:35:01     4.0  STATUS             STARTED Checking the loaded object
+2018-08-08 19:35:01     4.0    INFO                 Checking the supplied RnBiseqSet object
+2018-08-08 19:35:01     4.0    INFO                 The object contains information for 98877 methylation sites
+2018-08-08 19:35:01     4.0    INFO                 The object contains information for 16 samples
+2018-08-08 19:35:01     4.0    INFO                 The object contains 1462393 missing methylation values
+2018-08-08 19:35:01     4.0    INFO                 Methylation values are within the expected range
+2018-08-08 19:35:01     4.0    INFO                 The object contains coverage information
+2018-08-08 19:35:01     4.1    INFO                 Coverage values are within the expected range
+2018-08-08 19:35:01     4.1    INFO                 The object loaded during the loading test is valid
+2018-08-08 19:35:01     4.1  STATUS             COMPLETED Checking the loaded object
+2018-08-08 19:35:01     4.1  STATUS         COMPLETED Performing loading test
+2018-08-08 19:35:02     4.1    INFO         No column with file names specified: will try to find one
+2018-08-08 19:35:02     4.1  STATUS         STARTED Loading Data From BED Files
+2018-08-08 19:35:02     4.0  STATUS             STARTED Automatically parsing the provided sample annotation file
+2018-08-08 19:35:02     4.0  STATUS                 Potential file names found in column 4 of the supplied annotation table
+2018-08-08 19:35:02     4.0  STATUS             COMPLETED Automatically parsing the provided sample annotation file
+2018-08-08 19:35:02     4.0    INFO             Reading BED file: ./input/SRX1485695.bismark.cov.gz
+2018-08-08 19:38:08     5.6    INFO             Reading BED file: ./input/SRX1485696.bismark.cov.gz

@@ -1,0 +1,383 @@
+
+
+processing file: 20190425-dmr_plots.Rmd
+Loading required package: bsseq
+Loading required package: BiocGenerics
+Loading required package: parallel
+
+Attaching package: 'BiocGenerics'
+
+The following objects are masked from 'package:parallel':
+
+    clusterApply, clusterApplyLB, clusterCall, clusterEvalQ,
+    clusterExport, clusterMap, parApply, parCapply, parLapply,
+    parLapplyLB, parRapply, parSapply, parSapplyLB
+
+The following objects are masked from 'package:stats':
+
+    IQR, mad, sd, var, xtabs
+
+The following objects are masked from 'package:base':
+
+    anyDuplicated, append, as.data.frame, basename, cbind,
+    colMeans, colnames, colSums, dirname, do.call, duplicated,
+    eval, evalq, Filter, Find, get, grep, grepl, intersect,
+    is.unsorted, lapply, lengths, Map, mapply, match, mget, order,
+    paste, pmax, pmax.int, pmin, pmin.int, Position, rank, rbind,
+    Reduce, rowMeans, rownames, rowSums, sapply, setdiff, sort,
+    table, tapply, union, unique, unsplit, which, which.max,
+    which.min
+
+Loading required package: GenomicRanges
+Loading required package: stats4
+Loading required package: S4Vectors
+
+Attaching package: 'S4Vectors'
+
+The following object is masked from 'package:base':
+
+    expand.grid
+
+Loading required package: IRanges
+Loading required package: GenomeInfoDb
+Loading required package: SummarizedExperiment
+Loading required package: Biobase
+Welcome to Bioconductor
+
+    Vignettes contain introductory material; view with
+    'browseVignettes()'. To cite Bioconductor, see
+    'citation("Biobase")', and for packages 'citation("pkgname")'.
+
+Loading required package: DelayedArray
+Loading required package: matrixStats
+
+Attaching package: 'matrixStats'
+
+The following objects are masked from 'package:Biobase':
+
+    anyMissing, rowMedians
+
+Loading required package: BiocParallel
+
+Attaching package: 'DelayedArray'
+
+The following objects are masked from 'package:matrixStats':
+
+    colMaxs, colMins, colRanges, rowMaxs, rowMins, rowRanges
+
+The following objects are masked from 'package:base':
+
+    aperm, apply
+
+Loading required package: viridisLite
+
+Attaching package: 'data.table'
+
+The following object is masked from 'package:SummarizedExperiment':
+
+    shift
+
+The following object is masked from 'package:GenomicRanges':
+
+    shift
+
+The following object is masked from 'package:IRanges':
+
+    shift
+
+The following objects are masked from 'package:S4Vectors':
+
+    first, second
+
+Building CpG islands...
+Building CpG shores...
+Building CpG shelves...
+Building inter-CpG-islands...
+Download of CpG annotation successful!
+Loading required package: GenomicFeatures
+Loading required package: AnnotationDbi
+
+'select()' returned 1:1 mapping between keys and columns
+Building cds...
+Download of Gene annotation successful!
+--2019-04-30 14:34:24--  http://hgdownload.cse.ucsc.edu/goldenPath/mm9/liftOver/mm9ToMm10.over.chain.gz
+Resolving hgdownload.cse.ucsc.edu (hgdownload.cse.ucsc.edu)... 128.114.119.163
+Connecting to hgdownload.cse.ucsc.edu (hgdownload.cse.ucsc.edu)|128.114.119.163|:80... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 535855 (523K) [application/x-gzip]
+Saving to: ‘mm9ToMm10.over.chain.gz’
+
+     0K .......... .......... .......... .......... ..........  9%  156K 3s
+    50K .......... .......... .......... .......... .......... 19%  154K 3s
+   100K .......... .......... .......... .......... .......... 28%  154K 2s
+   150K .......... .......... .......... .......... .......... 38%  304K 2s
+   200K .......... .......... .......... .......... .......... 47%  156K 2s
+   250K .......... .......... .......... .......... .......... 57%  302K 1s
+   300K .......... .......... .......... .......... .......... 66%  313K 1s
+   350K .......... .......... .......... .......... .......... 76%  303K 1s
+   400K .......... .......... .......... .......... .......... 85%  157K 0s
+   450K .......... .......... .......... .......... .......... 95%  309K 0s
+   500K .......... .......... ...                             100% 5.88M=2.4s
+
+2019-04-30 14:34:27 (215 KB/s) - ‘mm9ToMm10.over.chain.gz’ saved [535855/535855]
+
+[plotDMRs] Plotting  DMRs
+[plotDMRs] Plotting  DMRs
+[plotDMRs] Plotting  DMRs
+[plotDMRs] Plotting  DMRs
+[plotDMRs] Plotting  DMRs
+[plotDMRs] Plotting  DMRs
+[plotDMRs] Plotting  DMRs
+[plotDMRs] Plotting  DMRs
+[plotDMRs] Plotting  DMRs
+[plotDMRs] Plotting  DMRs
+[plotDMRs] Plotting  DMRs
+[plotDMRs] Plotting  DMRs
+[plotDMRs] Plotting  DMRs
+[plotDMRs] Plotting  DMRs
+[plotDMRs] Plotting  DMRs
+output file: 20190425-dmr_plots.knit.md
+
+
+Output created: 20190425-dmr_plots.html
+Warning messages:
+1: closing unused connection 5 (mm9ToMm10.over.chain) 
+2: MathJax doesn't work with self_contained when not using the rmarkdown "default" template. 
+                                                   |..............                                                   |  21%
+label: unnamed-chunk-6 (with options) 
+List of 2
+ $ message: logi FALSE
+ $ warning: logi FALSE
+
+  |                                                                         |...............                                                  |  23%
+  ordinary text without R code
+
+  |                                                                         |................                                                 |  25%
+label: unnamed-chunk-7
+  |                                                                         |.................                                                |  27%
+  ordinary text without R code
+
+  |                                                                         |...................                                              |  29%
+label: unnamed-chunk-8
+  |                                                                         |....................                                             |  30%
+  ordinary text without R code
+
+  |                                                                         |.....................                                            |  32%
+label: unnamed-chunk-9
+  |                                                                         |......................                                           |  34%
+  ordinary text without R code
+
+  |                                                                         |.......................                                          |  36%
+label: unnamed-chunk-10 (with options) 
+List of 5
+ $ message   : logi FALSE
+ $ warning   : logi FALSE
+ $ fig.align : chr "center"
+ $ fig.height: num 5
+ $ fig.width : num 6
+
+  |                                                                         |........................                                         |  38%
+  ordinary text without R code
+
+  |                                                                         |..........................                                       |  39%
+label: unnamed-chunk-11 (with options) 
+List of 5
+ $ message   : logi FALSE
+ $ warning   : logi FALSE
+ $ fig.align : chr "center"
+ $ fig.height: num 5
+ $ fig.width : num 6
+
+  |                                                                         |...........................                                      |  41%
+  ordinary text without R code
+
+  |                                                                         |............................                                     |  43%
+label: unnamed-chunk-12 (with options) 
+List of 5
+ $ message   : logi FALSE
+ $ warning   : logi FALSE
+ $ fig.align : chr "center"
+ $ fig.height: num 5
+ $ fig.width : num 6
+
+  |                                                                         |.............................                                    |  45%
+  ordinary text without R code
+
+  |                                                                         |..............................                                   |  46%
+label: unnamed-chunk-13 (with options) 
+List of 2
+ $ message: logi FALSE
+ $ warning: logi FALSE
+
+  |                                                                         |...............................                                  |  48%
+  ordinary text without R code
+
+  |                                                                         |................................                                 |  50%
+label: unnamed-chunk-14 (with options) 
+List of 2
+ $ message: logi FALSE
+ $ warning: logi FALSE
+
+  |                                                                         |..................................                               |  52%
+  ordinary text without R code
+
+  |                                                                         |...................................                              |  54%
+label: unnamed-chunk-15 (with options) 
+List of 2
+ $ message: logi FALSE
+ $ warning: logi FALSE
+
+  |                                                                         |....................................                             |  55%
+  ordinary text without R code
+
+  |                                                                         |.....................................                            |  57%
+label: unnamed-chunk-16 (with options) 
+List of 3
+ $ results: chr "asis"
+ $ message: logi FALSE
+ $ warning: logi FALSE
+
+  |                                                                         |......................................                           |  59%
+  ordinary text without R code
+
+  |                                                                         |.......................................                          |  61%
+label: unnamed-chunk-17 (with options) 
+List of 3
+ $ results: chr "asis"
+ $ message: logi FALSE
+ $ warning: logi FALSE
+
+  |                                                                         |.........................................                        |  62%
+  ordinary text without R code
+
+  |                                                                         |..........................................                       |  64%
+label: unnamed-chunk-18 (with options) 
+List of 3
+ $ results: chr "asis"
+ $ message: logi FALSE
+ $ warning: logi FALSE
+
+  |                                                                         |...........................................                      |  66%
+  ordinary text without R code
+
+  |                                                                         |............................................                     |  68%
+label: unnamed-chunk-19 (with options) 
+List of 6
+ $ results   : chr "asis"
+ $ message   : logi FALSE
+ $ warning   : logi FALSE
+ $ fig.align : chr "center"
+ $ fig.height: num 8
+ $ fig.width : num 8
+
+  |                                                                         |.............................................                    |  70%
+  ordinary text without R code
+
+  |                                                                         |..............................................                   |  71%
+label: unnamed-chunk-20 (with options) 
+List of 6
+ $ results   : chr "asis"
+ $ message   : logi FALSE
+ $ warning   : logi FALSE
+ $ fig.align : chr "center"
+ $ fig.height: num 8
+ $ fig.width : num 8
+
+  |                                                                         |................................................                 |  73%
+  ordinary text without R code
+
+  |                                                                         |.................................................                |  75%
+label: unnamed-chunk-21 (with options) 
+List of 6
+ $ results   : chr "asis"
+ $ message   : logi FALSE
+ $ warning   : logi FALSE
+ $ fig.align : chr "center"
+ $ fig.height: num 8
+ $ fig.width : num 8
+
+  |                                                                         |..................................................               |  77%
+  ordinary text without R code
+
+  |                                                                         |...................................................              |  79%
+label: unnamed-chunk-22 (with options) 
+List of 6
+ $ results   : chr "asis"
+ $ message   : logi FALSE
+ $ warning   : logi FALSE
+ $ fig.align : chr "center"
+ $ fig.height: num 8
+ $ fig.width : num 8
+
+  |                                                                         |....................................................             |  80%
+  ordinary text without R code
+
+  |                                                                         |.....................................................            |  82%
+label: unnamed-chunk-23 (with options) 
+List of 6
+ $ results   : chr "asis"
+ $ message   : logi FALSE
+ $ warning   : logi FALSE
+ $ fig.align : chr "center"
+ $ fig.height: num 8
+ $ fig.width : num 8
+
+  |                                                                         |.......................................................          |  84%
+  ordinary text without R code
+
+  |                                                                         |........................................................         |  86%
+label: unnamed-chunk-24 (with options) 
+List of 6
+ $ results   : chr "asis"
+ $ message   : logi FALSE
+ $ warning   : logi FALSE
+ $ fig.align : chr "center"
+ $ fig.height: num 8
+ $ fig.width : num 8
+
+  |                                                                         |.........................................................        |  88%
+  ordinary text without R code
+
+  |                                                                         |..........................................................       |  89%
+label: unnamed-chunk-25 (with options) 
+List of 6
+ $ results   : chr "asis"
+ $ message   : logi FALSE
+ $ warning   : logi FALSE
+ $ fig.align : chr "center"
+ $ fig.height: num 8
+ $ fig.width : num 8
+
+  |                                                                         |...........................................................      |  91%
+  ordinary text without R code
+
+  |                                                                         |............................................................     |  93%
+label: unnamed-chunk-26 (with options) 
+List of 6
+ $ results   : chr "asis"
+ $ message   : logi FALSE
+ $ warning   : logi FALSE
+ $ fig.align : chr "center"
+ $ fig.height: num 8
+ $ fig.width : num 8
+
+  |                                                                         |..............................................................   |  95%
+  ordinary text without R code
+
+  |                                                                         |...............................................................  |  96%
+label: unnamed-chunk-27 (with options) 
+List of 6
+ $ results   : chr "asis"
+ $ message   : logi FALSE
+ $ warning   : logi FALSE
+ $ fig.align : chr "center"
+ $ fig.height: num 8
+ $ fig.width : num 8
+
+  |                                                                         |................................................................ |  98%
+  ordinary text without R code
+
+  |                                                                         |.................................................................| 100%
+label: unnamed-chunk-28
+
+/home/ubuntu/softwares/miniconda2/bin/pandoc +RTS -K512m -RTS 20190425-dmr_plots.utf8.md --to html4 --from markdown+autolink_bare_uris+ascii_identifiers+tex_math_single_backslash+smart --output 20190425-dmr_plots.html --email-obfuscation none --self-contained --mathjax --variable 'mathjax-url:https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML' --variable 'lightbox:true' --variable 'thumbnails:true' --variable 'gallery:false' --standalone --section-divs --table-of-contents --toc-depth 2 --template /home/ubuntu/R/x86_64-pc-linux-gnu-library/3.5/rmdformats/templates/readthedown/readthedown.html --highlight-style tango --variable 'theme:bootstrap' --include-in-header /tmp/RtmpunQnfa/rmarkdown-str4f1357c5ed3a.html --variable code_folding=show --variable code_menu=1 

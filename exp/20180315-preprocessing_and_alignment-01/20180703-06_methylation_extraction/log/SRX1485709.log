@@ -1,0 +1,2432 @@
+
+
+                           Bismark Methylation Extractor
+
+                         Bismark Extractor Version: v0.17.0
+              Copyright 2010-17 Felix Krueger, Babraham Bioinformatics
+                www.bioinformatics.babraham.ac.uk/projects/bismark/
+                     https://github.com/FelixKrueger/Bismark
+
+
+
+ *** Bismark methylation extractor version v0.17.0 ***
+
+Setting option '--no_overlap' since this is (normally) the right thing to do for paired-end data
+
+
+Summarising Bismark methylation extractor parameters:
+===============================================================
+Bismark paired-end SAM format specified (default)
+Number of cores to be used: 15
+Output path specified as: output/SRR3019200/
+
+
+Summarising bedGraph parameters:
+===============================================================
+Generating additional output in bedGraph and coverage format
+bedGraph format:	<Chromosome> <Start Position> <End Position> <Methylation Percentage>
+coverage format:	<Chromosome> <Start Position> <End Position> <Methylation Percentage> <count methylated> <count non-methylated>
+
+Using a cutoff of 1 read(s) to report cytosine positions
+Reporting and sorting cytosine methylation information in CpG context only (default)
+The bedGraph UNIX sort command will use the following memory setting:	'2G'. Temporary directory used for sorting is the output directory
+
+
+Summarising genome-wide cytosine methylation report parameters:
+===============================================================
+Generating comprehensive genome-wide cytosine report
+(output format: <Chromosome> <Position> <Strand> <count methylated> <count non-methylated>  <C-context>  <trinucleotide context> )
+Reporting cytosine methylation in CpG context only (default)
+Using 1-based genomic coordinates (default)
+Genome folder was specified as /mnt/IM/DKT/genomes/gencode/mm10_release_m16/
+
+Checking file >>input/SRR3019200_1_paired_bismark_bt2_pe.bam<< for signs of file truncation...
+
+
+Now testing Bismark result file input/SRR3019200_1_paired_bismark_bt2_pe.bam for positional sorting (which would be bad...)	...passed!
+Writing result file containing methylation information for C in CpG context from the original top strand to output/SRR3019200/CpG_OT_SRR3019200_1_paired_bismark_bt2_pe.txt
+Writing result file containing methylation information for C in CpG context from the complementary to original top strand to output/SRR3019200/CpG_CTOT_SRR3019200_1_paired_bismark_bt2_pe.txt
+Writing result file containing methylation information for C in CpG context from the complementary to original bottom strand to output/SRR3019200/CpG_CTOB_SRR3019200_1_paired_bismark_bt2_pe.txt
+Writing result file containing methylation information for C in CpG context from the original bottom strand to output/SRR3019200/CpG_OB_SRR3019200_1_paired_bismark_bt2_pe.txt
+
+Writing result file containing methylation information for C in CHG context from the original top strand to output/SRR3019200/CHG_OT_SRR3019200_1_paired_bismark_bt2_pe.txt
+Writing result file containing methylation information for C in CHG context from the complementary to original top strand to output/SRR3019200/CHG_CTOT_SRR3019200_1_paired_bismark_bt2_pe.txt
+Writing result file containing methylation information for C in CHG context from the complementary to original bottom strand to output/SRR3019200/CHG_CTOB_SRR3019200_1_paired_bismark_bt2_pe.txt
+Writing result file containing methylation information for C in CHG context from the original bottom strand to output/SRR3019200/CHG_OB_SRR3019200_1_paired_bismark_bt2_pe.txt
+
+Writing result file containing methylation information for C in CHH context from the original top strand to output/SRR3019200/CHH_OT_SRR3019200_1_paired_bismark_bt2_pe.txt
+Writing result file containing methylation information for C in CHH context from the complementary to original top strand to output/SRR3019200/CHH_CTOT_SRR3019200_1_paired_bismark_bt2_pe.txt
+Writing result file containing methylation information for C in CHH context from the complementary to original bottom strand to output/SRR3019200/CHH_CTOB_SRR3019200_1_paired_bismark_bt2_pe.txt
+Writing result file containing methylation information for C in CHH context from the original bottom strand to output/SRR3019200/CHH_OB_SRR3019200_1_paired_bismark_bt2_pe.txt
+
+
+Now reading in Bismark result file input/SRR3019200_1_paired_bismark_bt2_pe.bam
+
+
+Now reading in Bismark result file input/SRR3019200_1_paired_bismark_bt2_pe.bam
+
+
+Now reading in Bismark result file input/SRR3019200_1_paired_bismark_bt2_pe.bam
+
+
+Now reading in Bismark result file input/SRR3019200_1_paired_bismark_bt2_pe.bam
+
+
+Now reading in Bismark result file input/SRR3019200_1_paired_bismark_bt2_pe.bam
+
+
+Now reading in Bismark result file input/SRR3019200_1_paired_bismark_bt2_pe.bam
+
+
+Now reading in Bismark result file input/SRR3019200_1_paired_bismark_bt2_pe.bam
+
+
+Now reading in Bismark result file input/SRR3019200_1_paired_bismark_bt2_pe.bam
+
+
+Now reading in Bismark result file input/SRR3019200_1_paired_bismark_bt2_pe.bam
+
+
+Now reading in Bismark result file input/SRR3019200_1_paired_bismark_bt2_pe.bam
+
+
+Now reading in Bismark result file input/SRR3019200_1_paired_bismark_bt2_pe.bam
+
+
+Now reading in Bismark result file input/SRR3019200_1_paired_bismark_bt2_pe.bam
+
+
+Now reading in Bismark result file input/SRR3019200_1_paired_bismark_bt2_pe.bam
+
+Now reading in Bismark result file input/SRR3019200_1_paired_bismark_bt2_pe.bam
+
+Now reading in Bismark result file input/SRR3019200_1_paired_bismark_bt2_pe.bam
+
+skipping SAM header line:	@HD	VN:1.0	SO:unsorted
+skipping SAM header line:	@SQ	SN:chr1	LN:195471971
+skipping SAM header line:	@SQ	SN:chr10	LN:130694993
+skipping SAM header line:	@SQ	SN:chr11	LN:122082543
+skipping SAM header line:	@SQ	SN:chr12	LN:120129022
+skipping SAM header line:	@SQ	SN:chr13	LN:120421639
+skipping SAM header line:	@SQ	SN:chr14	LN:124902244
+skipping SAM header line:	@SQ	SN:chr15	LN:104043685
+skipping SAM header line:	@SQ	SN:chr16	LN:98207768
+skipping SAM header line:	@SQ	SN:chr17	LN:94987271
+skipping SAM header line:	@SQ	SN:chr18	LN:90702639
+skipping SAM header line:	@SQ	SN:chr19	LN:61431566
+skipping SAM header line:	@SQ	SN:chr1_GL456210_random	LN:169725
+skipping SAM header line:	@SQ	SN:chr1_GL456211_random	LN:241735
+skipping SAM header line:	@SQ	SN:chr1_GL456212_random	LN:153618
+skipping SAM header line:	@SQ	SN:chr1_GL456213_random	LN:39340
+skipping SAM header line:	@SQ	SN:chr1_GL456221_random	LN:206961
+skipping SAM header line:	@SQ	SN:chr2	LN:182113224
+skipping SAM header line:	@SQ	SN:chr3	LN:160039680
+skipping SAM header line:	@SQ	SN:chr4	LN:156508116
+skipping SAM header line:	@SQ	SN:chr4_GL456216_random	LN:66673
+skipping SAM header line:	@SQ	SN:chr4_JH584292_random	LN:14945
+skipping SAM header line:	@SQ	SN:chr4_GL456350_random	LN:227966
+skipping SAM header line:	@SQ	SN:chr4_JH584293_random	LN:207968
+skipping SAM header line:	@SQ	SN:chr4_JH584294_random	LN:191905
+skipping SAM header line:	@SQ	SN:chr4_JH584295_random	LN:1976
+skipping SAM header line:	@SQ	SN:chr5	LN:151834684
+skipping SAM header line:	@SQ	SN:chr5_JH584296_random	LN:199368
+skipping SAM header line:	@SQ	SN:chr5_JH584297_random	LN:205776
+skipping SAM header line:	@SQ	SN:chr5_JH584298_random	LN:184189
+skipping SAM header line:	@SQ	SN:chr5_GL456354_random	LN:195993
+skipping SAM header line:	@SQ	SN:chr5_JH584299_random	LN:953012
+skipping SAM header line:	@SQ	SN:chr6	LN:149736546
+skipping SAM header line:	@SQ	SN:chr7	LN:145441459
+skipping SAM header line:	@SQ	SN:chr7_GL456219_random	LN:175968
+skipping SAM header line:	@SQ	SN:chr8	LN:129401213
+skipping SAM header line:	@SQ	SN:chr9	LN:124595110
+skipping SAM header line:	@SQ	SN:chrM	LN:16299
+skipping SAM header line:	@SQ	SN:chrX	LN:171031299
+skipping SAM header line:	@SQ	SN:chrX_GL456233_random	LN:336933
+skipping SAM header line:	@SQ	SN:chrY	LN:91744698
+skipping SAM header line:	@SQ	SN:chrY_JH584300_random	LN:182347
+skipping SAM header line:	@SQ	SN:chrY_JH584301_random	LN:259875
+skipping SAM header line:	@SQ	SN:chrY_JH584302_random	LN:155838
+skipping SAM header line:	@SQ	SN:chrY_JH584303_random	LN:158099
+skipping SAM header line:	@SQ	SN:chrUn_GL456239	LN:40056
+skipping SAM header line:	@SQ	SN:chrUn_GL456367	LN:42057
+skipping SAM header line:	@SQ	SN:chrUn_GL456378	LN:31602
+skipping SAM header line:	@SQ	SN:chrUn_GL456381	LN:25871
+skipping SAM header line:	@SQ	SN:chrUn_GL456382	LN:23158
+skipping SAM header line:	@SQ	SN:chrUn_GL456383	LN:38659
+skipping SAM header line:	@SQ	SN:chrUn_GL456385	LN:35240
+skipping SAM header line:	@SQ	SN:chrUn_GL456390	LN:24668
+skipping SAM header line:	@SQ	SN:chrUn_GL456392	LN:23629
+skipping SAM header line:	@SQ	SN:chrUn_GL456393	LN:55711
+skipping SAM header line:	@SQ	SN:chrUn_GL456394	LN:24323
+skipping SAM header line:	@SQ	SN:chrUn_GL456359	LN:22974
+skipping SAM header line:	@SQ	SN:chrUn_GL456360	LN:31704
+skipping SAM header line:	@SQ	SN:chrUn_GL456396	LN:21240
+skipping SAM header line:	@SQ	SN:chrUn_GL456372	LN:28664
+skipping SAM header line:	@SQ	SN:chrUn_GL456387	LN:24685
+skipping SAM header line:	@SQ	SN:chrUn_GL456389	LN:28772
+skipping SAM header line:	@SQ	SN:chrUn_GL456370	LN:26764
+skipping SAM header line:	@SQ	SN:chrUn_GL456379	LN:72385
+skipping SAM header line:	@SQ	SN:chrUn_GL456366	LN:47073
+skipping SAM header line:	@SQ	SN:chrUn_GL456368	LN:20208
+skipping SAM header line:	@SQ	SN:chrUn_JH584304	LN:114452
+skipping SAM header line:	@PG	ID:Bismark	VN:v0.17.0	CL:"bismark ./input/mm10/ -1 ./input/SRR3019200_1_paired.fastq.gz -2 ./input/SRR3019200_2_paired.fastq.gz --multicore 8 -o ./output/SRR3019200 --temp_dir ./output/SRR3019200 --bowtie2"
+Processed lines: 500000
+Processed lines: 500000
+Processed lines: 500000
+Processed lines: 500000
+Processed lines: 500000
+Processed lines: 500000
+Processed lines: 500000
+Processed lines: 500000
+Processed lines: 500000
+Processed lines: 500000
+Processed lines: 500000
+Processed lines: 500000
+Processed lines: 500000
+Processed lines: 500000
+Processed lines: 500000
+Processed lines: 1000000
+Processed lines: 1000000
+Processed lines: 1000000
+Processed lines: 1000000
+Processed lines: 1000000
+Processed lines: 1000000
+Processed lines: 1000000
+Processed lines: 1000000
+Processed lines: 1000000
+Processed lines: 1000000
+Processed lines: 1000000
+Processed lines: 1000000
+Processed lines: 1000000
+Processed lines: 1000000
+Processed lines: 1000000
+Processed lines: 1500000
+Processed lines: 1500000
+Processed lines: 1500000
+Processed lines: 1500000
+Processed lines: 1500000
+Processed lines: 1500000
+Processed lines: 1500000
+Processed lines: 1500000
+Processed lines: 1500000
+Processed lines: 1500000
+Processed lines: 1500000
+Processed lines: 1500000
+Processed lines: 1500000
+Processed lines: 1500000
+Processed lines: 1500000
+Processed lines: 2000000
+Processed lines: 2000000
+Processed lines: 2000000
+Processed lines: 2000000
+Processed lines: 2000000
+Processed lines: 2000000
+Processed lines: 2000000
+Processed lines: 2000000
+Processed lines: 2000000
+Processed lines: 2000000
+Processed lines: 2000000
+Processed lines: 2000000
+Processed lines: 2000000
+Processed lines: 2000000
+Processed lines: 2000000
+Processed lines: 2500000
+Processed lines: 2500000
+Processed lines: 2500000
+Processed lines: 2500000
+Processed lines: 2500000
+Processed lines: 2500000
+Processed lines: 2500000
+Processed lines: 2500000
+Processed lines: 2500000
+Processed lines: 2500000
+Processed lines: 2500000
+Processed lines: 2500000
+Processed lines: 2500000
+Processed lines: 2500000
+Processed lines: 2500000
+Processed lines: 3000000
+Processed lines: 3000000
+Processed lines: 3000000
+Processed lines: 3000000
+Processed lines: 3000000
+Processed lines: 3000000
+Processed lines: 3000000
+Processed lines: 3000000
+Processed lines: 3000000
+Processed lines: 3000000
+Processed lines: 3000000
+Processed lines: 3000000
+Processed lines: 3000000
+Processed lines: 3000000
+Processed lines: 3000000
+Processed lines: 3500000
+Processed lines: 3500000
+Processed lines: 3500000
+Processed lines: 3500000
+Processed lines: 3500000
+Processed lines: 3500000
+Processed lines: 3500000
+Processed lines: 3500000
+Processed lines: 3500000
+Processed lines: 3500000
+Processed lines: 3500000
+Processed lines: 3500000
+Processed lines: 3500000
+Processed lines: 3500000
+Processed lines: 3500000
+Processed lines: 4000000
+Processed lines: 4000000
+Processed lines: 4000000
+Processed lines: 4000000
+Processed lines: 4000000
+Processed lines: 4000000
+Processed lines: 4000000
+Processed lines: 4000000
+Processed lines: 4000000
+Processed lines: 4000000
+Processed lines: 4000000
+Processed lines: 4000000
+Processed lines: 4000000
+Processed lines: 4000000
+Processed lines: 4000000
+Processed lines: 4500000
+Processed lines: 4500000
+Processed lines: 4500000
+Processed lines: 4500000
+Processed lines: 4500000
+Processed lines: 4500000
+Processed lines: 4500000
+Processed lines: 4500000
+Processed lines: 4500000
+Processed lines: 4500000
+Processed lines: 4500000
+Processed lines: 4500000
+Processed lines: 4500000
+Processed lines: 4500000
+Processed lines: 4500000
+Processed lines: 5000000
+Processed lines: 5000000
+Processed lines: 5000000
+Processed lines: 5000000
+Processed lines: 5000000
+Processed lines: 5000000
+Processed lines: 5000000
+Processed lines: 5000000
+Processed lines: 5000000
+Processed lines: 5000000
+Processed lines: 5000000
+Processed lines: 5000000
+Processed lines: 5000000
+Processed lines: 5000000
+Processed lines: 5000000
+Processed lines: 5500000
+Processed lines: 5500000
+Processed lines: 5500000
+Processed lines: 5500000
+Processed lines: 5500000
+Processed lines: 5500000
+Processed lines: 5500000
+Processed lines: 5500000
+Processed lines: 5500000
+Processed lines: 5500000
+Processed lines: 5500000
+Processed lines: 5500000
+Processed lines: 5500000
+Processed lines: 5500000
+Processed lines: 5500000
+Processed lines: 6000000
+Processed lines: 6000000
+Processed lines: 6000000
+Processed lines: 6000000
+Processed lines: 6000000
+Processed lines: 6000000
+Processed lines: 6000000
+Processed lines: 6000000
+Processed lines: 6000000
+Processed lines: 6000000
+Processed lines: 6000000
+Processed lines: 6000000
+Processed lines: 6000000
+Processed lines: 6000000
+Processed lines: 6000000
+Processed lines: 6500000
+Processed lines: 6500000
+Processed lines: 6500000
+Processed lines: 6500000
+Processed lines: 6500000
+Processed lines: 6500000
+Processed lines: 6500000
+Processed lines: 6500000
+Processed lines: 6500000
+Processed lines: 6500000
+Processed lines: 6500000
+Processed lines: 6500000
+Processed lines: 6500000
+Processed lines: 6500000
+Processed lines: 6500000
+Processed lines: 7000000
+Processed lines: 7000000
+Processed lines: 7000000
+Processed lines: 7000000
+Processed lines: 7000000
+Processed lines: 7000000
+Processed lines: 7000000
+Processed lines: 7000000
+Processed lines: 7000000
+Processed lines: 7000000
+Processed lines: 7000000
+Processed lines: 7000000
+Processed lines: 7000000
+Processed lines: 7000000
+Processed lines: 7000000
+Processed lines: 7500000
+Processed lines: 7500000
+Processed lines: 7500000
+Processed lines: 7500000
+Processed lines: 7500000
+Processed lines: 7500000
+Processed lines: 7500000
+Processed lines: 7500000
+Processed lines: 7500000
+Processed lines: 7500000
+Processed lines: 7500000
+Processed lines: 7500000
+Processed lines: 7500000
+Processed lines: 7500000
+Processed lines: 7500000
+Processed lines: 8000000
+Processed lines: 8000000
+Processed lines: 8000000
+Processed lines: 8000000
+Processed lines: 8000000
+Processed lines: 8000000
+Processed lines: 8000000
+Processed lines: 8000000
+Processed lines: 8000000
+Processed lines: 8000000
+Processed lines: 8000000
+Processed lines: 8000000
+Processed lines: 8000000
+Processed lines: 8000000
+Processed lines: 8000000
+Processed lines: 8500000
+Processed lines: 8500000
+Processed lines: 8500000
+Processed lines: 8500000
+Processed lines: 8500000
+Processed lines: 8500000
+Processed lines: 8500000
+Processed lines: 8500000
+Processed lines: 8500000
+Processed lines: 8500000
+Processed lines: 8500000
+Processed lines: 8500000
+Processed lines: 8500000
+Processed lines: 8500000
+Processed lines: 8500000
+Processed lines: 9000000
+Processed lines: 9000000
+Processed lines: 9000000
+Processed lines: 9000000
+Processed lines: 9000000
+Processed lines: 9000000
+Processed lines: 9000000
+Processed lines: 9000000
+Processed lines: 9000000
+Processed lines: 9000000
+Processed lines: 9000000
+Processed lines: 9000000
+Processed lines: 9000000
+Processed lines: 9000000
+Processed lines: 9000000
+Processed lines: 9500000
+Processed lines: 9500000
+Processed lines: 9500000
+Processed lines: 9500000
+Processed lines: 9500000
+Processed lines: 9500000
+Processed lines: 9500000
+Processed lines: 9500000
+Processed lines: 9500000
+Processed lines: 9500000
+Processed lines: 9500000
+Processed lines: 9500000
+Processed lines: 9500000
+Processed lines: 9500000
+Processed lines: 9500000
+Processed lines: 10000000
+Processed lines: 10000000
+Processed lines: 10000000
+Processed lines: 10000000
+Processed lines: 10000000
+Processed lines: 10000000
+Processed lines: 10000000
+Processed lines: 10000000
+Processed lines: 10000000
+Processed lines: 10000000
+Processed lines: 10000000
+Processed lines: 10000000
+Processed lines: 10000000
+Processed lines: 10000000
+Processed lines: 10000000
+Processed lines: 10500000
+Processed lines: 10500000
+Processed lines: 10500000
+Processed lines: 10500000
+Processed lines: 10500000
+Processed lines: 10500000
+Processed lines: 10500000
+Processed lines: 10500000
+Processed lines: 10500000
+Processed lines: 10500000
+Processed lines: 10500000
+Processed lines: 10500000
+Processed lines: 10500000
+Processed lines: 10500000
+Processed lines: 10500000
+Processed lines: 11000000
+Processed lines: 11000000
+Processed lines: 11000000
+Processed lines: 11000000
+Processed lines: 11000000
+Processed lines: 11000000
+Processed lines: 11000000
+Processed lines: 11000000
+Processed lines: 11000000
+Processed lines: 11000000
+Processed lines: 11000000
+Processed lines: 11000000
+Processed lines: 11000000
+Processed lines: 11000000
+Processed lines: 11000000
+Processed lines: 11500000
+Processed lines: 11500000
+Processed lines: 11500000
+Processed lines: 11500000
+Processed lines: 11500000
+Processed lines: 11500000
+Processed lines: 11500000
+Processed lines: 11500000
+Processed lines: 11500000
+Processed lines: 11500000
+Processed lines: 11500000
+Processed lines: 11500000
+Processed lines: 11500000
+Processed lines: 11500000
+Processed lines: 11500000
+Processed lines: 12000000
+Processed lines: 12000000
+Processed lines: 12000000
+Processed lines: 12000000
+Processed lines: 12000000
+Processed lines: 12000000
+Processed lines: 12000000
+Processed lines: 12000000
+Processed lines: 12000000
+Processed lines: 12000000
+Processed lines: 12000000
+Processed lines: 12000000
+Processed lines: 12000000
+Processed lines: 12000000
+Processed lines: 12000000
+Processed lines: 12500000
+Processed lines: 12500000
+Processed lines: 12500000
+Processed lines: 12500000
+Processed lines: 12500000
+Processed lines: 12500000
+Processed lines: 12500000
+Processed lines: 12500000
+Processed lines: 12500000
+Processed lines: 12500000
+Processed lines: 12500000
+Processed lines: 12500000
+Processed lines: 12500000
+Processed lines: 12500000
+Processed lines: 12500000
+Processed lines: 13000000
+Processed lines: 13000000
+Processed lines: 13000000
+Processed lines: 13000000
+Processed lines: 13000000
+Processed lines: 13000000
+Processed lines: 13000000
+Processed lines: 13000000
+Processed lines: 13000000
+Processed lines: 13000000
+Processed lines: 13000000
+Processed lines: 13000000
+Processed lines: 13000000
+Processed lines: 13000000
+Processed lines: 13000000
+Processed lines: 13500000
+Processed lines: 13500000
+Processed lines: 13500000
+Processed lines: 13500000
+Processed lines: 13500000
+Processed lines: 13500000
+Processed lines: 13500000
+Processed lines: 13500000
+Processed lines: 13500000
+Processed lines: 13500000
+Processed lines: 13500000
+Processed lines: 13500000
+Processed lines: 13500000
+Processed lines: 13500000
+Processed lines: 13500000
+Processed lines: 14000000
+Processed lines: 14000000
+Processed lines: 14000000
+Processed lines: 14000000
+Processed lines: 14000000
+Processed lines: 14000000
+Processed lines: 14000000
+Processed lines: 14000000
+Processed lines: 14000000
+Processed lines: 14000000
+Processed lines: 14000000
+Processed lines: 14000000
+Processed lines: 14000000
+Processed lines: 14000000
+Processed lines: 14000000
+Processed lines: 14500000
+Processed lines: 14500000
+Processed lines: 14500000
+Processed lines: 14500000
+Processed lines: 14500000
+Processed lines: 14500000
+Processed lines: 14500000
+Processed lines: 14500000
+Processed lines: 14500000
+Processed lines: 14500000
+Processed lines: 14500000
+Processed lines: 14500000
+Processed lines: 14500000
+Processed lines: 14500000
+Processed lines: 14500000
+Processed lines: 15000000
+Processed lines: 15000000
+Processed lines: 15000000
+Processed lines: 15000000
+Processed lines: 15000000
+Processed lines: 15000000
+Processed lines: 15000000
+Processed lines: 15000000
+Processed lines: 15000000
+Processed lines: 15000000
+Processed lines: 15000000
+Processed lines: 15000000
+Processed lines: 15000000
+Processed lines: 15000000
+Processed lines: 15000000
+Processed lines: 15500000
+Processed lines: 15500000
+Processed lines: 15500000
+Processed lines: 15500000
+Processed lines: 15500000
+Processed lines: 15500000
+Processed lines: 15500000
+Processed lines: 15500000
+Processed lines: 15500000
+Processed lines: 15500000
+Processed lines: 15500000
+Processed lines: 15500000
+Processed lines: 15500000
+Processed lines: 15500000
+Processed lines: 15500000
+Processed lines: 16000000
+Processed lines: 16000000
+Processed lines: 16000000
+Processed lines: 16000000
+Processed lines: 16000000
+Processed lines: 16000000
+Processed lines: 16000000
+Processed lines: 16000000
+Processed lines: 16000000
+Processed lines: 16000000
+Processed lines: 16000000
+Processed lines: 16000000
+Processed lines: 16000000
+Processed lines: 16000000
+Processed lines: 16000000
+Processed lines: 16500000
+Processed lines: 16500000
+Processed lines: 16500000
+Processed lines: 16500000
+Processed lines: 16500000
+Processed lines: 16500000
+Processed lines: 16500000
+Processed lines: 16500000
+Processed lines: 16500000
+Processed lines: 16500000
+Processed lines: 16500000
+Processed lines: 16500000
+Processed lines: 16500000
+Processed lines: 16500000
+Processed lines: 16500000
+Processed lines: 17000000
+Processed lines: 17000000
+Processed lines: 17000000
+Processed lines: 17000000
+Processed lines: 17000000
+Processed lines: 17000000
+Processed lines: 17000000
+Processed lines: 17000000
+Processed lines: 17000000
+Processed lines: 17000000
+Processed lines: 17000000
+Processed lines: 17000000
+Processed lines: 17000000
+Processed lines: 17000000
+Processed lines: 17000000
+Processed lines: 17500000
+Processed lines: 17500000
+Processed lines: 17500000
+Processed lines: 17500000
+Processed lines: 17500000
+Processed lines: 17500000
+Processed lines: 17500000
+Processed lines: 17500000
+Processed lines: 17500000
+Processed lines: 17500000
+Processed lines: 17500000
+Processed lines: 17500000
+Processed lines: 17500000
+Processed lines: 17500000
+Processed lines: 17500000
+Processed lines: 18000000
+Processed lines: 18000000
+Processed lines: 18000000
+Processed lines: 18000000
+Processed lines: 18000000
+Processed lines: 18000000
+Processed lines: 18000000
+Processed lines: 18000000
+Processed lines: 18000000
+Processed lines: 18000000
+Processed lines: 18000000
+Processed lines: 18000000
+Processed lines: 18000000
+Processed lines: 18000000
+Processed lines: 18000000
+Processed lines: 18500000
+Processed lines: 18500000
+Processed lines: 18500000
+Processed lines: 18500000
+Processed lines: 18500000
+Processed lines: 18500000
+Processed lines: 18500000
+Processed lines: 18500000
+Processed lines: 18500000
+Processed lines: 18500000
+Processed lines: 18500000
+Processed lines: 18500000
+Processed lines: 18500000
+Processed lines: 18500000
+Processed lines: 18500000
+Processed lines: 19000000
+Processed lines: 19000000
+Processed lines: 19000000
+Processed lines: 19000000
+Processed lines: 19000000
+Processed lines: 19000000
+Processed lines: 19000000
+Processed lines: 19000000
+Processed lines: 19000000
+Processed lines: 19000000
+Processed lines: 19000000
+Processed lines: 19000000
+Processed lines: 19000000
+Processed lines: 19000000
+Processed lines: 19000000
+Processed lines: 19500000
+Processed lines: 19500000
+Processed lines: 19500000
+Processed lines: 19500000
+Processed lines: 19500000
+Processed lines: 19500000
+Processed lines: 19500000
+Processed lines: 19500000
+Processed lines: 19500000
+Processed lines: 19500000
+Processed lines: 19500000
+Processed lines: 19500000
+Processed lines: 19500000
+Processed lines: 19500000
+Processed lines: 19500000
+Processed lines: 20000000
+Processed lines: 20000000
+Processed lines: 20000000
+Processed lines: 20000000
+Processed lines: 20000000
+Processed lines: 20000000
+Processed lines: 20000000
+Processed lines: 20000000
+Processed lines: 20000000
+Processed lines: 20000000
+Processed lines: 20000000
+Processed lines: 20000000
+Processed lines: 20000000
+Processed lines: 20000000
+Processed lines: 20000000
+Processed lines: 20500000
+Processed lines: 20500000
+Processed lines: 20500000
+Processed lines: 20500000
+Processed lines: 20500000
+Processed lines: 20500000
+Processed lines: 20500000
+Processed lines: 20500000
+Processed lines: 20500000
+Processed lines: 20500000
+Processed lines: 20500000
+Processed lines: 20500000
+Processed lines: 20500000
+Processed lines: 20500000
+Processed lines: 20500000
+Processed lines: 21000000
+Processed lines: 21000000
+Processed lines: 21000000
+Processed lines: 21000000
+Processed lines: 21000000
+Processed lines: 21000000
+Processed lines: 21000000
+Processed lines: 21000000
+Processed lines: 21000000
+Processed lines: 21000000
+Processed lines: 21000000
+Processed lines: 21000000
+Processed lines: 21000000
+Processed lines: 21000000
+Processed lines: 21000000
+Processed lines: 21500000
+Processed lines: 21500000
+Processed lines: 21500000
+Processed lines: 21500000
+Processed lines: 21500000
+Processed lines: 21500000
+Processed lines: 21500000
+Processed lines: 21500000
+Processed lines: 21500000
+Processed lines: 21500000
+Processed lines: 21500000
+Processed lines: 21500000
+Processed lines: 21500000
+Processed lines: 21500000
+Processed lines: 21500000
+Processed lines: 22000000
+Processed lines: 22000000
+Processed lines: 22000000
+Processed lines: 22000000
+Processed lines: 22000000
+Processed lines: 22000000
+Processed lines: 22000000
+Processed lines: 22000000
+Processed lines: 22000000
+Processed lines: 22000000
+Processed lines: 22000000
+Processed lines: 22000000
+Processed lines: 22000000
+Processed lines: 22000000
+Processed lines: 22000000
+Processed lines: 22500000
+Processed lines: 22500000
+Processed lines: 22500000
+Processed lines: 22500000
+Processed lines: 22500000
+Processed lines: 22500000
+Processed lines: 22500000
+Processed lines: 22500000
+Processed lines: 22500000
+Processed lines: 22500000
+Processed lines: 22500000
+Processed lines: 22500000
+Processed lines: 22500000
+Processed lines: 22500000
+Processed lines: 22500000
+Processed lines: 23000000
+Processed lines: 23000000
+Processed lines: 23000000
+Processed lines: 23000000
+Processed lines: 23000000
+Processed lines: 23000000
+Processed lines: 23000000
+Processed lines: 23000000
+Processed lines: 23000000
+Processed lines: 23000000
+Processed lines: 23000000
+Processed lines: 23000000
+Processed lines: 23000000
+Processed lines: 23000000
+Processed lines: 23000000
+Processed lines: 23500000
+Processed lines: 23500000
+Processed lines: 23500000
+Processed lines: 23500000
+Processed lines: 23500000
+Processed lines: 23500000
+Processed lines: 23500000
+Processed lines: 23500000
+Processed lines: 23500000
+Processed lines: 23500000
+Processed lines: 23500000
+Processed lines: 23500000
+Processed lines: 23500000
+Processed lines: 23500000
+Processed lines: 23500000
+Processed lines: 24000000
+Processed lines: 24000000
+Processed lines: 24000000
+Processed lines: 24000000
+Processed lines: 24000000
+Processed lines: 24000000
+Processed lines: 24000000
+Processed lines: 24000000
+Processed lines: 24000000
+Processed lines: 24000000
+Processed lines: 24000000
+Processed lines: 24000000
+Processed lines: 24000000
+Processed lines: 24000000
+Processed lines: 24000000
+Processed lines: 24500000
+Processed lines: 24500000
+Processed lines: 24500000
+Processed lines: 24500000
+Processed lines: 24500000
+Processed lines: 24500000
+Processed lines: 24500000
+Processed lines: 24500000
+Processed lines: 24500000
+Processed lines: 24500000
+Processed lines: 24500000
+Processed lines: 24500000
+Processed lines: 24500000
+Processed lines: 24500000
+Processed lines: 24500000
+Processed lines: 25000000
+Processed lines: 25000000
+Processed lines: 25000000
+Processed lines: 25000000
+Processed lines: 25000000
+Processed lines: 25000000
+Processed lines: 25000000
+Processed lines: 25000000
+Processed lines: 25000000
+Processed lines: 25000000
+Processed lines: 25000000
+Processed lines: 25000000
+Processed lines: 25000000
+Processed lines: 25000000
+Processed lines: 25000000
+Processed lines: 25500000
+Processed lines: 25500000
+Processed lines: 25500000
+Processed lines: 25500000
+Processed lines: 25500000
+Processed lines: 25500000
+Processed lines: 25500000
+Processed lines: 25500000
+Processed lines: 25500000
+Processed lines: 25500000
+Processed lines: 25500000
+Processed lines: 25500000
+Processed lines: 25500000
+Processed lines: 25500000
+Processed lines: 25500000
+Processed lines: 26000000
+Processed lines: 26000000
+Processed lines: 26000000
+Processed lines: 26000000
+Processed lines: 26000000
+Processed lines: 26000000
+Processed lines: 26000000
+Processed lines: 26000000
+Processed lines: 26000000
+Processed lines: 26000000
+Processed lines: 26000000
+Processed lines: 26000000
+Processed lines: 26000000
+Processed lines: 26000000
+Processed lines: 26000000
+Processed lines: 26500000
+Processed lines: 26500000
+Processed lines: 26500000
+Processed lines: 26500000
+Processed lines: 26500000
+Processed lines: 26500000
+Processed lines: 26500000
+Processed lines: 26500000
+Processed lines: 26500000
+Processed lines: 26500000
+Processed lines: 26500000
+Processed lines: 26500000
+Processed lines: 26500000
+Processed lines: 26500000
+Processed lines: 26500000
+Processed lines: 27000000
+Processed lines: 27000000
+Processed lines: 27000000
+Processed lines: 27000000
+Processed lines: 27000000
+Processed lines: 27000000
+Processed lines: 27000000
+Processed lines: 27000000
+Processed lines: 27000000
+Processed lines: 27000000
+Processed lines: 27000000
+Processed lines: 27000000
+Processed lines: 27000000
+Processed lines: 27000000
+Processed lines: 27000000
+Processed lines: 27500000
+Processed lines: 27500000
+Processed lines: 27500000
+Processed lines: 27500000
+Processed lines: 27500000
+Processed lines: 27500000
+Processed lines: 27500000
+Processed lines: 27500000
+Processed lines: 27500000
+Processed lines: 27500000
+Processed lines: 27500000
+Processed lines: 27500000
+Processed lines: 27500000
+Processed lines: 27500000
+Processed lines: 27500000
+Processed lines: 28000000
+Processed lines: 28000000
+Processed lines: 28000000
+Processed lines: 28000000
+Processed lines: 28000000
+Processed lines: 28000000
+Processed lines: 28000000
+Processed lines: 28000000
+Processed lines: 28000000
+Processed lines: 28000000
+Processed lines: 28000000
+Processed lines: 28000000
+Processed lines: 28000000
+Processed lines: 28000000
+Processed lines: 28000000
+Processed lines: 28500000
+Processed lines: 28500000
+Processed lines: 28500000
+Processed lines: 28500000
+Processed lines: 28500000
+Processed lines: 28500000
+Processed lines: 28500000
+Processed lines: 28500000
+Processed lines: 28500000
+Processed lines: 28500000
+Processed lines: 28500000
+Processed lines: 28500000
+Processed lines: 28500000
+Processed lines: 28500000
+Processed lines: 28500000
+Processed lines: 29000000
+Processed lines: 29000000
+Processed lines: 29000000
+Processed lines: 29000000
+Processed lines: 29000000
+Processed lines: 29000000
+Processed lines: 29000000
+Processed lines: 29000000
+Processed lines: 29000000
+Processed lines: 29000000
+Processed lines: 29000000
+Processed lines: 29000000
+Processed lines: 29000000
+Processed lines: 29000000
+Processed lines: 29000000
+Processed lines: 29500000
+Processed lines: 29500000
+Processed lines: 29500000
+Processed lines: 29500000
+Processed lines: 29500000
+Processed lines: 29500000
+Processed lines: 29500000
+Processed lines: 29500000
+Processed lines: 29500000
+Processed lines: 29500000
+Processed lines: 29500000
+Processed lines: 29500000
+Processed lines: 29500000
+Processed lines: 29500000
+Processed lines: 29500000
+Processed lines: 30000000
+Processed lines: 30000000
+Processed lines: 30000000
+Processed lines: 30000000
+Processed lines: 30000000
+Processed lines: 30000000
+Processed lines: 30000000
+Processed lines: 30000000
+Processed lines: 30000000
+Processed lines: 30000000
+Processed lines: 30000000
+Processed lines: 30000000
+Processed lines: 30000000
+Processed lines: 30000000
+Processed lines: 30000000
+Processed lines: 30500000
+Processed lines: 30500000
+Processed lines: 30500000
+Processed lines: 30500000
+Processed lines: 30500000
+Processed lines: 30500000
+Processed lines: 30500000
+Processed lines: 30500000
+Processed lines: 30500000
+Processed lines: 30500000
+Processed lines: 30500000
+Processed lines: 30500000
+Processed lines: 30500000
+Processed lines: 30500000
+Processed lines: 30500000
+Processed lines: 31000000
+Processed lines: 31000000
+Processed lines: 31000000
+Processed lines: 31000000
+Processed lines: 31000000
+Processed lines: 31000000
+Processed lines: 31000000
+Processed lines: 31000000
+Processed lines: 31000000
+Processed lines: 31000000
+Processed lines: 31000000
+Processed lines: 31000000
+Processed lines: 31000000
+Processed lines: 31000000
+Processed lines: 31000000
+Processed lines: 31500000
+Processed lines: 31500000
+Processed lines: 31500000
+Processed lines: 31500000
+Processed lines: 31500000
+Processed lines: 31500000
+Processed lines: 31500000
+Processed lines: 31500000
+Processed lines: 31500000
+Processed lines: 31500000
+Processed lines: 31500000
+Processed lines: 31500000
+Processed lines: 31500000
+Processed lines: 31500000
+Processed lines: 31500000
+Processed lines: 32000000
+Processed lines: 32000000
+Processed lines: 32000000
+Processed lines: 32000000
+Processed lines: 32000000
+Processed lines: 32000000
+Processed lines: 32000000
+Processed lines: 32000000
+Processed lines: 32000000
+Processed lines: 32000000
+Processed lines: 32000000
+Processed lines: 32000000
+Processed lines: 32000000
+Processed lines: 32000000
+Processed lines: 32000000
+Processed lines: 32500000
+Processed lines: 32500000
+Processed lines: 32500000
+Processed lines: 32500000
+Processed lines: 32500000
+Processed lines: 32500000
+Processed lines: 32500000
+Processed lines: 32500000
+Processed lines: 32500000
+Processed lines: 32500000
+Processed lines: 32500000
+Processed lines: 32500000
+Processed lines: 32500000
+Processed lines: 32500000
+Processed lines: 32500000
+Processed lines: 33000000
+Processed lines: 33000000
+Processed lines: 33000000
+Processed lines: 33000000
+Processed lines: 33000000
+Processed lines: 33000000
+Processed lines: 33000000
+Processed lines: 33000000
+Processed lines: 33000000
+Processed lines: 33000000
+Processed lines: 33000000
+Processed lines: 33000000
+Processed lines: 33000000
+Processed lines: 33000000
+Processed lines: 33000000
+Processed lines: 33500000
+Processed lines: 33500000
+Processed lines: 33500000
+Processed lines: 33500000
+Processed lines: 33500000
+Processed lines: 33500000
+Processed lines: 33500000
+Processed lines: 33500000
+Processed lines: 33500000
+Processed lines: 33500000
+Processed lines: 33500000
+Processed lines: 33500000
+Processed lines: 33500000
+Processed lines: 33500000
+Processed lines: 33500000
+Processed lines: 34000000
+Processed lines: 34000000
+Processed lines: 34000000
+Processed lines: 34000000
+Processed lines: 34000000
+Processed lines: 34000000
+Processed lines: 34000000
+Processed lines: 34000000
+Processed lines: 34000000
+Processed lines: 34000000
+Processed lines: 34000000
+Processed lines: 34000000
+Processed lines: 34000000
+Processed lines: 34000000
+Processed lines: 34000000
+Processed lines: 34500000
+Processed lines: 34500000
+Processed lines: 34500000
+Processed lines: 34500000
+Processed lines: 34500000
+Processed lines: 34500000
+Processed lines: 34500000
+Processed lines: 34500000
+Processed lines: 34500000
+Processed lines: 34500000
+Processed lines: 34500000
+Processed lines: 34500000
+Processed lines: 34500000
+Processed lines: 34500000
+Processed lines: 34500000
+Processed lines: 35000000
+Processed lines: 35000000
+Processed lines: 35000000
+Processed lines: 35000000
+Processed lines: 35000000
+Processed lines: 35000000
+Processed lines: 35000000
+Processed lines: 35000000
+Processed lines: 35000000
+Processed lines: 35000000
+Processed lines: 35000000
+Processed lines: 35000000
+Processed lines: 35000000
+Processed lines: 35000000
+Processed lines: 35000000
+Processed lines: 35500000
+Processed lines: 35500000
+Processed lines: 35500000
+Processed lines: 35500000
+Processed lines: 35500000
+Processed lines: 35500000
+Processed lines: 35500000
+Processed lines: 35500000
+Processed lines: 35500000
+Processed lines: 35500000
+Processed lines: 35500000
+Processed lines: 35500000
+Processed lines: 35500000
+Processed lines: 35500000
+Processed lines: 35500000
+Processed lines: 36000000
+Processed lines: 36000000
+Processed lines: 36000000
+Processed lines: 36000000
+Processed lines: 36000000
+Processed lines: 36000000
+Processed lines: 36000000
+Processed lines: 36000000
+Processed lines: 36000000
+Processed lines: 36000000
+Processed lines: 36000000
+Processed lines: 36000000
+Processed lines: 36000000
+Processed lines: 36000000
+Processed lines: 36000000
+Processed lines: 36500000
+Processed lines: 36500000
+Processed lines: 36500000
+Processed lines: 36500000
+Processed lines: 36500000
+Processed lines: 36500000
+Processed lines: 36500000
+Processed lines: 36500000
+Processed lines: 36500000
+Processed lines: 36500000
+Processed lines: 36500000
+Processed lines: 36500000
+Processed lines: 36500000
+Processed lines: 36500000
+Processed lines: 36500000
+Processed lines: 37000000
+Processed lines: 37000000
+Processed lines: 37000000
+Processed lines: 37000000
+Processed lines: 37000000
+Processed lines: 37000000
+Processed lines: 37000000
+Processed lines: 37000000
+Processed lines: 37000000
+Processed lines: 37000000
+Processed lines: 37000000
+Processed lines: 37000000
+Processed lines: 37000000
+Processed lines: 37000000
+Processed lines: 37000000
+Processed lines: 37500000
+Processed lines: 37500000
+Processed lines: 37500000
+Processed lines: 37500000
+Processed lines: 37500000
+Processed lines: 37500000
+Processed lines: 37500000
+Processed lines: 37500000
+Processed lines: 37500000
+Processed lines: 37500000
+Processed lines: 37500000
+Processed lines: 37500000
+Processed lines: 37500000
+Processed lines: 37500000
+Processed lines: 37500000
+Processed lines: 38000000
+Processed lines: 38000000
+Processed lines: 38000000
+Processed lines: 38000000
+Processed lines: 38000000
+Processed lines: 38000000
+Processed lines: 38000000
+Processed lines: 38000000
+Processed lines: 38000000
+Processed lines: 38000000
+Processed lines: 38000000
+Processed lines: 38000000
+Processed lines: 38000000
+Processed lines: 38000000
+Processed lines: 38000000
+Processed lines: 38500000
+Processed lines: 38500000
+Processed lines: 38500000
+Processed lines: 38500000
+Processed lines: 38500000
+Processed lines: 38500000
+Processed lines: 38500000
+Processed lines: 38500000
+Processed lines: 38500000
+Processed lines: 38500000
+Processed lines: 38500000
+Processed lines: 38500000
+Processed lines: 38500000
+Processed lines: 38500000
+Processed lines: 38500000
+Processed lines: 39000000
+Processed lines: 39000000
+Processed lines: 39000000
+Processed lines: 39000000
+Processed lines: 39000000
+Processed lines: 39000000
+Processed lines: 39000000
+Processed lines: 39000000
+Processed lines: 39000000
+Processed lines: 39000000
+Processed lines: 39000000
+Processed lines: 39000000
+Processed lines: 39000000
+Processed lines: 39000000
+Processed lines: 39000000
+Processed lines: 39500000
+Processed lines: 39500000
+Processed lines: 39500000
+Processed lines: 39500000
+Processed lines: 39500000
+Processed lines: 39500000
+Processed lines: 39500000
+Processed lines: 39500000
+Processed lines: 39500000
+Processed lines: 39500000
+Processed lines: 39500000
+Processed lines: 39500000
+Processed lines: 39500000
+Processed lines: 39500000
+Processed lines: 39500000
+Processed lines: 40000000
+Processed lines: 40000000
+Processed lines: 40000000
+Processed lines: 40000000
+Processed lines: 40000000
+Processed lines: 40000000
+Processed lines: 40000000
+Processed lines: 40000000
+Processed lines: 40000000
+Processed lines: 40000000
+Processed lines: 40000000
+Processed lines: 40000000
+Processed lines: 40000000
+Processed lines: 40000000
+Processed lines: 40000000
+Processed lines: 40500000
+Processed lines: 40500000
+Processed lines: 40500000
+Processed lines: 40500000
+Processed lines: 40500000
+Processed lines: 40500000
+Processed lines: 40500000
+Processed lines: 40500000
+Processed lines: 40500000
+Processed lines: 40500000
+Processed lines: 40500000
+Processed lines: 40500000
+Processed lines: 40500000
+Processed lines: 40500000
+Processed lines: 40500000
+Processed lines: 41000000
+Processed lines: 41000000
+Processed lines: 41000000
+Processed lines: 41000000
+Processed lines: 41000000
+Processed lines: 41000000
+Processed lines: 41000000
+Processed lines: 41000000
+Processed lines: 41000000
+Processed lines: 41000000
+Processed lines: 41000000
+Processed lines: 41000000
+Processed lines: 41000000
+Processed lines: 41000000
+Processed lines: 41000000
+Processed lines: 41500000
+Processed lines: 41500000
+Processed lines: 41500000
+Processed lines: 41500000
+Processed lines: 41500000
+Processed lines: 41500000
+Processed lines: 41500000
+Processed lines: 41500000
+Processed lines: 41500000
+Processed lines: 41500000
+Processed lines: 41500000
+Processed lines: 41500000
+Processed lines: 41500000
+Processed lines: 41500000
+Processed lines: 41500000
+Processed lines: 42000000
+Processed lines: 42000000
+Processed lines: 42000000
+Processed lines: 42000000
+Processed lines: 42000000
+Processed lines: 42000000
+Processed lines: 42000000
+Processed lines: 42000000
+Processed lines: 42000000
+Processed lines: 42000000
+Processed lines: 42000000
+Processed lines: 42000000
+Processed lines: 42000000
+Processed lines: 42000000
+Processed lines: 42000000
+Processed lines: 42500000
+Processed lines: 42500000
+Processed lines: 42500000
+Processed lines: 42500000
+Processed lines: 42500000
+Processed lines: 42500000
+Processed lines: 42500000
+Processed lines: 42500000
+Processed lines: 42500000
+Processed lines: 42500000
+Processed lines: 42500000
+Processed lines: 42500000
+Processed lines: 42500000
+Processed lines: 42500000
+Processed lines: 42500000
+Processed lines: 43000000
+Processed lines: 43000000
+Processed lines: 43000000
+Processed lines: 43000000
+Processed lines: 43000000
+Processed lines: 43000000
+Processed lines: 43000000
+Processed lines: 43000000
+Processed lines: 43000000
+Processed lines: 43000000
+Processed lines: 43000000
+Processed lines: 43000000
+Processed lines: 43000000
+Processed lines: 43000000
+Processed lines: 43000000
+Processed lines: 43500000
+Processed lines: 43500000
+Processed lines: 43500000
+Processed lines: 43500000
+Processed lines: 43500000
+Processed lines: 43500000
+Processed lines: 43500000
+Processed lines: 43500000
+Processed lines: 43500000
+Processed lines: 43500000
+Processed lines: 43500000
+Processed lines: 43500000
+Processed lines: 43500000
+Processed lines: 43500000
+Processed lines: 43500000
+Processed lines: 44000000
+Processed lines: 44000000
+Processed lines: 44000000
+Processed lines: 44000000
+Processed lines: 44000000
+Processed lines: 44000000
+Processed lines: 44000000
+Processed lines: 44000000
+Processed lines: 44000000
+Processed lines: 44000000
+Processed lines: 44000000
+Processed lines: 44000000
+Processed lines: 44000000
+Processed lines: 44000000
+Processed lines: 44000000
+Processed lines: 44500000
+Processed lines: 44500000
+Processed lines: 44500000
+Processed lines: 44500000
+Processed lines: 44500000
+Processed lines: 44500000
+Processed lines: 44500000
+Processed lines: 44500000
+Processed lines: 44500000
+Processed lines: 44500000
+Processed lines: 44500000
+Processed lines: 44500000
+Processed lines: 44500000
+Processed lines: 44500000
+Processed lines: 44500000
+Processed lines: 45000000
+Processed lines: 45000000
+Processed lines: 45000000
+Processed lines: 45000000
+Processed lines: 45000000
+Processed lines: 45000000
+Processed lines: 45000000
+Processed lines: 45000000
+Processed lines: 45000000
+Processed lines: 45000000
+Processed lines: 45000000
+Processed lines: 45000000
+Processed lines: 45000000
+Processed lines: 45000000
+Processed lines: 45000000
+Processed lines: 45500000
+Processed lines: 45500000
+Processed lines: 45500000
+Processed lines: 45500000
+Processed lines: 45500000
+Processed lines: 45500000
+Processed lines: 45500000
+Processed lines: 45500000
+Processed lines: 45500000
+Processed lines: 45500000
+Processed lines: 45500000
+Processed lines: 45500000
+Processed lines: 45500000
+Processed lines: 45500000
+Processed lines: 45500000
+Processed lines: 46000000
+Processed lines: 46000000
+Processed lines: 46000000
+Processed lines: 46000000
+Processed lines: 46000000
+Processed lines: 46000000
+Processed lines: 46000000
+Processed lines: 46000000
+Processed lines: 46000000
+Processed lines: 46000000
+Processed lines: 46000000
+Processed lines: 46000000
+Processed lines: 46000000
+Processed lines: 46000000
+Processed lines: 46000000
+Processed lines: 46500000
+Processed lines: 46500000
+Processed lines: 46500000
+Processed lines: 46500000
+Processed lines: 46500000
+Processed lines: 46500000
+Processed lines: 46500000
+Processed lines: 46500000
+Processed lines: 46500000
+Processed lines: 46500000
+Processed lines: 46500000
+Processed lines: 46500000
+Processed lines: 46500000
+Processed lines: 46500000
+Processed lines: 46500000
+Processed lines: 47000000
+Processed lines: 47000000
+Processed lines: 47000000
+Processed lines: 47000000
+Processed lines: 47000000
+Processed lines: 47000000
+Processed lines: 47000000
+Processed lines: 47000000
+Processed lines: 47000000
+Processed lines: 47000000
+Processed lines: 47000000
+Processed lines: 47000000
+Processed lines: 47000000
+Processed lines: 47000000
+Processed lines: 47000000
+Processed lines: 47500000
+Processed lines: 47500000
+Processed lines: 47500000
+Processed lines: 47500000
+Processed lines: 47500000
+Processed lines: 47500000
+Processed lines: 47500000
+Processed lines: 47500000
+Processed lines: 47500000
+Processed lines: 47500000
+Processed lines: 47500000
+Processed lines: 47500000
+Processed lines: 47500000
+Processed lines: 47500000
+Processed lines: 47500000
+Processed lines: 48000000
+Processed lines: 48000000
+Processed lines: 48000000
+Processed lines: 48000000
+Processed lines: 48000000
+Processed lines: 48000000
+Processed lines: 48000000
+Processed lines: 48000000
+Processed lines: 48000000
+Processed lines: 48000000
+Processed lines: 48000000
+Processed lines: 48000000
+Processed lines: 48000000
+Processed lines: 48000000
+Processed lines: 48000000
+Processed lines: 48500000
+Processed lines: 48500000
+Processed lines: 48500000
+Processed lines: 48500000
+Processed lines: 48500000
+Processed lines: 48500000
+Processed lines: 48500000
+Processed lines: 48500000
+Processed lines: 48500000
+Processed lines: 48500000
+Processed lines: 48500000
+Processed lines: 48500000
+Processed lines: 48500000
+Processed lines: 48500000
+Processed lines: 48500000
+Processed lines: 49000000
+Processed lines: 49000000
+Processed lines: 49000000
+Processed lines: 49000000
+Processed lines: 49000000
+Processed lines: 49000000
+Processed lines: 49000000
+Processed lines: 49000000
+Processed lines: 49000000
+Processed lines: 49000000
+Processed lines: 49000000
+Processed lines: 49000000
+Processed lines: 49000000
+Processed lines: 49000000
+Processed lines: 49000000
+Processed lines: 49500000
+Processed lines: 49500000
+Processed lines: 49500000
+Processed lines: 49500000
+Processed lines: 49500000
+Processed lines: 49500000
+Processed lines: 49500000
+Processed lines: 49500000
+Processed lines: 49500000
+Processed lines: 49500000
+Processed lines: 49500000
+Processed lines: 49500000
+Processed lines: 49500000
+Processed lines: 49500000
+Processed lines: 49500000
+Processed lines: 50000000
+Processed lines: 50000000
+Processed lines: 50000000
+Processed lines: 50000000
+Processed lines: 50000000
+Processed lines: 50000000
+Processed lines: 50000000
+Processed lines: 50000000
+Processed lines: 50000000
+Processed lines: 50000000
+Processed lines: 50000000
+Processed lines: 50000000
+Processed lines: 50000000
+Processed lines: 50000000
+Processed lines: 50000000
+Processed lines: 50500000
+Processed lines: 50500000
+Processed lines: 50500000
+Processed lines: 50500000
+Processed lines: 50500000
+Processed lines: 50500000
+Processed lines: 50500000
+Processed lines: 50500000
+Processed lines: 50500000
+Processed lines: 50500000
+Processed lines: 50500000
+Processed lines: 50500000
+Processed lines: 50500000
+Processed lines: 50500000
+Processed lines: 50500000
+Processed lines: 51000000
+Processed lines: 51000000
+Processed lines: 51000000
+Processed lines: 51000000
+Processed lines: 51000000
+Processed lines: 51000000
+Processed lines: 51000000
+Processed lines: 51000000
+Processed lines: 51000000
+Processed lines: 51000000
+Processed lines: 51000000
+Processed lines: 51000000
+Processed lines: 51000000
+Processed lines: 51000000
+Processed lines: 51000000
+Processed lines: 51500000
+Processed lines: 51500000
+Processed lines: 51500000
+Processed lines: 51500000
+Processed lines: 51500000
+Processed lines: 51500000
+Processed lines: 51500000
+Processed lines: 51500000
+Processed lines: 51500000
+Processed lines: 51500000
+Processed lines: 51500000
+Processed lines: 51500000
+Processed lines: 51500000
+Processed lines: 51500000
+Finished processing child process. Exiting..
+Processed lines: 51500000
+Finished processing child process. Exiting..
+Finished processing child process. Exiting..
+Finished processing child process. Exiting..
+Finished processing child process. Exiting..
+Finished processing child process. Exiting..
+Finished processing child process. Exiting..
+Finished processing child process. Exiting..
+Finished processing child process. Exiting..
+Finished processing child process. Exiting..
+Finished processing child process. Exiting..
+Finished processing child process. Exiting..
+Finished processing child process. Exiting..
+Finished processing child process. Exiting..
+Now waiting for all child processes to complete
+
+Merging individual splitting reports into overall report: 'output/SRR3019200/SRR3019200_1_paired_bismark_bt2_pe_splitting_report.txt'
+Merging from these individual files:
+output/SRR3019200/SRR3019200_1_paired_bismark_bt2_pe_splitting_report.txt.1
+output/SRR3019200/SRR3019200_1_paired_bismark_bt2_pe_splitting_report.txt.2
+output/SRR3019200/SRR3019200_1_paired_bismark_bt2_pe_splitting_report.txt.3
+output/SRR3019200/SRR3019200_1_paired_bismark_bt2_pe_splitting_report.txt.4
+output/SRR3019200/SRR3019200_1_paired_bismark_bt2_pe_splitting_report.txt.5
+output/SRR3019200/SRR3019200_1_paired_bismark_bt2_pe_splitting_report.txt.6
+output/SRR3019200/SRR3019200_1_paired_bismark_bt2_pe_splitting_report.txt.7
+output/SRR3019200/SRR3019200_1_paired_bismark_bt2_pe_splitting_report.txt.8
+output/SRR3019200/SRR3019200_1_paired_bismark_bt2_pe_splitting_report.txt.9
+output/SRR3019200/SRR3019200_1_paired_bismark_bt2_pe_splitting_report.txt.10
+output/SRR3019200/SRR3019200_1_paired_bismark_bt2_pe_splitting_report.txt.11
+output/SRR3019200/SRR3019200_1_paired_bismark_bt2_pe_splitting_report.txt.12
+output/SRR3019200/SRR3019200_1_paired_bismark_bt2_pe_splitting_report.txt.13
+output/SRR3019200/SRR3019200_1_paired_bismark_bt2_pe_splitting_report.txt.14
+output/SRR3019200/SRR3019200_1_paired_bismark_bt2_pe_splitting_report.txt.15
+
+
+Processed 51875886 lines in total
+Total number of methylation call strings processed: 103751772
+
+Final Cytosine Methylation Report
+=================================
+Total number of C's analysed:	1158537861
+
+Total methylated C's in CpG context:	49739399
+Total methylated C's in CHG context:	4797926
+Total methylated C's in CHH context:	5080625
+
+Total C to T conversions in CpG context:	15054224
+Total C to T conversions in CHG context:	298070338
+Total C to T conversions in CHH context:	785795349
+
+C methylated in CpG context:	76.8%
+C methylated in CHG context:	1.6%
+C methylated in CHH context:	0.6%
+
+
+
+Merging individual M-bias reports into overall M-bias statistics from these 15 individual files:
+output/SRR3019200/SRR3019200_1_paired_bismark_bt2_pe_splitting_report.txt.1.mbias
+output/SRR3019200/SRR3019200_1_paired_bismark_bt2_pe_splitting_report.txt.2.mbias
+output/SRR3019200/SRR3019200_1_paired_bismark_bt2_pe_splitting_report.txt.3.mbias
+output/SRR3019200/SRR3019200_1_paired_bismark_bt2_pe_splitting_report.txt.4.mbias
+output/SRR3019200/SRR3019200_1_paired_bismark_bt2_pe_splitting_report.txt.5.mbias
+output/SRR3019200/SRR3019200_1_paired_bismark_bt2_pe_splitting_report.txt.6.mbias
+output/SRR3019200/SRR3019200_1_paired_bismark_bt2_pe_splitting_report.txt.7.mbias
+output/SRR3019200/SRR3019200_1_paired_bismark_bt2_pe_splitting_report.txt.8.mbias
+output/SRR3019200/SRR3019200_1_paired_bismark_bt2_pe_splitting_report.txt.9.mbias
+output/SRR3019200/SRR3019200_1_paired_bismark_bt2_pe_splitting_report.txt.10.mbias
+output/SRR3019200/SRR3019200_1_paired_bismark_bt2_pe_splitting_report.txt.11.mbias
+output/SRR3019200/SRR3019200_1_paired_bismark_bt2_pe_splitting_report.txt.12.mbias
+output/SRR3019200/SRR3019200_1_paired_bismark_bt2_pe_splitting_report.txt.13.mbias
+output/SRR3019200/SRR3019200_1_paired_bismark_bt2_pe_splitting_report.txt.14.mbias
+output/SRR3019200/SRR3019200_1_paired_bismark_bt2_pe_splitting_report.txt.15.mbias
+
+Determining maximum read lengths for M-Bias plots
+Maximum read length of Read 1: 75
+Maximum read length of Read 2: 75
+
+Determining maximum read lengths for M-Bias plots
+Maximum read length of Read 1: 75
+Maximum read length of Read 2: 75
+
+Deleting unused files ...
+
+output/SRR3019200/CpG_OT_SRR3019200_1_paired_bismark_bt2_pe.txt contains data ->	kept
+output/SRR3019200/CpG_CTOT_SRR3019200_1_paired_bismark_bt2_pe.txt was empty ->	deleted
+output/SRR3019200/CpG_CTOB_SRR3019200_1_paired_bismark_bt2_pe.txt was empty ->	deleted
+output/SRR3019200/CpG_OB_SRR3019200_1_paired_bismark_bt2_pe.txt contains data ->	kept
+output/SRR3019200/CHG_OT_SRR3019200_1_paired_bismark_bt2_pe.txt contains data ->	kept
+output/SRR3019200/CHG_CTOT_SRR3019200_1_paired_bismark_bt2_pe.txt was empty ->	deleted
+output/SRR3019200/CHG_CTOB_SRR3019200_1_paired_bismark_bt2_pe.txt was empty ->	deleted
+output/SRR3019200/CHG_OB_SRR3019200_1_paired_bismark_bt2_pe.txt contains data ->	kept
+output/SRR3019200/CHH_OT_SRR3019200_1_paired_bismark_bt2_pe.txt contains data ->	kept
+output/SRR3019200/CHH_CTOT_SRR3019200_1_paired_bismark_bt2_pe.txt was empty ->	deleted
+output/SRR3019200/CHH_CTOB_SRR3019200_1_paired_bismark_bt2_pe.txt was empty ->	deleted
+output/SRR3019200/CHH_OB_SRR3019200_1_paired_bismark_bt2_pe.txt contains data ->	kept
+
+
+Using these input files: output/SRR3019200/CpG_OT_SRR3019200_1_paired_bismark_bt2_pe.txt output/SRR3019200/CpG_OB_SRR3019200_1_paired_bismark_bt2_pe.txt output/SRR3019200/CHG_OT_SRR3019200_1_paired_bismark_bt2_pe.txt output/SRR3019200/CHG_OB_SRR3019200_1_paired_bismark_bt2_pe.txt output/SRR3019200/CHH_OT_SRR3019200_1_paired_bismark_bt2_pe.txt output/SRR3019200/CHH_OB_SRR3019200_1_paired_bismark_bt2_pe.txt
+
+Summary of parameters for bismark2bedGraph conversion:
+======================================================
+bedGraph output:		SRR3019200_1_paired_bismark_bt2_pe.bedGraph.gz
+output directory:		>/mnt/IM/DKT/projets/rando_cell_2015/exp/20180315-preprocessing_and_alignment-01/20180625-05_methylation_extraction/output/SRR3019200/<
+remove whitespaces:		no
+CX context:			no (CpG context only, default)
+No-header selected:		no
+Sorting method:			Unix sort-based (smaller memory footprint, but slower)
+Sort buffer size:		2G
+Coverage threshold:		1
+=============================================================================
+Methylation information will now be written into a bedGraph and coverage file
+=============================================================================
+
+Using the following files as Input:
+/mnt/IM/DKT/projets/rando_cell_2015/exp/20180315-preprocessing_and_alignment-01/20180625-05_methylation_extraction/output/SRR3019200/CpG_OT_SRR3019200_1_paired_bismark_bt2_pe.txt	/mnt/IM/DKT/projets/rando_cell_2015/exp/20180315-preprocessing_and_alignment-01/20180625-05_methylation_extraction/output/SRR3019200/CpG_OB_SRR3019200_1_paired_bismark_bt2_pe.txt
+
+Writing bedGraph to file: SRR3019200_1_paired_bismark_bt2_pe.bedGraph.gz
+Also writing out a coverage file including counts methylated and unmethylated residues to file: SRR3019200_1_paired_bismark_bt2_pe.bismark.cov.gz
+
+Changed directory to /mnt/IM/DKT/projets/rando_cell_2015/exp/20180315-preprocessing_and_alignment-01/20180625-05_methylation_extraction/output/SRR3019200/
+Now writing methylation information for file >>CpG_OT_SRR3019200_1_paired_bismark_bt2_pe.txt<< to individual files for each chromosome
+Finished writing out individual chromosome files for CpG_OT_SRR3019200_1_paired_bismark_bt2_pe.txt
+Now writing methylation information for file >>CpG_OB_SRR3019200_1_paired_bismark_bt2_pe.txt<< to individual files for each chromosome
+Finished writing out individual chromosome files for CpG_OB_SRR3019200_1_paired_bismark_bt2_pe.txt
+
+Collecting temporary chromosome file information... Processing the following input file(s):
+CpG_OT_SRR3019200_1_paired_bismark_bt2_pe.txt.chrchr6.methXtractor.temp
+CpG_OT_SRR3019200_1_paired_bismark_bt2_pe.txt.chrchr10.methXtractor.temp
+CpG_OT_SRR3019200_1_paired_bismark_bt2_pe.txt.chrchr5.methXtractor.temp
+CpG_OT_SRR3019200_1_paired_bismark_bt2_pe.txt.chrchr4.methXtractor.temp
+CpG_OT_SRR3019200_1_paired_bismark_bt2_pe.txt.chrchr17.methXtractor.temp
+CpG_OT_SRR3019200_1_paired_bismark_bt2_pe.txt.chrchr11.methXtractor.temp
+CpG_OT_SRR3019200_1_paired_bismark_bt2_pe.txt.chrchr8.methXtractor.temp
+CpG_OT_SRR3019200_1_paired_bismark_bt2_pe.txt.chrchr12.methXtractor.temp
+CpG_OT_SRR3019200_1_paired_bismark_bt2_pe.txt.chrchr2.methXtractor.temp
+CpG_OT_SRR3019200_1_paired_bismark_bt2_pe.txt.chrchr19.methXtractor.temp
+CpG_OT_SRR3019200_1_paired_bismark_bt2_pe.txt.chrchr1.methXtractor.temp
+CpG_OT_SRR3019200_1_paired_bismark_bt2_pe.txt.chrchr18.methXtractor.temp
+CpG_OT_SRR3019200_1_paired_bismark_bt2_pe.txt.chrchr13.methXtractor.temp
+CpG_OT_SRR3019200_1_paired_bismark_bt2_pe.txt.chrchr14.methXtractor.temp
+CpG_OT_SRR3019200_1_paired_bismark_bt2_pe.txt.chrchr7.methXtractor.temp
+CpG_OT_SRR3019200_1_paired_bismark_bt2_pe.txt.chrchrX.methXtractor.temp
+CpG_OT_SRR3019200_1_paired_bismark_bt2_pe.txt.chrchr15.methXtractor.temp
+CpG_OT_SRR3019200_1_paired_bismark_bt2_pe.txt.chrchr16.methXtractor.temp
+CpG_OT_SRR3019200_1_paired_bismark_bt2_pe.txt.chrchr9.methXtractor.temp
+CpG_OT_SRR3019200_1_paired_bismark_bt2_pe.txt.chrchr3.methXtractor.temp
+CpG_OT_SRR3019200_1_paired_bismark_bt2_pe.txt.chrchrY.methXtractor.temp
+CpG_OT_SRR3019200_1_paired_bismark_bt2_pe.txt.chrchrUn_JH584304.methXtractor.temp
+CpG_OT_SRR3019200_1_paired_bismark_bt2_pe.txt.chrchrUn_GL456372.methXtractor.temp
+CpG_OT_SRR3019200_1_paired_bismark_bt2_pe.txt.chrchr1_GL456221_random.methXtractor.temp
+CpG_OT_SRR3019200_1_paired_bismark_bt2_pe.txt.chrchr5_JH584297_random.methXtractor.temp
+CpG_OT_SRR3019200_1_paired_bismark_bt2_pe.txt.chrchr1_GL456212_random.methXtractor.temp
+CpG_OT_SRR3019200_1_paired_bismark_bt2_pe.txt.chrchrX_GL456233_random.methXtractor.temp
+CpG_OT_SRR3019200_1_paired_bismark_bt2_pe.txt.chrchr1_GL456210_random.methXtractor.temp
+CpG_OT_SRR3019200_1_paired_bismark_bt2_pe.txt.chrchrUn_GL456393.methXtractor.temp
+CpG_OT_SRR3019200_1_paired_bismark_bt2_pe.txt.chrchrUn_GL456396.methXtractor.temp
+CpG_OT_SRR3019200_1_paired_bismark_bt2_pe.txt.chrchr4_JH584295_random.methXtractor.temp
+CpG_OT_SRR3019200_1_paired_bismark_bt2_pe.txt.chrchrUn_GL456379.methXtractor.temp
+CpG_OT_SRR3019200_1_paired_bismark_bt2_pe.txt.chrchrUn_GL456368.methXtractor.temp
+CpG_OT_SRR3019200_1_paired_bismark_bt2_pe.txt.chrchr5_JH584299_random.methXtractor.temp
+CpG_OT_SRR3019200_1_paired_bismark_bt2_pe.txt.chrchrUn_GL456381.methXtractor.temp
+CpG_OT_SRR3019200_1_paired_bismark_bt2_pe.txt.chrchr1_GL456211_random.methXtractor.temp
+CpG_OT_SRR3019200_1_paired_bismark_bt2_pe.txt.chrchrUn_GL456387.methXtractor.temp
+CpG_OT_SRR3019200_1_paired_bismark_bt2_pe.txt.chrchrUn_GL456389.methXtractor.temp
+CpG_OT_SRR3019200_1_paired_bismark_bt2_pe.txt.chrchrUn_GL456394.methXtractor.temp
+CpG_OT_SRR3019200_1_paired_bismark_bt2_pe.txt.chrchrUn_GL456378.methXtractor.temp
+CpG_OT_SRR3019200_1_paired_bismark_bt2_pe.txt.chrchrUn_GL456370.methXtractor.temp
+CpG_OT_SRR3019200_1_paired_bismark_bt2_pe.txt.chrchrM.methXtractor.temp
+CpG_OT_SRR3019200_1_paired_bismark_bt2_pe.txt.chrchrUn_GL456367.methXtractor.temp
+CpG_OT_SRR3019200_1_paired_bismark_bt2_pe.txt.chrchr5_GL456354_random.methXtractor.temp
+CpG_OT_SRR3019200_1_paired_bismark_bt2_pe.txt.chrchr4_GL456216_random.methXtractor.temp
+CpG_OT_SRR3019200_1_paired_bismark_bt2_pe.txt.chrchrUn_GL456359.methXtractor.temp
+CpG_OT_SRR3019200_1_paired_bismark_bt2_pe.txt.chrchrUn_GL456366.methXtractor.temp
+CpG_OT_SRR3019200_1_paired_bismark_bt2_pe.txt.chrchrUn_GL456360.methXtractor.temp
+CpG_OT_SRR3019200_1_paired_bismark_bt2_pe.txt.chrchrUn_GL456392.methXtractor.temp
+CpG_OT_SRR3019200_1_paired_bismark_bt2_pe.txt.chrchr7_GL456219_random.methXtractor.temp
+CpG_OT_SRR3019200_1_paired_bismark_bt2_pe.txt.chrchr4_JH584292_random.methXtractor.temp
+CpG_OT_SRR3019200_1_paired_bismark_bt2_pe.txt.chrchrY_JH584301_random.methXtractor.temp
+CpG_OT_SRR3019200_1_paired_bismark_bt2_pe.txt.chrchrY_JH584300_random.methXtractor.temp
+CpG_OT_SRR3019200_1_paired_bismark_bt2_pe.txt.chrchrUn_GL456239.methXtractor.temp
+CpG_OT_SRR3019200_1_paired_bismark_bt2_pe.txt.chrchrUn_GL456385.methXtractor.temp
+CpG_OT_SRR3019200_1_paired_bismark_bt2_pe.txt.chrchrUn_GL456383.methXtractor.temp
+CpG_OT_SRR3019200_1_paired_bismark_bt2_pe.txt.chrchrUn_GL456382.methXtractor.temp
+CpG_OT_SRR3019200_1_paired_bismark_bt2_pe.txt.chrchrUn_GL456390.methXtractor.temp
+CpG_OT_SRR3019200_1_paired_bismark_bt2_pe.txt.chrchr1_GL456213_random.methXtractor.temp
+CpG_OT_SRR3019200_1_paired_bismark_bt2_pe.txt.chrchr4_GL456350_random.methXtractor.temp
+CpG_OT_SRR3019200_1_paired_bismark_bt2_pe.txt.chrchr5_JH584296_random.methXtractor.temp
+CpG_OT_SRR3019200_1_paired_bismark_bt2_pe.txt.chrchr5_JH584298_random.methXtractor.temp
+CpG_OT_SRR3019200_1_paired_bismark_bt2_pe.txt.chrchrY_JH584303_random.methXtractor.temp
+CpG_OT_SRR3019200_1_paired_bismark_bt2_pe.txt.chrchr4_JH584294_random.methXtractor.temp
+
+Sorting input file CpG_OT_SRR3019200_1_paired_bismark_bt2_pe.txt.chrchr6.methXtractor.temp by positions (using -S of 2G)
+Successfully deleted the temporary input file CpG_OT_SRR3019200_1_paired_bismark_bt2_pe.txt.chrchr6.methXtractor.temp
+
+Sorting input file CpG_OT_SRR3019200_1_paired_bismark_bt2_pe.txt.chrchr10.methXtractor.temp by positions (using -S of 2G)
+Successfully deleted the temporary input file CpG_OT_SRR3019200_1_paired_bismark_bt2_pe.txt.chrchr10.methXtractor.temp
+
+Sorting input file CpG_OT_SRR3019200_1_paired_bismark_bt2_pe.txt.chrchr5.methXtractor.temp by positions (using -S of 2G)
+Successfully deleted the temporary input file CpG_OT_SRR3019200_1_paired_bismark_bt2_pe.txt.chrchr5.methXtractor.temp
+
+Sorting input file CpG_OT_SRR3019200_1_paired_bismark_bt2_pe.txt.chrchr4.methXtractor.temp by positions (using -S of 2G)
+Successfully deleted the temporary input file CpG_OT_SRR3019200_1_paired_bismark_bt2_pe.txt.chrchr4.methXtractor.temp
+
+Sorting input file CpG_OT_SRR3019200_1_paired_bismark_bt2_pe.txt.chrchr17.methXtractor.temp by positions (using -S of 2G)
+Successfully deleted the temporary input file CpG_OT_SRR3019200_1_paired_bismark_bt2_pe.txt.chrchr17.methXtractor.temp
+
+Sorting input file CpG_OT_SRR3019200_1_paired_bismark_bt2_pe.txt.chrchr11.methXtractor.temp by positions (using -S of 2G)
+Successfully deleted the temporary input file CpG_OT_SRR3019200_1_paired_bismark_bt2_pe.txt.chrchr11.methXtractor.temp
+
+Sorting input file CpG_OT_SRR3019200_1_paired_bismark_bt2_pe.txt.chrchr8.methXtractor.temp by positions (using -S of 2G)
+Successfully deleted the temporary input file CpG_OT_SRR3019200_1_paired_bismark_bt2_pe.txt.chrchr8.methXtractor.temp
+
+Sorting input file CpG_OT_SRR3019200_1_paired_bismark_bt2_pe.txt.chrchr12.methXtractor.temp by positions (using -S of 2G)
+Successfully deleted the temporary input file CpG_OT_SRR3019200_1_paired_bismark_bt2_pe.txt.chrchr12.methXtractor.temp
+
+Sorting input file CpG_OT_SRR3019200_1_paired_bismark_bt2_pe.txt.chrchr2.methXtractor.temp by positions (using -S of 2G)
+Successfully deleted the temporary input file CpG_OT_SRR3019200_1_paired_bismark_bt2_pe.txt.chrchr2.methXtractor.temp
+
+Sorting input file CpG_OT_SRR3019200_1_paired_bismark_bt2_pe.txt.chrchr19.methXtractor.temp by positions (using -S of 2G)
+Successfully deleted the temporary input file CpG_OT_SRR3019200_1_paired_bismark_bt2_pe.txt.chrchr19.methXtractor.temp
+
+Sorting input file CpG_OT_SRR3019200_1_paired_bismark_bt2_pe.txt.chrchr1.methXtractor.temp by positions (using -S of 2G)
+Successfully deleted the temporary input file CpG_OT_SRR3019200_1_paired_bismark_bt2_pe.txt.chrchr1.methXtractor.temp
+
+Sorting input file CpG_OT_SRR3019200_1_paired_bismark_bt2_pe.txt.chrchr18.methXtractor.temp by positions (using -S of 2G)
+Successfully deleted the temporary input file CpG_OT_SRR3019200_1_paired_bismark_bt2_pe.txt.chrchr18.methXtractor.temp
+
+Sorting input file CpG_OT_SRR3019200_1_paired_bismark_bt2_pe.txt.chrchr13.methXtractor.temp by positions (using -S of 2G)
+Successfully deleted the temporary input file CpG_OT_SRR3019200_1_paired_bismark_bt2_pe.txt.chrchr13.methXtractor.temp
+
+Sorting input file CpG_OT_SRR3019200_1_paired_bismark_bt2_pe.txt.chrchr14.methXtractor.temp by positions (using -S of 2G)
+Successfully deleted the temporary input file CpG_OT_SRR3019200_1_paired_bismark_bt2_pe.txt.chrchr14.methXtractor.temp
+
+Sorting input file CpG_OT_SRR3019200_1_paired_bismark_bt2_pe.txt.chrchr7.methXtractor.temp by positions (using -S of 2G)
+Successfully deleted the temporary input file CpG_OT_SRR3019200_1_paired_bismark_bt2_pe.txt.chrchr7.methXtractor.temp
+
+Sorting input file CpG_OT_SRR3019200_1_paired_bismark_bt2_pe.txt.chrchrX.methXtractor.temp by positions (using -S of 2G)
+Successfully deleted the temporary input file CpG_OT_SRR3019200_1_paired_bismark_bt2_pe.txt.chrchrX.methXtractor.temp
+
+Sorting input file CpG_OT_SRR3019200_1_paired_bismark_bt2_pe.txt.chrchr15.methXtractor.temp by positions (using -S of 2G)
+Successfully deleted the temporary input file CpG_OT_SRR3019200_1_paired_bismark_bt2_pe.txt.chrchr15.methXtractor.temp
+
+Sorting input file CpG_OT_SRR3019200_1_paired_bismark_bt2_pe.txt.chrchr16.methXtractor.temp by positions (using -S of 2G)
+Successfully deleted the temporary input file CpG_OT_SRR3019200_1_paired_bismark_bt2_pe.txt.chrchr16.methXtractor.temp
+
+Sorting input file CpG_OT_SRR3019200_1_paired_bismark_bt2_pe.txt.chrchr9.methXtractor.temp by positions (using -S of 2G)
+Successfully deleted the temporary input file CpG_OT_SRR3019200_1_paired_bismark_bt2_pe.txt.chrchr9.methXtractor.temp
+
+Sorting input file CpG_OT_SRR3019200_1_paired_bismark_bt2_pe.txt.chrchr3.methXtractor.temp by positions (using -S of 2G)
+Successfully deleted the temporary input file CpG_OT_SRR3019200_1_paired_bismark_bt2_pe.txt.chrchr3.methXtractor.temp
+
+Sorting input file CpG_OT_SRR3019200_1_paired_bismark_bt2_pe.txt.chrchrY.methXtractor.temp by positions (using -S of 2G)
+Successfully deleted the temporary input file CpG_OT_SRR3019200_1_paired_bismark_bt2_pe.txt.chrchrY.methXtractor.temp
+
+Sorting input file CpG_OT_SRR3019200_1_paired_bismark_bt2_pe.txt.chrchrUn_JH584304.methXtractor.temp by positions (using -S of 2G)
+Successfully deleted the temporary input file CpG_OT_SRR3019200_1_paired_bismark_bt2_pe.txt.chrchrUn_JH584304.methXtractor.temp
+
+Sorting input file CpG_OT_SRR3019200_1_paired_bismark_bt2_pe.txt.chrchrUn_GL456372.methXtractor.temp by positions (using -S of 2G)
+Successfully deleted the temporary input file CpG_OT_SRR3019200_1_paired_bismark_bt2_pe.txt.chrchrUn_GL456372.methXtractor.temp
+
+Sorting input file CpG_OT_SRR3019200_1_paired_bismark_bt2_pe.txt.chrchr1_GL456221_random.methXtractor.temp by positions (using -S of 2G)
+Successfully deleted the temporary input file CpG_OT_SRR3019200_1_paired_bismark_bt2_pe.txt.chrchr1_GL456221_random.methXtractor.temp
+
+Sorting input file CpG_OT_SRR3019200_1_paired_bismark_bt2_pe.txt.chrchr5_JH584297_random.methXtractor.temp by positions (using -S of 2G)
+Successfully deleted the temporary input file CpG_OT_SRR3019200_1_paired_bismark_bt2_pe.txt.chrchr5_JH584297_random.methXtractor.temp
+
+Sorting input file CpG_OT_SRR3019200_1_paired_bismark_bt2_pe.txt.chrchr1_GL456212_random.methXtractor.temp by positions (using -S of 2G)
+Successfully deleted the temporary input file CpG_OT_SRR3019200_1_paired_bismark_bt2_pe.txt.chrchr1_GL456212_random.methXtractor.temp
+
+Sorting input file CpG_OT_SRR3019200_1_paired_bismark_bt2_pe.txt.chrchrX_GL456233_random.methXtractor.temp by positions (using -S of 2G)
+Successfully deleted the temporary input file CpG_OT_SRR3019200_1_paired_bismark_bt2_pe.txt.chrchrX_GL456233_random.methXtractor.temp
+
+Sorting input file CpG_OT_SRR3019200_1_paired_bismark_bt2_pe.txt.chrchr1_GL456210_random.methXtractor.temp by positions (using -S of 2G)
+Successfully deleted the temporary input file CpG_OT_SRR3019200_1_paired_bismark_bt2_pe.txt.chrchr1_GL456210_random.methXtractor.temp
+
+Sorting input file CpG_OT_SRR3019200_1_paired_bismark_bt2_pe.txt.chrchrUn_GL456393.methXtractor.temp by positions (using -S of 2G)
+Successfully deleted the temporary input file CpG_OT_SRR3019200_1_paired_bismark_bt2_pe.txt.chrchrUn_GL456393.methXtractor.temp
+
+Sorting input file CpG_OT_SRR3019200_1_paired_bismark_bt2_pe.txt.chrchrUn_GL456396.methXtractor.temp by positions (using -S of 2G)
+Successfully deleted the temporary input file CpG_OT_SRR3019200_1_paired_bismark_bt2_pe.txt.chrchrUn_GL456396.methXtractor.temp
+
+Sorting input file CpG_OT_SRR3019200_1_paired_bismark_bt2_pe.txt.chrchr4_JH584295_random.methXtractor.temp by positions (using -S of 2G)
+Successfully deleted the temporary input file CpG_OT_SRR3019200_1_paired_bismark_bt2_pe.txt.chrchr4_JH584295_random.methXtractor.temp
+
+Sorting input file CpG_OT_SRR3019200_1_paired_bismark_bt2_pe.txt.chrchrUn_GL456379.methXtractor.temp by positions (using -S of 2G)
+Successfully deleted the temporary input file CpG_OT_SRR3019200_1_paired_bismark_bt2_pe.txt.chrchrUn_GL456379.methXtractor.temp
+
+Sorting input file CpG_OT_SRR3019200_1_paired_bismark_bt2_pe.txt.chrchrUn_GL456368.methXtractor.temp by positions (using -S of 2G)
+Successfully deleted the temporary input file CpG_OT_SRR3019200_1_paired_bismark_bt2_pe.txt.chrchrUn_GL456368.methXtractor.temp
+
+Sorting input file CpG_OT_SRR3019200_1_paired_bismark_bt2_pe.txt.chrchr5_JH584299_random.methXtractor.temp by positions (using -S of 2G)
+Successfully deleted the temporary input file CpG_OT_SRR3019200_1_paired_bismark_bt2_pe.txt.chrchr5_JH584299_random.methXtractor.temp
+
+Sorting input file CpG_OT_SRR3019200_1_paired_bismark_bt2_pe.txt.chrchrUn_GL456381.methXtractor.temp by positions (using -S of 2G)
+Successfully deleted the temporary input file CpG_OT_SRR3019200_1_paired_bismark_bt2_pe.txt.chrchrUn_GL456381.methXtractor.temp
+
+Sorting input file CpG_OT_SRR3019200_1_paired_bismark_bt2_pe.txt.chrchr1_GL456211_random.methXtractor.temp by positions (using -S of 2G)
+Successfully deleted the temporary input file CpG_OT_SRR3019200_1_paired_bismark_bt2_pe.txt.chrchr1_GL456211_random.methXtractor.temp
+
+Sorting input file CpG_OT_SRR3019200_1_paired_bismark_bt2_pe.txt.chrchrUn_GL456387.methXtractor.temp by positions (using -S of 2G)
+Successfully deleted the temporary input file CpG_OT_SRR3019200_1_paired_bismark_bt2_pe.txt.chrchrUn_GL456387.methXtractor.temp
+
+Sorting input file CpG_OT_SRR3019200_1_paired_bismark_bt2_pe.txt.chrchrUn_GL456389.methXtractor.temp by positions (using -S of 2G)
+Successfully deleted the temporary input file CpG_OT_SRR3019200_1_paired_bismark_bt2_pe.txt.chrchrUn_GL456389.methXtractor.temp
+
+Sorting input file CpG_OT_SRR3019200_1_paired_bismark_bt2_pe.txt.chrchrUn_GL456394.methXtractor.temp by positions (using -S of 2G)
+Successfully deleted the temporary input file CpG_OT_SRR3019200_1_paired_bismark_bt2_pe.txt.chrchrUn_GL456394.methXtractor.temp
+
+Sorting input file CpG_OT_SRR3019200_1_paired_bismark_bt2_pe.txt.chrchrUn_GL456378.methXtractor.temp by positions (using -S of 2G)
+Successfully deleted the temporary input file CpG_OT_SRR3019200_1_paired_bismark_bt2_pe.txt.chrchrUn_GL456378.methXtractor.temp
+
+Sorting input file CpG_OT_SRR3019200_1_paired_bismark_bt2_pe.txt.chrchrUn_GL456370.methXtractor.temp by positions (using -S of 2G)
+Successfully deleted the temporary input file CpG_OT_SRR3019200_1_paired_bismark_bt2_pe.txt.chrchrUn_GL456370.methXtractor.temp
+
+Sorting input file CpG_OT_SRR3019200_1_paired_bismark_bt2_pe.txt.chrchrM.methXtractor.temp by positions (using -S of 2G)
+Successfully deleted the temporary input file CpG_OT_SRR3019200_1_paired_bismark_bt2_pe.txt.chrchrM.methXtractor.temp
+
+Sorting input file CpG_OT_SRR3019200_1_paired_bismark_bt2_pe.txt.chrchrUn_GL456367.methXtractor.temp by positions (using -S of 2G)
+Successfully deleted the temporary input file CpG_OT_SRR3019200_1_paired_bismark_bt2_pe.txt.chrchrUn_GL456367.methXtractor.temp
+
+Sorting input file CpG_OT_SRR3019200_1_paired_bismark_bt2_pe.txt.chrchr5_GL456354_random.methXtractor.temp by positions (using -S of 2G)
+Successfully deleted the temporary input file CpG_OT_SRR3019200_1_paired_bismark_bt2_pe.txt.chrchr5_GL456354_random.methXtractor.temp
+
+Sorting input file CpG_OT_SRR3019200_1_paired_bismark_bt2_pe.txt.chrchr4_GL456216_random.methXtractor.temp by positions (using -S of 2G)
+Successfully deleted the temporary input file CpG_OT_SRR3019200_1_paired_bismark_bt2_pe.txt.chrchr4_GL456216_random.methXtractor.temp
+
+Sorting input file CpG_OT_SRR3019200_1_paired_bismark_bt2_pe.txt.chrchrUn_GL456359.methXtractor.temp by positions (using -S of 2G)
+Successfully deleted the temporary input file CpG_OT_SRR3019200_1_paired_bismark_bt2_pe.txt.chrchrUn_GL456359.methXtractor.temp
+
+Sorting input file CpG_OT_SRR3019200_1_paired_bismark_bt2_pe.txt.chrchrUn_GL456366.methXtractor.temp by positions (using -S of 2G)
+Successfully deleted the temporary input file CpG_OT_SRR3019200_1_paired_bismark_bt2_pe.txt.chrchrUn_GL456366.methXtractor.temp
+
+Sorting input file CpG_OT_SRR3019200_1_paired_bismark_bt2_pe.txt.chrchrUn_GL456360.methXtractor.temp by positions (using -S of 2G)
+Successfully deleted the temporary input file CpG_OT_SRR3019200_1_paired_bismark_bt2_pe.txt.chrchrUn_GL456360.methXtractor.temp
+
+Sorting input file CpG_OT_SRR3019200_1_paired_bismark_bt2_pe.txt.chrchrUn_GL456392.methXtractor.temp by positions (using -S of 2G)
+Successfully deleted the temporary input file CpG_OT_SRR3019200_1_paired_bismark_bt2_pe.txt.chrchrUn_GL456392.methXtractor.temp
+
+Sorting input file CpG_OT_SRR3019200_1_paired_bismark_bt2_pe.txt.chrchr7_GL456219_random.methXtractor.temp by positions (using -S of 2G)
+Successfully deleted the temporary input file CpG_OT_SRR3019200_1_paired_bismark_bt2_pe.txt.chrchr7_GL456219_random.methXtractor.temp
+
+Sorting input file CpG_OT_SRR3019200_1_paired_bismark_bt2_pe.txt.chrchr4_JH584292_random.methXtractor.temp by positions (using -S of 2G)
+Successfully deleted the temporary input file CpG_OT_SRR3019200_1_paired_bismark_bt2_pe.txt.chrchr4_JH584292_random.methXtractor.temp
+
+Sorting input file CpG_OT_SRR3019200_1_paired_bismark_bt2_pe.txt.chrchrY_JH584301_random.methXtractor.temp by positions (using -S of 2G)
+Successfully deleted the temporary input file CpG_OT_SRR3019200_1_paired_bismark_bt2_pe.txt.chrchrY_JH584301_random.methXtractor.temp
+
+Sorting input file CpG_OT_SRR3019200_1_paired_bismark_bt2_pe.txt.chrchrY_JH584300_random.methXtractor.temp by positions (using -S of 2G)
+Successfully deleted the temporary input file CpG_OT_SRR3019200_1_paired_bismark_bt2_pe.txt.chrchrY_JH584300_random.methXtractor.temp
+
+Sorting input file CpG_OT_SRR3019200_1_paired_bismark_bt2_pe.txt.chrchrUn_GL456239.methXtractor.temp by positions (using -S of 2G)
+Successfully deleted the temporary input file CpG_OT_SRR3019200_1_paired_bismark_bt2_pe.txt.chrchrUn_GL456239.methXtractor.temp
+
+Sorting input file CpG_OT_SRR3019200_1_paired_bismark_bt2_pe.txt.chrchrUn_GL456385.methXtractor.temp by positions (using -S of 2G)
+Successfully deleted the temporary input file CpG_OT_SRR3019200_1_paired_bismark_bt2_pe.txt.chrchrUn_GL456385.methXtractor.temp
+
+Sorting input file CpG_OT_SRR3019200_1_paired_bismark_bt2_pe.txt.chrchrUn_GL456383.methXtractor.temp by positions (using -S of 2G)
+Successfully deleted the temporary input file CpG_OT_SRR3019200_1_paired_bismark_bt2_pe.txt.chrchrUn_GL456383.methXtractor.temp
+
+Sorting input file CpG_OT_SRR3019200_1_paired_bismark_bt2_pe.txt.chrchrUn_GL456382.methXtractor.temp by positions (using -S of 2G)
+Successfully deleted the temporary input file CpG_OT_SRR3019200_1_paired_bismark_bt2_pe.txt.chrchrUn_GL456382.methXtractor.temp
+
+Sorting input file CpG_OT_SRR3019200_1_paired_bismark_bt2_pe.txt.chrchrUn_GL456390.methXtractor.temp by positions (using -S of 2G)
+Successfully deleted the temporary input file CpG_OT_SRR3019200_1_paired_bismark_bt2_pe.txt.chrchrUn_GL456390.methXtractor.temp
+
+Sorting input file CpG_OT_SRR3019200_1_paired_bismark_bt2_pe.txt.chrchr1_GL456213_random.methXtractor.temp by positions (using -S of 2G)
+Successfully deleted the temporary input file CpG_OT_SRR3019200_1_paired_bismark_bt2_pe.txt.chrchr1_GL456213_random.methXtractor.temp
+
+Sorting input file CpG_OT_SRR3019200_1_paired_bismark_bt2_pe.txt.chrchr4_GL456350_random.methXtractor.temp by positions (using -S of 2G)
+Successfully deleted the temporary input file CpG_OT_SRR3019200_1_paired_bismark_bt2_pe.txt.chrchr4_GL456350_random.methXtractor.temp
+
+Sorting input file CpG_OT_SRR3019200_1_paired_bismark_bt2_pe.txt.chrchr5_JH584296_random.methXtractor.temp by positions (using -S of 2G)
+Successfully deleted the temporary input file CpG_OT_SRR3019200_1_paired_bismark_bt2_pe.txt.chrchr5_JH584296_random.methXtractor.temp
+
+Sorting input file CpG_OT_SRR3019200_1_paired_bismark_bt2_pe.txt.chrchr5_JH584298_random.methXtractor.temp by positions (using -S of 2G)
+Successfully deleted the temporary input file CpG_OT_SRR3019200_1_paired_bismark_bt2_pe.txt.chrchr5_JH584298_random.methXtractor.temp
+
+Sorting input file CpG_OT_SRR3019200_1_paired_bismark_bt2_pe.txt.chrchrY_JH584303_random.methXtractor.temp by positions (using -S of 2G)
+Successfully deleted the temporary input file CpG_OT_SRR3019200_1_paired_bismark_bt2_pe.txt.chrchrY_JH584303_random.methXtractor.temp
+
+Sorting input file CpG_OT_SRR3019200_1_paired_bismark_bt2_pe.txt.chrchr4_JH584294_random.methXtractor.temp by positions (using -S of 2G)
+Successfully deleted the temporary input file CpG_OT_SRR3019200_1_paired_bismark_bt2_pe.txt.chrchr4_JH584294_random.methXtractor.temp
+
+Finished BedGraph conversion ...
+
+Summary of parameters for genome-wide cytosine report:
+==============================================================================
+Coverage infile:			SRR3019200_1_paired_bismark_bt2_pe.bismark.cov.gz
+Output directory:			>output/SRR3019200/<
+Parent directory:			>/mnt/IM/DKT/projets/rando_cell_2015/exp/20180315-preprocessing_and_alignment-01/20180625-05_methylation_extraction/<
+Genome directory:			>/mnt/IM/DKT/genomes/gencode/mm10_release_m16/<
+CX context:				no (CpG context only, default)
+Genome coordinates used:		1-based (default)
+GZIP compression:			no
+Split by chromosome:			no
+
+
+Now reading in and storing sequence information of the genome specified in: /mnt/IM/DKT/genomes/gencode/mm10_release_m16/
+
+chr chr1 (195471971 bp)
+chr chr2 (182113224 bp)
+chr chr3 (160039680 bp)
+chr chr4 (156508116 bp)
+chr chr5 (151834684 bp)
+chr chr6 (149736546 bp)
+chr chr7 (145441459 bp)
+chr chr8 (129401213 bp)
+chr chr9 (124595110 bp)
+chr chr10 (130694993 bp)
+chr chr11 (122082543 bp)
+chr chr12 (120129022 bp)
+chr chr13 (120421639 bp)
+chr chr14 (124902244 bp)
+chr chr15 (104043685 bp)
+chr chr16 (98207768 bp)
+chr chr17 (94987271 bp)
+chr chr18 (90702639 bp)
+chr chr19 (61431566 bp)
+chr chrX (171031299 bp)
+chr chrY (91744698 bp)
+chr chrM (16299 bp)
+chr GL456210.1 (169725 bp)
+chr GL456211.1 (241735 bp)
+chr GL456212.1 (153618 bp)
+chr GL456213.1 (39340 bp)
+chr GL456216.1 (66673 bp)
+chr GL456219.1 (175968 bp)
+chr GL456221.1 (206961 bp)
+chr GL456233.1 (336933 bp)
+chr GL456239.1 (40056 bp)
+chr GL456350.1 (227966 bp)
+chr GL456354.1 (195993 bp)
+chr GL456359.1 (22974 bp)
+chr GL456360.1 (31704 bp)
+chr GL456366.1 (47073 bp)
+chr GL456367.1 (42057 bp)
+chr GL456368.1 (20208 bp)
+chr GL456370.1 (26764 bp)
+chr GL456372.1 (28664 bp)
+chr GL456378.1 (31602 bp)
+chr GL456379.1 (72385 bp)
+chr GL456381.1 (25871 bp)
+chr GL456382.1 (23158 bp)
+chr GL456383.1 (38659 bp)
+chr GL456385.1 (35240 bp)
+chr GL456387.1 (24685 bp)
+chr GL456389.1 (28772 bp)
+chr GL456390.1 (24668 bp)
+chr GL456392.1 (23629 bp)
+chr GL456393.1 (55711 bp)
+chr GL456394.1 (24323 bp)
+chr GL456396.1 (21240 bp)
+chr JH584292.1 (14945 bp)
+chr JH584293.1 (207968 bp)
+chr JH584294.1 (191905 bp)
+chr JH584295.1 (1976 bp)
+chr JH584296.1 (199368 bp)
+chr JH584297.1 (205776 bp)
+chr JH584298.1 (184189 bp)
+chr JH584299.1 (953012 bp)
+chr JH584300.1 (182347 bp)
+chr JH584301.1 (259875 bp)
+chr JH584302.1 (155838 bp)
+chr JH584303.1 (158099 bp)
+chr JH584304.1 (114452 bp)
+chr KQ030490.1 (120154 bp)
+chr KB469738.3 (210641 bp)
+chr JH792830.1 (246751 bp)
+chr KV575237.1 (1224174 bp)
+chr KK082442.1 (154766 bp)
+chr KV575240.1 (171859 bp)
+chr KV575235.1 (195735 bp)
+chr KV575239.1 (71460 bp)
+chr KQ030495.1 (490000 bp)
+chr KV575238.1 (414410 bp)
+chr KV575234.1 (686942 bp)
+chr KQ030485.1 (185548 bp)
+chr KQ030486.1 (399265 bp)
+chr KQ030487.1 (316842 bp)
+chr KB469739.1 (331111 bp)
+chr KB469741.2 (505876 bp)
+chr JH792829.1 (352455 bp)
+chr KV575236.1 (166096 bp)
+chr KV575233.1 (266016 bp)
+chr JH792826.1 (368286 bp)
+chr JH792828.1 (473738 bp)
+chr KB469740.1 (316140 bp)
+chr JH792832.1 (544189 bp)
+chr JH792833.1 (221588 bp)
+chr JH792827.1 (205713 bp)
+chr JH792834.1 (331480 bp)
+chr JH792831.1 (182256 bp)
+chr KB469742.1 (1059955 bp)
+chr KQ030484.1 (214957 bp)
+chr KQ030494.1 (506812 bp)
+chr KQ030496.1 (260447 bp)
+chr KQ030497.1 (219721 bp)
+chr KQ030492.1 (166012 bp)
+chr KQ030493.1 (269476 bp)
+chr KQ030491.1 (129865 bp)
+chr KQ030488.1 (45901 bp)
+chr KQ030489.1 (188269 bp)
+chr KV575232.1 (200008 bp)
+chr KV575241.1 (211337 bp)
+chr KV575242.1 (299789 bp)
+chr KK082441.1 (456798 bp)
+
+Stored sequence information of 107 chromosomes/scaffolds in total
+
+==============================================================================
+Methylation information will now be written into a genome-wide cytosine report
+==============================================================================
+
+>>> Writing genome-wide cytosine report to: SRR3019200_1_paired_bismark_bt2_pe.CpG_report.txt <<<
+
+Writing cytosine report for chromosome chr6 (stored 596684 different covered positions)
+Writing cytosine report for chromosome chr10 (stored 590577 different covered positions)
+Writing cytosine report for chromosome chr5 (stored 781423 different covered positions)
+Writing cytosine report for chromosome chr4 (stored 743533 different covered positions)
+Writing cytosine report for chromosome chr17 (stored 488158 different covered positions)
+Writing cytosine report for chromosome chr11 (stored 731651 different covered positions)
+Writing cytosine report for chromosome chr8 (stored 636752 different covered positions)
+Writing cytosine report for chromosome chr12 (stored 484664 different covered positions)
+Writing cytosine report for chromosome chr2 (stored 843882 different covered positions)
+Writing cytosine report for chromosome chr19 (stored 318968 different covered positions)
+Writing cytosine report for chromosome chr1 (stored 745881 different covered positions)
+Writing cytosine report for chromosome chr18 (stored 380399 different covered positions)
+Writing cytosine report for chromosome chr13 (stored 499978 different covered positions)
+Writing cytosine report for chromosome chr14 (stored 447989 different covered positions)
+Writing cytosine report for chromosome chr7 (stored 698670 different covered positions)
+Writing cytosine report for chromosome chrX (stored 232110 different covered positions)
+Writing cytosine report for chromosome chr15 (stored 494021 different covered positions)
+Writing cytosine report for chromosome chr16 (stored 385801 different covered positions)
+Writing cytosine report for chromosome chr9 (stored 608079 different covered positions)
+Writing cytosine report for chromosome chr3 (stored 572457 different covered positions)
+Writing cytosine report for chromosome chrY (stored 14640 different covered positions)
+Writing cytosine report for chromosome chrUn_JH584304 (stored 1774 different covered positions)
+Use of uninitialized value within %chromosomes in pattern match (m//) at /home/ubuntu/softwares/miniconda2/bin/coverage2cytosine line 396, <IN> line 11298092.
+Writing cytosine report for chromosome chrUn_GL456372 (stored 87 different covered positions)
+Use of uninitialized value within %chromosomes in pattern match (m//) at /home/ubuntu/softwares/miniconda2/bin/coverage2cytosine line 396, <IN> line 11298179.
+Writing cytosine report for chromosome chr1_GL456221_random (stored 392 different covered positions)
+Use of uninitialized value within %chromosomes in pattern match (m//) at /home/ubuntu/softwares/miniconda2/bin/coverage2cytosine line 396, <IN> line 11298571.
+Writing cytosine report for chromosome chr5_JH584297_random (stored 23 different covered positions)
+Use of uninitialized value within %chromosomes in pattern match (m//) at /home/ubuntu/softwares/miniconda2/bin/coverage2cytosine line 396, <IN> line 11298594.
+Writing cytosine report for chromosome chr1_GL456212_random (stored 407 different covered positions)
+Use of uninitialized value within %chromosomes in pattern match (m//) at /home/ubuntu/softwares/miniconda2/bin/coverage2cytosine line 396, <IN> line 11299001.
+Writing cytosine report for chromosome chrX_GL456233_random (stored 342 different covered positions)
+Use of uninitialized value within %chromosomes in pattern match (m//) at /home/ubuntu/softwares/miniconda2/bin/coverage2cytosine line 396, <IN> line 11299343.
+Writing cytosine report for chromosome chr1_GL456210_random (stored 497 different covered positions)
+Use of uninitialized value within %chromosomes in pattern match (m//) at /home/ubuntu/softwares/miniconda2/bin/coverage2cytosine line 396, <IN> line 11299840.
+Writing cytosine report for chromosome chrUn_GL456393 (stored 87 different covered positions)
+Use of uninitialized value within %chromosomes in pattern match (m//) at /home/ubuntu/softwares/miniconda2/bin/coverage2cytosine line 396, <IN> line 11299927.
+Writing cytosine report for chromosome chrUn_GL456396 (stored 65 different covered positions)
+Use of uninitialized value within %chromosomes in pattern match (m//) at /home/ubuntu/softwares/miniconda2/bin/coverage2cytosine line 396, <IN> line 11299992.
+Writing cytosine report for chromosome chr4_JH584295_random (stored 72 different covered positions)
+Use of uninitialized value within %chromosomes in pattern match (m//) at /home/ubuntu/softwares/miniconda2/bin/coverage2cytosine line 396, <IN> line 11300064.
+Writing cytosine report for chromosome chrUn_GL456379 (stored 96 different covered positions)
+Use of uninitialized value within %chromosomes in pattern match (m//) at /home/ubuntu/softwares/miniconda2/bin/coverage2cytosine line 396, <IN> line 11300160.
+Writing cytosine report for chromosome chrUn_GL456368 (stored 48 different covered positions)
+Use of uninitialized value within %chromosomes in pattern match (m//) at /home/ubuntu/softwares/miniconda2/bin/coverage2cytosine line 396, <IN> line 11300208.
+Writing cytosine report for chromosome chr5_JH584299_random (stored 303 different covered positions)
+Use of uninitialized value within %chromosomes in pattern match (m//) at /home/ubuntu/softwares/miniconda2/bin/coverage2cytosine line 396, <IN> line 11300511.
+Writing cytosine report for chromosome chrUn_GL456381 (stored 28 different covered positions)
+Use of uninitialized value within %chromosomes in pattern match (m//) at /home/ubuntu/softwares/miniconda2/bin/coverage2cytosine line 396, <IN> line 11300539.
+Writing cytosine report for chromosome chr1_GL456211_random (stored 714 different covered positions)
+Use of uninitialized value within %chromosomes in pattern match (m//) at /home/ubuntu/softwares/miniconda2/bin/coverage2cytosine line 396, <IN> line 11301253.
+Writing cytosine report for chromosome chrUn_GL456387 (stored 51 different covered positions)
+Use of uninitialized value within %chromosomes in pattern match (m//) at /home/ubuntu/softwares/miniconda2/bin/coverage2cytosine line 396, <IN> line 11301304.
+Writing cytosine report for chromosome chrUn_GL456389 (stored 53 different covered positions)
+Use of uninitialized value within %chromosomes in pattern match (m//) at /home/ubuntu/softwares/miniconda2/bin/coverage2cytosine line 396, <IN> line 11301357.
+Writing cytosine report for chromosome chrUn_GL456394 (stored 39 different covered positions)
+Use of uninitialized value within %chromosomes in pattern match (m//) at /home/ubuntu/softwares/miniconda2/bin/coverage2cytosine line 396, <IN> line 11301396.
+Writing cytosine report for chromosome chrUn_GL456378 (stored 136 different covered positions)
+Use of uninitialized value within %chromosomes in pattern match (m//) at /home/ubuntu/softwares/miniconda2/bin/coverage2cytosine line 396, <IN> line 11301532.
+Writing cytosine report for chromosome chrUn_GL456370 (stored 163 different covered positions)
+Use of uninitialized value within %chromosomes in pattern match (m//) at /home/ubuntu/softwares/miniconda2/bin/coverage2cytosine line 396, <IN> line 11301695.
+Writing cytosine report for chromosome chrM (stored 256 different covered positions)
+Writing cytosine report for chromosome chrUn_GL456367 (stored 103 different covered positions)
+Use of uninitialized value within %chromosomes in pattern match (m//) at /home/ubuntu/softwares/miniconda2/bin/coverage2cytosine line 396, <IN> line 11302054.
+Writing cytosine report for chromosome chr5_GL456354_random (stored 81 different covered positions)
+Use of uninitialized value within %chromosomes in pattern match (m//) at /home/ubuntu/softwares/miniconda2/bin/coverage2cytosine line 396, <IN> line 11302135.
+Writing cytosine report for chromosome chr4_GL456216_random (stored 369 different covered positions)
+Use of uninitialized value within %chromosomes in pattern match (m//) at /home/ubuntu/softwares/miniconda2/bin/coverage2cytosine line 396, <IN> line 11302504.
+Writing cytosine report for chromosome chrUn_GL456359 (stored 49 different covered positions)
+Use of uninitialized value within %chromosomes in pattern match (m//) at /home/ubuntu/softwares/miniconda2/bin/coverage2cytosine line 396, <IN> line 11302553.
+Writing cytosine report for chromosome chrUn_GL456366 (stored 149 different covered positions)
+Use of uninitialized value within %chromosomes in pattern match (m//) at /home/ubuntu/softwares/miniconda2/bin/coverage2cytosine line 396, <IN> line 11302702.
+Writing cytosine report for chromosome chrUn_GL456360 (stored 85 different covered positions)
+Use of uninitialized value within %chromosomes in pattern match (m//) at /home/ubuntu/softwares/miniconda2/bin/coverage2cytosine line 396, <IN> line 11302787.
+Writing cytosine report for chromosome chrUn_GL456392 (stored 80 different covered positions)
+Use of uninitialized value within %chromosomes in pattern match (m//) at /home/ubuntu/softwares/miniconda2/bin/coverage2cytosine line 396, <IN> line 11302867.
+Writing cytosine report for chromosome chr7_GL456219_random (stored 17 different covered positions)
+Use of uninitialized value within %chromosomes in pattern match (m//) at /home/ubuntu/softwares/miniconda2/bin/coverage2cytosine line 396, <IN> line 11302884.
+Writing cytosine report for chromosome chr4_JH584292_random (stored 7 different covered positions)
+Use of uninitialized value within %chromosomes in pattern match (m//) at /home/ubuntu/softwares/miniconda2/bin/coverage2cytosine line 396, <IN> line 11302891.
+Writing cytosine report for chromosome chrY_JH584301_random (stored 9 different covered positions)
+Use of uninitialized value within %chromosomes in pattern match (m//) at /home/ubuntu/softwares/miniconda2/bin/coverage2cytosine line 396, <IN> line 11302900.
+Writing cytosine report for chromosome chrY_JH584300_random (stored 6 different covered positions)
+Use of uninitialized value within %chromosomes in pattern match (m//) at /home/ubuntu/softwares/miniconda2/bin/coverage2cytosine line 396, <IN> line 11302906.
+Writing cytosine report for chromosome chrUn_GL456239 (stored 39 different covered positions)
+Use of uninitialized value within %chromosomes in pattern match (m//) at /home/ubuntu/softwares/miniconda2/bin/coverage2cytosine line 396, <IN> line 11302945.
+Writing cytosine report for chromosome chrUn_GL456385 (stored 66 different covered positions)
+Use of uninitialized value within %chromosomes in pattern match (m//) at /home/ubuntu/softwares/miniconda2/bin/coverage2cytosine line 396, <IN> line 11303011.
+Writing cytosine report for chromosome chrUn_GL456383 (stored 56 different covered positions)
+Use of uninitialized value within %chromosomes in pattern match (m//) at /home/ubuntu/softwares/miniconda2/bin/coverage2cytosine line 396, <IN> line 11303067.
+Writing cytosine report for chromosome chrUn_GL456382 (stored 28 different covered positions)
+Use of uninitialized value within %chromosomes in pattern match (m//) at /home/ubuntu/softwares/miniconda2/bin/coverage2cytosine line 396, <IN> line 11303095.
+Writing cytosine report for chromosome chrUn_GL456390 (stored 9 different covered positions)
+Use of uninitialized value within %chromosomes in pattern match (m//) at /home/ubuntu/softwares/miniconda2/bin/coverage2cytosine line 396, <IN> line 11303104.
+Writing cytosine report for chromosome chr1_GL456213_random (stored 17 different covered positions)
+Use of uninitialized value within %chromosomes in pattern match (m//) at /home/ubuntu/softwares/miniconda2/bin/coverage2cytosine line 396, <IN> line 11303121.
+Writing cytosine report for chromosome chr4_GL456350_random (stored 21 different covered positions)
+Use of uninitialized value within %chromosomes in pattern match (m//) at /home/ubuntu/softwares/miniconda2/bin/coverage2cytosine line 396, <IN> line 11303142.
+Writing cytosine report for chromosome chr5_JH584296_random (stored 12 different covered positions)
+Use of uninitialized value within %chromosomes in pattern match (m//) at /home/ubuntu/softwares/miniconda2/bin/coverage2cytosine line 396, <IN> line 11303154.
+Writing cytosine report for chromosome chr5_JH584298_random (stored 8 different covered positions)
+Use of uninitialized value within %chromosomes in pattern match (m//) at /home/ubuntu/softwares/miniconda2/bin/coverage2cytosine line 396, <IN> line 11303162.
+Writing cytosine report for chromosome chrY_JH584303_random (stored 4 different covered positions)
+Use of uninitialized value within %chromosomes in pattern match (m//) at /home/ubuntu/softwares/miniconda2/bin/coverage2cytosine line 396, <IN> line 11303166.
+Writing cytosine report for last chromosome chr4_JH584294_random (stored 2 different covered positions)
+Use of uninitialized value within %chromosomes in pattern match (m//) at /home/ubuntu/softwares/miniconda2/bin/coverage2cytosine line 585, <IN> line 11303167.
+Finished writing out cytosine report for covered chromosomes (processed 64 chromosomes/scaffolds in total)
+
+Now processing chromosomes that were not covered by any methylation calls in the coverage file...
+Writing cytosine report for not covered chromosome GL456210.1
+Writing cytosine report for not covered chromosome GL456211.1
+Writing cytosine report for not covered chromosome GL456212.1
+Writing cytosine report for not covered chromosome GL456213.1
+Writing cytosine report for not covered chromosome GL456216.1
+Writing cytosine report for not covered chromosome GL456219.1
+Writing cytosine report for not covered chromosome GL456221.1
+Writing cytosine report for not covered chromosome GL456233.1
+Writing cytosine report for not covered chromosome GL456239.1
+Writing cytosine report for not covered chromosome GL456350.1
+Writing cytosine report for not covered chromosome GL456354.1
+Writing cytosine report for not covered chromosome GL456359.1
+Writing cytosine report for not covered chromosome GL456360.1
+Writing cytosine report for not covered chromosome GL456366.1
+Writing cytosine report for not covered chromosome GL456367.1
+Writing cytosine report for not covered chromosome GL456368.1
+Writing cytosine report for not covered chromosome GL456370.1
+Writing cytosine report for not covered chromosome GL456372.1
+Writing cytosine report for not covered chromosome GL456378.1
+Writing cytosine report for not covered chromosome GL456379.1
+Writing cytosine report for not covered chromosome GL456381.1
+Writing cytosine report for not covered chromosome GL456382.1
+Writing cytosine report for not covered chromosome GL456383.1
+Writing cytosine report for not covered chromosome GL456385.1
+Writing cytosine report for not covered chromosome GL456387.1
+Writing cytosine report for not covered chromosome GL456389.1
+Writing cytosine report for not covered chromosome GL456390.1
+Writing cytosine report for not covered chromosome GL456392.1
+Writing cytosine report for not covered chromosome GL456393.1
+Writing cytosine report for not covered chromosome GL456394.1
+Writing cytosine report for not covered chromosome GL456396.1
+Writing cytosine report for not covered chromosome JH584292.1
+Writing cytosine report for not covered chromosome JH584293.1
+Writing cytosine report for not covered chromosome JH584294.1
+Writing cytosine report for not covered chromosome JH584295.1
+Writing cytosine report for not covered chromosome JH584296.1
+Writing cytosine report for not covered chromosome JH584297.1
+Writing cytosine report for not covered chromosome JH584298.1
+Writing cytosine report for not covered chromosome JH584299.1
+Writing cytosine report for not covered chromosome JH584300.1
+Writing cytosine report for not covered chromosome JH584301.1
+Writing cytosine report for not covered chromosome JH584302.1
+Writing cytosine report for not covered chromosome JH584303.1
+Writing cytosine report for not covered chromosome JH584304.1
+Writing cytosine report for not covered chromosome JH792826.1
+Writing cytosine report for not covered chromosome JH792827.1
+Writing cytosine report for not covered chromosome JH792828.1
+Writing cytosine report for not covered chromosome JH792829.1
+Writing cytosine report for not covered chromosome JH792830.1
+Writing cytosine report for not covered chromosome JH792831.1
+Writing cytosine report for not covered chromosome JH792832.1
+Writing cytosine report for not covered chromosome JH792833.1
+Writing cytosine report for not covered chromosome JH792834.1
+Writing cytosine report for not covered chromosome KB469738.3
+Writing cytosine report for not covered chromosome KB469739.1
+Writing cytosine report for not covered chromosome KB469740.1
+Writing cytosine report for not covered chromosome KB469741.2
+Writing cytosine report for not covered chromosome KB469742.1
+Writing cytosine report for not covered chromosome KK082441.1
+Writing cytosine report for not covered chromosome KK082442.1
+Writing cytosine report for not covered chromosome KQ030484.1
+Writing cytosine report for not covered chromosome KQ030485.1
+Writing cytosine report for not covered chromosome KQ030486.1
+Writing cytosine report for not covered chromosome KQ030487.1
+Writing cytosine report for not covered chromosome KQ030488.1
+Writing cytosine report for not covered chromosome KQ030489.1
+Writing cytosine report for not covered chromosome KQ030490.1
+Writing cytosine report for not covered chromosome KQ030491.1
+Writing cytosine report for not covered chromosome KQ030492.1
+Writing cytosine report for not covered chromosome KQ030493.1
+Writing cytosine report for not covered chromosome KQ030494.1
+Writing cytosine report for not covered chromosome KQ030495.1
+Writing cytosine report for not covered chromosome KQ030496.1
+Writing cytosine report for not covered chromosome KQ030497.1
+Writing cytosine report for not covered chromosome KV575232.1
+Writing cytosine report for not covered chromosome KV575233.1
+Writing cytosine report for not covered chromosome KV575234.1
+Writing cytosine report for not covered chromosome KV575235.1
+Writing cytosine report for not covered chromosome KV575236.1
+Writing cytosine report for not covered chromosome KV575237.1
+Writing cytosine report for not covered chromosome KV575238.1
+Writing cytosine report for not covered chromosome KV575239.1
+Writing cytosine report for not covered chromosome KV575240.1
+Writing cytosine report for not covered chromosome KV575241.1
+Writing cytosine report for not covered chromosome KV575242.1
+Finished writing out cytosine report (processed 149 chromosomes/scaffolds in total). coverage2cytosine processing complete.
+
+
+
+Finished generating genome-wide cytosine report
+

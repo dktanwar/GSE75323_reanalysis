@@ -1,0 +1,2307 @@
+
+
+processing file: 20190315-dmrseq.Rmd
+Loading required package: bsseq
+Loading required package: BiocGenerics
+Loading required package: parallel
+
+Attaching package: 'BiocGenerics'
+
+The following objects are masked from 'package:parallel':
+
+    clusterApply, clusterApplyLB, clusterCall, clusterEvalQ,
+    clusterExport, clusterMap, parApply, parCapply, parLapply,
+    parLapplyLB, parRapply, parSapply, parSapplyLB
+
+The following objects are masked from 'package:stats':
+
+    IQR, mad, sd, var, xtabs
+
+The following objects are masked from 'package:base':
+
+    anyDuplicated, append, as.data.frame, basename, cbind,
+    colMeans, colnames, colSums, dirname, do.call, duplicated,
+    eval, evalq, Filter, Find, get, grep, grepl, intersect,
+    is.unsorted, lapply, lengths, Map, mapply, match, mget, order,
+    paste, pmax, pmax.int, pmin, pmin.int, Position, rank, rbind,
+    Reduce, rowMeans, rownames, rowSums, sapply, setdiff, sort,
+    table, tapply, union, unique, unsplit, which, which.max,
+    which.min
+
+Loading required package: GenomicRanges
+Loading required package: stats4
+Loading required package: S4Vectors
+
+Attaching package: 'S4Vectors'
+
+The following object is masked from 'package:base':
+
+    expand.grid
+
+Loading required package: IRanges
+Loading required package: GenomeInfoDb
+Loading required package: SummarizedExperiment
+Loading required package: Biobase
+Welcome to Bioconductor
+
+    Vignettes contain introductory material; view with
+    'browseVignettes()'. To cite Bioconductor, see
+    'citation("Biobase")', and for packages 'citation("pkgname")'.
+
+Loading required package: DelayedArray
+Loading required package: matrixStats
+
+Attaching package: 'matrixStats'
+
+The following objects are masked from 'package:Biobase':
+
+    anyMissing, rowMedians
+
+Loading required package: BiocParallel
+
+Attaching package: 'DelayedArray'
+
+The following objects are masked from 'package:matrixStats':
+
+    colMaxs, colMins, colRanges, rowMaxs, rowMins, rowRanges
+
+The following objects are masked from 'package:base':
+
+    aperm, apply
+
+Assuming the test covariate Group1 is a factor.
+Condition: high fat vs control
+Parallelizing using 2 workers/cores (backend: BiocParallel:MulticoreParam).
+Computing on 1 chromosome(s) at a time.
+
+Detecting candidate regions with coefficient larger than 0.1 in magnitude.
+...Chromosome chr1: Smoothed (0.53 min). 3846 regions scored (1.53 min). 
+...Chromosome chr2: Smoothed (0.67 min). 3410 regions scored (1.36 min). 
+...Chromosome chr3: Smoothed (0.49 min). 3345 regions scored (1.2 min). 
+...Chromosome chr4: Smoothed (0.47 min). 3172 regions scored (1.49 min). 
+...Chromosome chr5: Smoothed (0.5 min). 3248 regions scored (1.23 min). 
+...Chromosome chr6: Smoothed (0.38 min). 3076 regions scored (1.1 min). 
+...Chromosome chr7: Smoothed (0.47 min). 2888 regions scored (1.16 min). 
+...Chromosome chr8: Smoothed (0.46 min). 2813 regions scored (1.14 min). 
+...Chromosome chr9: Smoothed (0.46 min). 2529 regions scored (1.09 min). 
+...Chromosome chr10: Smoothed (0.47 min). 2787 regions scored (1.16 min). 
+...Chromosome chr11: Smoothed (0.56 min). 2254 regions scored (0.98 min). 
+...Chromosome chr12: Smoothed (0.45 min). 2416 regions scored (1.02 min). 
+...Chromosome chr13: Smoothed (0.37 min). 2453 regions scored (0.99 min). 
+...Chromosome chr14: Smoothed (0.37 min). 2237 regions scored (0.94 min). 
+...Chromosome chr15: Smoothed (0.45 min). 1933 regions scored (0.78 min). 
+...Chromosome chr16: Smoothed (0.29 min). 1873 regions scored (0.79 min). 
+...Chromosome chr17: Smoothed (0.35 min). Note: Large candidate regions with more than 1000 CpGs detected. If you'd like to detect large-scale blocks, set block=TRUE. If you'd like to detect local DMRs, it is recommended to decrease the values of bpSpan, minInSpan, and/or maxGapSmooth increase computational efficiency.
+1976 regions scored (9.98 min). 
+...Chromosome chr18: Smoothed (0.32 min). 1609 regions scored (0.72 min). 
+...Chromosome chr19: Smoothed (0.28 min). 1303 regions scored (0.57 min). 
+...Chromosome chrX: Smoothed (0.35 min). 2077 regions scored (0.76 min). 
+...Chromosome chrY: Smoothed (0.15 min). 176 regions scored (0.21 min). 
+...Chromosome chrM: Smoothed (0.12 min). 2 regions scored (0.13 min). 
+...Chromosome chr1_GL456210_random: Smoothed (0.12 min). 7 regions scored (0.12 min). 
+...Chromosome chr1_GL456211_random: Smoothed (0.12 min). 19 regions scored (0.13 min). 
+...Chromosome chr1_GL456212_random: Smoothed (0.13 min). 8 regions scored (0.14 min). 
+...Chromosome chr1_GL456213_random: No candidates found.
+...Chromosome chr1_GL456221_random: Smoothed (0.12 min). 8 regions scored (0.12 min). 
+...Chromosome chr4_GL456216_random: Smoothed (0.11 min). 3 regions scored (0.12 min). 
+...Chromosome chr4_GL456350_random: No candidates found.
+...Chromosome chr4_JH584292_random: Smoothed (0.11 min). No candidates found. 
+...Chromosome chr4_JH584293_random: No candidates found.
+...Chromosome chr4_JH584295_random: Smoothed (0 min). 1 regions scored (0 min). 
+...Chromosome chr5_GL456354_random: Smoothed (0.11 min). No candidates found. 
+...Chromosome chr5_JH584296_random: Smoothed (0.11 min). No candidates found. 
+...Chromosome chr5_JH584297_random: Smoothed (0.12 min). No candidates found. 
+...Chromosome chr5_JH584298_random: Smoothed (0.11 min). No candidates found. 
+...Chromosome chr5_JH584299_random: Smoothed (0.11 min). 7 regions scored (0.12 min). 
+...Chromosome chr7_GL456219_random: No candidates found.
+...Chromosome chrX_GL456233_random: Smoothed (0.13 min). 5 regions scored (0.13 min). 
+...Chromosome chrY_JH584300_random: No candidates found.
+...Chromosome chrY_JH584301_random: No candidates found.
+...Chromosome chrY_JH584303_random: No candidates found.
+...Chromosome chrUn_GL456239: Smoothed (0.11 min). 3 regions scored (0.12 min). 
+...Chromosome chrUn_GL456359: Smoothed (0.13 min). 2 regions scored (0.13 min). 
+...Chromosome chrUn_GL456360: Smoothed (0.13 min). 1 regions scored (0 min). 
+...Chromosome chrUn_GL456366: Smoothed (0.12 min). 2 regions scored (0.12 min). 
+...Chromosome chrUn_GL456367: Smoothed (0.12 min). 1 regions scored (0 min). 
+...Chromosome chrUn_GL456368: Smoothed (0.12 min). 2 regions scored (0.12 min). 
+...Chromosome chrUn_GL456370: Smoothed (0.12 min). 2 regions scored (0.12 min). 
+...Chromosome chrUn_GL456372: Smoothed (0.13 min). 1 regions scored (0 min). 
+...Chromosome chrUn_GL456378: Smoothed (0.13 min). 1 regions scored (0 min). 
+...Chromosome chrUn_GL456379: Smoothed (0.12 min). 1 regions scored (0 min). 
+...Chromosome chrUn_GL456381: Smoothed (0.12 min). 1 regions scored (0 min). 
+...Chromosome chrUn_GL456382: Smoothed (0 min). No candidates found. 
+...Chromosome chrUn_GL456383: Smoothed (0.11 min). No candidates found. 
+...Chromosome chrUn_GL456385: Smoothed (0.13 min). 1 regions scored (0 min). 
+...Chromosome chrUn_GL456387: Smoothed (0.13 min). 2 regions scored (0.13 min). 
+...Chromosome chrUn_GL456389: Smoothed (0.13 min). 1 regions scored (0 min). 
+...Chromosome chrUn_GL456390: Smoothed (0.12 min). No candidates found. 
+...Chromosome chrUn_GL456392: Smoothed (0.12 min). 1 regions scored (0 min). 
+...Chromosome chrUn_GL456393: Smoothed (0.12 min). 2 regions scored (0.12 min). 
+...Chromosome chrUn_GL456394: Smoothed (0 min). 1 regions scored (0 min). 
+...Chromosome chrUn_GL456396: Smoothed (0.13 min). 3 regions scored (0.13 min). 
+...Chromosome chrUn_JH584304: Smoothed (0 min). 18 regions scored (0.13 min). 
+* 51527 candidates detected
+Performing balanced permutations of condition across samples to generate a null distribution of region test statistics
+
+Beginning permutation 1
+...Chromosome chr1: Smoothed (0.48 min). 16 CpG(s) excluded due to zero coverage. 829 regions scored (0.47 min). 
+...Chromosome chr2: Smoothed (0.53 min). 15 CpG(s) excluded due to zero coverage. 749 regions scored (0.46 min). 
+...Chromosome chr3: Smoothed (0.46 min). 7 CpG(s) excluded due to zero coverage. 792 regions scored (0.49 min). 
+...Chromosome chr4: Smoothed (0.59 min). 8 CpG(s) excluded due to zero coverage. 616 regions scored (0.47 min). 
+...Chromosome chr5: Smoothed (0.6 min). 4 CpG(s) excluded due to zero coverage. 763 regions scored (0.51 min). 
+...Chromosome chr6: Smoothed (0.47 min). 6 CpG(s) excluded due to zero coverage. 649 regions scored (0.41 min). 
+...Chromosome chr7: Smoothed (0.58 min). 15 CpG(s) excluded due to zero coverage. 556 regions scored (0.47 min). 
+...Chromosome chr8: Smoothed (0.45 min). 6 CpG(s) excluded due to zero coverage. 647 regions scored (0.38 min). 
+...Chromosome chr9: Smoothed (0.44 min). 3 CpG(s) excluded due to zero coverage. 493 regions scored (0.34 min). 
+...Chromosome chr10: Smoothed (0.43 min). 7 CpG(s) excluded due to zero coverage. 715 regions scored (0.4 min). 
+...Chromosome chr11: Smoothed (0.51 min). 5 CpG(s) excluded due to zero coverage. 479 regions scored (0.34 min). 
+...Chromosome chr12: Smoothed (0.41 min). 5 CpG(s) excluded due to zero coverage. 500 regions scored (0.33 min). 
+...Chromosome chr13: Smoothed (0.33 min). 3 CpG(s) excluded due to zero coverage. 580 regions scored (0.39 min). 
+...Chromosome chr14: Smoothed (0.32 min). 17 CpG(s) excluded due to zero coverage. 502 regions scored (0.35 min). 
+...Chromosome chr15: Smoothed (0.4 min). 1 CpG(s) excluded due to zero coverage. 452 regions scored (0.34 min). 
+...Chromosome chr16: Smoothed (0.31 min). 1 CpG(s) excluded due to zero coverage. 442 regions scored (0.32 min). 
+...Chromosome chr17: Smoothed (0.37 min). 1 CpG(s) excluded due to zero coverage. 429 regions scored (0.33 min). 
+...Chromosome chr18: Smoothed (0.32 min). 1 CpG(s) excluded due to zero coverage. 417 regions scored (0.33 min). 
+...Chromosome chr19: Smoothed (0.3 min). 1 CpG(s) excluded due to zero coverage. 269 regions scored (0.28 min). 
+...Chromosome chrX: Smoothed (0.39 min). 94 CpG(s) excluded due to zero coverage. 741 regions scored (0.39 min). 
+...Chromosome chrY: Smoothed (0.15 min). 47 CpG(s) excluded due to zero coverage. 52 regions scored (0.14 min). 
+...Chromosome chrM: Smoothed (0.13 min). No candidates found. 
+...Chromosome chr1_GL456210_random: Smoothed (0.12 min). 1 regions scored (0 min). 
+...Chromosome chr1_GL456211_random: Smoothed (0.13 min). 3 regions scored (0.13 min). 
+...Chromosome chr1_GL456212_random: Smoothed (0.13 min). 1 regions scored (0 min). 
+...Chromosome chr1_GL456213_random: No candidates found.
+...Chromosome chr1_GL456221_random: Smoothed (0.12 min). 2 regions scored (0.12 min). 
+...Chromosome chr4_GL456216_random: Smoothed (0.12 min). No candidates found. 
+...Chromosome chr4_GL456350_random: No candidates found.
+...Chromosome chr4_JH584292_random: Smoothed (0.13 min). No candidates found. 
+...Chromosome chr4_JH584293_random: No candidates found.
+...Chromosome chr4_JH584295_random: Smoothed (0 min). No candidates found. 
+...Chromosome chr5_GL456354_random: Smoothed (0.12 min). No candidates found. 
+...Chromosome chr5_JH584296_random: Smoothed (0.12 min). No candidates found. 
+...Chromosome chr5_JH584297_random: Smoothed (0.13 min). No candidates found. 
+...Chromosome chr5_JH584298_random: Smoothed (0.13 min). No candidates found. 
+...Chromosome chr5_JH584299_random: Smoothed (0.12 min). 1 CpG(s) excluded due to zero coverage. 1 regions scored (0 min). 
+...Chromosome chr7_GL456219_random: No candidates found.
+...Chromosome chrX_GL456233_random: Smoothed (0.11 min). No candidates found. 
+...Chromosome chrY_JH584300_random: No candidates found.
+...Chromosome chrY_JH584301_random: No candidates found.
+...Chromosome chrY_JH584303_random: No candidates found.
+...Chromosome chrUn_GL456239: Smoothed (0.13 min). No candidates found. 
+...Chromosome chrUn_GL456359: Smoothed (0.12 min). 1 regions scored (0 min). 
+...Chromosome chrUn_GL456360: Smoothed (0.13 min). No candidates found. 
+...Chromosome chrUn_GL456366: Smoothed (0.13 min). No candidates found. 
+...Chromosome chrUn_GL456367: Smoothed (0.12 min). No candidates found. 
+...Chromosome chrUn_GL456368: Smoothed (0.13 min). No candidates found. 
+...Chromosome chrUn_GL456370: Smoothed (0.12 min). 1 regions scored (0 min). 
+...Chromosome chrUn_GL456372: Smoothed (0.12 min). 1 regions scored (0 min). 
+...Chromosome chrUn_GL456378: Smoothed (0.13 min). No candidates found. 
+...Chromosome chrUn_GL456379: Smoothed (0.13 min). No candidates found. 
+...Chromosome chrUn_GL456381: Smoothed (0.12 min). No candidates found. 
+...Chromosome chrUn_GL456382: Smoothed (0 min). No candidates found. 
+...Chromosome chrUn_GL456383: Smoothed (0.11 min). 1 regions scored (0 min). 
+...Chromosome chrUn_GL456385: Smoothed (0.13 min). No candidates found. 
+...Chromosome chrUn_GL456387: Smoothed (0.13 min). No candidates found. 
+...Chromosome chrUn_GL456389: Smoothed (0.12 min). 1 regions scored (0 min). 
+...Chromosome chrUn_GL456390: Smoothed (0.12 min). No candidates found. 
+...Chromosome chrUn_GL456392: Smoothed (0.12 min). 2 regions scored (0.12 min). 
+...Chromosome chrUn_GL456393: Smoothed (0.13 min). 1 regions scored (0 min). 
+...Chromosome chrUn_GL456394: Smoothed (0 min). 1 regions scored (0 min). 
+...Chromosome chrUn_GL456396: Smoothed (0.12 min). 2 regions scored (0.12 min). 
+...Chromosome chrUn_JH584304: Smoothed (0 min). No candidates found. 
+* 1 out of 10 permutations completed (11691 null candidates)
+
+Beginning permutation 2
+...Chromosome chr1: Smoothed (0.45 min). 4 CpG(s) excluded due to zero coverage. 722 regions scored (0.4 min). 
+...Chromosome chr2: Smoothed (0.55 min). 16 CpG(s) excluded due to zero coverage. 665 regions scored (0.37 min). 
+...Chromosome chr3: Smoothed (0.44 min). 3 CpG(s) excluded due to zero coverage. 729 regions scored (0.39 min). 
+...Chromosome chr4: Smoothed (0.52 min). 14 CpG(s) excluded due to zero coverage. 521 regions scored (0.34 min). 
+...Chromosome chr5: Smoothed (0.57 min). 15 CpG(s) excluded due to zero coverage. 641 regions scored (0.38 min). 
+...Chromosome chr6: Smoothed (0.44 min). 1 CpG(s) excluded due to zero coverage. 540 regions scored (0.36 min). 
+...Chromosome chr7: Smoothed (0.49 min). 6 CpG(s) excluded due to zero coverage. 443 regions scored (0.35 min). 
+...Chromosome chr8: Smoothed (0.47 min). 3 CpG(s) excluded due to zero coverage. 574 regions scored (0.39 min). 
+...Chromosome chr9: Smoothed (0.48 min). 2 CpG(s) excluded due to zero coverage. 430 regions scored (0.32 min). 
+...Chromosome chr10: Smoothed (0.47 min). 2 CpG(s) excluded due to zero coverage. 648 regions scored (0.39 min). 
+...Chromosome chr11: Smoothed (0.56 min). 2 CpG(s) excluded due to zero coverage. 438 regions scored (0.35 min). 
+...Chromosome chr12: Smoothed (0.42 min). 9 CpG(s) excluded due to zero coverage. 424 regions scored (0.33 min). 
+...Chromosome chr13: Smoothed (0.35 min). 561 regions scored (0.38 min). 
+...Chromosome chr14: Smoothed (0.35 min). 11 CpG(s) excluded due to zero coverage. 448 regions scored (0.33 min). 
+...Chromosome chr15: Smoothed (0.43 min). 1 CpG(s) excluded due to zero coverage. 404 regions scored (0.3 min). 
+...Chromosome chr16: Smoothed (0.32 min). 4 CpG(s) excluded due to zero coverage. 409 regions scored (0.33 min). 
+...Chromosome chr17: Smoothed (0.35 min). 4 CpG(s) excluded due to zero coverage. 398 regions scored (0.29 min). 
+...Chromosome chr18: Smoothed (0.33 min). 408 regions scored (0.29 min). 
+...Chromosome chr19: Smoothed (0.29 min). 262 regions scored (0.23 min). 
+...Chromosome chrX: Smoothed (0.37 min). 39 CpG(s) excluded due to zero coverage. 562 regions scored (0.34 min). 
+...Chromosome chrY: Smoothed (0.18 min). 61 CpG(s) excluded due to zero coverage. 43 regions scored (0.14 min). 
+...Chromosome chrM: Smoothed (0.12 min). No candidates found. 
+...Chromosome chr1_GL456210_random: Smoothed (0.12 min). No candidates found. 
+...Chromosome chr1_GL456211_random: Smoothed (0.12 min). 1 regions scored (0 min). 
+...Chromosome chr1_GL456212_random: Smoothed (0.11 min). No candidates found. 
+...Chromosome chr1_GL456213_random: No candidates found.
+...Chromosome chr1_GL456221_random: Smoothed (0.14 min). 1 regions scored (0 min). 
+...Chromosome chr4_GL456216_random: Smoothed (0.12 min). No candidates found. 
+...Chromosome chr4_GL456350_random: No candidates found.
+...Chromosome chr4_JH584292_random: Smoothed (0.12 min). 1 CpG(s) excluded due to zero coverage. No candidates found. 
+...Chromosome chr4_JH584293_random: No candidates found.
+...Chromosome chr4_JH584295_random: Smoothed (0 min). No candidates found. 
+...Chromosome chr5_GL456354_random: Smoothed (0.14 min). No candidates found. 
+...Chromosome chr5_JH584296_random: Smoothed (0.13 min). No candidates found. 
+...Chromosome chr5_JH584297_random: Smoothed (0.13 min). No candidates found. 
+...Chromosome chr5_JH584298_random: Smoothed (0.13 min). No candidates found. 
+...Chromosome chr5_JH584299_random: Smoothed (0.13 min). No candidates found. 
+...Chromosome chr7_GL456219_random: No candidates found.
+...Chromosome chrX_GL456233_random: Smoothed (0.12 min). No candidates found. 
+...Chromosome chrY_JH584300_random: No candidates found.
+...Chromosome chrY_JH584301_random: No candidates found.
+...Chromosome chrY_JH584303_random: No candidates found.
+...Chromosome chrUn_GL456239: Smoothed (0.12 min). No candidates found. 
+...Chromosome chrUn_GL456359: Smoothed (0.11 min). No candidates found. 
+...Chromosome chrUn_GL456360: Smoothed (0.12 min). No candidates found. 
+...Chromosome chrUn_GL456366: Smoothed (0.13 min). No candidates found. 
+...Chromosome chrUn_GL456367: Smoothed (0.14 min). No candidates found. 
+...Chromosome chrUn_GL456368: Smoothed (0.13 min). No candidates found. 
+...Chromosome chrUn_GL456370: Smoothed (0.12 min). No candidates found. 
+...Chromosome chrUn_GL456372: Smoothed (0.12 min). 1 regions scored (0 min). 
+...Chromosome chrUn_GL456378: Smoothed (0.12 min). No candidates found. 
+...Chromosome chrUn_GL456379: Smoothed (0.12 min). No candidates found. 
+...Chromosome chrUn_GL456381: Smoothed (0.14 min). No candidates found. 
+...Chromosome chrUn_GL456382: Smoothed (0 min). No candidates found. 
+...Chromosome chrUn_GL456383: Smoothed (0.13 min). No candidates found. 
+...Chromosome chrUn_GL456385: Smoothed (0.12 min). No candidates found. 
+...Chromosome chrUn_GL456387: Smoothed (0.12 min). No candidates found. 
+...Chromosome chrUn_GL456389: Smoothed (0.11 min). No candidates found. 
+...Chromosome chrUn_GL456390: Smoothed (0.13 min). No candidates found. 
+...Chromosome chrUn_GL456392: Smoothed (0.13 min). 2 regions scored (0.14 min). 
+...Chromosome chrUn_GL456393: Smoothed (0.12 min). No candidates found. 
+...Chromosome chrUn_GL456394: Smoothed (0 min). 1 regions scored (0 min). 
+...Chromosome chrUn_GL456396: Smoothed (0.12 min). 1 regions scored (0 min). 
+...Chromosome chrUn_JH584304: Smoothed (0 min). No candidates found. 
+* 2 out of 10 permutations completed (10277 null candidates)
+
+Beginning permutation 3
+...Chromosome chr1: Smoothed (0.48 min). 19 CpG(s) excluded due to zero coverage. 1993 regions scored (0.83 min). 
+...Chromosome chr2: Smoothed (0.55 min). 14 CpG(s) excluded due to zero coverage. 1933 regions scored (0.83 min). 
+...Chromosome chr3: Smoothed (0.48 min). 14 CpG(s) excluded due to zero coverage. 1699 regions scored (0.74 min). 
+...Chromosome chr4: Smoothed (0.56 min). 22 CpG(s) excluded due to zero coverage. 1538 regions scored (0.71 min). 
+...Chromosome chr5: Smoothed (0.59 min). 8 CpG(s) excluded due to zero coverage. 1736 regions scored (0.77 min). 
+...Chromosome chr6: Smoothed (0.46 min). 14 CpG(s) excluded due to zero coverage. 1561 regions scored (0.69 min). 
+...Chromosome chr7: Smoothed (0.51 min). 41 CpG(s) excluded due to zero coverage. 1522 regions scored (0.71 min). 
+...Chromosome chr8: Smoothed (0.46 min). 15 CpG(s) excluded due to zero coverage. 1485 regions scored (0.7 min). 
+...Chromosome chr9: Smoothed (0.51 min). 3 CpG(s) excluded due to zero coverage. 1447 regions scored (0.71 min). 
+...Chromosome chr10: Smoothed (0.52 min). 8 CpG(s) excluded due to zero coverage. 1652 regions scored (0.73 min). 
+...Chromosome chr11: Smoothed (0.61 min). 3 CpG(s) excluded due to zero coverage. 1411 regions scored (0.66 min). 
+...Chromosome chr12: Smoothed (0.48 min). 14 CpG(s) excluded due to zero coverage. 1200 regions scored (0.55 min). 
+...Chromosome chr13: Smoothed (0.39 min). 12 CpG(s) excluded due to zero coverage. 1431 regions scored (0.65 min). 
+...Chromosome chr14: Smoothed (0.39 min). 31 CpG(s) excluded due to zero coverage. 1154 regions scored (0.55 min). 
+...Chromosome chr15: Smoothed (0.5 min). 14 CpG(s) excluded due to zero coverage. 1042 regions scored (0.47 min). 
+...Chromosome chr16: Smoothed (0.3 min). 7 CpG(s) excluded due to zero coverage. 1043 regions scored (0.46 min). 
+...Chromosome chr17: Smoothed (0.37 min). 5 CpG(s) excluded due to zero coverage. 1048 regions scored (0.47 min). 
+...Chromosome chr18: Smoothed (0.33 min). 4 CpG(s) excluded due to zero coverage. 1002 regions scored (0.45 min). 
+...Chromosome chr19: Smoothed (0.28 min). 1 CpG(s) excluded due to zero coverage. 768 regions scored (0.38 min). 
+...Chromosome chrX: Smoothed (0.36 min). 117 CpG(s) excluded due to zero coverage. 960 regions scored (0.42 min). 
+...Chromosome chrY: Smoothed (0.16 min). 112 CpG(s) excluded due to zero coverage. 54 regions scored (0.15 min). 
+...Chromosome chrM: Smoothed (0.12 min). No candidates found. 
+...Chromosome chr1_GL456210_random: Smoothed (0.13 min). 2 regions scored (0.12 min). 
+...Chromosome chr1_GL456211_random: Smoothed (0.12 min). 2 CpG(s) excluded due to zero coverage. 1 regions scored (0 min). 
+...Chromosome chr1_GL456212_random: Smoothed (0.12 min). 1 regions scored (0 min). 
+...Chromosome chr1_GL456213_random: No candidates found.
+...Chromosome chr1_GL456221_random: Smoothed (0.12 min). 1 regions scored (0 min). 
+...Chromosome chr4_GL456216_random: Smoothed (0.12 min). 2 regions scored (0.13 min). 
+...Chromosome chr4_GL456350_random: No candidates found.
+...Chromosome chr4_JH584292_random: Smoothed (0.12 min). No candidates found. 
+...Chromosome chr4_JH584293_random: No candidates found.
+...Chromosome chr4_JH584295_random: Smoothed (0 min). No candidates found. 
+...Chromosome chr5_GL456354_random: Smoothed (0.12 min). No candidates found. 
+...Chromosome chr5_JH584296_random: Smoothed (0.12 min). No candidates found. 
+...Chromosome chr5_JH584297_random: Smoothed (0.13 min). 1 CpG(s) excluded due to zero coverage. No candidates found. 
+...Chromosome chr5_JH584298_random: Smoothed (0.12 min). No candidates found. 
+...Chromosome chr5_JH584299_random: Smoothed (0.12 min). No candidates found. 
+...Chromosome chr7_GL456219_random: No candidates found.
+...Chromosome chrX_GL456233_random: Smoothed (0.12 min). 1 CpG(s) excluded due to zero coverage. 2 regions scored (0.12 min). 
+...Chromosome chrY_JH584300_random: No candidates found.
+...Chromosome chrY_JH584301_random: No candidates found.
+...Chromosome chrY_JH584303_random: No candidates found.
+...Chromosome chrUn_GL456239: Smoothed (0.12 min). No candidates found. 
+...Chromosome chrUn_GL456359: Smoothed (0.12 min). No candidates found. 
+...Chromosome chrUn_GL456360: Smoothed (0.12 min). No candidates found. 
+...Chromosome chrUn_GL456366: Smoothed (0.12 min). No candidates found. 
+...Chromosome chrUn_GL456367: Smoothed (0.12 min). No candidates found. 
+...Chromosome chrUn_GL456368: Smoothed (0.13 min). No candidates found. 
+...Chromosome chrUn_GL456370: Smoothed (0.13 min). 1 regions scored (0 min). 
+...Chromosome chrUn_GL456372: Smoothed (0.12 min). No candidates found. 
+...Chromosome chrUn_GL456378: Smoothed (0.12 min). No candidates found. 
+...Chromosome chrUn_GL456379: Smoothed (0.12 min). 1 regions scored (0 min). 
+...Chromosome chrUn_GL456381: Smoothed (0.12 min). No candidates found. 
+...Chromosome chrUn_GL456382: Smoothed (0 min). No candidates found. 
+...Chromosome chrUn_GL456383: Smoothed (0.13 min). No candidates found. 
+...Chromosome chrUn_GL456385: Smoothed (0.13 min). 1 regions scored (0 min). 
+...Chromosome chrUn_GL456387: Smoothed (0.12 min). No candidates found. 
+...Chromosome chrUn_GL456389: Smoothed (0.12 min). 1 regions scored (0 min). 
+...Chromosome chrUn_GL456390: Smoothed (0.12 min). No candidates found. 
+...Chromosome chrUn_GL456392: Smoothed (0.12 min). No candidates found. 
+...Chromosome chrUn_GL456393: Smoothed (0.12 min). 1 regions scored (0 min). 
+...Chromosome chrUn_GL456394: Smoothed (0 min). No candidates found. 
+...Chromosome chrUn_GL456396: Smoothed (0.12 min). 2 regions scored (0.13 min). 
+...Chromosome chrUn_JH584304: Smoothed (0 min). No candidates found. 
+* 3 out of 10 permutations completed (27695 null candidates)
+
+Beginning permutation 4
+...Chromosome chr1: Smoothed (0.46 min). 9 CpG(s) excluded due to zero coverage. 882 regions scored (0.42 min). 
+...Chromosome chr2: Smoothed (0.53 min). 4 CpG(s) excluded due to zero coverage. 795 regions scored (0.41 min). 
+...Chromosome chr3: Smoothed (0.45 min). 2 CpG(s) excluded due to zero coverage. 750 regions scored (0.4 min). 
+...Chromosome chr4: Smoothed (0.51 min). 3 CpG(s) excluded due to zero coverage. 666 regions scored (0.4 min). 
+...Chromosome chr5: Smoothed (0.57 min). 6 CpG(s) excluded due to zero coverage. 770 regions scored (0.42 min). 
+...Chromosome chr6: Smoothed (0.44 min). 7 CpG(s) excluded due to zero coverage. 621 regions scored (0.4 min). 
+...Chromosome chr7: Smoothed (0.47 min). 21 CpG(s) excluded due to zero coverage. 572 regions scored (0.37 min). 
+...Chromosome chr8: Smoothed (0.46 min). 3 CpG(s) excluded due to zero coverage. 661 regions scored (0.4 min). 
+...Chromosome chr9: Smoothed (0.47 min). 548 regions scored (0.33 min). 
+...Chromosome chr10: Smoothed (0.45 min). 2 CpG(s) excluded due to zero coverage. 771 regions scored (0.42 min). 
+...Chromosome chr11: Smoothed (0.55 min). 601 regions scored (0.39 min). 
+...Chromosome chr12: Smoothed (0.41 min). 1 CpG(s) excluded due to zero coverage. 505 regions scored (0.34 min). 
+...Chromosome chr13: Smoothed (0.35 min). 7 CpG(s) excluded due to zero coverage. 599 regions scored (0.39 min). 
+...Chromosome chr14: Smoothed (0.37 min). 6 CpG(s) excluded due to zero coverage. 490 regions scored (0.35 min). 
+...Chromosome chr15: Smoothed (0.43 min). 1 CpG(s) excluded due to zero coverage. 504 regions scored (0.35 min). 
+...Chromosome chr16: Smoothed (0.32 min). 480 regions scored (0.32 min). 
+...Chromosome chr17: Smoothed (0.4 min). 450 regions scored (0.32 min). 
+...Chromosome chr18: Smoothed (0.33 min). 1 CpG(s) excluded due to zero coverage. 446 regions scored (0.3 min). 
+...Chromosome chr19: Smoothed (0.29 min). 1 CpG(s) excluded due to zero coverage. 329 regions scored (0.29 min). 
+...Chromosome chrX: Smoothed (0.39 min). 56 CpG(s) excluded due to zero coverage. 595 regions scored (0.38 min). 
+...Chromosome chrY: Smoothed (0.18 min). 48 CpG(s) excluded due to zero coverage. 40 regions scored (0.15 min). 
+...Chromosome chrM: Smoothed (0.13 min). No candidates found. 
+...Chromosome chr1_GL456210_random: Smoothed (0.13 min). No candidates found. 
+...Chromosome chr1_GL456211_random: Smoothed (0.12 min). No candidates found. 
+...Chromosome chr1_GL456212_random: Smoothed (0.12 min). 1 regions scored (0 min). 
+...Chromosome chr1_GL456213_random: No candidates found.
+...Chromosome chr1_GL456221_random: Smoothed (0.14 min). No candidates found. 
+...Chromosome chr4_GL456216_random: Smoothed (0.14 min). 1 regions scored (0.01 min). 
+...Chromosome chr4_GL456350_random: No candidates found.
+...Chromosome chr4_JH584292_random: Smoothed (0.13 min). No candidates found. 
+...Chromosome chr4_JH584293_random: No candidates found.
+...Chromosome chr4_JH584295_random: Smoothed (0 min). No candidates found. 
+...Chromosome chr5_GL456354_random: Smoothed (0.12 min). No candidates found. 
+...Chromosome chr5_JH584296_random: Smoothed (0.13 min). No candidates found. 
+...Chromosome chr5_JH584297_random: Smoothed (0.13 min). No candidates found. 
+...Chromosome chr5_JH584298_random: Smoothed (0.12 min). 1 CpG(s) excluded due to zero coverage. No candidates found. 
+...Chromosome chr5_JH584299_random: Smoothed (0.12 min). 1 CpG(s) excluded due to zero coverage. 1 regions scored (0 min). 
+...Chromosome chr7_GL456219_random: No candidates found.
+...Chromosome chrX_GL456233_random: Smoothed (0.12 min). 1 regions scored (0 min). 
+...Chromosome chrY_JH584300_random: No candidates found.
+...Chromosome chrY_JH584301_random: No candidates found.
+...Chromosome chrY_JH584303_random: No candidates found.
+...Chromosome chrUn_GL456239: Smoothed (0.12 min). No candidates found. 
+...Chromosome chrUn_GL456359: Smoothed (0.12 min). No candidates found. 
+...Chromosome chrUn_GL456360: Smoothed (0.12 min). No candidates found. 
+...Chromosome chrUn_GL456366: Smoothed (0.12 min). No candidates found. 
+...Chromosome chrUn_GL456367: Smoothed (0.12 min). No candidates found. 
+...Chromosome chrUn_GL456368: Smoothed (0.14 min). No candidates found. 
+...Chromosome chrUn_GL456370: Smoothed (0.14 min). No candidates found. 
+...Chromosome chrUn_GL456372: Smoothed (0.13 min). 1 regions scored (0 min). 
+...Chromosome chrUn_GL456378: Smoothed (0.12 min). No candidates found. 
+...Chromosome chrUn_GL456379: Smoothed (0.12 min). No candidates found. 
+...Chromosome chrUn_GL456381: Smoothed (0.12 min). No candidates found. 
+...Chromosome chrUn_GL456382: Smoothed (0 min). No candidates found. 
+...Chromosome chrUn_GL456383: Smoothed (0.13 min). 1 regions scored (0 min). 
+...Chromosome chrUn_GL456385: Smoothed (0.14 min). No candidates found. 
+...Chromosome chrUn_GL456387: Smoothed (0.12 min). No candidates found. 
+...Chromosome chrUn_GL456389: Smoothed (0.13 min). No candidates found. 
+...Chromosome chrUn_GL456390: Smoothed (0.13 min). No candidates found. 
+...Chromosome chrUn_GL456392: Smoothed (0.13 min). No candidates found. 
+...Chromosome chrUn_GL456393: Smoothed (0.12 min). No candidates found. 
+...Chromosome chrUn_GL456394: Smoothed (0 min). 1 regions scored (0 min). 
+...Chromosome chrUn_GL456396: Smoothed (0.14 min). 1 regions scored (0 min). 
+...Chromosome chrUn_JH584304: Smoothed (0 min). No candidates found. 
+* 4 out of 10 permutations completed (12083 null candidates)
+
+Beginning permutation 5
+...Chromosome chr1: Smoothed (0.55 min). 11 CpG(s) excluded due to zero coverage. 510 regions scored (0.39 min). 
+...Chromosome chr2: Smoothed (0.64 min). 15 CpG(s) excluded due to zero coverage. 454 regions scored (0.37 min). 
+...Chromosome chr3: Smoothed (0.46 min). 6 CpG(s) excluded due to zero coverage. 497 regions scored (0.35 min). 
+...Chromosome chr4: Smoothed (0.58 min). 13 CpG(s) excluded due to zero coverage. 337 regions scored (0.31 min). 
+...Chromosome chr5: Smoothed (0.57 min). 14 CpG(s) excluded due to zero coverage. 430 regions scored (0.38 min). 
+...Chromosome chr6: Smoothed (0.42 min). 7 CpG(s) excluded due to zero coverage. 389 regions scored (0.29 min). 
+...Chromosome chr7: Smoothed (0.46 min). 26 CpG(s) excluded due to zero coverage. 318 regions scored (0.29 min). 
+...Chromosome chr8: Smoothed (0.46 min). 6 CpG(s) excluded due to zero coverage. 353 regions scored (0.3 min). 
+...Chromosome chr9: Smoothed (0.44 min). 2 CpG(s) excluded due to zero coverage. 314 regions scored (0.26 min). 
+...Chromosome chr10: Smoothed (0.44 min). 10 CpG(s) excluded due to zero coverage. 447 regions scored (0.32 min). 
+...Chromosome chr11: Smoothed (0.53 min). 2 CpG(s) excluded due to zero coverage. 308 regions scored (0.29 min). 
+...Chromosome chr12: Smoothed (0.42 min). 9 CpG(s) excluded due to zero coverage. 329 regions scored (0.27 min). 
+...Chromosome chr13: Smoothed (0.35 min). 5 CpG(s) excluded due to zero coverage. 340 regions scored (0.3 min). 
+...Chromosome chr14: Smoothed (0.34 min). 18 CpG(s) excluded due to zero coverage. 322 regions scored (0.27 min). 
+...Chromosome chr15: Smoothed (0.41 min). 3 CpG(s) excluded due to zero coverage. 252 regions scored (0.27 min). 
+...Chromosome chr16: Smoothed (0.3 min). 7 CpG(s) excluded due to zero coverage. 296 regions scored (0.26 min). 
+...Chromosome chr17: Smoothed (0.38 min). 5 CpG(s) excluded due to zero coverage. 263 regions scored (0.27 min). 
+...Chromosome chr18: Smoothed (0.33 min). 268 regions scored (0.25 min). 
+...Chromosome chr19: Smoothed (0.29 min). 1 CpG(s) excluded due to zero coverage. 171 regions scored (0.22 min). 
+...Chromosome chrX: Smoothed (0.36 min). 95 CpG(s) excluded due to zero coverage. 479 regions scored (0.34 min). 
+...Chromosome chrY: Smoothed (0.16 min). 66 CpG(s) excluded due to zero coverage. 37 regions scored (0.15 min). 
+...Chromosome chrM: Smoothed (0.12 min). No candidates found. 
+...Chromosome chr1_GL456210_random: Smoothed (0.12 min). No candidates found. 
+...Chromosome chr1_GL456211_random: Smoothed (0.12 min). 1 regions scored (0 min). 
+...Chromosome chr1_GL456212_random: Smoothed (0.13 min). No candidates found. 
+...Chromosome chr1_GL456213_random: No candidates found.
+...Chromosome chr1_GL456221_random: Smoothed (0.12 min). 1 regions scored (0 min). 
+...Chromosome chr4_GL456216_random: Smoothed (0.12 min). 1 regions scored (0 min). 
+...Chromosome chr4_GL456350_random: No candidates found.
+...Chromosome chr4_JH584292_random: Smoothed (0.13 min). No candidates found. 
+...Chromosome chr4_JH584293_random: No candidates found.
+...Chromosome chr4_JH584295_random: Smoothed (0 min). No candidates found. 
+...Chromosome chr5_GL456354_random: Smoothed (0.12 min). No candidates found. 
+...Chromosome chr5_JH584296_random: Smoothed (0.13 min). No candidates found. 
+...Chromosome chr5_JH584297_random: Smoothed (0.14 min). No candidates found. 
+...Chromosome chr5_JH584298_random: Smoothed (0.14 min). No candidates found. 
+...Chromosome chr5_JH584299_random: Smoothed (0.13 min). 1 regions scored (0 min). 
+...Chromosome chr7_GL456219_random: No candidates found.
+...Chromosome chrX_GL456233_random: Smoothed (0.13 min). 1 regions scored (0 min). 
+...Chromosome chrY_JH584300_random: No candidates found.
+...Chromosome chrY_JH584301_random: No candidates found.
+...Chromosome chrY_JH584303_random: No candidates found.
+...Chromosome chrUn_GL456239: Smoothed (0.12 min). No candidates found. 
+...Chromosome chrUn_GL456359: Smoothed (0.14 min). No candidates found. 
+...Chromosome chrUn_GL456360: Smoothed (0.14 min). No candidates found. 
+...Chromosome chrUn_GL456366: Smoothed (0.12 min). No candidates found. 
+...Chromosome chrUn_GL456367: Smoothed (0.12 min). 1 CpG(s) excluded due to zero coverage. 1 regions scored (0 min). 
+...Chromosome chrUn_GL456368: Smoothed (0.12 min). No candidates found. 
+...Chromosome chrUn_GL456370: Smoothed (0.14 min). No candidates found. 
+...Chromosome chrUn_GL456372: Smoothed (0.14 min). 1 regions scored (0 min). 
+...Chromosome chrUn_GL456378: Smoothed (0.12 min). No candidates found. 
+...Chromosome chrUn_GL456379: Smoothed (0.13 min). No candidates found. 
+...Chromosome chrUn_GL456381: Smoothed (0.14 min). No candidates found. 
+...Chromosome chrUn_GL456382: Smoothed (0 min). No candidates found. 
+...Chromosome chrUn_GL456383: Smoothed (0.12 min). No candidates found. 
+...Chromosome chrUn_GL456385: Smoothed (0.13 min). No candidates found. 
+...Chromosome chrUn_GL456387: Smoothed (0.12 min). No candidates found. 
+...Chromosome chrUn_GL456389: Smoothed (0.14 min). No candidates found. 
+...Chromosome chrUn_GL456390: Smoothed (0.13 min). No candidates found. 
+...Chromosome chrUn_GL456392: Smoothed (0.12 min). No candidates found. 
+...Chromosome chrUn_GL456393: Smoothed (0.13 min). 1 regions scored (0 min). 
+...Chromosome chrUn_GL456394: Smoothed (0 min). No candidates found. 
+...Chromosome chrUn_GL456396: Smoothed (0.14 min). No candidates found. 
+...Chromosome chrUn_JH584304: Smoothed (0 min). No candidates found. 
+* 5 out of 10 permutations completed (7122 null candidates)
+
+Beginning permutation 6
+...Chromosome chr1: Smoothed (0.47 min). 16 CpG(s) excluded due to zero coverage. 1892 regions scored (0.77 min). 
+...Chromosome chr2: Smoothed (0.56 min). 8 CpG(s) excluded due to zero coverage. 1821 regions scored (0.78 min). 
+...Chromosome chr3: Smoothed (0.46 min). 12 CpG(s) excluded due to zero coverage. 1598 regions scored (0.7 min). 
+...Chromosome chr4: Smoothed (0.54 min). 23 CpG(s) excluded due to zero coverage. 1492 regions scored (0.7 min). 
+...Chromosome chr5: Smoothed (0.57 min). 15 CpG(s) excluded due to zero coverage. 1679 regions scored (0.78 min). 
+...Chromosome chr6: Smoothed (0.45 min). 13 CpG(s) excluded due to zero coverage. 1462 regions scored (0.67 min). 
+...Chromosome chr7: Smoothed (0.48 min). 19 CpG(s) excluded due to zero coverage. 1438 regions scored (0.68 min). 
+...Chromosome chr8: Smoothed (0.47 min). 8 CpG(s) excluded due to zero coverage. 1420 regions scored (0.68 min). 
+...Chromosome chr9: Smoothed (0.49 min). 7 CpG(s) excluded due to zero coverage. 1361 regions scored (0.66 min). 
+...Chromosome chr10: Smoothed (0.46 min). 11 CpG(s) excluded due to zero coverage. 1580 regions scored (0.65 min). 
+...Chromosome chr11: Smoothed (0.52 min). 1353 regions scored (0.55 min). 
+...Chromosome chr12: Smoothed (0.4 min). 11 CpG(s) excluded due to zero coverage. 1157 regions scored (0.48 min). 
+...Chromosome chr13: Smoothed (0.34 min). 6 CpG(s) excluded due to zero coverage. 1383 regions scored (0.58 min). 
+...Chromosome chr14: Smoothed (0.34 min). 26 CpG(s) excluded due to zero coverage. 1132 regions scored (0.48 min). 
+...Chromosome chr15: Smoothed (0.39 min). 9 CpG(s) excluded due to zero coverage. 1022 regions scored (0.46 min). 
+...Chromosome chr16: Smoothed (0.29 min). 8 CpG(s) excluded due to zero coverage. 1040 regions scored (0.47 min). 
+...Chromosome chr17: Smoothed (0.37 min). 6 CpG(s) excluded due to zero coverage. 1031 regions scored (0.48 min). 
+...Chromosome chr18: Smoothed (0.33 min). 6 CpG(s) excluded due to zero coverage. 985 regions scored (0.46 min). 
+...Chromosome chr19: Smoothed (0.29 min). 3 CpG(s) excluded due to zero coverage. 716 regions scored (0.37 min). 
+...Chromosome chrX: Smoothed (0.38 min). 146 CpG(s) excluded due to zero coverage. 997 regions scored (0.48 min). 
+...Chromosome chrY: Smoothed (0.15 min). 86 CpG(s) excluded due to zero coverage. 40 regions scored (0.15 min). 
+...Chromosome chrM: Smoothed (0.13 min). No candidates found. 
+...Chromosome chr1_GL456210_random: Smoothed (0.12 min). 3 regions scored (0.13 min). 
+...Chromosome chr1_GL456211_random: Smoothed (0.13 min). 2 regions scored (0.13 min). 
+...Chromosome chr1_GL456212_random: Smoothed (0.13 min). 2 regions scored (0.14 min). 
+...Chromosome chr1_GL456213_random: No candidates found.
+...Chromosome chr1_GL456221_random: Smoothed (0.12 min). 2 regions scored (0.13 min). 
+...Chromosome chr4_GL456216_random: Smoothed (0.13 min). 2 CpG(s) excluded due to zero coverage. 2 regions scored (0.12 min). 
+...Chromosome chr4_GL456350_random: No candidates found.
+...Chromosome chr4_JH584292_random: Smoothed (0.13 min). No candidates found. 
+...Chromosome chr4_JH584293_random: No candidates found.
+...Chromosome chr4_JH584295_random: Smoothed (0 min). No candidates found. 
+...Chromosome chr5_GL456354_random: Smoothed (0.12 min). No candidates found. 
+...Chromosome chr5_JH584296_random: Smoothed (0.13 min). No candidates found. 
+...Chromosome chr5_JH584297_random: Smoothed (0.12 min). No candidates found. 
+...Chromosome chr5_JH584298_random: Smoothed (0.14 min). No candidates found. 
+...Chromosome chr5_JH584299_random: Smoothed (0.13 min). No candidates found. 
+...Chromosome chr7_GL456219_random: No candidates found.
+...Chromosome chrX_GL456233_random: Smoothed (0.12 min). No candidates found. 
+...Chromosome chrY_JH584300_random: No candidates found.
+...Chromosome chrY_JH584301_random: No candidates found.
+...Chromosome chrY_JH584303_random: No candidates found.
+...Chromosome chrUn_GL456239: Smoothed (0.13 min). No candidates found. 
+...Chromosome chrUn_GL456359: Smoothed (0.12 min). No candidates found. 
+...Chromosome chrUn_GL456360: Smoothed (0.13 min). 1 regions scored (0 min). 
+...Chromosome chrUn_GL456366: Smoothed (0.13 min). 1 regions scored (0 min). 
+...Chromosome chrUn_GL456367: Smoothed (0.13 min). No candidates found. 
+...Chromosome chrUn_GL456368: Smoothed (0.13 min). 1 regions scored (0 min). 
+...Chromosome chrUn_GL456370: Smoothed (0.12 min). 1 regions scored (0 min). 
+...Chromosome chrUn_GL456372: Smoothed (0.12 min). No candidates found. 
+...Chromosome chrUn_GL456378: Smoothed (0.13 min). No candidates found. 
+...Chromosome chrUn_GL456379: Smoothed (0.12 min). No candidates found. 
+...Chromosome chrUn_GL456381: Smoothed (0.13 min). 1 regions scored (0 min). 
+...Chromosome chrUn_GL456382: Smoothed (0 min). No candidates found. 
+...Chromosome chrUn_GL456383: Smoothed (0.12 min). No candidates found. 
+...Chromosome chrUn_GL456385: Smoothed (0.12 min). No candidates found. 
+...Chromosome chrUn_GL456387: Smoothed (0.12 min). No candidates found. 
+...Chromosome chrUn_GL456389: Smoothed (0.13 min). 1 regions scored (0 min). 
+...Chromosome chrUn_GL456390: Smoothed (0.13 min). No candidates found. 
+...Chromosome chrUn_GL456392: Smoothed (0.12 min). No candidates found. 
+...Chromosome chrUn_GL456393: Smoothed (0.12 min). 2 regions scored (0.12 min). 
+...Chromosome chrUn_GL456394: Smoothed (0 min). 2 regions scored (0.13 min). 
+...Chromosome chrUn_GL456396: Smoothed (0.13 min). 3 regions scored (0.14 min). 
+...Chromosome chrUn_JH584304: Smoothed (0 min). No candidates found. 
+* 6 out of 10 permutations completed (26623 null candidates)
+
+Beginning permutation 7
+...Chromosome chr1: Smoothed (0.45 min). 8 CpG(s) excluded due to zero coverage. 1399 regions scored (0.65 min). 
+...Chromosome chr2: Smoothed (0.57 min). 4 CpG(s) excluded due to zero coverage. 1230 regions scored (0.62 min). 
+...Chromosome chr3: Smoothed (0.49 min). 8 CpG(s) excluded due to zero coverage. 1255 regions scored (0.63 min). 
+...Chromosome chr4: Smoothed (0.57 min). 5 CpG(s) excluded due to zero coverage. 1072 regions scored (0.59 min). 
+...Chromosome chr5: Smoothed (0.61 min). 2 CpG(s) excluded due to zero coverage. 1184 regions scored (0.65 min). 
+...Chromosome chr6: Smoothed (0.47 min). 4 CpG(s) excluded due to zero coverage. 1083 regions scored (0.53 min). 
+...Chromosome chr7: Smoothed (0.55 min). 17 CpG(s) excluded due to zero coverage. 942 regions scored (0.55 min). 
+...Chromosome chr8: Smoothed (0.54 min). 11 CpG(s) excluded due to zero coverage. 1069 regions scored (0.52 min). 
+...Chromosome chr9: Smoothed (0.45 min). 1 CpG(s) excluded due to zero coverage. 945 regions scored (0.49 min). 
+...Chromosome chr10: Smoothed (0.44 min). 5 CpG(s) excluded due to zero coverage. 1114 regions scored (0.53 min). 
+...Chromosome chr11: Smoothed (0.53 min). 895 regions scored (0.47 min). 
+...Chromosome chr12: Smoothed (0.4 min). 5 CpG(s) excluded due to zero coverage. 886 regions scored (0.45 min). 
+...Chromosome chr13: Smoothed (0.32 min). 6 CpG(s) excluded due to zero coverage. 970 regions scored (0.5 min). 
+...Chromosome chr14: Smoothed (0.35 min). 13 CpG(s) excluded due to zero coverage. 845 regions scored (0.41 min). 
+...Chromosome chr15: Smoothed (0.4 min). 678 regions scored (0.41 min). 
+...Chromosome chr16: Smoothed (0.29 min). 3 CpG(s) excluded due to zero coverage. 718 regions scored (0.42 min). 
+...Chromosome chr17: Smoothed (0.38 min). 5 CpG(s) excluded due to zero coverage. 705 regions scored (0.43 min). 
+...Chromosome chr18: Smoothed (0.32 min). 1 CpG(s) excluded due to zero coverage. 643 regions scored (0.41 min). 
+...Chromosome chr19: Smoothed (0.31 min). 515 regions scored (0.35 min). 
+...Chromosome chrX: Smoothed (0.38 min). 59 CpG(s) excluded due to zero coverage. 833 regions scored (0.44 min). 
+...Chromosome chrY: Smoothed (0.17 min). 89 CpG(s) excluded due to zero coverage. 55 regions scored (0.17 min). 
+...Chromosome chrM: Smoothed (0.13 min). No candidates found. 
+...Chromosome chr1_GL456210_random: Smoothed (0.12 min). 2 regions scored (0.12 min). 
+...Chromosome chr1_GL456211_random: Smoothed (0.15 min). 3 regions scored (0.17 min). 
+...Chromosome chr1_GL456212_random: Smoothed (0.12 min). No candidates found. 
+...Chromosome chr1_GL456213_random: No candidates found.
+...Chromosome chr1_GL456221_random: Smoothed (0.12 min). No candidates found. 
+...Chromosome chr4_GL456216_random: Smoothed (0.12 min). No candidates found. 
+...Chromosome chr4_GL456350_random: No candidates found.
+...Chromosome chr4_JH584292_random: Smoothed (0.14 min). No candidates found. 
+...Chromosome chr4_JH584293_random: No candidates found.
+...Chromosome chr4_JH584295_random: Smoothed (0 min). No candidates found. 
+...Chromosome chr5_GL456354_random: Smoothed (0.13 min). No candidates found. 
+...Chromosome chr5_JH584296_random: Smoothed (0.13 min). No candidates found. 
+...Chromosome chr5_JH584297_random: Smoothed (0.12 min). No candidates found. 
+...Chromosome chr5_JH584298_random: Smoothed (0.12 min). 1 CpG(s) excluded due to zero coverage. No candidates found. 
+...Chromosome chr5_JH584299_random: Smoothed (0.13 min). 1 CpG(s) excluded due to zero coverage. 1 regions scored (0 min). 
+...Chromosome chr7_GL456219_random: No candidates found.
+...Chromosome chrX_GL456233_random: Smoothed (0.14 min). 2 regions scored (0.14 min). 
+...Chromosome chrY_JH584300_random: No candidates found.
+...Chromosome chrY_JH584301_random: No candidates found.
+...Chromosome chrY_JH584303_random: No candidates found.
+...Chromosome chrUn_GL456239: Smoothed (0.12 min). No candidates found. 
+...Chromosome chrUn_GL456359: Smoothed (0.12 min). No candidates found. 
+...Chromosome chrUn_GL456360: Smoothed (0.13 min). 1 regions scored (0 min). 
+...Chromosome chrUn_GL456366: Smoothed (0.13 min). No candidates found. 
+...Chromosome chrUn_GL456367: Smoothed (0.12 min). No candidates found. 
+...Chromosome chrUn_GL456368: Smoothed (0.12 min). 1 regions scored (0 min). 
+...Chromosome chrUn_GL456370: Smoothed (0.13 min). 2 regions scored (0.13 min). 
+...Chromosome chrUn_GL456372: Smoothed (0.12 min). 1 regions scored (0 min). 
+...Chromosome chrUn_GL456378: Smoothed (0.13 min). No candidates found. 
+...Chromosome chrUn_GL456379: Smoothed (0.13 min). No candidates found. 
+...Chromosome chrUn_GL456381: Smoothed (0.13 min). No candidates found. 
+...Chromosome chrUn_GL456382: Smoothed (0 min). No candidates found. 
+...Chromosome chrUn_GL456383: Smoothed (0.12 min). No candidates found. 
+...Chromosome chrUn_GL456385: Smoothed (0.12 min). 1 regions scored (0 min). 
+...Chromosome chrUn_GL456387: Smoothed (0.12 min). No candidates found. 
+...Chromosome chrUn_GL456389: Smoothed (0.12 min). 2 regions scored (0.13 min). 
+...Chromosome chrUn_GL456390: Smoothed (0.12 min). No candidates found. 
+...Chromosome chrUn_GL456392: Smoothed (0.13 min). 1 regions scored (0 min). 
+...Chromosome chrUn_GL456393: Smoothed (0.13 min). 1 regions scored (0 min). 
+...Chromosome chrUn_GL456394: Smoothed (0 min). 2 regions scored (0.13 min). 
+...Chromosome chrUn_GL456396: Smoothed (0.13 min). 2 regions scored (0.13 min). 
+...Chromosome chrUn_JH584304: Smoothed (0 min). No candidates found. 
+* 7 out of 10 permutations completed (19058 null candidates)
+
+Beginning permutation 8
+...Chromosome chr1: Smoothed (0.46 min). 20 CpG(s) excluded due to zero coverage. 477 regions scored (0.34 min). 
+...Chromosome chr2: Smoothed (0.56 min). 14 CpG(s) excluded due to zero coverage. 389 regions scored (0.33 min). 
+...Chromosome chr3: Smoothed (0.48 min). 9 CpG(s) excluded due to zero coverage. 455 regions scored (0.32 min). 
+...Chromosome chr4: Smoothed (0.54 min). 11 CpG(s) excluded due to zero coverage. 322 regions scored (0.32 min). 
+...Chromosome chr5: Smoothed (0.56 min). 14 CpG(s) excluded due to zero coverage. 398 regions scored (0.32 min). 
+...Chromosome chr6: Smoothed (0.42 min). 12 CpG(s) excluded due to zero coverage. 392 regions scored (0.32 min). 
+...Chromosome chr7: Smoothed (0.52 min). 23 CpG(s) excluded due to zero coverage. 274 regions scored (0.3 min). 
+...Chromosome chr8: Smoothed (0.5 min). 7 CpG(s) excluded due to zero coverage. 358 regions scored (0.34 min). 
+...Chromosome chr9: Smoothed (0.47 min). 4 CpG(s) excluded due to zero coverage. 261 regions scored (0.26 min). 
+...Chromosome chr10: Smoothed (0.47 min). 6 CpG(s) excluded due to zero coverage. 410 regions scored (0.33 min). 
+...Chromosome chr11: Smoothed (0.58 min). 1 CpG(s) excluded due to zero coverage. 273 regions scored (0.31 min). 
+...Chromosome chr12: Smoothed (0.43 min). 5 CpG(s) excluded due to zero coverage. 283 regions scored (0.28 min). 
+...Chromosome chr13: Smoothed (0.37 min). 6 CpG(s) excluded due to zero coverage. 321 regions scored (0.29 min). 
+...Chromosome chr14: Smoothed (0.37 min). 22 CpG(s) excluded due to zero coverage. 307 regions scored (0.3 min). 
+...Chromosome chr15: Smoothed (0.48 min). 5 CpG(s) excluded due to zero coverage. 249 regions scored (0.28 min). 
+...Chromosome chr16: Smoothed (0.44 min). 5 CpG(s) excluded due to zero coverage. 267 regions scored (0.25 min). 
+...Chromosome chr17: Smoothed (0.35 min). 2 CpG(s) excluded due to zero coverage. 220 regions scored (0.26 min). 
+...Chromosome chr18: Smoothed (0.34 min). 2 CpG(s) excluded due to zero coverage. 243 regions scored (0.25 min). 
+...Chromosome chr19: Smoothed (0.28 min). 1 CpG(s) excluded due to zero coverage. 164 regions scored (0.22 min). 
+...Chromosome chrX: Smoothed (0.35 min). 122 CpG(s) excluded due to zero coverage. 496 regions scored (0.31 min). 
+...Chromosome chrY: Smoothed (0.16 min). 66 CpG(s) excluded due to zero coverage. 33 regions scored (0.15 min). 
+...Chromosome chrM: Smoothed (0.13 min). No candidates found. 
+...Chromosome chr1_GL456210_random: Smoothed (0.12 min). 1 regions scored (0 min). 
+...Chromosome chr1_GL456211_random: Smoothed (0.13 min). 1 regions scored (0 min). 
+...Chromosome chr1_GL456212_random: Smoothed (0.13 min). No candidates found. 
+...Chromosome chr1_GL456213_random: No candidates found.
+...Chromosome chr1_GL456221_random: Smoothed (0.12 min). No candidates found. 
+...Chromosome chr4_GL456216_random: Smoothed (0.14 min). No candidates found. 
+...Chromosome chr4_GL456350_random: No candidates found.
+...Chromosome chr4_JH584292_random: Smoothed (0.13 min). No candidates found. 
+...Chromosome chr4_JH584293_random: No candidates found.
+...Chromosome chr4_JH584295_random: Smoothed (0 min). No candidates found. 
+...Chromosome chr5_GL456354_random: Smoothed (0.12 min). No candidates found. 
+...Chromosome chr5_JH584296_random: Smoothed (0.12 min). No candidates found. 
+...Chromosome chr5_JH584297_random: Smoothed (0.12 min). No candidates found. 
+...Chromosome chr5_JH584298_random: Smoothed (0.13 min). No candidates found. 
+...Chromosome chr5_JH584299_random: Smoothed (0.13 min). 1 regions scored (0 min). 
+...Chromosome chr7_GL456219_random: No candidates found.
+...Chromosome chrX_GL456233_random: Smoothed (0.12 min). 1 regions scored (0 min). 
+...Chromosome chrY_JH584300_random: No candidates found.
+...Chromosome chrY_JH584301_random: No candidates found.
+...Chromosome chrY_JH584303_random: No candidates found.
+...Chromosome chrUn_GL456239: Smoothed (0.13 min). No candidates found. 
+...Chromosome chrUn_GL456359: Smoothed (0.13 min). No candidates found. 
+...Chromosome chrUn_GL456360: Smoothed (0.13 min). No candidates found. 
+...Chromosome chrUn_GL456366: Smoothed (0.13 min). No candidates found. 
+...Chromosome chrUn_GL456367: Smoothed (0.12 min). No candidates found. 
+...Chromosome chrUn_GL456368: Smoothed (0.12 min). No candidates found. 
+...Chromosome chrUn_GL456370: Smoothed (0.12 min). No candidates found. 
+...Chromosome chrUn_GL456372: Smoothed (0.12 min). 1 regions scored (0 min). 
+...Chromosome chrUn_GL456378: Smoothed (0.13 min). No candidates found. 
+...Chromosome chrUn_GL456379: Smoothed (0.13 min). 1 regions scored (0 min). 
+...Chromosome chrUn_GL456381: Smoothed (0.12 min). No candidates found. 
+...Chromosome chrUn_GL456382: Smoothed (0 min). No candidates found. 
+...Chromosome chrUn_GL456383: Smoothed (0.12 min). No candidates found. 
+...Chromosome chrUn_GL456385: Smoothed (0.13 min). No candidates found. 
+...Chromosome chrUn_GL456387: Smoothed (0.12 min). No candidates found. 
+...Chromosome chrUn_GL456389: Smoothed (0.13 min). No candidates found. 
+...Chromosome chrUn_GL456390: Smoothed (0.13 min). No candidates found. 
+...Chromosome chrUn_GL456392: Smoothed (0.12 min). 1 regions scored (0 min). 
+...Chromosome chrUn_GL456393: Smoothed (0.13 min). No candidates found. 
+...Chromosome chrUn_GL456394: Smoothed (0 min). No candidates found. 
+...Chromosome chrUn_GL456396: Smoothed (0.13 min). 1 regions scored (0 min). 
+...Chromosome chrUn_JH584304: Smoothed (0 min). No candidates found. 
+* 8 out of 10 permutations completed (6600 null candidates)
+
+Beginning permutation 9
+...Chromosome chr1: Smoothed (0.46 min). 9 CpG(s) excluded due to zero coverage. 2309 regions scored (0.89 min). 
+...Chromosome chr2: Smoothed (0.56 min). 6 CpG(s) excluded due to zero coverage. 2221 regions scored (0.89 min). 
+...Chromosome chr3: Smoothed (0.45 min). 5 CpG(s) excluded due to zero coverage. 1969 regions scored (0.8 min). 
+...Chromosome chr4: Smoothed (0.55 min). 5 CpG(s) excluded due to zero coverage. 1849 regions scored (0.78 min). 
+...Chromosome chr5: Smoothed (0.56 min). 3 CpG(s) excluded due to zero coverage. 2124 regions scored (0.88 min). 
+...Chromosome chr6: Smoothed (0.45 min). 3 CpG(s) excluded due to zero coverage. 1795 regions scored (0.74 min). 
+...Chromosome chr7: Smoothed (0.53 min). 9 CpG(s) excluded due to zero coverage. 1764 regions scored (0.75 min). 
+...Chromosome chr8: Smoothed (0.48 min). 8 CpG(s) excluded due to zero coverage. 1757 regions scored (0.73 min). 
+...Chromosome chr9: Smoothed (0.46 min). 2 CpG(s) excluded due to zero coverage. 1666 regions scored (0.72 min). 
+...Chromosome chr10: Smoothed (0.49 min). 4 CpG(s) excluded due to zero coverage. 1930 regions scored (0.89 min). 
+...Chromosome chr11: Smoothed (0.6 min). 1733 regions scored (0.75 min). 
+...Chromosome chr12: Smoothed (0.47 min). 7 CpG(s) excluded due to zero coverage. 1386 regions scored (0.63 min). 
+...Chromosome chr13: Smoothed (0.41 min). 2 CpG(s) excluded due to zero coverage. 1666 regions scored (0.66 min). 
+...Chromosome chr14: Smoothed (0.33 min). 10 CpG(s) excluded due to zero coverage. 1368 regions scored (0.55 min). 
+...Chromosome chr15: Smoothed (0.39 min). 4 CpG(s) excluded due to zero coverage. 1272 regions scored (0.54 min). 
+...Chromosome chr16: Smoothed (0.29 min). 5 CpG(s) excluded due to zero coverage. 1261 regions scored (0.55 min). 
+...Chromosome chr17: Smoothed (0.37 min). 2 CpG(s) excluded due to zero coverage. 1238 regions scored (0.55 min). 
+...Chromosome chr18: Smoothed (0.32 min). 1 CpG(s) excluded due to zero coverage. 1141 regions scored (0.5 min). 
+...Chromosome chr19: Smoothed (0.3 min). 911 regions scored (0.47 min). 
+...Chromosome chrX: Smoothed (0.36 min). 64 CpG(s) excluded due to zero coverage. 1132 regions scored (0.48 min). 
+...Chromosome chrY: Smoothed (0.16 min). 47 CpG(s) excluded due to zero coverage. 50 regions scored (0.16 min). 
+...Chromosome chrM: Smoothed (0.13 min). No candidates found. 
+...Chromosome chr1_GL456210_random: Smoothed (0.13 min). 3 regions scored (0.13 min). 
+...Chromosome chr1_GL456211_random: Smoothed (0.12 min). 1 regions scored (0.01 min). 
+...Chromosome chr1_GL456212_random: Smoothed (0.13 min). No candidates found. 
+...Chromosome chr1_GL456213_random: No candidates found.
+...Chromosome chr1_GL456221_random: Smoothed (0.13 min). 1 regions scored (0 min). 
+...Chromosome chr4_GL456216_random: Smoothed (0.12 min). 1 regions scored (0 min). 
+...Chromosome chr4_GL456350_random: No candidates found.
+...Chromosome chr4_JH584292_random: Smoothed (0.17 min). No candidates found. 
+...Chromosome chr4_JH584293_random: No candidates found.
+...Chromosome chr4_JH584295_random: Smoothed (0 min). No candidates found. 
+...Chromosome chr5_GL456354_random: Smoothed (0.13 min). No candidates found. 
+...Chromosome chr5_JH584296_random: Smoothed (0.13 min). No candidates found. 
+...Chromosome chr5_JH584297_random: Smoothed (0.13 min). No candidates found. 
+...Chromosome chr5_JH584298_random: Smoothed (0.12 min). No candidates found. 
+...Chromosome chr5_JH584299_random: Smoothed (0.13 min). No candidates found. 
+...Chromosome chr7_GL456219_random: No candidates found.
+...Chromosome chrX_GL456233_random: Smoothed (0.13 min). No candidates found. 
+...Chromosome chrY_JH584300_random: No candidates found.
+...Chromosome chrY_JH584301_random: No candidates found.
+...Chromosome chrY_JH584303_random: No candidates found.
+...Chromosome chrUn_GL456239: Smoothed (0.12 min). No candidates found. 
+...Chromosome chrUn_GL456359: Smoothed (0.13 min). No candidates found. 
+...Chromosome chrUn_GL456360: Smoothed (0.13 min). No candidates found. 
+...Chromosome chrUn_GL456366: Smoothed (0.13 min). 1 regions scored (0 min). 
+...Chromosome chrUn_GL456367: Smoothed (0.13 min). No candidates found. 
+...Chromosome chrUn_GL456368: Smoothed (0.13 min). No candidates found. 
+...Chromosome chrUn_GL456370: Smoothed (0.13 min). 1 regions scored (0 min). 
+...Chromosome chrUn_GL456372: Smoothed (0.13 min). 1 regions scored (0 min). 
+...Chromosome chrUn_GL456378: Smoothed (0.13 min). No candidates found. 
+...Chromosome chrUn_GL456379: Smoothed (0.14 min). 1 regions scored (0 min). 
+...Chromosome chrUn_GL456381: Smoothed (0.14 min). No candidates found. 
+...Chromosome chrUn_GL456382: Smoothed (0 min). No candidates found. 
+...Chromosome chrUn_GL456383: Smoothed (0.13 min). No candidates found. 
+...Chromosome chrUn_GL456385: Smoothed (0.14 min). 1 regions scored (0 min). 
+...Chromosome chrUn_GL456387: Smoothed (0.12 min). No candidates found. 
+...Chromosome chrUn_GL456389: Smoothed (0.13 min). No candidates found. 
+...Chromosome chrUn_GL456390: Smoothed (0.13 min). No candidates found. 
+...Chromosome chrUn_GL456392: Smoothed (0.13 min). 1 regions scored (0 min). 
+...Chromosome chrUn_GL456393: Smoothed (0.13 min). 1 regions scored (0 min). 
+...Chromosome chrUn_GL456394: Smoothed (0 min). 1 regions scored (0 min). 
+...Chromosome chrUn_GL456396: Smoothed (0.13 min). 2 regions scored (0.13 min). 
+...Chromosome chrUn_JH584304: Smoothed (0 min). No candidates found. 
+* 9 out of 10 permutations completed (32558 null candidates)
+
+Beginning permutation 10
+...Chromosome chr1: Smoothed (0.48 min). 8 CpG(s) excluded due to zero coverage. 1349 regions scored (0.57 min). 
+...Chromosome chr2: Smoothed (0.52 min). 7 CpG(s) excluded due to zero coverage. 1315 regions scored (0.56 min). 
+...Chromosome chr3: Smoothed (0.46 min). 8 CpG(s) excluded due to zero coverage. 1240 regions scored (0.52 min). 
+...Chromosome chr4: Smoothed (0.53 min). 5 CpG(s) excluded due to zero coverage. 1131 regions scored (0.55 min). 
+...Chromosome chr5: Smoothed (0.59 min). 7 CpG(s) excluded due to zero coverage. 1266 regions scored (0.58 min). 
+...Chromosome chr6: Smoothed (0.45 min). 10 CpG(s) excluded due to zero coverage. 1041 regions scored (0.53 min). 
+...Chromosome chr7: Smoothed (0.49 min). 24 CpG(s) excluded due to zero coverage. 966 regions scored (0.48 min). 
+...Chromosome chr8: Smoothed (0.48 min). 11 CpG(s) excluded due to zero coverage. 1027 regions scored (0.52 min). 
+...Chromosome chr9: Smoothed (0.47 min). 2 CpG(s) excluded due to zero coverage. 901 regions scored (0.49 min). 
+...Chromosome chr10: Smoothed (0.48 min). 8 CpG(s) excluded due to zero coverage. 1208 regions scored (0.61 min). 
+...Chromosome chr11: Smoothed (0.56 min). 1007 regions scored (0.52 min). 
+...Chromosome chr12: Smoothed (0.41 min). 4 CpG(s) excluded due to zero coverage. 839 regions scored (0.45 min). 
+...Chromosome chr13: Smoothed (0.33 min). 2 CpG(s) excluded due to zero coverage. 1029 regions scored (0.54 min). 
+...Chromosome chr14: Smoothed (0.36 min). 8 CpG(s) excluded due to zero coverage. 854 regions scored (0.46 min). 
+...Chromosome chr15: Smoothed (0.42 min). 3 CpG(s) excluded due to zero coverage. 752 regions scored (0.44 min). 
+...Chromosome chr16: Smoothed (0.32 min). 4 CpG(s) excluded due to zero coverage. 795 regions scored (0.42 min). 
+...Chromosome chr17: Smoothed (0.41 min). 3 CpG(s) excluded due to zero coverage. 744 regions scored (0.38 min). 
+...Chromosome chr18: Smoothed (0.31 min). 1 CpG(s) excluded due to zero coverage. 758 regions scored (0.38 min). 
+...Chromosome chr19: Smoothed (0.3 min). 574 regions scored (0.33 min). 
+...Chromosome chrX: Smoothed (0.35 min). 77 CpG(s) excluded due to zero coverage. 779 regions scored (0.39 min). 
+...Chromosome chrY: Smoothed (0.16 min). 53 CpG(s) excluded due to zero coverage. 37 regions scored (0.15 min). 
+...Chromosome chrM: Smoothed (0.12 min). No candidates found. 
+...Chromosome chr1_GL456210_random: Smoothed (0.14 min). No candidates found. 
+...Chromosome chr1_GL456211_random: Smoothed (0.13 min). 1 regions scored (0.01 min). 
+...Chromosome chr1_GL456212_random: Smoothed (0.12 min). 2 regions scored (0.12 min). 
+...Chromosome chr1_GL456213_random: No candidates found.
+...Chromosome chr1_GL456221_random: Smoothed (0.12 min). No candidates found. 
+...Chromosome chr4_GL456216_random: Smoothed (0.12 min). No candidates found. 
+...Chromosome chr4_GL456350_random: No candidates found.
+...Chromosome chr4_JH584292_random: Smoothed (0.13 min). 1 CpG(s) excluded due to zero coverage. No candidates found. 
+...Chromosome chr4_JH584293_random: No candidates found.
+...Chromosome chr4_JH584295_random: Smoothed (0 min). No candidates found. 
+...Chromosome chr5_GL456354_random: Smoothed (0.13 min). No candidates found. 
+...Chromosome chr5_JH584296_random: Smoothed (0.13 min). No candidates found. 
+...Chromosome chr5_JH584297_random: Smoothed (0.12 min). No candidates found. 
+...Chromosome chr5_JH584298_random: Smoothed (0.13 min). No candidates found. 
+...Chromosome chr5_JH584299_random: Smoothed (0.13 min). 1 CpG(s) excluded due to zero coverage. 1 regions scored (0 min). 
+...Chromosome chr7_GL456219_random: No candidates found.
+...Chromosome chrX_GL456233_random: Smoothed (0.14 min). 1 regions scored (0 min). 
+...Chromosome chrY_JH584300_random: No candidates found.
+...Chromosome chrY_JH584301_random: No candidates found.
+...Chromosome chrY_JH584303_random: No candidates found.
+...Chromosome chrUn_GL456239: Smoothed (0.12 min). No candidates found. 
+...Chromosome chrUn_GL456359: Smoothed (0.12 min). No candidates found. 
+...Chromosome chrUn_GL456360: Smoothed (0.13 min). No candidates found. 
+...Chromosome chrUn_GL456366: Smoothed (0.13 min). No candidates found. 
+...Chromosome chrUn_GL456367: Smoothed (0.13 min). No candidates found. 
+...Chromosome chrUn_GL456368: Smoothed (0.12 min). No candidates found. 
+...Chromosome chrUn_GL456370: Smoothed (0.13 min). No candidates found. 
+...Chromosome chrUn_GL456372: Smoothed (0.13 min). 1 regions scored (0 min). 
+...Chromosome chrUn_GL456378: Smoothed (0.12 min). No candidates found. 
+...Chromosome chrUn_GL456379: Smoothed (0.13 min). No candidates found. 
+...Chromosome chrUn_GL456381: Smoothed (0.13 min). No candidates found. 
+...Chromosome chrUn_GL456382: Smoothed (0 min). No candidates found. 
+...Chromosome chrUn_GL456383: Smoothed (0.13 min). 1 regions scored (0 min). 
+...Chromosome chrUn_GL456385: Smoothed (0.13 min). No candidates found. 
+...Chromosome chrUn_GL456387: Smoothed (0.12 min). No candidates found. 
+...Chromosome chrUn_GL456389: Smoothed (0.12 min). No candidates found. 
+...Chromosome chrUn_GL456390: Smoothed (0.13 min). No candidates found. 
+...Chromosome chrUn_GL456392: Smoothed (0.13 min). No candidates found. 
+...Chromosome chrUn_GL456393: Smoothed (0.13 min). 2 regions scored (0.13 min). 
+...Chromosome chrUn_GL456394: Smoothed (0 min). 1 regions scored (0 min). 
+...Chromosome chrUn_GL456396: Smoothed (0.13 min). No candidates found. 
+...Chromosome chrUn_JH584304: Smoothed (0 min). No candidates found. 
+* 10 out of 10 permutations completed (19622 null candidates)
+Assuming the test covariate Group2 is a factor.
+Condition: low protein vs control
+Parallelizing using 2 workers/cores (backend: BiocParallel:MulticoreParam).
+Computing on 1 chromosome(s) at a time.
+
+Detecting candidate regions with coefficient larger than 0.1 in magnitude.
+...Chromosome chr1: Smoothed (0.52 min). 3264 regions scored (1.29 min). 
+...Chromosome chr2: Smoothed (0.58 min). 2877 regions scored (1.21 min). 
+...Chromosome chr3: Smoothed (0.5 min). 2848 regions scored (1.14 min). 
+...Chromosome chr4: Smoothed (0.59 min). 2737 regions scored (1.34 min). 
+...Chromosome chr5: Smoothed (0.51 min). 2787 regions scored (1.05 min). 
+...Chromosome chr6: Smoothed (0.41 min). 2610 regions scored (0.96 min). 
+...Chromosome chr7: Smoothed (0.45 min). 2494 regions scored (1.01 min). 
+...Chromosome chr8: Smoothed (0.44 min). 2408 regions scored (1.08 min). 
+...Chromosome chr9: Smoothed (0.43 min). 2214 regions scored (0.85 min). 
+...Chromosome chr10: Smoothed (0.43 min). 2431 regions scored (0.97 min). 
+...Chromosome chr11: Smoothed (0.49 min). 1985 regions scored (0.81 min). 
+...Chromosome chr12: Smoothed (0.39 min). 2065 regions scored (0.83 min). 
+...Chromosome chr13: Smoothed (0.3 min). 2115 regions scored (0.87 min). 
+...Chromosome chr14: Smoothed (0.33 min). 1889 regions scored (0.75 min). 
+...Chromosome chr15: Smoothed (0.37 min). 1631 regions scored (0.71 min). 
+...Chromosome chr16: Smoothed (0.27 min). 1627 regions scored (0.7 min). 
+...Chromosome chr17: Smoothed (0.33 min). Note: Large candidate regions with more than 1000 CpGs detected. If you'd like to detect large-scale blocks, set block=TRUE. If you'd like to detect local DMRs, it is recommended to decrease the values of bpSpan, minInSpan, and/or maxGapSmooth increase computational efficiency.
+1796 regions scored (9.4 min). 
+...Chromosome chr18: Smoothed (0.3 min). 1431 regions scored (0.63 min). 
+...Chromosome chr19: Smoothed (0.26 min). 1170 regions scored (0.56 min). 
+...Chromosome chrX: Smoothed (0.41 min). 1624 regions scored (0.72 min). 
+...Chromosome chrY: Smoothed (0.14 min). 130 regions scored (0.18 min). 
+...Chromosome chrM: Smoothed (0.1 min). 1 regions scored (0.01 min). 
+...Chromosome chr1_GL456210_random: Smoothed (0.11 min). 7 regions scored (0.11 min). 
+...Chromosome chr1_GL456211_random: Smoothed (0.11 min). 11 regions scored (0.11 min). 
+...Chromosome chr1_GL456212_random: Smoothed (0.12 min). 7 regions scored (0.13 min). 
+...Chromosome chr1_GL456213_random: No candidates found.
+...Chromosome chr1_GL456221_random: Smoothed (0.11 min). 10 regions scored (0.12 min). 
+...Chromosome chr4_GL456216_random: Smoothed (0.11 min). 3 regions scored (0.16 min). 
+...Chromosome chr4_GL456350_random: Smoothed (0.11 min). No candidates found. 
+...Chromosome chr4_JH584292_random: Smoothed (0.11 min). No candidates found. 
+...Chromosome chr4_JH584293_random: No candidates found.
+...Chromosome chr4_JH584295_random: Smoothed (0 min). 1 regions scored (0 min). 
+...Chromosome chr5_GL456354_random: Smoothed (0.13 min). No candidates found. 
+...Chromosome chr5_JH584296_random: No candidates found.
+...Chromosome chr5_JH584297_random: Smoothed (0.12 min). No candidates found. 
+...Chromosome chr5_JH584298_random: No candidates found.
+...Chromosome chr5_JH584299_random: Smoothed (0.11 min). 4 regions scored (0.11 min). 
+...Chromosome chr7_GL456219_random: No candidates found.
+...Chromosome chrX_GL456233_random: Smoothed (0.12 min). 4 regions scored (0.13 min). 
+...Chromosome chrY_JH584300_random: No candidates found.
+...Chromosome chrY_JH584301_random: Smoothed (0.11 min). No candidates found. 
+...Chromosome chrUn_GL456239: Smoothed (0.11 min). 1 regions scored (0 min). 
+...Chromosome chrUn_GL456359: Smoothed (0.1 min). 1 regions scored (0 min). 
+...Chromosome chrUn_GL456360: Smoothed (0.1 min). No candidates found. 
+...Chromosome chrUn_GL456366: Smoothed (0.11 min). 1 regions scored (0 min). 
+...Chromosome chrUn_GL456367: Smoothed (0.21 min). No candidates found. 
+...Chromosome chrUn_GL456368: Smoothed (0.21 min). 1 regions scored (0 min). 
+...Chromosome chrUn_GL456370: Smoothed (0.11 min). No candidates found. 
+...Chromosome chrUn_GL456372: Smoothed (0 min). 1 regions scored (0 min). 
+...Chromosome chrUn_GL456378: Smoothed (0 min). 2 regions scored (0.11 min). 
+...Chromosome chrUn_GL456379: Smoothed (0.11 min). 2 regions scored (0.11 min). 
+...Chromosome chrUn_GL456381: Smoothed (0.11 min). 1 regions scored (0 min). 
+...Chromosome chrUn_GL456382: Smoothed (0 min). 1 regions scored (0 min). 
+...Chromosome chrUn_GL456383: Smoothed (0.11 min). No candidates found. 
+...Chromosome chrUn_GL456385: Smoothed (0.11 min). No candidates found. 
+...Chromosome chrUn_GL456387: Smoothed (0.11 min). No candidates found. 
+...Chromosome chrUn_GL456389: Smoothed (0.13 min). 2 regions scored (0.13 min). 
+...Chromosome chrUn_GL456390: Smoothed (0.12 min). No candidates found. 
+...Chromosome chrUn_GL456392: Smoothed (0.12 min). No candidates found. 
+...Chromosome chrUn_GL456393: Smoothed (0.12 min). 3 regions scored (0.12 min). 
+...Chromosome chrUn_GL456394: Smoothed (0.11 min). 1 regions scored (0 min). 
+...Chromosome chrUn_GL456396: Smoothed (0.11 min). 4 regions scored (0.11 min). 
+...Chromosome chrUn_JH584304: Smoothed (0 min). 20 regions scored (0.12 min). 
+* 44222 candidates detected
+Performing balanced permutations of condition across samples to generate a null distribution of region test statistics
+
+Beginning permutation 1
+...Chromosome chr1: Smoothed (0.47 min). 9 CpG(s) excluded due to zero coverage. 504 regions scored (0.31 min). 
+...Chromosome chr2: Smoothed (0.51 min). 12 CpG(s) excluded due to zero coverage. 467 regions scored (0.3 min). 
+...Chromosome chr3: Smoothed (0.47 min). 3 CpG(s) excluded due to zero coverage. 505 regions scored (0.33 min). 
+...Chromosome chr4: Smoothed (0.52 min). 6 CpG(s) excluded due to zero coverage. 385 regions scored (0.29 min). 
+...Chromosome chr5: Smoothed (0.56 min). 7 CpG(s) excluded due to zero coverage. 433 regions scored (0.3 min). 
+...Chromosome chr6: Smoothed (0.43 min). 3 CpG(s) excluded due to zero coverage. 384 regions scored (0.3 min). 
+...Chromosome chr7: Smoothed (0.46 min). 8 CpG(s) excluded due to zero coverage. 319 regions scored (0.27 min). 
+...Chromosome chr8: Smoothed (0.45 min). 6 CpG(s) excluded due to zero coverage. 389 regions scored (0.29 min). 
+...Chromosome chr9: Smoothed (0.46 min). 291 regions scored (0.28 min). 
+...Chromosome chr10: Smoothed (0.44 min). 8 CpG(s) excluded due to zero coverage. 501 regions scored (0.31 min). 
+...Chromosome chr11: Smoothed (0.56 min). 1 CpG(s) excluded due to zero coverage. 323 regions scored (0.27 min). 
+...Chromosome chr12: Smoothed (0.4 min). 2 CpG(s) excluded due to zero coverage. 277 regions scored (0.25 min). 
+...Chromosome chr13: Smoothed (0.34 min). 5 CpG(s) excluded due to zero coverage. 376 regions scored (0.29 min). 
+...Chromosome chr14: Smoothed (0.35 min). 12 CpG(s) excluded due to zero coverage. 287 regions scored (0.24 min). 
+...Chromosome chr15: Smoothed (0.43 min). 2 CpG(s) excluded due to zero coverage. 284 regions scored (0.27 min). 
+...Chromosome chr16: Smoothed (0.29 min). 308 regions scored (0.24 min). 
+...Chromosome chr17: Smoothed (0.36 min). 3 CpG(s) excluded due to zero coverage. 262 regions scored (0.24 min). 
+...Chromosome chr18: Smoothed (0.33 min). 262 regions scored (0.23 min). 
+...Chromosome chr19: Smoothed (0.28 min). 2 CpG(s) excluded due to zero coverage. 176 regions scored (0.21 min). 
+...Chromosome chrX: Smoothed (0.38 min). 39 CpG(s) excluded due to zero coverage. 385 regions scored (0.3 min). 
+...Chromosome chrY: Smoothed (0.17 min). 47 CpG(s) excluded due to zero coverage. 37 regions scored (0.13 min). 
+...Chromosome chrM: Smoothed (0.12 min). No candidates found. 
+...Chromosome chr1_GL456210_random: Smoothed (0.12 min). No candidates found. 
+...Chromosome chr1_GL456211_random: Smoothed (0.11 min). 3 regions scored (0.12 min). 
+...Chromosome chr1_GL456212_random: Smoothed (0.12 min). No candidates found. 
+...Chromosome chr1_GL456213_random: No candidates found.
+...Chromosome chr1_GL456221_random: Smoothed (0.13 min). No candidates found. 
+...Chromosome chr4_GL456216_random: Smoothed (0.13 min). 1 regions scored (0 min). 
+...Chromosome chr4_GL456350_random: Smoothed (0.12 min). No candidates found. 
+...Chromosome chr4_JH584292_random: Smoothed (0.12 min). No candidates found. 
+...Chromosome chr4_JH584293_random: No candidates found.
+...Chromosome chr4_JH584295_random: Smoothed (0 min). No candidates found. 
+...Chromosome chr5_GL456354_random: Smoothed (0.11 min). No candidates found. 
+...Chromosome chr5_JH584296_random: No candidates found.
+...Chromosome chr5_JH584297_random: Smoothed (0.13 min). No candidates found. 
+...Chromosome chr5_JH584298_random: No candidates found.
+...Chromosome chr5_JH584299_random: Smoothed (0.12 min). No candidates found. 
+...Chromosome chr7_GL456219_random: No candidates found.
+...Chromosome chrX_GL456233_random: Smoothed (0.11 min). No candidates found. 
+...Chromosome chrY_JH584300_random: No candidates found.
+...Chromosome chrY_JH584301_random: Smoothed (0.13 min). No candidates found. 
+...Chromosome chrUn_GL456239: Smoothed (0.13 min). No candidates found. 
+...Chromosome chrUn_GL456359: Smoothed (0.12 min). No candidates found. 
+...Chromosome chrUn_GL456360: Smoothed (0.12 min). 1 regions scored (0 min). 
+...Chromosome chrUn_GL456366: Smoothed (0.11 min). No candidates found. 
+...Chromosome chrUn_GL456367: Smoothed (0.11 min). No candidates found. 
+...Chromosome chrUn_GL456368: Smoothed (0.11 min). 1 regions scored (0 min). 
+...Chromosome chrUn_GL456370: Smoothed (0.13 min). 1 regions scored (0 min). 
+...Chromosome chrUn_GL456372: Smoothed (0 min). No candidates found. 
+...Chromosome chrUn_GL456378: Smoothed (0 min). No candidates found. 
+...Chromosome chrUn_GL456379: Smoothed (0.12 min). 1 regions scored (0 min). 
+...Chromosome chrUn_GL456381: Smoothed (0.12 min). No candidates found. 
+...Chromosome chrUn_GL456382: Smoothed (0 min). No candidates found. 
+...Chromosome chrUn_GL456383: Smoothed (0.11 min). No candidates found. 
+...Chromosome chrUn_GL456385: Smoothed (0.13 min). No candidates found. 
+...Chromosome chrUn_GL456387: Smoothed (0.13 min). No candidates found. 
+...Chromosome chrUn_GL456389: Smoothed (0.11 min). No candidates found. 
+...Chromosome chrUn_GL456390: Smoothed (0.12 min). No candidates found. 
+...Chromosome chrUn_GL456392: Smoothed (0.11 min). 1 regions scored (0 min). 
+...Chromosome chrUn_GL456393: Smoothed (0.11 min). 1 regions scored (0 min). 
+...Chromosome chrUn_GL456394: Smoothed (0.11 min). 1 regions scored (0 min). 
+...Chromosome chrUn_GL456396: Smoothed (0.13 min). No candidates found. 
+...Chromosome chrUn_JH584304: Smoothed (0 min). No candidates found. 
+* 1 out of 10 permutations completed (7166 null candidates)
+
+Beginning permutation 2
+...Chromosome chr1: Smoothed (0.46 min). 12 CpG(s) excluded due to zero coverage. 659 regions scored (0.4 min). 
+...Chromosome chr2: Smoothed (0.54 min). 13 CpG(s) excluded due to zero coverage. 602 regions scored (0.43 min). 
+...Chromosome chr3: Smoothed (0.45 min). 15 CpG(s) excluded due to zero coverage. 596 regions scored (0.38 min). 
+...Chromosome chr4: Smoothed (0.53 min). 5 CpG(s) excluded due to zero coverage. 567 regions scored (0.38 min). 
+...Chromosome chr5: Smoothed (0.55 min). 15 CpG(s) excluded due to zero coverage. 617 regions scored (0.4 min). 
+...Chromosome chr6: Smoothed (0.45 min). 6 CpG(s) excluded due to zero coverage. 512 regions scored (0.34 min). 
+...Chromosome chr7: Smoothed (0.51 min). 13 CpG(s) excluded due to zero coverage. 452 regions scored (0.33 min). 
+...Chromosome chr8: Smoothed (0.46 min). 10 CpG(s) excluded due to zero coverage. 482 regions scored (0.34 min). 
+...Chromosome chr9: Smoothed (0.47 min). 7 CpG(s) excluded due to zero coverage. 414 regions scored (0.32 min). 
+...Chromosome chr10: Smoothed (0.46 min). 12 CpG(s) excluded due to zero coverage. 592 regions scored (0.38 min). 
+...Chromosome chr11: Smoothed (0.55 min). 3 CpG(s) excluded due to zero coverage. 378 regions scored (0.32 min). 
+...Chromosome chr12: Smoothed (0.4 min). 14 CpG(s) excluded due to zero coverage. 419 regions scored (0.3 min). 
+...Chromosome chr13: Smoothed (0.34 min). 7 CpG(s) excluded due to zero coverage. 471 regions scored (0.35 min). 
+...Chromosome chr14: Smoothed (0.34 min). 24 CpG(s) excluded due to zero coverage. 415 regions scored (0.31 min). 
+...Chromosome chr15: Smoothed (0.4 min). 10 CpG(s) excluded due to zero coverage. 389 regions scored (0.32 min). 
+...Chromosome chr16: Smoothed (0.31 min). 6 CpG(s) excluded due to zero coverage. 384 regions scored (0.3 min). 
+...Chromosome chr17: Smoothed (0.34 min). 10 CpG(s) excluded due to zero coverage. 368 regions scored (0.3 min). 
+...Chromosome chr18: Smoothed (0.34 min). 1 CpG(s) excluded due to zero coverage. 311 regions scored (0.29 min). 
+...Chromosome chr19: Smoothed (0.29 min). 1 CpG(s) excluded due to zero coverage. 255 regions scored (0.25 min). 
+...Chromosome chrX: Smoothed (0.39 min). 149 CpG(s) excluded due to zero coverage. 502 regions scored (0.33 min). 
+...Chromosome chrY: Smoothed (0.16 min). 55 CpG(s) excluded due to zero coverage. 45 regions scored (0.15 min). 
+...Chromosome chrM: Smoothed (0.12 min). No candidates found. 
+...Chromosome chr1_GL456210_random: Smoothed (0.12 min). 1 regions scored (0 min). 
+...Chromosome chr1_GL456211_random: Smoothed (0.11 min). 2 regions scored (0.12 min). 
+...Chromosome chr1_GL456212_random: Smoothed (0.12 min). 1 regions scored (0 min). 
+...Chromosome chr1_GL456213_random: No candidates found.
+...Chromosome chr1_GL456221_random: Smoothed (0.13 min). 1 regions scored (0 min). 
+...Chromosome chr4_GL456216_random: Smoothed (0.14 min). 2 regions scored (0.14 min). 
+...Chromosome chr4_GL456350_random: Smoothed (0.12 min). No candidates found. 
+...Chromosome chr4_JH584292_random: Smoothed (0.12 min). No candidates found. 
+...Chromosome chr4_JH584293_random: No candidates found.
+...Chromosome chr4_JH584295_random: Smoothed (0 min). 1 regions scored (0 min). 
+...Chromosome chr5_GL456354_random: Smoothed (0.11 min). 1 CpG(s) excluded due to zero coverage. 1 regions scored (0 min). 
+...Chromosome chr5_JH584296_random: No candidates found.
+...Chromosome chr5_JH584297_random: Smoothed (0.13 min). No candidates found. 
+...Chromosome chr5_JH584298_random: No candidates found.
+...Chromosome chr5_JH584299_random: Smoothed (0.12 min). 1 regions scored (0 min). 
+...Chromosome chr7_GL456219_random: No candidates found.
+...Chromosome chrX_GL456233_random: Smoothed (0.12 min). 1 regions scored (0 min). 
+...Chromosome chrY_JH584300_random: No candidates found.
+...Chromosome chrY_JH584301_random: Smoothed (0.11 min). No candidates found. 
+...Chromosome chrUn_GL456239: Smoothed (0.11 min). No candidates found. 
+...Chromosome chrUn_GL456359: Smoothed (0.13 min). No candidates found. 
+...Chromosome chrUn_GL456360: Smoothed (0.13 min). No candidates found. 
+...Chromosome chrUn_GL456366: Smoothed (0.12 min). No candidates found. 
+...Chromosome chrUn_GL456367: Smoothed (0.11 min). No candidates found. 
+...Chromosome chrUn_GL456368: Smoothed (0.12 min). No candidates found. 
+...Chromosome chrUn_GL456370: Smoothed (0.11 min). No candidates found. 
+...Chromosome chrUn_GL456372: Smoothed (0 min). No candidates found. 
+...Chromosome chrUn_GL456378: Smoothed (0 min). No candidates found. 
+...Chromosome chrUn_GL456379: Smoothed (0.13 min). No candidates found. 
+...Chromosome chrUn_GL456381: Smoothed (0.13 min). No candidates found. 
+...Chromosome chrUn_GL456382: Smoothed (0 min). No candidates found. 
+...Chromosome chrUn_GL456383: Smoothed (0.12 min). No candidates found. 
+...Chromosome chrUn_GL456385: Smoothed (0.12 min). 1 regions scored (0 min). 
+...Chromosome chrUn_GL456387: Smoothed (0.11 min). No candidates found. 
+...Chromosome chrUn_GL456389: Smoothed (0.12 min). 1 regions scored (0 min). 
+...Chromosome chrUn_GL456390: Smoothed (0.13 min). No candidates found. 
+...Chromosome chrUn_GL456392: Smoothed (0.13 min). No candidates found. 
+...Chromosome chrUn_GL456393: Smoothed (0.13 min). 1 regions scored (0.01 min). 
+...Chromosome chrUn_GL456394: Smoothed (0.12 min). 1 regions scored (0 min). 
+...Chromosome chrUn_GL456396: Smoothed (0.12 min). 2 regions scored (0.12 min). 
+...Chromosome chrUn_JH584304: Smoothed (0 min). No candidates found. 
+* 2 out of 10 permutations completed (9447 null candidates)
+
+Beginning permutation 3
+...Chromosome chr1: Smoothed (0.49 min). 14 CpG(s) excluded due to zero coverage. 952 regions scored (0.52 min). 
+...Chromosome chr2: Smoothed (0.59 min). 7 CpG(s) excluded due to zero coverage. 959 regions scored (0.52 min). 
+...Chromosome chr3: Smoothed (0.49 min). 17 CpG(s) excluded due to zero coverage. 900 regions scored (0.49 min). 
+...Chromosome chr4: Smoothed (0.51 min). 6 CpG(s) excluded due to zero coverage. 768 regions scored (0.45 min). 
+...Chromosome chr5: Smoothed (0.56 min). 15 CpG(s) excluded due to zero coverage. 898 regions scored (0.48 min). 
+...Chromosome chr6: Smoothed (0.46 min). 7 CpG(s) excluded due to zero coverage. 713 regions scored (0.4 min). 
+...Chromosome chr7: Smoothed (0.46 min). 19 CpG(s) excluded due to zero coverage. 714 regions scored (0.43 min). 
+...Chromosome chr8: Smoothed (0.49 min). 11 CpG(s) excluded due to zero coverage. 736 regions scored (0.43 min). 
+...Chromosome chr9: Smoothed (0.47 min). 682 regions scored (0.41 min). 
+...Chromosome chr10: Smoothed (0.45 min). 11 CpG(s) excluded due to zero coverage. 879 regions scored (0.48 min). 
+...Chromosome chr11: Smoothed (0.54 min). 3 CpG(s) excluded due to zero coverage. 749 regions scored (0.42 min). 
+...Chromosome chr12: Smoothed (0.43 min). 12 CpG(s) excluded due to zero coverage. 561 regions scored (0.36 min). 
+...Chromosome chr13: Smoothed (0.33 min). 7 CpG(s) excluded due to zero coverage. 726 regions scored (0.41 min). 
+...Chromosome chr14: Smoothed (0.36 min). 17 CpG(s) excluded due to zero coverage. 589 regions scored (0.35 min). 
+...Chromosome chr15: Smoothed (0.41 min). 9 CpG(s) excluded due to zero coverage. 510 regions scored (0.34 min). 
+...Chromosome chr16: Smoothed (0.3 min). 8 CpG(s) excluded due to zero coverage. 522 regions scored (0.35 min). 
+...Chromosome chr17: Smoothed (0.36 min). 9 CpG(s) excluded due to zero coverage. 551 regions scored (0.36 min). 
+...Chromosome chr18: Smoothed (0.32 min). 1 CpG(s) excluded due to zero coverage. 499 regions scored (0.34 min). 
+...Chromosome chr19: Smoothed (0.29 min). 2 CpG(s) excluded due to zero coverage. 383 regions scored (0.3 min). 
+...Chromosome chrX: Smoothed (0.38 min). 119 CpG(s) excluded due to zero coverage. 521 regions scored (0.34 min). 
+...Chromosome chrY: Smoothed (0.16 min). 37 CpG(s) excluded due to zero coverage. 39 regions scored (0.15 min). 
+...Chromosome chrM: Smoothed (0.11 min). No candidates found. 
+...Chromosome chr1_GL456210_random: Smoothed (0.11 min). 2 regions scored (0.12 min). 
+...Chromosome chr1_GL456211_random: Smoothed (0.11 min). 1 regions scored (0.01 min). 
+...Chromosome chr1_GL456212_random: Smoothed (0.12 min). 1 regions scored (0 min). 
+...Chromosome chr1_GL456213_random: No candidates found.
+...Chromosome chr1_GL456221_random: Smoothed (0.12 min). 1 regions scored (0 min). 
+...Chromosome chr4_GL456216_random: Smoothed (0.11 min). 1 regions scored (0 min). 
+...Chromosome chr4_GL456350_random: Smoothed (0.11 min). No candidates found. 
+...Chromosome chr4_JH584292_random: Smoothed (0.11 min). No candidates found. 
+...Chromosome chr4_JH584293_random: No candidates found.
+...Chromosome chr4_JH584295_random: Smoothed (0 min). No candidates found. 
+...Chromosome chr5_GL456354_random: Smoothed (0.11 min). No candidates found. 
+...Chromosome chr5_JH584296_random: No candidates found.
+...Chromosome chr5_JH584297_random: Smoothed (0.12 min). No candidates found. 
+...Chromosome chr5_JH584298_random: No candidates found.
+...Chromosome chr5_JH584299_random: Smoothed (0.11 min). No candidates found. 
+...Chromosome chr7_GL456219_random: No candidates found.
+...Chromosome chrX_GL456233_random: Smoothed (0.11 min). No candidates found. 
+...Chromosome chrY_JH584300_random: No candidates found.
+...Chromosome chrY_JH584301_random: Smoothed (0.13 min). No candidates found. 
+...Chromosome chrUn_GL456239: Smoothed (0.12 min). No candidates found. 
+...Chromosome chrUn_GL456359: Smoothed (0.11 min). No candidates found. 
+...Chromosome chrUn_GL456360: Smoothed (0.11 min). No candidates found. 
+...Chromosome chrUn_GL456366: Smoothed (0.11 min). No candidates found. 
+...Chromosome chrUn_GL456367: Smoothed (0.11 min). No candidates found. 
+...Chromosome chrUn_GL456368: Smoothed (0.11 min). No candidates found. 
+...Chromosome chrUn_GL456370: Smoothed (0.13 min). No candidates found. 
+...Chromosome chrUn_GL456372: Smoothed (0 min). No candidates found. 
+...Chromosome chrUn_GL456378: Smoothed (0 min). No candidates found. 
+...Chromosome chrUn_GL456379: Smoothed (0.11 min). No candidates found. 
+...Chromosome chrUn_GL456381: Smoothed (0.12 min). No candidates found. 
+...Chromosome chrUn_GL456382: Smoothed (0 min). No candidates found. 
+...Chromosome chrUn_GL456383: Smoothed (0.11 min). No candidates found. 
+...Chromosome chrUn_GL456385: Smoothed (0.11 min). No candidates found. 
+...Chromosome chrUn_GL456387: Smoothed (0.11 min). No candidates found. 
+...Chromosome chrUn_GL456389: Smoothed (0.13 min). No candidates found. 
+...Chromosome chrUn_GL456390: Smoothed (0.13 min). No candidates found. 
+...Chromosome chrUn_GL456392: Smoothed (0.12 min). No candidates found. 
+...Chromosome chrUn_GL456393: Smoothed (0.11 min). 1 regions scored (0 min). 
+...Chromosome chrUn_GL456394: Smoothed (0.12 min). No candidates found. 
+...Chromosome chrUn_GL456396: Smoothed (0.11 min). 1 regions scored (0 min). 
+...Chromosome chrUn_JH584304: Smoothed (0 min). No candidates found. 
+* 3 out of 10 permutations completed (13859 null candidates)
+
+Beginning permutation 4
+...Chromosome chr1: Smoothed (0.5 min). 25 CpG(s) excluded due to zero coverage. 1231 regions scored (0.58 min). 
+...Chromosome chr2: Smoothed (0.55 min). 18 CpG(s) excluded due to zero coverage. 1273 regions scored (0.62 min). 
+...Chromosome chr3: Smoothed (0.44 min). 20 CpG(s) excluded due to zero coverage. 1236 regions scored (0.54 min). 
+...Chromosome chr4: Smoothed (0.57 min). 18 CpG(s) excluded due to zero coverage. 1062 regions scored (0.54 min). 
+...Chromosome chr5: Smoothed (0.58 min). 23 CpG(s) excluded due to zero coverage. 1205 regions scored (0.58 min). 
+...Chromosome chr6: Smoothed (0.43 min). 10 CpG(s) excluded due to zero coverage. 1016 regions scored (0.49 min). 
+...Chromosome chr7: Smoothed (0.48 min). 34 CpG(s) excluded due to zero coverage. 944 regions scored (0.47 min). 
+...Chromosome chr8: Smoothed (0.51 min). 24 CpG(s) excluded due to zero coverage. 999 regions scored (0.48 min). 
+...Chromosome chr9: Smoothed (0.49 min). 3 CpG(s) excluded due to zero coverage. 901 regions scored (0.44 min). 
+...Chromosome chr10: Smoothed (0.45 min). 13 CpG(s) excluded due to zero coverage. 1175 regions scored (0.53 min). 
+...Chromosome chr11: Smoothed (0.57 min). 4 CpG(s) excluded due to zero coverage. 1100 regions scored (0.51 min). 
+...Chromosome chr12: Smoothed (0.42 min). 14 CpG(s) excluded due to zero coverage. 760 regions scored (0.41 min). 
+...Chromosome chr13: Smoothed (0.33 min). 9 CpG(s) excluded due to zero coverage. 981 regions scored (0.47 min). 
+...Chromosome chr14: Smoothed (0.36 min). 28 CpG(s) excluded due to zero coverage. 778 regions scored (0.41 min). 
+...Chromosome chr15: Smoothed (0.42 min). 15 CpG(s) excluded due to zero coverage. 710 regions scored (0.41 min). 
+...Chromosome chr16: Smoothed (0.3 min). 17 CpG(s) excluded due to zero coverage. 723 regions scored (0.37 min). 
+...Chromosome chr17: Smoothed (0.35 min). 11 CpG(s) excluded due to zero coverage. 726 regions scored (0.42 min). 
+...Chromosome chr18: Smoothed (0.33 min). 10 CpG(s) excluded due to zero coverage. 687 regions scored (0.36 min). 
+...Chromosome chr19: Smoothed (0.3 min). 1 CpG(s) excluded due to zero coverage. 537 regions scored (0.33 min). 
+...Chromosome chrX: Smoothed (0.39 min). 190 CpG(s) excluded due to zero coverage. 671 regions scored (0.35 min). 
+...Chromosome chrY: Smoothed (0.15 min). 77 CpG(s) excluded due to zero coverage. 37 regions scored (0.13 min). 
+...Chromosome chrM: Smoothed (0.12 min). No candidates found. 
+...Chromosome chr1_GL456210_random: Smoothed (0.12 min). 2 regions scored (0.12 min). 
+...Chromosome chr1_GL456211_random: Smoothed (0.11 min). 2 regions scored (0.12 min). 
+...Chromosome chr1_GL456212_random: Smoothed (0.12 min). No candidates found. 
+...Chromosome chr1_GL456213_random: No candidates found.
+...Chromosome chr1_GL456221_random: Smoothed (0.13 min). No candidates found. 
+...Chromosome chr4_GL456216_random: Smoothed (0.13 min). 1 regions scored (0 min). 
+...Chromosome chr4_GL456350_random: Smoothed (0.12 min). No candidates found. 
+...Chromosome chr4_JH584292_random: Smoothed (0.12 min). 1 CpG(s) excluded due to zero coverage. No candidates found. 
+...Chromosome chr4_JH584293_random: No candidates found.
+...Chromosome chr4_JH584295_random: Smoothed (0 min). No candidates found. 
+...Chromosome chr5_GL456354_random: Smoothed (0.11 min). 1 regions scored (0 min). 
+...Chromosome chr5_JH584296_random: No candidates found.
+...Chromosome chr5_JH584297_random: Smoothed (0.12 min). No candidates found. 
+...Chromosome chr5_JH584298_random: No candidates found.
+...Chromosome chr5_JH584299_random: Smoothed (0.13 min). 2 CpG(s) excluded due to zero coverage. 1 regions scored (0 min). 
+...Chromosome chr7_GL456219_random: No candidates found.
+...Chromosome chrX_GL456233_random: Smoothed (0.12 min). 2 regions scored (0.12 min). 
+...Chromosome chrY_JH584300_random: No candidates found.
+...Chromosome chrY_JH584301_random: Smoothed (0.12 min). No candidates found. 
+...Chromosome chrUn_GL456239: Smoothed (0.11 min). No candidates found. 
+...Chromosome chrUn_GL456359: Smoothed (0.11 min). No candidates found. 
+...Chromosome chrUn_GL456360: Smoothed (0.13 min). No candidates found. 
+...Chromosome chrUn_GL456366: Smoothed (0.13 min). No candidates found. 
+...Chromosome chrUn_GL456367: Smoothed (0.13 min). No candidates found. 
+...Chromosome chrUn_GL456368: Smoothed (0.12 min). No candidates found. 
+...Chromosome chrUn_GL456370: Smoothed (0.12 min). No candidates found. 
+...Chromosome chrUn_GL456372: Smoothed (0 min). 1 regions scored (0 min). 
+...Chromosome chrUn_GL456378: Smoothed (0 min). No candidates found. 
+...Chromosome chrUn_GL456379: Smoothed (0.12 min). No candidates found. 
+...Chromosome chrUn_GL456381: Smoothed (0.11 min). No candidates found. 
+...Chromosome chrUn_GL456382: Smoothed (0 min). No candidates found. 
+...Chromosome chrUn_GL456383: Smoothed (0.14 min). No candidates found. 
+...Chromosome chrUn_GL456385: Smoothed (0.12 min). No candidates found. 
+...Chromosome chrUn_GL456387: Smoothed (0.12 min). 1 regions scored (0 min). 
+...Chromosome chrUn_GL456389: Smoothed (0.12 min). 1 regions scored (0 min). 
+...Chromosome chrUn_GL456390: Smoothed (0.12 min). No candidates found. 
+...Chromosome chrUn_GL456392: Smoothed (0.11 min). No candidates found. 
+...Chromosome chrUn_GL456393: Smoothed (0.12 min). 1 regions scored (0 min). 
+...Chromosome chrUn_GL456394: Smoothed (0.11 min). 1 regions scored (0 min). 
+...Chromosome chrUn_GL456396: Smoothed (0.14 min). No candidates found. 
+...Chromosome chrUn_JH584304: Smoothed (0 min). No candidates found. 
+* 4 out of 10 permutations completed (18766 null candidates)
+
+Beginning permutation 5
+...Chromosome chr1: Smoothed (0.46 min). 6 CpG(s) excluded due to zero coverage. 605 regions scored (0.39 min). 
+...Chromosome chr2: Smoothed (0.57 min). 2 CpG(s) excluded due to zero coverage. 573 regions scored (0.38 min). 
+...Chromosome chr3: Smoothed (0.45 min). 13 CpG(s) excluded due to zero coverage. 562 regions scored (0.38 min). 
+...Chromosome chr4: Smoothed (0.54 min). 11 CpG(s) excluded due to zero coverage. 477 regions scored (0.35 min). 
+...Chromosome chr5: Smoothed (0.59 min). 5 CpG(s) excluded due to zero coverage. 529 regions scored (0.36 min). 
+...Chromosome chr6: Smoothed (0.44 min). 13 CpG(s) excluded due to zero coverage. 454 regions scored (0.35 min). 
+...Chromosome chr7: Smoothed (0.51 min). 19 CpG(s) excluded due to zero coverage. 405 regions scored (0.33 min). 
+...Chromosome chr8: Smoothed (0.53 min). 8 CpG(s) excluded due to zero coverage. 452 regions scored (0.35 min). 
+...Chromosome chr9: Smoothed (0.49 min). 443 regions scored (0.35 min). 
+...Chromosome chr10: Smoothed (0.46 min). 4 CpG(s) excluded due to zero coverage. 542 regions scored (0.36 min). 
+...Chromosome chr11: Smoothed (0.55 min). 390 regions scored (0.32 min). 
+...Chromosome chr12: Smoothed (0.45 min). 3 CpG(s) excluded due to zero coverage. 358 regions scored (0.28 min). 
+...Chromosome chr13: Smoothed (0.34 min). 3 CpG(s) excluded due to zero coverage. 406 regions scored (0.32 min). 
+...Chromosome chr14: Smoothed (0.35 min). 10 CpG(s) excluded due to zero coverage. 326 regions scored (0.3 min). 
+...Chromosome chr15: Smoothed (0.4 min). 318 regions scored (0.27 min). 
+...Chromosome chr16: Smoothed (0.3 min). 4 CpG(s) excluded due to zero coverage. 331 regions scored (0.29 min). 
+...Chromosome chr17: Smoothed (0.39 min). 5 CpG(s) excluded due to zero coverage. 327 regions scored (0.3 min). 
+...Chromosome chr18: Smoothed (0.34 min). 5 CpG(s) excluded due to zero coverage. 331 regions scored (0.27 min). 
+...Chromosome chr19: Smoothed (0.29 min). 1 CpG(s) excluded due to zero coverage. 216 regions scored (0.24 min). 
+...Chromosome chrX: Smoothed (0.4 min). 61 CpG(s) excluded due to zero coverage. 395 regions scored (0.3 min). 
+...Chromosome chrY: Smoothed (0.15 min). 91 CpG(s) excluded due to zero coverage. 31 regions scored (0.14 min). 
+...Chromosome chrM: Smoothed (0.12 min). No candidates found. 
+...Chromosome chr1_GL456210_random: Smoothed (0.12 min). No candidates found. 
+...Chromosome chr1_GL456211_random: Smoothed (0.11 min). 2 regions scored (0.11 min). 
+...Chromosome chr1_GL456212_random: Smoothed (0.12 min). No candidates found. 
+...Chromosome chr1_GL456213_random: No candidates found.
+...Chromosome chr1_GL456221_random: Smoothed (0.14 min). No candidates found. 
+...Chromosome chr4_GL456216_random: Smoothed (0.13 min). No candidates found. 
+...Chromosome chr4_GL456350_random: Smoothed (0.14 min). No candidates found. 
+...Chromosome chr4_JH584292_random: Smoothed (0.12 min). 1 CpG(s) excluded due to zero coverage. No candidates found. 
+...Chromosome chr4_JH584293_random: No candidates found.
+...Chromosome chr4_JH584295_random: Smoothed (0 min). 1 regions scored (0 min). 
+...Chromosome chr5_GL456354_random: Smoothed (0.12 min). No candidates found. 
+...Chromosome chr5_JH584296_random: No candidates found.
+...Chromosome chr5_JH584297_random: Smoothed (0.12 min). 1 CpG(s) excluded due to zero coverage. No candidates found. 
+...Chromosome chr5_JH584298_random: No candidates found.
+...Chromosome chr5_JH584299_random: Smoothed (0.14 min). 2 regions scored (0.14 min). 
+...Chromosome chr7_GL456219_random: No candidates found.
+...Chromosome chrX_GL456233_random: Smoothed (0.12 min). 2 regions scored (0.13 min). 
+...Chromosome chrY_JH584300_random: No candidates found.
+...Chromosome chrY_JH584301_random: Smoothed (0.12 min). No candidates found. 
+...Chromosome chrUn_GL456239: Smoothed (0.11 min). No candidates found. 
+...Chromosome chrUn_GL456359: Smoothed (0.12 min). No candidates found. 
+...Chromosome chrUn_GL456360: Smoothed (0.11 min). No candidates found. 
+...Chromosome chrUn_GL456366: Smoothed (0.11 min). No candidates found. 
+...Chromosome chrUn_GL456367: Smoothed (0.14 min). No candidates found. 
+...Chromosome chrUn_GL456368: Smoothed (0.14 min). No candidates found. 
+...Chromosome chrUn_GL456370: Smoothed (0.12 min). No candidates found. 
+...Chromosome chrUn_GL456372: Smoothed (0 min). No candidates found. 
+...Chromosome chrUn_GL456378: Smoothed (0 min). No candidates found. 
+...Chromosome chrUn_GL456379: Smoothed (0.11 min). 1 regions scored (0 min). 
+...Chromosome chrUn_GL456381: Smoothed (0.11 min). No candidates found. 
+...Chromosome chrUn_GL456382: Smoothed (0 min). No candidates found. 
+...Chromosome chrUn_GL456383: Smoothed (0.14 min). No candidates found. 
+...Chromosome chrUn_GL456385: Smoothed (0.14 min). No candidates found. 
+...Chromosome chrUn_GL456387: Smoothed (0.14 min). No candidates found. 
+...Chromosome chrUn_GL456389: Smoothed (0.12 min). No candidates found. 
+...Chromosome chrUn_GL456390: Smoothed (0.12 min). No candidates found. 
+...Chromosome chrUn_GL456392: Smoothed (0.12 min). 1 regions scored (0 min). 
+...Chromosome chrUn_GL456393: Smoothed (0.12 min). 1 regions scored (0 min). 
+...Chromosome chrUn_GL456394: Smoothed (0.11 min). 1 regions scored (0 min). 
+...Chromosome chrUn_GL456396: Smoothed (0.12 min). 2 regions scored (0.12 min). 
+...Chromosome chrUn_JH584304: Smoothed (0 min). No candidates found. 
+* 5 out of 10 permutations completed (8484 null candidates)
+
+Beginning permutation 6
+...Chromosome chr1: Smoothed (0.5 min). 23 CpG(s) excluded due to zero coverage. 665 regions scored (0.4 min). 
+...Chromosome chr2: Smoothed (0.59 min). 9 CpG(s) excluded due to zero coverage. 568 regions scored (0.45 min). 
+...Chromosome chr3: Smoothed (0.51 min). 16 CpG(s) excluded due to zero coverage. 601 regions scored (0.41 min). 
+...Chromosome chr4: Smoothed (0.57 min). 14 CpG(s) excluded due to zero coverage. 490 regions scored (0.42 min). 
+...Chromosome chr5: Smoothed (0.59 min). 10 CpG(s) excluded due to zero coverage. 585 regions scored (0.41 min). 
+...Chromosome chr6: Smoothed (0.5 min). 16 CpG(s) excluded due to zero coverage. 485 regions scored (0.38 min). 
+...Chromosome chr7: Smoothed (0.54 min). 23 CpG(s) excluded due to zero coverage. 435 regions scored (0.4 min). 
+...Chromosome chr8: Smoothed (0.52 min). 6 CpG(s) excluded due to zero coverage. 493 regions scored (0.4 min). 
+...Chromosome chr9: Smoothed (0.53 min). 4 CpG(s) excluded due to zero coverage. 399 regions scored (0.35 min). 
+...Chromosome chr10: Smoothed (0.5 min). 7 CpG(s) excluded due to zero coverage. 581 regions scored (0.41 min). 
+...Chromosome chr11: Smoothed (0.58 min). 3 CpG(s) excluded due to zero coverage. 367 regions scored (0.35 min). 
+...Chromosome chr12: Smoothed (0.47 min). 9 CpG(s) excluded due to zero coverage. 400 regions scored (0.37 min). 
+...Chromosome chr13: Smoothed (0.4 min). 2 CpG(s) excluded due to zero coverage. 462 regions scored (0.37 min). 
+...Chromosome chr14: Smoothed (0.42 min). 18 CpG(s) excluded due to zero coverage. 396 regions scored (0.33 min). 
+...Chromosome chr15: Smoothed (0.51 min). 4 CpG(s) excluded due to zero coverage. 383 regions scored (0.29 min). 
+...Chromosome chr16: Smoothed (0.3 min). 3 CpG(s) excluded due to zero coverage. 345 regions scored (0.28 min). 
+...Chromosome chr17: Smoothed (0.35 min). 5 CpG(s) excluded due to zero coverage. 327 regions scored (0.28 min). 
+...Chromosome chr18: Smoothed (0.33 min). 3 CpG(s) excluded due to zero coverage. 327 regions scored (0.27 min). 
+...Chromosome chr19: Smoothed (0.29 min). 241 regions scored (0.24 min). 
+...Chromosome chrX: Smoothed (0.38 min). 109 CpG(s) excluded due to zero coverage. 534 regions scored (0.32 min). 
+...Chromosome chrY: Smoothed (0.16 min). 42 CpG(s) excluded due to zero coverage. 43 regions scored (0.14 min). 
+...Chromosome chrM: Smoothed (0.12 min). No candidates found. 
+...Chromosome chr1_GL456210_random: Smoothed (0.12 min). 1 regions scored (0 min). 
+...Chromosome chr1_GL456211_random: Smoothed (0.12 min). 3 regions scored (0.13 min). 
+...Chromosome chr1_GL456212_random: Smoothed (0.12 min). No candidates found. 
+...Chromosome chr1_GL456213_random: No candidates found.
+...Chromosome chr1_GL456221_random: Smoothed (0.13 min). No candidates found. 
+...Chromosome chr4_GL456216_random: Smoothed (0.12 min). 1 regions scored (0 min). 
+...Chromosome chr4_GL456350_random: Smoothed (0.12 min). No candidates found. 
+...Chromosome chr4_JH584292_random: Smoothed (0.11 min). No candidates found. 
+...Chromosome chr4_JH584293_random: No candidates found.
+...Chromosome chr4_JH584295_random: Smoothed (0 min). 1 regions scored (0 min). 
+...Chromosome chr5_GL456354_random: Smoothed (0.12 min). No candidates found. 
+...Chromosome chr5_JH584296_random: No candidates found.
+...Chromosome chr5_JH584297_random: Smoothed (0.12 min). No candidates found. 
+...Chromosome chr5_JH584298_random: No candidates found.
+...Chromosome chr5_JH584299_random: Smoothed (0.12 min). 1 CpG(s) excluded due to zero coverage. No candidates found. 
+...Chromosome chr7_GL456219_random: No candidates found.
+...Chromosome chrX_GL456233_random: Smoothed (0.11 min). 1 regions scored (0 min). 
+...Chromosome chrY_JH584300_random: No candidates found.
+...Chromosome chrY_JH584301_random: Smoothed (0.11 min). No candidates found. 
+...Chromosome chrUn_GL456239: Smoothed (0.11 min). No candidates found. 
+...Chromosome chrUn_GL456359: Smoothed (0.11 min). No candidates found. 
+...Chromosome chrUn_GL456360: Smoothed (0.13 min). No candidates found. 
+...Chromosome chrUn_GL456366: Smoothed (0.13 min). No candidates found. 
+...Chromosome chrUn_GL456367: Smoothed (0.12 min). No candidates found. 
+...Chromosome chrUn_GL456368: Smoothed (0.12 min). No candidates found. 
+...Chromosome chrUn_GL456370: Smoothed (0.12 min). 2 regions scored (0.12 min). 
+...Chromosome chrUn_GL456372: Smoothed (0 min). No candidates found. 
+...Chromosome chrUn_GL456378: Smoothed (0 min). No candidates found. 
+...Chromosome chrUn_GL456379: Smoothed (0.12 min). No candidates found. 
+...Chromosome chrUn_GL456381: Smoothed (0.11 min). No candidates found. 
+...Chromosome chrUn_GL456382: Smoothed (0 min). No candidates found. 
+...Chromosome chrUn_GL456383: Smoothed (0.13 min). No candidates found. 
+...Chromosome chrUn_GL456385: Smoothed (0.13 min). No candidates found. 
+...Chromosome chrUn_GL456387: Smoothed (0.12 min). No candidates found. 
+...Chromosome chrUn_GL456389: Smoothed (0.12 min). 1 regions scored (0 min). 
+...Chromosome chrUn_GL456390: Smoothed (0.12 min). No candidates found. 
+...Chromosome chrUn_GL456392: Smoothed (0.12 min). No candidates found. 
+...Chromosome chrUn_GL456393: Smoothed (0.11 min). No candidates found. 
+...Chromosome chrUn_GL456394: Smoothed (0.11 min). 1 regions scored (0 min). 
+...Chromosome chrUn_GL456396: Smoothed (0.12 min). No candidates found. 
+...Chromosome chrUn_JH584304: Smoothed (0 min). No candidates found. 
+* 6 out of 10 permutations completed (9138 null candidates)
+
+Beginning permutation 7
+...Chromosome chr1: Smoothed (0.49 min). 8 CpG(s) excluded due to zero coverage. 733 regions scored (0.41 min). 
+...Chromosome chr2: Smoothed (0.55 min). 6 CpG(s) excluded due to zero coverage. 650 regions scored (0.41 min). 
+...Chromosome chr3: Smoothed (0.45 min). 3 CpG(s) excluded due to zero coverage. 676 regions scored (0.4 min). 
+...Chromosome chr4: Smoothed (0.55 min). 6 CpG(s) excluded due to zero coverage. 590 regions scored (0.39 min). 
+...Chromosome chr5: Smoothed (0.55 min). 9 CpG(s) excluded due to zero coverage. 716 regions scored (0.45 min). 
+...Chromosome chr6: Smoothed (0.45 min). 1 CpG(s) excluded due to zero coverage. 568 regions scored (0.35 min). 
+...Chromosome chr7: Smoothed (0.47 min). 6 CpG(s) excluded due to zero coverage. 498 regions scored (0.34 min). 
+...Chromosome chr8: Smoothed (0.49 min). 3 CpG(s) excluded due to zero coverage. 574 regions scored (0.38 min). 
+...Chromosome chr9: Smoothed (0.48 min). 4 CpG(s) excluded due to zero coverage. 454 regions scored (0.33 min). 
+...Chromosome chr10: Smoothed (0.44 min). 643 regions scored (0.38 min). 
+...Chromosome chr11: Smoothed (0.59 min). 1 CpG(s) excluded due to zero coverage. 462 regions scored (0.37 min). 
+...Chromosome chr12: Smoothed (0.45 min). 5 CpG(s) excluded due to zero coverage. 432 regions scored (0.35 min). 
+...Chromosome chr13: Smoothed (0.37 min). 1 CpG(s) excluded due to zero coverage. 540 regions scored (0.37 min). 
+...Chromosome chr14: Smoothed (0.37 min). 9 CpG(s) excluded due to zero coverage. 467 regions scored (0.36 min). 
+...Chromosome chr15: Smoothed (0.45 min). 1 CpG(s) excluded due to zero coverage. 378 regions scored (0.34 min). 
+...Chromosome chr16: Smoothed (0.32 min). 2 CpG(s) excluded due to zero coverage. 396 regions scored (0.31 min). 
+...Chromosome chr17: Smoothed (0.41 min). 417 regions scored (0.33 min). 
+...Chromosome chr18: Smoothed (0.36 min). 374 regions scored (0.33 min). 
+...Chromosome chr19: Smoothed (0.28 min). 1 CpG(s) excluded due to zero coverage. 249 regions scored (0.29 min). 
+...Chromosome chrX: Smoothed (0.41 min). 57 CpG(s) excluded due to zero coverage. 528 regions scored (0.35 min). 
+...Chromosome chrY: Smoothed (0.2 min). 33 CpG(s) excluded due to zero coverage. 44 regions scored (0.14 min). 
+...Chromosome chrM: Smoothed (0.12 min). No candidates found. 
+...Chromosome chr1_GL456210_random: Smoothed (0.12 min). 1 regions scored (0 min). 
+...Chromosome chr1_GL456211_random: Smoothed (0.12 min). 3 regions scored (0.13 min). 
+...Chromosome chr1_GL456212_random: Smoothed (0.12 min). No candidates found. 
+...Chromosome chr1_GL456213_random: No candidates found.
+...Chromosome chr1_GL456221_random: Smoothed (0.12 min). 2 regions scored (0.12 min). 
+...Chromosome chr4_GL456216_random: Smoothed (0.11 min). 1 regions scored (0 min). 
+...Chromosome chr4_GL456350_random: Smoothed (0.12 min). No candidates found. 
+...Chromosome chr4_JH584292_random: Smoothed (0.14 min). No candidates found. 
+...Chromosome chr4_JH584293_random: No candidates found.
+...Chromosome chr4_JH584295_random: Smoothed (0 min). No candidates found. 
+...Chromosome chr5_GL456354_random: Smoothed (0.12 min). No candidates found. 
+...Chromosome chr5_JH584296_random: No candidates found.
+...Chromosome chr5_JH584297_random: Smoothed (0.12 min). No candidates found. 
+...Chromosome chr5_JH584298_random: No candidates found.
+...Chromosome chr5_JH584299_random: Smoothed (0.12 min). 1 CpG(s) excluded due to zero coverage. No candidates found. 
+...Chromosome chr7_GL456219_random: No candidates found.
+...Chromosome chrX_GL456233_random: Smoothed (0.12 min). 1 regions scored (0 min). 
+...Chromosome chrY_JH584300_random: No candidates found.
+...Chromosome chrY_JH584301_random: Smoothed (0.14 min). No candidates found. 
+...Chromosome chrUn_GL456239: Smoothed (0.14 min). No candidates found. 
+...Chromosome chrUn_GL456359: Smoothed (0.13 min). 1 regions scored (0 min). 
+...Chromosome chrUn_GL456360: Smoothed (0.13 min). No candidates found. 
+...Chromosome chrUn_GL456366: Smoothed (0.13 min). No candidates found. 
+...Chromosome chrUn_GL456367: Smoothed (0.12 min). No candidates found. 
+...Chromosome chrUn_GL456368: Smoothed (0.12 min). No candidates found. 
+...Chromosome chrUn_GL456370: Smoothed (0.12 min). 1 regions scored (0 min). 
+...Chromosome chrUn_GL456372: Smoothed (0 min). 1 regions scored (0 min). 
+...Chromosome chrUn_GL456378: Smoothed (0 min). No candidates found. 
+...Chromosome chrUn_GL456379: Smoothed (0.11 min). 1 regions scored (0 min). 
+...Chromosome chrUn_GL456381: Smoothed (0.13 min). No candidates found. 
+...Chromosome chrUn_GL456382: Smoothed (0 min). No candidates found. 
+...Chromosome chrUn_GL456383: Smoothed (0.12 min). No candidates found. 
+...Chromosome chrUn_GL456385: Smoothed (0.12 min). No candidates found. 
+...Chromosome chrUn_GL456387: Smoothed (0.12 min). No candidates found. 
+...Chromosome chrUn_GL456389: Smoothed (0.12 min). 2 regions scored (0.12 min). 
+...Chromosome chrUn_GL456390: Smoothed (0.12 min). No candidates found. 
+...Chromosome chrUn_GL456392: Smoothed (0.12 min). 2 regions scored (0.12 min). 
+...Chromosome chrUn_GL456393: Smoothed (0.12 min). No candidates found. 
+...Chromosome chrUn_GL456394: Smoothed (0.12 min). 1 regions scored (0 min). 
+...Chromosome chrUn_GL456396: Smoothed (0.14 min). No candidates found. 
+...Chromosome chrUn_JH584304: Smoothed (0 min). No candidates found. 
+* 7 out of 10 permutations completed (10406 null candidates)
+
+Beginning permutation 8
+...Chromosome chr1: Smoothed (0.46 min). 15 CpG(s) excluded due to zero coverage. 402 regions scored (0.32 min). 
+...Chromosome chr2: Smoothed (0.56 min). 8 CpG(s) excluded due to zero coverage. 346 regions scored (0.31 min). 
+...Chromosome chr3: Smoothed (0.46 min). 9 CpG(s) excluded due to zero coverage. 378 regions scored (0.31 min). 
+...Chromosome chr4: Smoothed (0.54 min). 6 CpG(s) excluded due to zero coverage. 287 regions scored (0.28 min). 
+...Chromosome chr5: Smoothed (0.61 min). 17 CpG(s) excluded due to zero coverage. 337 regions scored (0.31 min). 
+...Chromosome chr6: Smoothed (0.46 min). 1 CpG(s) excluded due to zero coverage. 298 regions scored (0.31 min). 
+...Chromosome chr7: Smoothed (0.48 min). 10 CpG(s) excluded due to zero coverage. 244 regions scored (0.28 min). 
+...Chromosome chr8: Smoothed (0.54 min). 9 CpG(s) excluded due to zero coverage. 266 regions scored (0.28 min). 
+...Chromosome chr9: Smoothed (0.52 min). 4 CpG(s) excluded due to zero coverage. 231 regions scored (0.27 min). 
+...Chromosome chr10: Smoothed (0.48 min). 5 CpG(s) excluded due to zero coverage. 383 regions scored (0.31 min). 
+...Chromosome chr11: Smoothed (0.59 min). 239 regions scored (0.28 min). 
+...Chromosome chr12: Smoothed (0.45 min). 5 CpG(s) excluded due to zero coverage. 238 regions scored (0.28 min). 
+...Chromosome chr13: Smoothed (0.36 min). 6 CpG(s) excluded due to zero coverage. 282 regions scored (0.28 min). 
+...Chromosome chr14: Smoothed (0.36 min). 19 CpG(s) excluded due to zero coverage. 260 regions scored (0.25 min). 
+...Chromosome chr15: Smoothed (0.46 min). 6 CpG(s) excluded due to zero coverage. 212 regions scored (0.25 min). 
+...Chromosome chr16: Smoothed (0.31 min). 8 CpG(s) excluded due to zero coverage. 227 regions scored (0.25 min). 
+...Chromosome chr17: Smoothed (0.39 min). 5 CpG(s) excluded due to zero coverage. 197 regions scored (0.23 min). 
+...Chromosome chr18: Smoothed (0.33 min). 1 CpG(s) excluded due to zero coverage. 198 regions scored (0.24 min). 
+...Chromosome chr19: Smoothed (0.32 min). 2 CpG(s) excluded due to zero coverage. 117 regions scored (0.22 min). 
+...Chromosome chrX: Smoothed (0.41 min). 91 CpG(s) excluded due to zero coverage. 320 regions scored (0.27 min). 
+...Chromosome chrY: Smoothed (0.17 min). 52 CpG(s) excluded due to zero coverage. 22 regions scored (0.14 min). 
+...Chromosome chrM: Smoothed (0.12 min). No candidates found. 
+...Chromosome chr1_GL456210_random: Smoothed (0.12 min). 1 regions scored (0 min). 
+...Chromosome chr1_GL456211_random: Smoothed (0.12 min). No candidates found. 
+...Chromosome chr1_GL456212_random: Smoothed (0.12 min). No candidates found. 
+...Chromosome chr1_GL456213_random: No candidates found.
+...Chromosome chr1_GL456221_random: Smoothed (0.11 min). 1 regions scored (0 min). 
+...Chromosome chr4_GL456216_random: Smoothed (0.11 min). No candidates found. 
+...Chromosome chr4_GL456350_random: Smoothed (0.12 min). No candidates found. 
+...Chromosome chr4_JH584292_random: Smoothed (0.14 min). No candidates found. 
+...Chromosome chr4_JH584293_random: No candidates found.
+...Chromosome chr4_JH584295_random: Smoothed (0 min). No candidates found. 
+...Chromosome chr5_GL456354_random: Smoothed (0.12 min). No candidates found. 
+...Chromosome chr5_JH584296_random: No candidates found.
+...Chromosome chr5_JH584297_random: Smoothed (0.12 min). No candidates found. 
+...Chromosome chr5_JH584298_random: No candidates found.
+...Chromosome chr5_JH584299_random: Smoothed (0.11 min). 1 CpG(s) excluded due to zero coverage. 1 regions scored (0 min). 
+...Chromosome chr7_GL456219_random: No candidates found.
+...Chromosome chrX_GL456233_random: Smoothed (0.12 min). No candidates found. 
+...Chromosome chrY_JH584300_random: No candidates found.
+...Chromosome chrY_JH584301_random: Smoothed (0.13 min). No candidates found. 
+...Chromosome chrUn_GL456239: Smoothed (0.12 min). No candidates found. 
+...Chromosome chrUn_GL456359: Smoothed (0.13 min). No candidates found. 
+...Chromosome chrUn_GL456360: Smoothed (0.12 min). No candidates found. 
+...Chromosome chrUn_GL456366: Smoothed (0.12 min). No candidates found. 
+...Chromosome chrUn_GL456367: Smoothed (0.12 min). No candidates found. 
+...Chromosome chrUn_GL456368: Smoothed (0.12 min). No candidates found. 
+...Chromosome chrUn_GL456370: Smoothed (0.12 min). No candidates found. 
+...Chromosome chrUn_GL456372: Smoothed (0 min). 1 regions scored (0 min). 
+...Chromosome chrUn_GL456378: Smoothed (0 min). No candidates found. 
+...Chromosome chrUn_GL456379: Smoothed (0.14 min). 1 regions scored (0 min). 
+...Chromosome chrUn_GL456381: Smoothed (0.12 min). No candidates found. 
+...Chromosome chrUn_GL456382: Smoothed (0 min). No candidates found. 
+...Chromosome chrUn_GL456383: Smoothed (0.12 min). No candidates found. 
+...Chromosome chrUn_GL456385: Smoothed (0.12 min). No candidates found. 
+...Chromosome chrUn_GL456387: Smoothed (0.12 min). No candidates found. 
+...Chromosome chrUn_GL456389: Smoothed (0.12 min). No candidates found. 
+...Chromosome chrUn_GL456390: Smoothed (0.12 min). No candidates found. 
+...Chromosome chrUn_GL456392: Smoothed (0.12 min). 1 regions scored (0 min). 
+...Chromosome chrUn_GL456393: Smoothed (0.15 min). No candidates found. 
+...Chromosome chrUn_GL456394: Smoothed (0.16 min). 1 regions scored (0 min). 
+...Chromosome chrUn_GL456396: Smoothed (0.12 min). 2 regions scored (0.13 min). 
+...Chromosome chrUn_JH584304: Smoothed (0 min). No candidates found. 
+* 8 out of 10 permutations completed (5493 null candidates)
+
+Beginning permutation 9
+...Chromosome chr1: Smoothed (0.5 min). 2 CpG(s) excluded due to zero coverage. 661 regions scored (0.43 min). 
+...Chromosome chr2: Smoothed (0.58 min). 5 CpG(s) excluded due to zero coverage. 623 regions scored (0.38 min). 
+...Chromosome chr3: Smoothed (0.45 min). 4 CpG(s) excluded due to zero coverage. 659 regions scored (0.4 min). 
+...Chromosome chr4: Smoothed (0.55 min). 4 CpG(s) excluded due to zero coverage. 508 regions scored (0.37 min). 
+...Chromosome chr5: Smoothed (0.55 min). 5 CpG(s) excluded due to zero coverage. 609 regions scored (0.38 min). 
+...Chromosome chr6: Smoothed (0.45 min). 1 CpG(s) excluded due to zero coverage. 511 regions scored (0.36 min). 
+...Chromosome chr7: Smoothed (0.5 min). 4 CpG(s) excluded due to zero coverage. 471 regions scored (0.36 min). 
+...Chromosome chr8: Smoothed (0.5 min). 2 CpG(s) excluded due to zero coverage. 504 regions scored (0.34 min). 
+...Chromosome chr9: Smoothed (0.46 min). 1 CpG(s) excluded due to zero coverage. 436 regions scored (0.35 min). 
+...Chromosome chr10: Smoothed (0.46 min). 1 CpG(s) excluded due to zero coverage. 621 regions scored (0.4 min). 
+...Chromosome chr11: Smoothed (0.59 min). 436 regions scored (0.33 min). 
+...Chromosome chr12: Smoothed (0.43 min). 3 CpG(s) excluded due to zero coverage. 384 regions scored (0.34 min). 
+...Chromosome chr13: Smoothed (0.36 min). 1 CpG(s) excluded due to zero coverage. 467 regions scored (0.34 min). 
+...Chromosome chr14: Smoothed (0.38 min). 3 CpG(s) excluded due to zero coverage. 401 regions scored (0.32 min). 
+...Chromosome chr15: Smoothed (0.45 min). 364 regions scored (0.32 min). 
+...Chromosome chr16: Smoothed (0.31 min). 1 CpG(s) excluded due to zero coverage. 393 regions scored (0.31 min). 
+...Chromosome chr17: Smoothed (0.39 min). 3 CpG(s) excluded due to zero coverage. 342 regions scored (0.3 min). 
+...Chromosome chr18: Smoothed (0.32 min). 1 CpG(s) excluded due to zero coverage. 331 regions scored (0.27 min). 
+...Chromosome chr19: Smoothed (0.33 min). 247 regions scored (0.24 min). 
+...Chromosome chrX: Smoothed (0.4 min). 32 CpG(s) excluded due to zero coverage. 450 regions scored (0.31 min). 
+...Chromosome chrY: Smoothed (0.16 min). 26 CpG(s) excluded due to zero coverage. 42 regions scored (0.15 min). 
+...Chromosome chrM: Smoothed (0.13 min). No candidates found. 
+...Chromosome chr1_GL456210_random: Smoothed (0.13 min). 1 regions scored (0 min). 
+...Chromosome chr1_GL456211_random: Smoothed (0.12 min). 2 regions scored (0.13 min). 
+...Chromosome chr1_GL456212_random: Smoothed (0.12 min). No candidates found. 
+...Chromosome chr1_GL456213_random: No candidates found.
+...Chromosome chr1_GL456221_random: Smoothed (0.11 min). No candidates found. 
+...Chromosome chr4_GL456216_random: Smoothed (0.14 min). 2 regions scored (0.14 min). 
+...Chromosome chr4_GL456350_random: Smoothed (0.14 min). No candidates found. 
+...Chromosome chr4_JH584292_random: Smoothed (0.13 min). No candidates found. 
+...Chromosome chr4_JH584293_random: No candidates found.
+...Chromosome chr4_JH584295_random: Smoothed (0 min). No candidates found. 
+...Chromosome chr5_GL456354_random: Smoothed (0.12 min). No candidates found. 
+...Chromosome chr5_JH584296_random: No candidates found.
+...Chromosome chr5_JH584297_random: Smoothed (0.14 min). No candidates found. 
+...Chromosome chr5_JH584298_random: No candidates found.
+...Chromosome chr5_JH584299_random: Smoothed (0.13 min). No candidates found. 
+...Chromosome chr7_GL456219_random: No candidates found.
+...Chromosome chrX_GL456233_random: Smoothed (0.12 min). 1 regions scored (0 min). 
+...Chromosome chrY_JH584300_random: No candidates found.
+...Chromosome chrY_JH584301_random: Smoothed (0.14 min). No candidates found. 
+...Chromosome chrUn_GL456239: Smoothed (0.13 min). No candidates found. 
+...Chromosome chrUn_GL456359: Smoothed (0.12 min). No candidates found. 
+...Chromosome chrUn_GL456360: Smoothed (0.12 min). No candidates found. 
+...Chromosome chrUn_GL456366: Smoothed (0.13 min). No candidates found. 
+...Chromosome chrUn_GL456367: Smoothed (0.12 min). No candidates found. 
+...Chromosome chrUn_GL456368: Smoothed (0.15 min). 1 regions scored (0 min). 
+...Chromosome chrUn_GL456370: Smoothed (0.16 min). No candidates found. 
+...Chromosome chrUn_GL456372: Smoothed (0 min). No candidates found. 
+...Chromosome chrUn_GL456378: Smoothed (0 min). No candidates found. 
+...Chromosome chrUn_GL456379: Smoothed (0.12 min). No candidates found. 
+...Chromosome chrUn_GL456381: Smoothed (0.12 min). No candidates found. 
+...Chromosome chrUn_GL456382: Smoothed (0 min). No candidates found. 
+...Chromosome chrUn_GL456383: Smoothed (0.12 min). No candidates found. 
+...Chromosome chrUn_GL456385: Smoothed (0.12 min). 1 regions scored (0 min). 
+...Chromosome chrUn_GL456387: Smoothed (0.12 min). No candidates found. 
+...Chromosome chrUn_GL456389: Smoothed (0.12 min). No candidates found. 
+...Chromosome chrUn_GL456390: Smoothed (0.14 min). No candidates found. 
+...Chromosome chrUn_GL456392: Smoothed (0.13 min). 1 regions scored (0 min). 
+...Chromosome chrUn_GL456393: Smoothed (0.12 min). No candidates found. 
+...Chromosome chrUn_GL456394: Smoothed (0.12 min). 1 regions scored (0 min). 
+...Chromosome chrUn_GL456396: Smoothed (0.12 min). 1 regions scored (0 min). 
+...Chromosome chrUn_JH584304: Smoothed (0 min). No candidates found. 
+* 9 out of 10 permutations completed (9471 null candidates)
+
+Beginning permutation 10
+...Chromosome chr1: Smoothed (0.53 min). 5 CpG(s) excluded due to zero coverage. 765 regions scored (0.49 min). 
+...Chromosome chr2: Smoothed (0.59 min). 3 CpG(s) excluded due to zero coverage. 666 regions scored (0.47 min). 
+...Chromosome chr3: Smoothed (0.46 min). 8 CpG(s) excluded due to zero coverage. 693 regions scored (0.44 min). 
+...Chromosome chr4: Smoothed (0.54 min). 8 CpG(s) excluded due to zero coverage. 614 regions scored (0.44 min). 
+...Chromosome chr5: Smoothed (0.58 min). 6 CpG(s) excluded due to zero coverage. 687 regions scored (0.48 min). 
+...Chromosome chr6: Smoothed (0.46 min). 6 CpG(s) excluded due to zero coverage. 609 regions scored (0.42 min). 
+...Chromosome chr7: Smoothed (0.48 min). 10 CpG(s) excluded due to zero coverage. 533 regions scored (0.38 min). 
+...Chromosome chr8: Smoothed (0.45 min). 7 CpG(s) excluded due to zero coverage. 575 regions scored (0.44 min). 
+...Chromosome chr9: Smoothed (0.49 min). 1 CpG(s) excluded due to zero coverage. 502 regions scored (0.38 min). 
+...Chromosome chr10: Smoothed (0.51 min). 3 CpG(s) excluded due to zero coverage. 649 regions scored (0.42 min). 
+...Chromosome chr11: Smoothed (0.59 min). 2 CpG(s) excluded due to zero coverage. 445 regions scored (0.37 min). 
+...Chromosome chr12: Smoothed (0.42 min). 3 CpG(s) excluded due to zero coverage. 514 regions scored (0.37 min). 
+...Chromosome chr13: Smoothed (0.35 min). 10 CpG(s) excluded due to zero coverage. 548 regions scored (0.4 min). 
+...Chromosome chr14: Smoothed (0.39 min). 12 CpG(s) excluded due to zero coverage. 487 regions scored (0.36 min). 
+...Chromosome chr15: Smoothed (0.45 min). 1 CpG(s) excluded due to zero coverage. 429 regions scored (0.36 min). 
+...Chromosome chr16: Smoothed (0.31 min). 455 regions scored (0.38 min). 
+...Chromosome chr17: Smoothed (0.37 min). 1 CpG(s) excluded due to zero coverage. 402 regions scored (0.37 min). 
+...Chromosome chr18: Smoothed (0.36 min). 2 CpG(s) excluded due to zero coverage. 362 regions scored (0.36 min). 
+...Chromosome chr19: Smoothed (0.32 min). 269 regions scored (0.32 min). 
+...Chromosome chrX: Smoothed (0.44 min). 58 CpG(s) excluded due to zero coverage. 565 regions scored (0.35 min). 
+...Chromosome chrY: Smoothed (0.16 min). 45 CpG(s) excluded due to zero coverage. 44 regions scored (0.15 min). 
+...Chromosome chrM: Smoothed (0.12 min). No candidates found. 
+...Chromosome chr1_GL456210_random: Smoothed (0.13 min). 1 regions scored (0 min). 
+...Chromosome chr1_GL456211_random: Smoothed (0.16 min). 2 regions scored (0.13 min). 
+...Chromosome chr1_GL456212_random: Smoothed (0.13 min). No candidates found. 
+...Chromosome chr1_GL456213_random: No candidates found.
+...Chromosome chr1_GL456221_random: Smoothed (0.13 min). 1 regions scored (0 min). 
+...Chromosome chr4_GL456216_random: Smoothed (0.12 min). 2 regions scored (0.13 min). 
+...Chromosome chr4_GL456350_random: Smoothed (0.11 min). No candidates found. 
+...Chromosome chr4_JH584292_random: Smoothed (0.11 min). No candidates found. 
+...Chromosome chr4_JH584293_random: No candidates found.
+...Chromosome chr4_JH584295_random: Smoothed (0 min). 1 regions scored (0 min). 
+...Chromosome chr5_GL456354_random: Smoothed (0.14 min). 1 CpG(s) excluded due to zero coverage. No candidates found. 
+...Chromosome chr5_JH584296_random: No candidates found.
+...Chromosome chr5_JH584297_random: Smoothed (0.12 min). No candidates found. 
+...Chromosome chr5_JH584298_random: No candidates found.
+...Chromosome chr5_JH584299_random: Smoothed (0.12 min). 1 regions scored (0 min). 
+...Chromosome chr7_GL456219_random: No candidates found.
+...Chromosome chrX_GL456233_random: Smoothed (0.12 min). 2 regions scored (0.13 min). 
+...Chromosome chrY_JH584300_random: No candidates found.
+...Chromosome chrY_JH584301_random: Smoothed (0.12 min). No candidates found. 
+...Chromosome chrUn_GL456239: Smoothed (0.12 min). No candidates found. 
+...Chromosome chrUn_GL456359: Smoothed (0.14 min). No candidates found. 
+...Chromosome chrUn_GL456360: Smoothed (0.15 min). No candidates found. 
+...Chromosome chrUn_GL456366: Smoothed (0.14 min). No candidates found. 
+...Chromosome chrUn_GL456367: Smoothed (0.13 min). No candidates found. 
+...Chromosome chrUn_GL456368: Smoothed (0.13 min). No candidates found. 
+...Chromosome chrUn_GL456370: Smoothed (0.12 min). 1 regions scored (0 min). 
+...Chromosome chrUn_GL456372: Smoothed (0 min). No candidates found. 
+...Chromosome chrUn_GL456378: Smoothed (0 min). No candidates found. 
+...Chromosome chrUn_GL456379: Smoothed (0.11 min). 1 regions scored (0 min). 
+...Chromosome chrUn_GL456381: Smoothed (0.12 min). No candidates found. 
+...Chromosome chrUn_GL456382: Smoothed (0 min). No candidates found. 
+...Chromosome chrUn_GL456383: Smoothed (0.14 min). No candidates found. 
+...Chromosome chrUn_GL456385: Smoothed (0.14 min). No candidates found. 
+...Chromosome chrUn_GL456387: Smoothed (0.13 min). No candidates found. 
+...Chromosome chrUn_GL456389: Smoothed (0.13 min). 1 regions scored (0 min). 
+...Chromosome chrUn_GL456390: Smoothed (0.13 min). No candidates found. 
+...Chromosome chrUn_GL456392: Smoothed (0.13 min). 1 regions scored (0 min). 
+...Chromosome chrUn_GL456393: Smoothed (0.12 min). No candidates found. 
+...Chromosome chrUn_GL456394: Smoothed (0.12 min). 1 regions scored (0 min). 
+...Chromosome chrUn_GL456396: Smoothed (0.11 min). 3 regions scored (0.13 min). 
+...Chromosome chrUn_JH584304: Smoothed (0 min). No candidates found. 
+* 10 out of 10 permutations completed (10831 null candidates)
+Assuming the test covariate Group3 is a factor.
+Condition: high fat vs low protein
+Parallelizing using 2 workers/cores (backend: BiocParallel:MulticoreParam).
+Computing on 1 chromosome(s) at a time.
+
+Detecting candidate regions with coefficient larger than 0.1 in magnitude.
+...Chromosome chr1: Smoothed (0.46 min). 1714 regions scored (0.72 min). 
+...Chromosome chr2: Smoothed (0.52 min). 1533 regions scored (0.69 min). 
+...Chromosome chr3: Smoothed (0.48 min). 1555 regions scored (0.67 min). 
+...Chromosome chr4: Smoothed (0.53 min). 1423 regions scored (0.71 min). 
+...Chromosome chr5: Smoothed (0.52 min). 1720 regions scored (0.79 min). 
+...Chromosome chr6: Smoothed (0.44 min). 1337 regions scored (0.67 min). 
+...Chromosome chr7: Smoothed (0.48 min). 1466 regions scored (0.86 min). 
+...Chromosome chr8: Smoothed (0.46 min). 1237 regions scored (0.58 min). 
+...Chromosome chr9: Smoothed (0.45 min). 1166 regions scored (0.54 min). 
+...Chromosome chr10: Smoothed (0.46 min). 1546 regions scored (0.61 min). 
+...Chromosome chr11: Smoothed (0.51 min). 1144 regions scored (0.55 min). 
+...Chromosome chr12: Smoothed (0.43 min). 1031 regions scored (0.51 min). 
+...Chromosome chr13: Smoothed (0.34 min). 1174 regions scored (0.52 min). 
+...Chromosome chr14: Smoothed (0.34 min). 1012 regions scored (0.49 min). 
+...Chromosome chr15: Smoothed (0.41 min). 982 regions scored (0.47 min). 
+...Chromosome chr16: Smoothed (0.28 min). 889 regions scored (0.44 min). 
+...Chromosome chr17: Smoothed (0.33 min). 999 regions scored (0.46 min). 
+...Chromosome chr18: Smoothed (0.33 min). 827 regions scored (0.43 min). 
+...Chromosome chr19: Smoothed (0.27 min). 646 regions scored (0.35 min). 
+...Chromosome chrX: Smoothed (0.38 min). 858 regions scored (0.4 min). 
+...Chromosome chrY: Smoothed (0.15 min). 60 regions scored (0.15 min). 
+...Chromosome chrM: Smoothed (0.13 min). No candidates found. 
+...Chromosome chr1_GL456210_random: Smoothed (0.13 min). 4 regions scored (0.12 min). 
+...Chromosome chr1_GL456211_random: Smoothed (0.13 min). 8 regions scored (0.12 min). 
+...Chromosome chr1_GL456212_random: Smoothed (0.11 min). 4 regions scored (0.11 min). 
+...Chromosome chr1_GL456213_random: No candidates found.
+...Chromosome chr1_GL456221_random: Smoothed (0.09 min). 6 regions scored (0.1 min). 
+...Chromosome chr4_GL456216_random: Smoothed (0.11 min). 3 regions scored (0.11 min). 
+...Chromosome chr4_GL456350_random: No candidates found.
+...Chromosome chr4_JH584292_random: Smoothed (0.12 min). No candidates found. 
+...Chromosome chr4_JH584293_random: No candidates found.
+...Chromosome chr4_JH584295_random: Smoothed (0 min). 1 regions scored (0 min). 
+...Chromosome chr5_GL456354_random: Smoothed (0.14 min). No candidates found. 
+...Chromosome chr5_JH584296_random: No candidates found.
+...Chromosome chr5_JH584297_random: Smoothed (0.1 min). No candidates found. 
+...Chromosome chr5_JH584298_random: No candidates found.
+...Chromosome chr5_JH584299_random: Smoothed (0.09 min). 1 regions scored (0 min). 
+...Chromosome chr7_GL456219_random: No candidates found.
+...Chromosome chrX_GL456233_random: Smoothed (0.11 min). 2 regions scored (0.11 min). 
+...Chromosome chrY_JH584300_random: No candidates found.
+...Chromosome chrY_JH584301_random: No candidates found.
+...Chromosome chrY_JH584303_random: No candidates found.
+...Chromosome chrUn_GL456239: Smoothed (0.12 min). No candidates found. 
+...Chromosome chrUn_GL456359: Smoothed (0.11 min). No candidates found. 
+...Chromosome chrUn_GL456360: Smoothed (0.1 min). No candidates found. 
+...Chromosome chrUn_GL456366: Smoothed (0.1 min). No candidates found. 
+...Chromosome chrUn_GL456367: Smoothed (0.09 min). No candidates found. 
+...Chromosome chrUn_GL456368: Smoothed (0.11 min). 1 regions scored (0 min). 
+...Chromosome chrUn_GL456370: Smoothed (0.11 min). 3 regions scored (0.12 min). 
+...Chromosome chrUn_GL456372: Smoothed (0.12 min). 1 regions scored (0 min). 
+...Chromosome chrUn_GL456378: Smoothed (0.12 min). 1 regions scored (0 min). 
+...Chromosome chrUn_GL456379: Smoothed (0.13 min). 1 regions scored (0 min). 
+...Chromosome chrUn_GL456381: Smoothed (0.12 min). No candidates found. 
+...Chromosome chrUn_GL456382: Smoothed (0 min). 1 regions scored (0 min). 
+...Chromosome chrUn_GL456383: Smoothed (0.09 min). No candidates found. 
+...Chromosome chrUn_GL456385: Smoothed (0.09 min). 1 regions scored (0 min). 
+...Chromosome chrUn_GL456387: Smoothed (0.09 min). No candidates found. 
+...Chromosome chrUn_GL456389: Smoothed (0.11 min). 1 regions scored (0 min). 
+...Chromosome chrUn_GL456390: No candidates found.
+...Chromosome chrUn_GL456392: Smoothed (0.12 min). 2 regions scored (0.13 min). 
+...Chromosome chrUn_GL456393: Smoothed (0.12 min). 1 regions scored (0 min). 
+...Chromosome chrUn_GL456394: Smoothed (0.13 min). 1 regions scored (0 min). 
+...Chromosome chrUn_GL456396: Smoothed (0.13 min). 2 regions scored (0.13 min). 
+...Chromosome chrUn_JH584304: Smoothed (0 min). 8 regions scored (0.11 min). 
+* 24372 candidates detected
+Performing balanced permutations of condition across samples to generate a null distribution of region test statistics
+
+Beginning permutation 1
+...Chromosome chr1: Smoothed (0.47 min). 165 CpG(s) excluded due to zero coverage. 1930 regions scored (0.8 min). 
+...Chromosome chr2: Smoothed (0.52 min). 123 CpG(s) excluded due to zero coverage. 1816 regions scored (0.77 min). 
+...Chromosome chr3: Smoothed (0.47 min). 151 CpG(s) excluded due to zero coverage. 1684 regions scored (0.69 min). 
+...Chromosome chr4: Smoothed (0.53 min). 100 CpG(s) excluded due to zero coverage. 1713 regions scored (0.73 min). 
+...Chromosome chr5: Smoothed (0.53 min). 124 CpG(s) excluded due to zero coverage. 1933 regions scored (0.81 min). 
+...Chromosome chr6: Smoothed (0.44 min). 98 CpG(s) excluded due to zero coverage. 1512 regions scored (0.67 min). 
+...Chromosome chr7: Smoothed (0.47 min). 112 CpG(s) excluded due to zero coverage. 1631 regions scored (0.72 min). 
+...Chromosome chr8: Smoothed (0.47 min). 129 CpG(s) excluded due to zero coverage. 1379 regions scored (0.65 min). 
+...Chromosome chr9: Smoothed (0.46 min). 45 CpG(s) excluded due to zero coverage. 1301 regions scored (0.58 min). 
+...Chromosome chr10: Smoothed (0.45 min). 80 CpG(s) excluded due to zero coverage. 1675 regions scored (0.75 min). 
+...Chromosome chr11: Smoothed (0.53 min). 40 CpG(s) excluded due to zero coverage. 1373 regions scored (0.63 min). 
+...Chromosome chr12: Smoothed (0.39 min). 126 CpG(s) excluded due to zero coverage. 1208 regions scored (0.56 min). 
+...Chromosome chr13: Smoothed (0.35 min). 77 CpG(s) excluded due to zero coverage. 1322 regions scored (0.62 min). 
+...Chromosome chr14: Smoothed (0.36 min). 170 CpG(s) excluded due to zero coverage. 1088 regions scored (0.52 min). 
+...Chromosome chr15: Smoothed (0.42 min). 71 CpG(s) excluded due to zero coverage. 1148 regions scored (0.54 min). 
+...Chromosome chr16: Smoothed (0.31 min). 79 CpG(s) excluded due to zero coverage. 1018 regions scored (0.49 min). 
+...Chromosome chr17: Smoothed (0.34 min). 78 CpG(s) excluded due to zero coverage. 1133 regions scored (0.53 min). 
+...Chromosome chr18: Smoothed (0.36 min). 42 CpG(s) excluded due to zero coverage. 931 regions scored (0.46 min). 
+...Chromosome chr19: Smoothed (0.29 min). 32 CpG(s) excluded due to zero coverage. 725 regions scored (0.41 min). 
+...Chromosome chrX: Smoothed (0.41 min). 853 CpG(s) excluded due to zero coverage. 1084 regions scored (0.48 min). 
+...Chromosome chrY: Smoothed (0.16 min). 127 CpG(s) excluded due to zero coverage. 67 regions scored (0.15 min). 
+...Chromosome chrM: Smoothed (0.13 min). No candidates found. 
+...Chromosome chr1_GL456210_random: Smoothed (0.12 min). 5 regions scored (0.12 min). 
+...Chromosome chr1_GL456211_random: Smoothed (0.13 min). 5 regions scored (0.13 min). 
+...Chromosome chr1_GL456212_random: Smoothed (0.13 min). 6 regions scored (0.13 min). 
+...Chromosome chr1_GL456213_random: No candidates found.
+...Chromosome chr1_GL456221_random: Smoothed (0.11 min). 1 regions scored (0 min). 
+...Chromosome chr4_GL456216_random: Smoothed (0.1 min). 3 regions scored (0.1 min). 
+...Chromosome chr4_GL456350_random: No candidates found.
+...Chromosome chr4_JH584292_random: Smoothed (0.12 min). No candidates found. 
+...Chromosome chr4_JH584293_random: No candidates found.
+...Chromosome chr4_JH584295_random: Smoothed (0 min). 1 regions scored (0 min). 
+...Chromosome chr5_GL456354_random: Smoothed (0.13 min). No candidates found. 
+...Chromosome chr5_JH584296_random: No candidates found.
+...Chromosome chr5_JH584297_random: Smoothed (0.12 min). No candidates found. 
+...Chromosome chr5_JH584298_random: No candidates found.
+...Chromosome chr5_JH584299_random: Smoothed (0.1 min). 7 CpG(s) excluded due to zero coverage. 3 regions scored (0.1 min). 
+...Chromosome chr7_GL456219_random: No candidates found.
+...Chromosome chrX_GL456233_random: Smoothed (0.1 min). 2 CpG(s) excluded due to zero coverage. No candidates found. 
+...Chromosome chrY_JH584300_random: No candidates found.
+...Chromosome chrY_JH584301_random: No candidates found.
+...Chromosome chrY_JH584303_random: No candidates found.
+...Chromosome chrUn_GL456239: Smoothed (0.12 min). No candidates found. 
+...Chromosome chrUn_GL456359: Smoothed (0.13 min). No candidates found. 
+...Chromosome chrUn_GL456360: Smoothed (0.13 min). 1 regions scored (0 min). 
+...Chromosome chrUn_GL456366: Smoothed (0.13 min). No candidates found. 
+...Chromosome chrUn_GL456367: Smoothed (0.11 min). No candidates found. 
+...Chromosome chrUn_GL456368: Smoothed (0.1 min). No candidates found. 
+...Chromosome chrUn_GL456370: Smoothed (0.1 min). 2 regions scored (0.1 min). 
+...Chromosome chrUn_GL456372: Smoothed (0.1 min). No candidates found. 
+...Chromosome chrUn_GL456378: Smoothed (0.11 min). 2 regions scored (0.12 min). 
+...Chromosome chrUn_GL456379: Smoothed (0.11 min). 1 regions scored (0 min). 
+...Chromosome chrUn_GL456381: Smoothed (0.12 min). No candidates found. 
+...Chromosome chrUn_GL456382: Smoothed (0 min). No candidates found. 
+...Chromosome chrUn_GL456383: Smoothed (0.12 min). No candidates found. 
+...Chromosome chrUn_GL456385: Smoothed (0.12 min). No candidates found. 
+...Chromosome chrUn_GL456387: Smoothed (0.11 min). No candidates found. 
+...Chromosome chrUn_GL456389: Smoothed (0.1 min). No candidates found. 
+...Chromosome chrUn_GL456390: No candidates found.
+...Chromosome chrUn_GL456392: Smoothed (0.1 min). 1 regions scored (0 min). 
+...Chromosome chrUn_GL456393: Smoothed (0.11 min). No candidates found. 
+...Chromosome chrUn_GL456394: Smoothed (0.11 min). No candidates found. 
+...Chromosome chrUn_GL456396: Smoothed (0.12 min). No candidates found. 
+...Chromosome chrUn_JH584304: Smoothed (0 min). 9 regions scored (0.13 min). 
+* 1 out of 10 permutations completed (27711 null candidates)
+
+Beginning permutation 2
+...Chromosome chr1: Smoothed (0.48 min). 83 CpG(s) excluded due to zero coverage. 1740 regions scored (0.79 min). 
+...Chromosome chr2: Smoothed (0.52 min). 54 CpG(s) excluded due to zero coverage. 1660 regions scored (0.81 min). 
+...Chromosome chr3: Smoothed (0.46 min). 72 CpG(s) excluded due to zero coverage. 1620 regions scored (0.71 min). 
+...Chromosome chr4: Smoothed (0.51 min). 32 CpG(s) excluded due to zero coverage. 1509 regions scored (0.75 min). 
+...Chromosome chr5: Smoothed (0.56 min). 40 CpG(s) excluded due to zero coverage. 1797 regions scored (0.82 min). 
+...Chromosome chr6: Smoothed (0.45 min). 37 CpG(s) excluded due to zero coverage. 1364 regions scored (0.63 min). 
+...Chromosome chr7: Smoothed (0.48 min). 53 CpG(s) excluded due to zero coverage. 1512 regions scored (0.71 min). 
+...Chromosome chr8: Smoothed (0.5 min). 50 CpG(s) excluded due to zero coverage. 1298 regions scored (0.68 min). 
+...Chromosome chr9: Smoothed (0.5 min). 16 CpG(s) excluded due to zero coverage. 1177 regions scored (0.59 min). 
+...Chromosome chr10: Smoothed (0.46 min). 26 CpG(s) excluded due to zero coverage. 1553 regions scored (0.72 min). 
+...Chromosome chr11: Smoothed (0.52 min). 31 CpG(s) excluded due to zero coverage. 1265 regions scored (0.65 min). 
+...Chromosome chr12: Smoothed (0.45 min). 56 CpG(s) excluded due to zero coverage. 1111 regions scored (0.55 min). 
+...Chromosome chr13: Smoothed (0.34 min). 25 CpG(s) excluded due to zero coverage. 1222 regions scored (0.6 min). 
+...Chromosome chr14: Smoothed (0.33 min). 79 CpG(s) excluded due to zero coverage. 1062 regions scored (0.55 min). 
+...Chromosome chr15: Smoothed (0.43 min). 39 CpG(s) excluded due to zero coverage. 1020 regions scored (0.56 min). 
+...Chromosome chr16: Smoothed (0.3 min). 29 CpG(s) excluded due to zero coverage. 955 regions scored (0.51 min). 
+...Chromosome chr17: Smoothed (0.35 min). 32 CpG(s) excluded due to zero coverage. 1055 regions scored (0.54 min). 
+...Chromosome chr18: Smoothed (0.34 min). 18 CpG(s) excluded due to zero coverage. 868 regions scored (0.47 min). 
+...Chromosome chr19: Smoothed (0.29 min). 10 CpG(s) excluded due to zero coverage. 649 regions scored (0.39 min). 
+...Chromosome chrX: Smoothed (0.4 min). 463 CpG(s) excluded due to zero coverage. 955 regions scored (0.5 min). 
+...Chromosome chrY: Smoothed (0.17 min). 58 CpG(s) excluded due to zero coverage. 42 regions scored (0.16 min). 
+...Chromosome chrM: Smoothed (0.13 min). No candidates found. 
+...Chromosome chr1_GL456210_random: Smoothed (0.12 min). 6 regions scored (0.12 min). 
+...Chromosome chr1_GL456211_random: Smoothed (0.12 min). 11 regions scored (0.14 min). 
+...Chromosome chr1_GL456212_random: Smoothed (0.13 min). 3 regions scored (0.12 min). 
+...Chromosome chr1_GL456213_random: No candidates found.
+...Chromosome chr1_GL456221_random: Smoothed (0.1 min). 6 regions scored (0.1 min). 
+...Chromosome chr4_GL456216_random: Smoothed (0.11 min). 3 regions scored (0.12 min). 
+...Chromosome chr4_GL456350_random: No candidates found.
+...Chromosome chr4_JH584292_random: Smoothed (0.13 min). No candidates found. 
+...Chromosome chr4_JH584293_random: No candidates found.
+...Chromosome chr4_JH584295_random: Smoothed (0 min). 1 regions scored (0 min). 
+...Chromosome chr5_GL456354_random: Smoothed (0.12 min). No candidates found. 
+...Chromosome chr5_JH584296_random: No candidates found.
+...Chromosome chr5_JH584297_random: Smoothed (0.1 min). No candidates found. 
+...Chromosome chr5_JH584298_random: No candidates found.
+...Chromosome chr5_JH584299_random: Smoothed (0.11 min). 2 regions scored (0.12 min). 
+...Chromosome chr7_GL456219_random: No candidates found.
+...Chromosome chrX_GL456233_random: Smoothed (0.13 min). 1 regions scored (0 min). 
+...Chromosome chrY_JH584300_random: No candidates found.
+...Chromosome chrY_JH584301_random: No candidates found.
+...Chromosome chrY_JH584303_random: No candidates found.
+...Chromosome chrUn_GL456239: Smoothed (0.1 min). 1 regions scored (0 min). 
+...Chromosome chrUn_GL456359: Smoothed (0.12 min). No candidates found. 
+...Chromosome chrUn_GL456360: Smoothed (0.13 min). No candidates found. 
+...Chromosome chrUn_GL456366: Smoothed (0.14 min). No candidates found. 
+...Chromosome chrUn_GL456367: Smoothed (0.13 min). No candidates found. 
+...Chromosome chrUn_GL456368: Smoothed (0.13 min). 1 regions scored (0 min). 
+...Chromosome chrUn_GL456370: Smoothed (0.13 min). 3 regions scored (0.15 min). 
+...Chromosome chrUn_GL456372: Smoothed (0.12 min). 1 regions scored (0 min). 
+...Chromosome chrUn_GL456378: Smoothed (0.12 min). 1 regions scored (0 min). 
+...Chromosome chrUn_GL456379: Smoothed (0.11 min). No candidates found. 
+...Chromosome chrUn_GL456381: Smoothed (0.12 min). No candidates found. 
+...Chromosome chrUn_GL456382: Smoothed (0 min). No candidates found. 
+...Chromosome chrUn_GL456383: Smoothed (0.12 min). No candidates found. 
+...Chromosome chrUn_GL456385: Smoothed (0.13 min). 2 regions scored (0.14 min). 
+...Chromosome chrUn_GL456387: Smoothed (0.13 min). 1 regions scored (0 min). 
+...Chromosome chrUn_GL456389: Smoothed (0.1 min). No candidates found. 
+...Chromosome chrUn_GL456390: No candidates found.
+...Chromosome chrUn_GL456392: Smoothed (0.12 min). 1 regions scored (0 min). 
+...Chromosome chrUn_GL456393: Smoothed (0.13 min). 3 regions scored (0.13 min). 
+...Chromosome chrUn_GL456394: Smoothed (0.13 min). 1 regions scored (0 min). 
+...Chromosome chrUn_GL456396: Smoothed (0.13 min). 1 regions scored (0 min). 
+...Chromosome chrUn_JH584304: Smoothed (0 min). 7 regions scored (0.13 min). 
+* 2 out of 10 permutations completed (25490 null candidates)
+
+Beginning permutation 3
+...Chromosome chr1: Smoothed (0.48 min). 65 CpG(s) excluded due to zero coverage. 1727 regions scored (0.82 min). 
+...Chromosome chr2: Smoothed (0.58 min). 43 CpG(s) excluded due to zero coverage. 1678 regions scored (0.78 min). 
+...Chromosome chr3: Smoothed (0.46 min). 70 CpG(s) excluded due to zero coverage. 1566 regions scored (0.76 min). 
+...Chromosome chr4: Smoothed (0.51 min). 46 CpG(s) excluded due to zero coverage. 1523 regions scored (0.76 min). 
+...Chromosome chr5: Smoothed (0.53 min). 57 CpG(s) excluded due to zero coverage. 1779 regions scored (0.87 min). 
+...Chromosome chr6: Smoothed (0.44 min). 42 CpG(s) excluded due to zero coverage. 1428 regions scored (0.64 min). 
+...Chromosome chr7: Smoothed (0.49 min). 54 CpG(s) excluded due to zero coverage. 1506 regions scored (0.75 min). 
+...Chromosome chr8: Smoothed (0.47 min). 50 CpG(s) excluded due to zero coverage. 1215 regions scored (0.62 min). 
+...Chromosome chr9: Smoothed (0.49 min). 26 CpG(s) excluded due to zero coverage. 1201 regions scored (0.68 min). 
+...Chromosome chr10: Smoothed (0.44 min). 22 CpG(s) excluded due to zero coverage. 1568 regions scored (0.73 min). 
+...Chromosome chr11: Smoothed (0.54 min). 21 CpG(s) excluded due to zero coverage. 1194 regions scored (0.67 min). 
+...Chromosome chr12: Smoothed (0.43 min). 51 CpG(s) excluded due to zero coverage. 1105 regions scored (0.56 min). 
+...Chromosome chr13: Smoothed (0.34 min). 32 CpG(s) excluded due to zero coverage. 1233 regions scored (0.62 min). 
+...Chromosome chr14: Smoothed (0.36 min). 88 CpG(s) excluded due to zero coverage. 1027 regions scored (0.53 min). 
+...Chromosome chr15: Smoothed (0.45 min). 29 CpG(s) excluded due to zero coverage. 1044 regions scored (0.5 min). 
+...Chromosome chr16: Smoothed (0.29 min). 25 CpG(s) excluded due to zero coverage. 917 regions scored (0.47 min). 
+...Chromosome chr17: Smoothed (0.32 min). 30 CpG(s) excluded due to zero coverage. 1103 regions scored (0.57 min). 
+...Chromosome chr18: Smoothed (0.33 min). 9 CpG(s) excluded due to zero coverage. 870 regions scored (0.45 min). 
+...Chromosome chr19: Smoothed (0.29 min). 15 CpG(s) excluded due to zero coverage. 643 regions scored (0.41 min). 
+...Chromosome chrX: Smoothed (0.4 min). 411 CpG(s) excluded due to zero coverage. 1005 regions scored (0.49 min). 
+...Chromosome chrY: Smoothed (0.16 min). 93 CpG(s) excluded due to zero coverage. 67 regions scored (0.19 min). 
+...Chromosome chrM: Smoothed (0.12 min). No candidates found. 
+...Chromosome chr1_GL456210_random: Smoothed (0.13 min). 5 regions scored (0.13 min). 
+...Chromosome chr1_GL456211_random: Smoothed (0.14 min). 4 regions scored (0.13 min). 
+...Chromosome chr1_GL456212_random: Smoothed (0.12 min). 1 CpG(s) excluded due to zero coverage. 6 regions scored (0.13 min). 
+...Chromosome chr1_GL456213_random: No candidates found.
+...Chromosome chr1_GL456221_random: Smoothed (0.1 min). 6 regions scored (0.11 min). 
+...Chromosome chr4_GL456216_random: Smoothed (0.1 min). 1 CpG(s) excluded due to zero coverage. 4 regions scored (0.1 min). 
+...Chromosome chr4_GL456350_random: No candidates found.
+...Chromosome chr4_JH584292_random: Smoothed (0.12 min). No candidates found. 
+...Chromosome chr4_JH584293_random: No candidates found.
+...Chromosome chr4_JH584295_random: Smoothed (0 min). No candidates found. 
+...Chromosome chr5_GL456354_random: Smoothed (0.13 min). No candidates found. 
+...Chromosome chr5_JH584296_random: No candidates found.
+...Chromosome chr5_JH584297_random: Smoothed (0.12 min). No candidates found. 
+...Chromosome chr5_JH584298_random: No candidates found.
+...Chromosome chr5_JH584299_random: Smoothed (0.1 min). 1 CpG(s) excluded due to zero coverage. 1 regions scored (0 min). 
+...Chromosome chr7_GL456219_random: No candidates found.
+...Chromosome chrX_GL456233_random: Smoothed (0.12 min). 1 CpG(s) excluded due to zero coverage. 2 regions scored (0.12 min). 
+...Chromosome chrY_JH584300_random: No candidates found.
+...Chromosome chrY_JH584301_random: No candidates found.
+...Chromosome chrY_JH584303_random: No candidates found.
+...Chromosome chrUn_GL456239: Smoothed (0.13 min). No candidates found. 
+...Chromosome chrUn_GL456359: Smoothed (0.13 min). No candidates found. 
+...Chromosome chrUn_GL456360: Smoothed (0.11 min). 1 regions scored (0 min). 
+...Chromosome chrUn_GL456366: Smoothed (0.1 min). No candidates found. 
+...Chromosome chrUn_GL456367: Smoothed (0.12 min). No candidates found. 
+...Chromosome chrUn_GL456368: Smoothed (0.12 min). 1 regions scored (0 min). 
+...Chromosome chrUn_GL456370: Smoothed (0.14 min). 2 regions scored (0.14 min). 
+...Chromosome chrUn_GL456372: Smoothed (0.14 min). 1 regions scored (0 min). 
+...Chromosome chrUn_GL456378: Smoothed (0.12 min). 1 regions scored (0 min). 
+...Chromosome chrUn_GL456379: Smoothed (0.13 min). 1 regions scored (0 min). 
+...Chromosome chrUn_GL456381: Smoothed (0.12 min). No candidates found. 
+...Chromosome chrUn_GL456382: Smoothed (0 min). 1 regions scored (0 min). 
+...Chromosome chrUn_GL456383: Smoothed (0.1 min). 1 regions scored (0 min). 
+...Chromosome chrUn_GL456385: Smoothed (0.12 min). 1 regions scored (0 min). 
+...Chromosome chrUn_GL456387: Smoothed (0.12 min). 1 regions scored (0 min). 
+...Chromosome chrUn_GL456389: Smoothed (0.14 min). No candidates found. 
+...Chromosome chrUn_GL456390: No candidates found.
+...Chromosome chrUn_GL456392: Smoothed (0.14 min). 1 regions scored (0 min). 
+...Chromosome chrUn_GL456393: Smoothed (0.14 min). No candidates found. 
+...Chromosome chrUn_GL456394: Smoothed (0.12 min). No candidates found. 
+...Chromosome chrUn_GL456396: Smoothed (0.1 min). 3 regions scored (0.11 min). 
+...Chromosome chrUn_JH584304: Smoothed (0 min). 9 regions scored (0.11 min). 
+* 3 out of 10 permutations completed (25451 null candidates)
+
+Beginning permutation 4
+...Chromosome chr1: Smoothed (0.55 min). 95 CpG(s) excluded due to zero coverage. 1773 regions scored (0.75 min). 
+...Chromosome chr2: Smoothed (0.58 min). 61 CpG(s) excluded due to zero coverage. 1619 regions scored (0.75 min). 
+...Chromosome chr3: Smoothed (0.53 min). 68 CpG(s) excluded due to zero coverage. 1622 regions scored (0.68 min). 
+...Chromosome chr4: Smoothed (0.51 min). 67 CpG(s) excluded due to zero coverage. 1526 regions scored (0.64 min). 
+...Chromosome chr5: Smoothed (0.54 min). 42 CpG(s) excluded due to zero coverage. 1758 regions scored (0.73 min). 
+...Chromosome chr6: Smoothed (0.46 min). 60 CpG(s) excluded due to zero coverage. 1405 regions scored (0.6 min). 
+...Chromosome chr7: Smoothed (0.47 min). 63 CpG(s) excluded due to zero coverage. 1536 regions scored (0.72 min). 
+...Chromosome chr8: Smoothed (0.47 min). 64 CpG(s) excluded due to zero coverage. 1272 regions scored (0.58 min). 
+...Chromosome chr9: Smoothed (0.47 min). 30 CpG(s) excluded due to zero coverage. 1207 regions scored (0.61 min). 
+...Chromosome chr10: Smoothed (0.48 min). 32 CpG(s) excluded due to zero coverage. 1553 regions scored (0.68 min). 
+...Chromosome chr11: Smoothed (0.52 min). 10 CpG(s) excluded due to zero coverage. 1262 regions scored (0.6 min). 
+...Chromosome chr12: Smoothed (0.42 min). 64 CpG(s) excluded due to zero coverage. 1091 regions scored (0.54 min). 
+...Chromosome chr13: Smoothed (0.33 min). 35 CpG(s) excluded due to zero coverage. 1245 regions scored (0.55 min). 
+...Chromosome chr14: Smoothed (0.34 min). 82 CpG(s) excluded due to zero coverage. 992 regions scored (0.5 min). 
+...Chromosome chr15: Smoothed (0.42 min). 41 CpG(s) excluded due to zero coverage. 1087 regions scored (0.51 min). 
+...Chromosome chr16: Smoothed (0.3 min). 29 CpG(s) excluded due to zero coverage. 971 regions scored (0.49 min). 
+...Chromosome chr17: Smoothed (0.34 min). 38 CpG(s) excluded due to zero coverage. 1091 regions scored (0.54 min). 
+...Chromosome chr18: Smoothed (0.36 min). 16 CpG(s) excluded due to zero coverage. 869 regions scored (0.45 min). 
+...Chromosome chr19: Smoothed (0.27 min). 12 CpG(s) excluded due to zero coverage. 661 regions scored (0.4 min). 
+...Chromosome chrX: Smoothed (0.36 min). 517 CpG(s) excluded due to zero coverage. 985 regions scored (0.47 min). 
+...Chromosome chrY: Smoothed (0.17 min). 101 CpG(s) excluded due to zero coverage. 37 regions scored (0.15 min). 
+...Chromosome chrM: Smoothed (0.12 min). No candidates found. 
+...Chromosome chr1_GL456210_random: Smoothed (0.14 min). 5 regions scored (0.13 min). 
+...Chromosome chr1_GL456211_random: Smoothed (0.11 min). 9 regions scored (0.13 min). 
+...Chromosome chr1_GL456212_random: Smoothed (0.1 min). 5 regions scored (0.11 min). 
+...Chromosome chr1_GL456213_random: No candidates found.
+...Chromosome chr1_GL456221_random: Smoothed (0.11 min). 6 regions scored (0.12 min). 
+...Chromosome chr4_GL456216_random: Smoothed (0.13 min). 2 regions scored (0.14 min). 
+...Chromosome chr4_GL456350_random: No candidates found.
+...Chromosome chr4_JH584292_random: Smoothed (0.13 min). 1 CpG(s) excluded due to zero coverage. No candidates found. 
+...Chromosome chr4_JH584293_random: No candidates found.
+...Chromosome chr4_JH584295_random: Smoothed (0 min). 2 regions scored (0.12 min). 
+...Chromosome chr5_GL456354_random: Smoothed (0.1 min). No candidates found. 
+...Chromosome chr5_JH584296_random: No candidates found.
+...Chromosome chr5_JH584297_random: Smoothed (0.12 min). No candidates found. 
+...Chromosome chr5_JH584298_random: No candidates found.
+...Chromosome chr5_JH584299_random: Smoothed (0.12 min). 3 regions scored (0.14 min). 
+...Chromosome chr7_GL456219_random: No candidates found.
+...Chromosome chrX_GL456233_random: Smoothed (0.13 min). 3 CpG(s) excluded due to zero coverage. 2 regions scored (0.12 min). 
+...Chromosome chrY_JH584300_random: No candidates found.
+...Chromosome chrY_JH584301_random: No candidates found.
+...Chromosome chrY_JH584303_random: No candidates found.
+...Chromosome chrUn_GL456239: Smoothed (0.1 min). 1 CpG(s) excluded due to zero coverage. No candidates found. 
+...Chromosome chrUn_GL456359: Smoothed (0.11 min). No candidates found. 
+...Chromosome chrUn_GL456360: Smoothed (0.14 min). 1 regions scored (0 min). 
+...Chromosome chrUn_GL456366: Smoothed (0.13 min). No candidates found. 
+...Chromosome chrUn_GL456367: Smoothed (0.13 min). No candidates found. 
+...Chromosome chrUn_GL456368: Smoothed (0.14 min). 1 regions scored (0 min). 
+...Chromosome chrUn_GL456370: Smoothed (0.12 min). 2 regions scored (0.12 min). 
+...Chromosome chrUn_GL456372: Smoothed (0.11 min). 1 regions scored (0 min). 
+...Chromosome chrUn_GL456378: Smoothed (0.1 min). 2 regions scored (0.1 min). 
+...Chromosome chrUn_GL456379: Smoothed (0.11 min). 1 regions scored (0 min). 
+...Chromosome chrUn_GL456381: Smoothed (0.11 min). No candidates found. 
+...Chromosome chrUn_GL456382: Smoothed (0 min). No candidates found. 
+...Chromosome chrUn_GL456383: Smoothed (0.13 min). No candidates found. 
+...Chromosome chrUn_GL456385: Smoothed (0.13 min). No candidates found. 
+...Chromosome chrUn_GL456387: Smoothed (0.12 min). 1 regions scored (0 min). 
+...Chromosome chrUn_GL456389: Smoothed (0.1 min). 2 CpG(s) excluded due to zero coverage. 2 regions scored (0.11 min). 
+...Chromosome chrUn_GL456390: No candidates found.
+...Chromosome chrUn_GL456392: Smoothed (0.12 min). No candidates found. 
+...Chromosome chrUn_GL456393: Smoothed (0.12 min). 1 regions scored (0 min). 
+...Chromosome chrUn_GL456394: Smoothed (0.12 min). 1 regions scored (0 min). 
+...Chromosome chrUn_GL456396: Smoothed (0.12 min). 2 regions scored (0.13 min). 
+...Chromosome chrUn_JH584304: Smoothed (0 min). 8 regions scored (0.13 min). 
+* 4 out of 10 permutations completed (25619 null candidates)
+
+Beginning permutation 5
+...Chromosome chr1: Smoothed (0.53 min). 73 CpG(s) excluded due to zero coverage. 1640 regions scored (0.69 min). 
+...Chromosome chr2: Smoothed (0.52 min). 58 CpG(s) excluded due to zero coverage. 1480 regions scored (0.66 min). 
+...Chromosome chr3: Smoothed (0.46 min). 75 CpG(s) excluded due to zero coverage. 1440 regions scored (0.64 min). 
+...Chromosome chr4: Smoothed (0.54 min). 40 CpG(s) excluded due to zero coverage. 1388 regions scored (0.68 min). 
+...Chromosome chr5: Smoothed (0.51 min). 49 CpG(s) excluded due to zero coverage. 1720 regions scored (0.78 min). 
+...Chromosome chr6: Smoothed (0.41 min). 34 CpG(s) excluded due to zero coverage. 1270 regions scored (0.61 min). 
+...Chromosome chr7: Smoothed (0.47 min). 58 CpG(s) excluded due to zero coverage. 1360 regions scored (0.69 min). 
+...Chromosome chr8: Smoothed (0.46 min). 40 CpG(s) excluded due to zero coverage. 1208 regions scored (0.6 min). 
+...Chromosome chr9: Smoothed (0.45 min). 32 CpG(s) excluded due to zero coverage. 1083 regions scored (0.57 min). 
+...Chromosome chr10: Smoothed (0.44 min). 24 CpG(s) excluded due to zero coverage. 1422 regions scored (0.69 min). 
+...Chromosome chr11: Smoothed (0.53 min). 18 CpG(s) excluded due to zero coverage. 1079 regions scored (0.6 min). 
+...Chromosome chr12: Smoothed (0.43 min). 67 CpG(s) excluded due to zero coverage. 1023 regions scored (0.56 min). 
+...Chromosome chr13: Smoothed (0.34 min). 34 CpG(s) excluded due to zero coverage. 1143 regions scored (0.56 min). 
+...Chromosome chr14: Smoothed (0.38 min). 76 CpG(s) excluded due to zero coverage. 955 regions scored (0.53 min). 
+...Chromosome chr15: Smoothed (0.44 min). 29 CpG(s) excluded due to zero coverage. 942 regions scored (0.51 min). 
+...Chromosome chr16: Smoothed (0.32 min). 30 CpG(s) excluded due to zero coverage. 880 regions scored (0.49 min). 
+...Chromosome chr17: Smoothed (0.34 min). 26 CpG(s) excluded due to zero coverage. 1016 regions scored (0.54 min). 
+...Chromosome chr18: Smoothed (0.33 min). 15 CpG(s) excluded due to zero coverage. 812 regions scored (0.43 min). 
+...Chromosome chr19: Smoothed (0.31 min). 15 CpG(s) excluded due to zero coverage. 620 regions scored (0.38 min). 
+...Chromosome chrX: Smoothed (0.41 min). 455 CpG(s) excluded due to zero coverage. 949 regions scored (0.46 min). 
+...Chromosome chrY: Smoothed (0.17 min). 80 CpG(s) excluded due to zero coverage. 60 regions scored (0.16 min). 
+...Chromosome chrM: Smoothed (0.13 min). No candidates found. 
+...Chromosome chr1_GL456210_random: Smoothed (0.14 min). 5 regions scored (0.13 min). 
+...Chromosome chr1_GL456211_random: Smoothed (0.12 min). 1 CpG(s) excluded due to zero coverage. 4 regions scored (0.11 min). 
+...Chromosome chr1_GL456212_random: Smoothed (0.1 min). 5 regions scored (0.12 min). 
+...Chromosome chr1_GL456213_random: No candidates found.
+...Chromosome chr1_GL456221_random: Smoothed (0.12 min). 3 regions scored (0.13 min). 
+...Chromosome chr4_GL456216_random: Smoothed (0.12 min). 2 regions scored (0.13 min). 
+...Chromosome chr4_GL456350_random: No candidates found.
+...Chromosome chr4_JH584292_random: Smoothed (0.1 min). No candidates found. 
+...Chromosome chr4_JH584293_random: No candidates found.
+...Chromosome chr4_JH584295_random: Smoothed (0 min). 1 regions scored (0 min). 
+...Chromosome chr5_GL456354_random: Smoothed (0.1 min). No candidates found. 
+...Chromosome chr5_JH584296_random: No candidates found.
+...Chromosome chr5_JH584297_random: Smoothed (0.12 min). No candidates found. 
+...Chromosome chr5_JH584298_random: No candidates found.
+...Chromosome chr5_JH584299_random: Smoothed (0.13 min). 1 CpG(s) excluded due to zero coverage. 2 regions scored (0.13 min). 
+...Chromosome chr7_GL456219_random: No candidates found.
+...Chromosome chrX_GL456233_random: Smoothed (0.14 min). 2 regions scored (0.14 min). 
+...Chromosome chrY_JH584300_random: No candidates found.
+...Chromosome chrY_JH584301_random: No candidates found.
+...Chromosome chrY_JH584303_random: No candidates found.
+...Chromosome chrUn_GL456239: Smoothed (0.1 min). No candidates found. 
+...Chromosome chrUn_GL456359: Smoothed (0.11 min). No candidates found. 
+...Chromosome chrUn_GL456360: Smoothed (0.12 min). 1 regions scored (0 min). 
+...Chromosome chrUn_GL456366: Smoothed (0.12 min). No candidates found. 
+...Chromosome chrUn_GL456367: Smoothed (0.14 min). No candidates found. 
+...Chromosome chrUn_GL456368: Smoothed (0.14 min). No candidates found. 
+...Chromosome chrUn_GL456370: Smoothed (0.13 min). 1 regions scored (0 min). 
+...Chromosome chrUn_GL456372: Smoothed (0.12 min). 2 regions scored (0.14 min). 
+...Chromosome chrUn_GL456378: Smoothed (0.12 min). No candidates found. 
+...Chromosome chrUn_GL456379: Smoothed (0.1 min). 2 regions scored (0.1 min). 
+...Chromosome chrUn_GL456381: Smoothed (0.1 min). No candidates found. 
+...Chromosome chrUn_GL456382: Smoothed (0 min). No candidates found. 
+...Chromosome chrUn_GL456383: Smoothed (0.1 min). No candidates found. 
+...Chromosome chrUn_GL456385: Smoothed (0.12 min). No candidates found. 
+...Chromosome chrUn_GL456387: Smoothed (0.12 min). 2 regions scored (0.12 min). 
+...Chromosome chrUn_GL456389: Smoothed (0.13 min). No candidates found. 
+...Chromosome chrUn_GL456390: No candidates found.
+...Chromosome chrUn_GL456392: Smoothed (0.13 min). 1 regions scored (0 min). 
+...Chromosome chrUn_GL456393: Smoothed (0.12 min). 2 regions scored (0.12 min). 
+...Chromosome chrUn_GL456394: Smoothed (0.11 min). No candidates found. 
+...Chromosome chrUn_GL456396: Smoothed (0.1 min). 2 regions scored (0.1 min). 
+...Chromosome chrUn_JH584304: Smoothed (0 min). 8 regions scored (0.1 min). 
+* 5 out of 10 permutations completed (23535 null candidates)
+
+Beginning permutation 6
+...Chromosome chr1: Smoothed (0.5 min). 147 CpG(s) excluded due to zero coverage. 1935 regions scored (0.85 min). 
+...Chromosome chr2: Smoothed (0.51 min). 88 CpG(s) excluded due to zero coverage. 1794 regions scored (0.78 min). 
+...Chromosome chr3: Smoothed (0.47 min). 120 CpG(s) excluded due to zero coverage. 1743 regions scored (0.81 min). 
+...Chromosome chr4: Smoothed (0.55 min). 100 CpG(s) excluded due to zero coverage. 1645 regions scored (0.81 min). 
+...Chromosome chr5: Smoothed (0.55 min). 86 CpG(s) excluded due to zero coverage. 1894 regions scored (0.89 min). 
+...Chromosome chr6: Smoothed (0.43 min). 84 CpG(s) excluded due to zero coverage. 1470 regions scored (0.65 min). 
+...Chromosome chr7: Smoothed (0.53 min). 112 CpG(s) excluded due to zero coverage. 1700 regions scored (0.81 min). 
+...Chromosome chr8: Smoothed (0.47 min). 83 CpG(s) excluded due to zero coverage. 1403 regions scored (0.71 min). 
+...Chromosome chr9: Smoothed (0.5 min). 45 CpG(s) excluded due to zero coverage. 1430 regions scored (0.67 min). 
+...Chromosome chr10: Smoothed (0.48 min). 46 CpG(s) excluded due to zero coverage. 1682 regions scored (0.83 min). 
+...Chromosome chr11: Smoothed (0.52 min). 42 CpG(s) excluded due to zero coverage. 1389 regions scored (0.68 min). 
+...Chromosome chr12: Smoothed (0.42 min). 77 CpG(s) excluded due to zero coverage. 1184 regions scored (0.61 min). 
+...Chromosome chr13: Smoothed (0.36 min). 67 CpG(s) excluded due to zero coverage. 1361 regions scored (0.64 min). 
+...Chromosome chr14: Smoothed (0.35 min). 172 CpG(s) excluded due to zero coverage. 1080 regions scored (0.56 min). 
+...Chromosome chr15: Smoothed (0.46 min). 70 CpG(s) excluded due to zero coverage. 1124 regions scored (0.57 min). 
+...Chromosome chr16: Smoothed (0.31 min). 62 CpG(s) excluded due to zero coverage. 1019 regions scored (0.55 min). 
+...Chromosome chr17: Smoothed (0.33 min). 59 CpG(s) excluded due to zero coverage. 1123 regions scored (0.59 min). 
+...Chromosome chr18: Smoothed (0.36 min). 40 CpG(s) excluded due to zero coverage. 901 regions scored (0.51 min). 
+...Chromosome chr19: Smoothed (0.29 min). 20 CpG(s) excluded due to zero coverage. 711 regions scored (0.43 min). 
+...Chromosome chrX: Smoothed (0.4 min). 703 CpG(s) excluded due to zero coverage. 1003 regions scored (0.53 min). 
+...Chromosome chrY: Smoothed (0.17 min). 106 CpG(s) excluded due to zero coverage. 58 regions scored (0.17 min). 
+...Chromosome chrM: Smoothed (0.13 min). No candidates found. 
+...Chromosome chr1_GL456210_random: Smoothed (0.12 min). 4 regions scored (0.13 min). 
+...Chromosome chr1_GL456211_random: Smoothed (0.12 min). 7 regions scored (0.14 min). 
+...Chromosome chr1_GL456212_random: Smoothed (0.15 min). 2 regions scored (0.14 min). 
+...Chromosome chr1_GL456213_random: No candidates found.
+...Chromosome chr1_GL456221_random: Smoothed (0.14 min). 1 CpG(s) excluded due to zero coverage. 3 regions scored (0.14 min). 
+...Chromosome chr4_GL456216_random: Smoothed (0.12 min). 3 regions scored (0.12 min). 
+...Chromosome chr4_GL456350_random: No candidates found.
+...Chromosome chr4_JH584292_random: Smoothed (0.1 min). No candidates found. 
+...Chromosome chr4_JH584293_random: No candidates found.
+...Chromosome chr4_JH584295_random: Smoothed (0 min). 1 regions scored (0 min). 
+...Chromosome chr5_GL456354_random: Smoothed (0.14 min). No candidates found. 
+...Chromosome chr5_JH584296_random: No candidates found.
+...Chromosome chr5_JH584297_random: Smoothed (0.14 min). No candidates found. 
+...Chromosome chr5_JH584298_random: No candidates found.
+...Chromosome chr5_JH584299_random: Smoothed (0.1 min). 2 CpG(s) excluded due to zero coverage. 3 regions scored (0.11 min). 
+...Chromosome chr7_GL456219_random: No candidates found.
+...Chromosome chrX_GL456233_random: Smoothed (0.12 min). 3 CpG(s) excluded due to zero coverage. 2 regions scored (0.13 min). 
+...Chromosome chrY_JH584300_random: No candidates found.
+...Chromosome chrY_JH584301_random: No candidates found.
+...Chromosome chrY_JH584303_random: No candidates found.
+...Chromosome chrUn_GL456239: Smoothed (0.13 min). 1 regions scored (0 min). 
+...Chromosome chrUn_GL456359: Smoothed (0.14 min). No candidates found. 
+...Chromosome chrUn_GL456360: Smoothed (0.12 min). No candidates found. 
+...Chromosome chrUn_GL456366: Smoothed (0.11 min). 1 regions scored (0 min). 
+...Chromosome chrUn_GL456367: Smoothed (0.13 min). No candidates found. 
+...Chromosome chrUn_GL456368: Smoothed (0.12 min). 1 regions scored (0 min). 
+...Chromosome chrUn_GL456370: Smoothed (0.14 min). 2 regions scored (0.15 min). 
+...Chromosome chrUn_GL456372: Smoothed (0.13 min). 1 regions scored (0 min). 
+...Chromosome chrUn_GL456378: Smoothed (0.13 min). No candidates found. 
+...Chromosome chrUn_GL456379: Smoothed (0.14 min). No candidates found. 
+...Chromosome chrUn_GL456381: Smoothed (0.11 min). No candidates found. 
+...Chromosome chrUn_GL456382: Smoothed (0 min). No candidates found. 
+...Chromosome chrUn_GL456383: Smoothed (0.12 min). No candidates found. 
+...Chromosome chrUn_GL456385: Smoothed (0.12 min). 1 regions scored (0 min). 
+...Chromosome chrUn_GL456387: Smoothed (0.12 min). No candidates found. 
+...Chromosome chrUn_GL456389: Smoothed (0.13 min). 1 regions scored (0 min). 
+...Chromosome chrUn_GL456390: No candidates found.
+...Chromosome chrUn_GL456392: Smoothed (0.14 min). 3 regions scored (0.14 min). 
+...Chromosome chrUn_GL456393: Smoothed (0.11 min). No candidates found. 
+...Chromosome chrUn_GL456394: Smoothed (0.1 min). No candidates found. 
+...Chromosome chrUn_GL456396: Smoothed (0.15 min). No candidates found. 
+...Chromosome chrUn_JH584304: Smoothed (0 min). 8 regions scored (0.15 min). 
+* 6 out of 10 permutations completed (27693 null candidates)
+
+Beginning permutation 7
+...Chromosome chr1: Smoothed (0.51 min). 76 CpG(s) excluded due to zero coverage. 1826 regions scored (0.79 min). 
+...Chromosome chr2: Smoothed (0.58 min). 63 CpG(s) excluded due to zero coverage. 1625 regions scored (0.73 min). 
+...Chromosome chr3: Smoothed (0.49 min). 94 CpG(s) excluded due to zero coverage. 1515 regions scored (0.72 min). 
+...Chromosome chr4: Smoothed (0.59 min). 55 CpG(s) excluded due to zero coverage. 1492 regions scored (0.67 min). 
+...Chromosome chr5: Smoothed (0.65 min). 47 CpG(s) excluded due to zero coverage. 1634 regions scored (0.77 min). 
+...Chromosome chr6: Smoothed (0.49 min). 51 CpG(s) excluded due to zero coverage. 1375 regions scored (0.63 min). 
+...Chromosome chr7: Smoothed (0.53 min). 71 CpG(s) excluded due to zero coverage. 1485 regions scored (0.74 min). 
+...Chromosome chr8: Smoothed (0.45 min). 55 CpG(s) excluded due to zero coverage. 1244 regions scored (0.56 min). 
+...Chromosome chr9: Smoothed (0.43 min). 37 CpG(s) excluded due to zero coverage. 1185 regions scored (0.54 min). 
+...Chromosome chr10: Smoothed (0.47 min). 40 CpG(s) excluded due to zero coverage. 1553 regions scored (0.64 min). 
+...Chromosome chr11: Smoothed (0.51 min). 27 CpG(s) excluded due to zero coverage. 1209 regions scored (0.57 min). 
+...Chromosome chr12: Smoothed (0.41 min). 63 CpG(s) excluded due to zero coverage. 1048 regions scored (0.51 min). 
+...Chromosome chr13: Smoothed (0.35 min). 41 CpG(s) excluded due to zero coverage. 1211 regions scored (0.54 min). 
+...Chromosome chr14: Smoothed (0.34 min). 99 CpG(s) excluded due to zero coverage. 1033 regions scored (0.52 min). 
+...Chromosome chr15: Smoothed (0.42 min). 46 CpG(s) excluded due to zero coverage. 984 regions scored (0.53 min). 
+...Chromosome chr16: Smoothed (0.34 min). 41 CpG(s) excluded due to zero coverage. 885 regions scored (0.48 min). 
+...Chromosome chr17: Smoothed (0.33 min). 34 CpG(s) excluded due to zero coverage. 1085 regions scored (0.56 min). 
+...Chromosome chr18: Smoothed (0.35 min). 18 CpG(s) excluded due to zero coverage. 862 regions scored (0.45 min). 
+...Chromosome chr19: Smoothed (0.28 min). 14 CpG(s) excluded due to zero coverage. 671 regions scored (0.39 min). 
+...Chromosome chrX: Smoothed (0.41 min). 477 CpG(s) excluded due to zero coverage. 961 regions scored (0.44 min). 
+...Chromosome chrY: Smoothed (0.15 min). 80 CpG(s) excluded due to zero coverage. 52 regions scored (0.16 min). 
+...Chromosome chrM: Smoothed (0.14 min). No candidates found. 
+...Chromosome chr1_GL456210_random: Smoothed (0.14 min). 4 regions scored (0.13 min). 
+...Chromosome chr1_GL456211_random: Smoothed (0.14 min). 10 regions scored (0.16 min). 
+...Chromosome chr1_GL456212_random: Smoothed (0.14 min). 4 regions scored (0.15 min). 
+...Chromosome chr1_GL456213_random: No candidates found.
+...Chromosome chr1_GL456221_random: Smoothed (0.13 min). 1 CpG(s) excluded due to zero coverage. 7 regions scored (0.13 min). 
+...Chromosome chr4_GL456216_random: Smoothed (0.13 min). No candidates found. 
+...Chromosome chr4_GL456350_random: No candidates found.
+...Chromosome chr4_JH584292_random: Smoothed (0.11 min). 1 CpG(s) excluded due to zero coverage. No candidates found. 
+...Chromosome chr4_JH584293_random: No candidates found.
+...Chromosome chr4_JH584295_random: Smoothed (0 min). No candidates found. 
+...Chromosome chr5_GL456354_random: Smoothed (0.1 min). No candidates found. 
+...Chromosome chr5_JH584296_random: No candidates found.
+...Chromosome chr5_JH584297_random: Smoothed (0.12 min). No candidates found. 
+...Chromosome chr5_JH584298_random: No candidates found.
+...Chromosome chr5_JH584299_random: Smoothed (0.12 min). 4 CpG(s) excluded due to zero coverage. 2 regions scored (0.13 min). 
+...Chromosome chr7_GL456219_random: No candidates found.
+...Chromosome chrX_GL456233_random: Smoothed (0.13 min). 2 regions scored (0.13 min). 
+...Chromosome chrY_JH584300_random: No candidates found.
+...Chromosome chrY_JH584301_random: No candidates found.
+...Chromosome chrY_JH584303_random: No candidates found.
+...Chromosome chrUn_GL456239: Smoothed (0.1 min). 1 CpG(s) excluded due to zero coverage. No candidates found. 
+...Chromosome chrUn_GL456359: Smoothed (0.1 min). No candidates found. 
+...Chromosome chrUn_GL456360: Smoothed (0.12 min). 1 regions scored (0 min). 
+...Chromosome chrUn_GL456366: Smoothed (0.11 min). 1 regions scored (0 min). 
+...Chromosome chrUn_GL456367: Smoothed (0.13 min). No candidates found. 
+...Chromosome chrUn_GL456368: Smoothed (0.13 min). 2 regions scored (0.13 min). 
+...Chromosome chrUn_GL456370: Smoothed (0.14 min). 2 regions scored (0.13 min). 
+...Chromosome chrUn_GL456372: Smoothed (0.14 min). No candidates found. 
+...Chromosome chrUn_GL456378: Smoothed (0.12 min). 1 regions scored (0 min). 
+...Chromosome chrUn_GL456379: Smoothed (0.11 min). 2 regions scored (0.1 min). 
+...Chromosome chrUn_GL456381: Smoothed (0.1 min). No candidates found. 
+...Chromosome chrUn_GL456382: Smoothed (0 min). 1 regions scored (0 min). 
+...Chromosome chrUn_GL456383: Smoothed (0.1 min). 1 regions scored (0 min). 
+...Chromosome chrUn_GL456385: Smoothed (0.11 min). 1 regions scored (0 min). 
+...Chromosome chrUn_GL456387: Smoothed (0.11 min). 1 CpG(s) excluded due to zero coverage. No candidates found. 
+...Chromosome chrUn_GL456389: Smoothed (0.14 min). 1 regions scored (0 min). 
+...Chromosome chrUn_GL456390: No candidates found.
+...Chromosome chrUn_GL456392: Smoothed (0.14 min). No candidates found. 
+...Chromosome chrUn_GL456393: Smoothed (0.14 min). 2 regions scored (0.14 min). 
+...Chromosome chrUn_GL456394: Smoothed (0.12 min). 1 regions scored (0 min). 
+...Chromosome chrUn_GL456396: Smoothed (0.11 min). 2 regions scored (0.11 min). 
+...Chromosome chrUn_JH584304: Smoothed (0 min). 5 regions scored (0.1 min). 
+* 7 out of 10 permutations completed (24987 null candidates)
+
+Beginning permutation 8
+...Chromosome chr1: Smoothed (0.49 min). 77 CpG(s) excluded due to zero coverage. 1779 regions scored (0.71 min). 
+...Chromosome chr2: Smoothed (0.48 min). 54 CpG(s) excluded due to zero coverage. 1697 regions scored (0.69 min). 
+...Chromosome chr3: Smoothed (0.44 min). 56 CpG(s) excluded due to zero coverage. 1630 regions scored (0.69 min). 
+...Chromosome chr4: Smoothed (0.52 min). 38 CpG(s) excluded due to zero coverage. 1540 regions scored (0.73 min). 
+...Chromosome chr5: Smoothed (0.53 min). 33 CpG(s) excluded due to zero coverage. 1741 regions scored (0.8 min). 
+...Chromosome chr6: Smoothed (0.47 min). 40 CpG(s) excluded due to zero coverage. 1374 regions scored (0.63 min). 
+...Chromosome chr7: Smoothed (0.5 min). 50 CpG(s) excluded due to zero coverage. 1506 regions scored (0.71 min). 
+...Chromosome chr8: Smoothed (0.5 min). 26 CpG(s) excluded due to zero coverage. 1265 regions scored (0.63 min). 
+...Chromosome chr9: Smoothed (0.49 min). 21 CpG(s) excluded due to zero coverage. 1190 regions scored (0.6 min). 
+...Chromosome chr10: Smoothed (0.47 min). 24 CpG(s) excluded due to zero coverage. 1545 regions scored (0.71 min). 
+...Chromosome chr11: Smoothed (0.54 min). 18 CpG(s) excluded due to zero coverage. 1263 regions scored (0.65 min). 
+...Chromosome chr12: Smoothed (0.44 min). 31 CpG(s) excluded due to zero coverage. 1110 regions scored (0.56 min). 
+...Chromosome chr13: Smoothed (0.35 min). 30 CpG(s) excluded due to zero coverage. 1281 regions scored (0.59 min). 
+...Chromosome chr14: Smoothed (0.35 min). 74 CpG(s) excluded due to zero coverage. 1001 regions scored (0.51 min). 
+...Chromosome chr15: Smoothed (0.42 min). 30 CpG(s) excluded due to zero coverage. 1063 regions scored (0.53 min). 
+...Chromosome chr16: Smoothed (0.3 min). 27 CpG(s) excluded due to zero coverage. 940 regions scored (0.5 min). 
+...Chromosome chr17: Smoothed (0.34 min). 40 CpG(s) excluded due to zero coverage. 1036 regions scored (0.52 min). 
+...Chromosome chr18: Smoothed (0.33 min). 20 CpG(s) excluded due to zero coverage. 865 regions scored (0.43 min). 
+...Chromosome chr19: Smoothed (0.29 min). 12 CpG(s) excluded due to zero coverage. 676 regions scored (0.41 min). 
+...Chromosome chrX: Smoothed (0.41 min). 370 CpG(s) excluded due to zero coverage. 945 regions scored (0.48 min). 
+...Chromosome chrY: Smoothed (0.17 min). 72 CpG(s) excluded due to zero coverage. 45 regions scored (0.16 min). 
+...Chromosome chrM: Smoothed (0.14 min). No candidates found. 
+...Chromosome chr1_GL456210_random: Smoothed (0.14 min). 3 regions scored (0.13 min). 
+...Chromosome chr1_GL456211_random: Smoothed (0.12 min). 9 regions scored (0.13 min). 
+...Chromosome chr1_GL456212_random: Smoothed (0.11 min). 6 regions scored (0.12 min). 
+...Chromosome chr1_GL456213_random: No candidates found.
+...Chromosome chr1_GL456221_random: Smoothed (0.1 min). 3 regions scored (0.1 min). 
+...Chromosome chr4_GL456216_random: Smoothed (0.12 min). 3 regions scored (0.14 min). 
+...Chromosome chr4_GL456350_random: No candidates found.
+...Chromosome chr4_JH584292_random: Smoothed (0.14 min). No candidates found. 
+...Chromosome chr4_JH584293_random: No candidates found.
+...Chromosome chr4_JH584295_random: Smoothed (0 min). 2 regions scored (0.12 min). 
+...Chromosome chr5_GL456354_random: Smoothed (0.11 min). 1 CpG(s) excluded due to zero coverage. No candidates found. 
+...Chromosome chr5_JH584296_random: No candidates found.
+...Chromosome chr5_JH584297_random: Smoothed (0.1 min). 2 CpG(s) excluded due to zero coverage. No candidates found. 
+...Chromosome chr5_JH584298_random: No candidates found.
+...Chromosome chr5_JH584299_random: Smoothed (0.12 min). 2 regions scored (0.12 min). 
+...Chromosome chr7_GL456219_random: No candidates found.
+...Chromosome chrX_GL456233_random: Smoothed (0.14 min). 2 regions scored (0.14 min). 
+...Chromosome chrY_JH584300_random: No candidates found.
+...Chromosome chrY_JH584301_random: No candidates found.
+...Chromosome chrY_JH584303_random: No candidates found.
+...Chromosome chrUn_GL456239: Smoothed (0.1 min). 1 regions scored (0 min). 
+...Chromosome chrUn_GL456359: Smoothed (0.1 min). No candidates found. 
+...Chromosome chrUn_GL456360: Smoothed (0.12 min). No candidates found. 
+...Chromosome chrUn_GL456366: Smoothed (0.12 min). No candidates found. 
+...Chromosome chrUn_GL456367: Smoothed (0.13 min). No candidates found. 
+...Chromosome chrUn_GL456368: Smoothed (0.14 min). 1 regions scored (0 min). 
+...Chromosome chrUn_GL456370: Smoothed (0.13 min). 1 regions scored (0 min). 
+...Chromosome chrUn_GL456372: Smoothed (0.13 min). 1 regions scored (0 min). 
+...Chromosome chrUn_GL456378: Smoothed (0.12 min). 1 regions scored (0 min). 
+...Chromosome chrUn_GL456379: Smoothed (0.11 min). 1 regions scored (0 min). 
+...Chromosome chrUn_GL456381: Smoothed (0.1 min). No candidates found. 
+...Chromosome chrUn_GL456382: Smoothed (0 min). No candidates found. 
+...Chromosome chrUn_GL456383: Smoothed (0.12 min). No candidates found. 
+...Chromosome chrUn_GL456385: Smoothed (0.12 min). No candidates found. 
+...Chromosome chrUn_GL456387: Smoothed (0.13 min). No candidates found. 
+...Chromosome chrUn_GL456389: Smoothed (0.13 min). 1 regions scored (0 min). 
+...Chromosome chrUn_GL456390: No candidates found.
+...Chromosome chrUn_GL456392: Smoothed (0.12 min). 1 regions scored (0 min). 
+...Chromosome chrUn_GL456393: Smoothed (0.1 min). 2 regions scored (0.11 min). 
+...Chromosome chrUn_GL456394: Smoothed (0.1 min). No candidates found. 
+...Chromosome chrUn_GL456396: Smoothed (0.1 min). 1 regions scored (0 min). 
+...Chromosome chrUn_JH584304: Smoothed (0 min). 8 regions scored (0.13 min). 
+* 8 out of 10 permutations completed (25541 null candidates)
+
+Beginning permutation 9
+...Chromosome chr1: Smoothed (0.55 min). 89 CpG(s) excluded due to zero coverage. 1760 regions scored (0.79 min). 
+...Chromosome chr2: Smoothed (0.55 min). 50 CpG(s) excluded due to zero coverage. 1622 regions scored (0.78 min). 
+...Chromosome chr3: Smoothed (0.48 min). 103 CpG(s) excluded due to zero coverage. 1572 regions scored (0.7 min). 
+...Chromosome chr4: Smoothed (0.51 min). 56 CpG(s) excluded due to zero coverage. 1466 regions scored (0.71 min). 
+...Chromosome chr5: Smoothed (0.56 min). 47 CpG(s) excluded due to zero coverage. 1758 regions scored (0.8 min). 
+...Chromosome chr6: Smoothed (0.5 min). 53 CpG(s) excluded due to zero coverage. 1375 regions scored (0.66 min). 
+...Chromosome chr7: Smoothed (0.5 min). 60 CpG(s) excluded due to zero coverage. 1437 regions scored (0.73 min). 
+...Chromosome chr8: Smoothed (0.53 min). 60 CpG(s) excluded due to zero coverage. 1225 regions scored (0.63 min). 
+...Chromosome chr9: Smoothed (0.47 min). 33 CpG(s) excluded due to zero coverage. 1162 regions scored (0.6 min). 
+...Chromosome chr10: Smoothed (0.46 min). 31 CpG(s) excluded due to zero coverage. 1486 regions scored (0.71 min). 
+...Chromosome chr11: Smoothed (0.56 min). 15 CpG(s) excluded due to zero coverage. 1197 regions scored (0.66 min). 
+...Chromosome chr12: Smoothed (0.42 min). 57 CpG(s) excluded due to zero coverage. 1068 regions scored (0.58 min). 
+...Chromosome chr13: Smoothed (0.35 min). 26 CpG(s) excluded due to zero coverage. 1251 regions scored (0.63 min). 
+...Chromosome chr14: Smoothed (0.36 min). 92 CpG(s) excluded due to zero coverage. 1045 regions scored (0.55 min). 
+...Chromosome chr15: Smoothed (0.44 min). 39 CpG(s) excluded due to zero coverage. 1020 regions scored (0.5 min). 
+...Chromosome chr16: Smoothed (0.32 min). 35 CpG(s) excluded due to zero coverage. 892 regions scored (0.48 min). 
+...Chromosome chr17: Smoothed (0.35 min). 40 CpG(s) excluded due to zero coverage. 1041 regions scored (0.57 min). 
+...Chromosome chr18: Smoothed (0.38 min). 31 CpG(s) excluded due to zero coverage. 825 regions scored (0.46 min). 
+...Chromosome chr19: Smoothed (0.29 min). 16 CpG(s) excluded due to zero coverage. 640 regions scored (0.41 min). 
+...Chromosome chrX: Smoothed (0.44 min). 519 CpG(s) excluded due to zero coverage. 936 regions scored (0.5 min). 
+...Chromosome chrY: Smoothed (0.17 min). 83 CpG(s) excluded due to zero coverage. 58 regions scored (0.16 min). 
+...Chromosome chrM: Smoothed (0.14 min). No candidates found. 
+...Chromosome chr1_GL456210_random: Smoothed (0.14 min). 4 regions scored (0.13 min). 
+...Chromosome chr1_GL456211_random: Smoothed (0.12 min). 10 regions scored (0.13 min). 
+...Chromosome chr1_GL456212_random: Smoothed (0.11 min). 2 CpG(s) excluded due to zero coverage. 7 regions scored (0.12 min). 
+...Chromosome chr1_GL456213_random: No candidates found.
+...Chromosome chr1_GL456221_random: Smoothed (0.11 min). 6 regions scored (0.1 min). 
+...Chromosome chr4_GL456216_random: Smoothed (0.1 min). 2 regions scored (0.11 min). 
+...Chromosome chr4_GL456350_random: No candidates found.
+...Chromosome chr4_JH584292_random: Smoothed (0.13 min). No candidates found. 
+...Chromosome chr4_JH584293_random: No candidates found.
+...Chromosome chr4_JH584295_random: Smoothed (0 min). No candidates found. 
+...Chromosome chr5_GL456354_random: Smoothed (0.1 min). No candidates found. 
+...Chromosome chr5_JH584296_random: No candidates found.
+...Chromosome chr5_JH584297_random: Smoothed (0.1 min). No candidates found. 
+...Chromosome chr5_JH584298_random: No candidates found.
+...Chromosome chr5_JH584299_random: Smoothed (0.12 min). 2 regions scored (0.12 min). 
+...Chromosome chr7_GL456219_random: No candidates found.
+...Chromosome chrX_GL456233_random: Smoothed (0.14 min). 1 regions scored (0 min). 
+...Chromosome chrY_JH584300_random: No candidates found.
+...Chromosome chrY_JH584301_random: No candidates found.
+...Chromosome chrY_JH584303_random: No candidates found.
+...Chromosome chrUn_GL456239: Smoothed (0.12 min). No candidates found. 
+...Chromosome chrUn_GL456359: Smoothed (0.11 min). No candidates found. 
+...Chromosome chrUn_GL456360: Smoothed (0.11 min). 1 regions scored (0 min). 
+...Chromosome chrUn_GL456366: Smoothed (0.11 min). No candidates found. 
+...Chromosome chrUn_GL456367: Smoothed (0.1 min). No candidates found. 
+...Chromosome chrUn_GL456368: Smoothed (0.13 min). No candidates found. 
+...Chromosome chrUn_GL456370: Smoothed (0.13 min). 3 regions scored (0.14 min). 
+...Chromosome chrUn_GL456372: Smoothed (0.15 min). No candidates found. 
+...Chromosome chrUn_GL456378: Smoothed (0.13 min). 1 regions scored (0 min). 
+...Chromosome chrUn_GL456379: Smoothed (0.12 min). 1 regions scored (0 min). 
+...Chromosome chrUn_GL456381: Smoothed (0.12 min). No candidates found. 
+...Chromosome chrUn_GL456382: Smoothed (0 min). No candidates found. 
+...Chromosome chrUn_GL456383: Smoothed (0.1 min). No candidates found. 
+...Chromosome chrUn_GL456385: Smoothed (0.1 min). 2 regions scored (0.11 min). 
+...Chromosome chrUn_GL456387: Smoothed (0.1 min). No candidates found. 
+...Chromosome chrUn_GL456389: Smoothed (0.12 min). No candidates found. 
+...Chromosome chrUn_GL456390: No candidates found.
+...Chromosome chrUn_GL456392: Smoothed (0.14 min). 1 regions scored (0 min). 
+...Chromosome chrUn_GL456393: Smoothed (0.14 min). 3 regions scored (0.14 min). 
+...Chromosome chrUn_GL456394: Smoothed (0.15 min). No candidates found. 
+...Chromosome chrUn_GL456396: Smoothed (0.12 min). No candidates found. 
+...Chromosome chrUn_JH584304: Smoothed (0 min). 6 regions scored (0.11 min). 
+* 9 out of 10 permutations completed (24886 null candidates)
+
+Beginning permutation 10
+...Chromosome chr1: Smoothed (0.51 min). 72 CpG(s) excluded due to zero coverage. 1874 regions scored (0.83 min). 
+...Chromosome chr2: Smoothed (0.55 min). 32 CpG(s) excluded due to zero coverage. 1734 regions scored (0.76 min). 
+...Chromosome chr3: Smoothed (0.47 min). 56 CpG(s) excluded due to zero coverage. 1596 regions scored (0.78 min). 
+...Chromosome chr4: Smoothed (0.53 min). 51 CpG(s) excluded due to zero coverage. 1555 regions scored (0.77 min). 
+...Chromosome chr5: Smoothed (0.57 min). 40 CpG(s) excluded due to zero coverage. 1809 regions scored (0.82 min). 
+...Chromosome chr6: Smoothed (0.44 min). 50 CpG(s) excluded due to zero coverage. 1400 regions scored (0.68 min). 
+...Chromosome chr7: Smoothed (0.48 min). 56 CpG(s) excluded due to zero coverage. 1516 regions scored (0.75 min). 
+...Chromosome chr8: Smoothed (0.48 min). 42 CpG(s) excluded due to zero coverage. 1270 regions scored (0.63 min). 
+...Chromosome chr9: Smoothed (0.48 min). 24 CpG(s) excluded due to zero coverage. 1229 regions scored (0.63 min). 
+...Chromosome chr10: Smoothed (0.49 min). 21 CpG(s) excluded due to zero coverage. 1577 regions scored (0.7 min). 
+...Chromosome chr11: Smoothed (0.52 min). 4 CpG(s) excluded due to zero coverage. 1218 regions scored (0.63 min). 
+...Chromosome chr12: Smoothed (0.44 min). 31 CpG(s) excluded due to zero coverage. 1057 regions scored (0.54 min). 
+...Chromosome chr13: Smoothed (0.36 min). 28 CpG(s) excluded due to zero coverage. 1244 regions scored (0.6 min). 
+...Chromosome chr14: Smoothed (0.35 min). 80 CpG(s) excluded due to zero coverage. 1026 regions scored (0.56 min). 
+...Chromosome chr15: Smoothed (0.44 min). 37 CpG(s) excluded due to zero coverage. 1039 regions scored (0.55 min). 
+...Chromosome chr16: Smoothed (0.32 min). 25 CpG(s) excluded due to zero coverage. 962 regions scored (0.49 min). 
+...Chromosome chr17: Smoothed (0.35 min). 34 CpG(s) excluded due to zero coverage. 1066 regions scored (0.57 min). 
+...Chromosome chr18: Smoothed (0.35 min). 19 CpG(s) excluded due to zero coverage. 834 regions scored (0.47 min). 
+...Chromosome chr19: Smoothed (0.31 min). 5 CpG(s) excluded due to zero coverage. 644 regions scored (0.4 min). 
+...Chromosome chrX: Smoothed (0.45 min). 402 CpG(s) excluded due to zero coverage. 958 regions scored (0.53 min). 
+...Chromosome chrY: Smoothed (0.18 min). 72 CpG(s) excluded due to zero coverage. 51 regions scored (0.17 min). 
+...Chromosome chrM: Smoothed (0.13 min). No candidates found. 
+...Chromosome chr1_GL456210_random: Smoothed (0.13 min). 5 regions scored (0.15 min). 
+...Chromosome chr1_GL456211_random: Smoothed (0.14 min). 9 regions scored (0.13 min). 
+...Chromosome chr1_GL456212_random: Smoothed (0.13 min). 4 regions scored (0.14 min). 
+...Chromosome chr1_GL456213_random: No candidates found.
+...Chromosome chr1_GL456221_random: Smoothed (0.13 min). 5 regions scored (0.14 min). 
+...Chromosome chr4_GL456216_random: Smoothed (0.12 min). 3 regions scored (0.13 min). 
+...Chromosome chr4_GL456350_random: No candidates found.
+...Chromosome chr4_JH584292_random: Smoothed (0.13 min). No candidates found. 
+...Chromosome chr4_JH584293_random: No candidates found.
+...Chromosome chr4_JH584295_random: Smoothed (0 min). 1 regions scored (0 min). 
+...Chromosome chr5_GL456354_random: Smoothed (0.14 min). No candidates found. 
+...Chromosome chr5_JH584296_random: No candidates found.
+...Chromosome chr5_JH584297_random: Smoothed (0.12 min). 3 CpG(s) excluded due to zero coverage. No candidates found. 
+...Chromosome chr5_JH584298_random: No candidates found.
+...Chromosome chr5_JH584299_random: Smoothed (0.1 min). 2 regions scored (0.11 min). 
+...Chromosome chr7_GL456219_random: No candidates found.
+...Chromosome chrX_GL456233_random: Smoothed (0.13 min). 1 CpG(s) excluded due to zero coverage. 1 regions scored (0 min). 
+...Chromosome chrY_JH584300_random: No candidates found.
+...Chromosome chrY_JH584301_random: No candidates found.
+...Chromosome chrY_JH584303_random: No candidates found.
+...Chromosome chrUn_GL456239: Smoothed (0.13 min). No candidates found. 
+...Chromosome chrUn_GL456359: Smoothed (0.12 min). No candidates found. 
+...Chromosome chrUn_GL456360: Smoothed (0.1 min). No candidates found. 
+...Chromosome chrUn_GL456366: Smoothed (0.13 min). No candidates found. 
+...Chromosome chrUn_GL456367: Smoothed (0.13 min). No candidates found. 
+...Chromosome chrUn_GL456368: Smoothed (0.14 min). 1 regions scored (0 min). 
+...Chromosome chrUn_GL456370: Smoothed (0.14 min). 1 regions scored (0 min). 
+...Chromosome chrUn_GL456372: Smoothed (0.15 min). No candidates found. 
+...Chromosome chrUn_GL456378: Smoothed (0.14 min). 2 regions scored (0.14 min). 
+...Chromosome chrUn_GL456379: Smoothed (0.11 min). No candidates found. 
+...Chromosome chrUn_GL456381: Smoothed (0.1 min). No candidates found. 
+...Chromosome chrUn_GL456382: Smoothed (0 min). No candidates found. 
+...Chromosome chrUn_GL456383: Smoothed (0.12 min). No candidates found. 
+...Chromosome chrUn_GL456385: Smoothed (0.14 min). No candidates found. 
+...Chromosome chrUn_GL456387: Smoothed (0.15 min). 1 regions scored (0 min). 
+...Chromosome chrUn_GL456389: Smoothed (0.14 min). 1 regions scored (0 min). 
+...Chromosome chrUn_GL456390: No candidates found.
+...Chromosome chrUn_GL456392: Smoothed (0.11 min). 2 regions scored (0.12 min). 
+...Chromosome chrUn_GL456393: Smoothed (0.11 min). 2 regions scored (0.11 min). 
+...Chromosome chrUn_GL456394: Smoothed (0.13 min). 1 regions scored (0 min). 
+...Chromosome chrUn_GL456396: Smoothed (0.13 min). 2 regions scored (0.13 min). 
+...Chromosome chrUn_JH584304: Smoothed (0 min). 8 regions scored (0.15 min). 
+* 10 out of 10 permutations completed (25710 null candidates)
+output file: 20190315-dmrseq.knit.md
+
+
+Output created: 20190315-dmrseq.html
+Warning message:
+MathJax doesn't work with self_contained when not using the rmarkdown "default" template. 
+  |                                                                         |..........................................................       |  89%
+label: unnamed-chunk-8
+  |                                                                         |.............................................................    |  94%
+  ordinary text without R code
+
+  |                                                                         |.................................................................| 100%
+label: test (with options) 
+List of 2
+ $ echo: symbol F
+ $ eval: symbol F
+
+
+/home/ubuntu/softwares/miniconda2/bin/pandoc +RTS -K512m -RTS 20190315-dmrseq.utf8.md --to html4 --from markdown+autolink_bare_uris+ascii_identifiers+tex_math_single_backslash+smart --output 20190315-dmrseq.html --email-obfuscation none --self-contained --mathjax --variable 'mathjax-url:https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML' --variable 'lightbox:true' --variable 'thumbnails:true' --variable 'gallery:false' --standalone --section-divs --table-of-contents --toc-depth 2 --template /home/ubuntu/R/x86_64-pc-linux-gnu-library/3.5/rmdformats/templates/readthedown/readthedown.html --highlight-style tango --variable 'theme:bootstrap' --include-in-header /tmp/RtmpXGgSLo/rmarkdown-str18826b5664fa.html --variable code_folding=show --variable code_menu=1 

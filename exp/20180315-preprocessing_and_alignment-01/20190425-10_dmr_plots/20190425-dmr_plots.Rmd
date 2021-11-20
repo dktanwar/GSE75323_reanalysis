@@ -1,0 +1,465 @@
+---
+title: "Shea et. al. Differential methylation plots (DMRs)"
+author: "Deepak Tanwar"
+date: "<b>Created on:</b> 2019-04-25 <br> <b>Updated on:</b> `r Sys.Date()`"
+output:
+  rmdformats::readthedown:
+    highlight: tango
+    self_contained: true
+    thumbnails: true
+    lightbox: true
+    gallery: false
+    keep_md: no
+    number_sections: no
+    fig_width: 8
+    fig_height: 8
+    fig_caption: true
+    df_print: paged
+    code_folding: show
+  fontsize: 12pt
+  geometry: margin=1in
+  documentclass: article
+# bibliography: references.bib
+link-citations: yes
+---
+
+
+# Libraries
+
+```{r, message=FALSE, warning=FALSE}
+library(dmrseq)
+library(ggplot2)
+library(GenomicRanges)
+library(plgINS)
+library(imputeTS)
+library(viridis)
+library(pheatmap)
+library(readxl)
+library(data.table)
+library(rtracklayer)
+```
+
+
+# Annotation track of mm10
+```{r, message=FALSE, warning=FALSE}
+annoTrack <- getAnnot("mm10")
+```
+
+
+# Import data
+```{r, message=FALSE, warning=FALSE}
+hf_ctrl <- readRDS("input/dmr_highFat_vs_ctrl.rds")
+lp_ctrl <- readRDS("input/dmr_lowProtein_vs_ctrl.rds")
+lp_hf <- readRDS("input/dmr_lowProtein_vs_highFat.rds")
+```
+
+
+# RRBS samples
+```{r}
+rrbs <- read.delim("./input/epigenomeDetails.mm9.2.RRBS.Promoter_centered_main_filtered.txt",
+  header = T, sep = "\t", stringsAsFactors = F
+)
+
+rrbs.s <- rrbs[, c(1:6, grep(pattern = "methRatio", x = colnames(rrbs)))]
+
+samples <- data.frame(read_xlsx("./input/Shea_2015_sigling_correlations.xlsx")[, 1])[-1, 1]
+samples <- gsub("\\.", "_", samples)
+
+final.rrbs <- data.frame(rrbs.s[, 1:6], rrbs.s[, grep(paste(samples, collapse = "|"), colnames(rrbs.s))])
+final.rrbs <- na.replace(final.rrbs, 0)
+final.rrbs <- GRanges(final.rrbs)
+
+system("wget http://hgdownload.cse.ucsc.edu/goldenPath/mm9/liftOver/mm9ToMm10.over.chain.gz && gunzip mm9ToMm10.over.chain.gz")
+
+chain <- import.chain("mm9ToMm10.over.chain")
+
+rrbs.liftOver <- liftOver(x = final.rrbs, chain = chain)
+
+final.rrbs <- rrbs.liftOver@unlistData
+```
+
+
+# Functions
+## To create DMR plot
+```{r, message=FALSE, warning=FALSE}
+plot_regions <- function(dmr, regions = 1:10, groupsCol = "Group", anno = annoTrack) {
+  for (i in regions) {
+    name <- paste("Region", i)
+    cat("\n \n")
+    cat(paste("###", name))
+    cat("\n \n")
+    plotDMRs(
+      BSseq = dmr$bs, regions = dmr$dmr[i, ], testCovariate = "Group",
+      annoTrack = annoTrack, extend = 1000
+    )
+    cat("\n \n")
+  }
+}
+```
+
+## To create DMR table
+```{r, message=FALSE, warning=FALSE}
+make_DT <- function(dmr) {
+  df <- data.frame(dmr$dmr[dmr$dmr$pval <= 0.05, ])[, 1:11]
+  df[, 7:11] <- round(df[, 7:11], digits = 2)
+  DT::datatable(
+    df,
+    rownames = F,
+    filter = "top", extensions = c("Buttons", "ColReorder"), options = list(
+      pageLength = 10,
+      buttons = c("copy", "csv", "excel", "pdf", "print"),
+      colReorder = list(realtime = FALSE),
+      dom = "fltBip"
+    )
+  )
+}
+```
+
+## To create histograms of `p-values`
+```{r}
+plot_hist <- function(dmr) {
+  ggplot() + aes(dmr$dmr$pval) +
+    geom_histogram(colour = "black", fill = "#3c8dbc", breaks = seq(0, 1, length.out = 20)) +
+    ggtitle("Pvalue distribution") +
+    xlab("P-value") + ylab("Frequency") +
+    theme_classic() +
+    theme(
+      plot.title = element_text(size = 14, face = "bold", hjust = 0.5),
+      axis.text = element_text(size = 12),
+      axis.title = element_text(size = 14)
+    )
+}
+```
+
+## To obtain M, Cov and Un matrices
+```{r}
+get_matrix <- function(bs, type = "all") {
+  m <- getCoverage(bs, type = "M")
+  c <- getCoverage(bs, type = "Cov")
+  u <- c - m
+  r <- data.frame(bs@rowRanges)
+  beta <- data.frame(r, m / c)
+
+  if (type == "M") {
+    return(data.frame(r, m))
+  } else if (type == "Cov") {
+    return(data.frame(r, c))
+  } else if (type == "Un") {
+    return(data.frame(r, u))
+  } else if (type == "beta") {
+    return(beta)
+  } else {
+    return(list(M = data.frame(r, m), Cov = data.frame(r, c), Un = data.frame(r, u), Beta = beta))
+  }
+}
+```
+
+## To plot heatmap of regions
+```{r}
+plot_heatmap_regions <- function(dmrs, bs, cutoff = 0.05, cutoffCol = "pval",
+                                 aggregateRegions = T, aggrFun = "mean", pCols,
+                                 minOverlap = 1000, rrbs = NULL) {
+  beta <- get_matrix(bs = bs, type = "beta")
+  reg <- dmrs[data.frame(dmrs[, cutoffCol])[, cutoffCol] <= cutoff, ]
+
+  overlap <- suppressWarnings(findOverlaps(subject = reg, query = GRanges(beta), type = "within"))
+  res1 <- data.frame(reg[overlap@to, ], stringsAsFactors = F)
+  res2 <- data.frame(GRanges(beta)[overlap@from], stringsAsFactors = F)
+  res <- cbind(res1, res2)
+  res <- res[!duplicated(res), c(1:11, 20:ncol(res))]
+  res$ID <- paste(res[, 1], res[, 2], res[, 3], sep = "-")
+
+  # overlap.M <- suppressWarnings(findOverlaps(subject = reg, query = GRanges(all$M), type = "within"))
+  # res1.M <- data.frame(reg[overlap.M@to, ], stringsAsFactors = F)
+  # res2.M <- data.frame(GRanges(all$M)[overlap.M@from], stringsAsFactors = F)
+  # res.M <- cbind(res1.M, res2.M)
+  # res.M <- res.M[!duplicated(res.M), c(1:11, 20:ncol(res.M))]
+  # res.M$ID <- paste(res.M[, 1], res.M[, 2], res.M[, 3], sep = "-")
+  #
+  # overlap.Cov <- suppressWarnings(findOverlaps(subject = reg, query = GRanges(all$Cov), type = "within"))
+  # res1.Cov <- data.frame(reg[overlap.Cov@to, ], stringsAsFactors = F)
+  # res2.Cov <- data.frame(GRanges(all$Cov)[overlap.Cov@from], stringsAsFactors = F)
+  # res.Cov <- cbind(res1.Cov, res2.Cov)
+  # res.Cov <- res.Cov[!duplicated(res.Cov), c(1:11, 20:ncol(res.Cov))]
+  # res.Cov$ID <- paste(res.Cov[, 1], res.Cov[, 2], res.Cov[, 3], sep = "-")
+
+  beta <- res
+
+  # if (aggregateRegions) {
+  #   cov <- plag(x = res.Cov[, 12:(ncol(res.Cov) - 1)], by = res.Cov$ID, agFun = median)
+  #   m <- plag(x = res.M[, 12:(ncol(res.M) - 1)], by = res.M$ID, agFun = median)
+  #   b <- m / cov
+  #   r <- res.Cov[, 1:11][!duplicated(res.Cov[, 1:11]), ]
+  #   rownames(r) <- paste(r[, 1], r[, 2], r[, 3], sep = "-")
+  #   beta <- data.frame(r, b)
+  # } else {
+  #   cov <- res.Cov[, 12:(ncol(res.Cov) - 1)]
+  #   m <- res.M[, 12:(ncol(res.M) - 1)]
+  #   b <- m / cov
+  #   r <- res.Cov[, 1:11]
+  #   beta <- data.frame(r, b)
+  # }
+
+  beta <- na.replace(beta, 0)
+  beta <- beta[order(beta$pval), ]
+
+  beta.a <- NULL
+
+  if (aggregateRegions) {
+    b <- plag(x = beta[, 12:(ncol(beta) - 1)], by = beta$ID, agFun = aggrFun)
+    r <- beta[, 1:11][!duplicated(beta[, 1:11]), ]
+    rownames(r) <- paste(r[, 1], r[, 2], r[, 3], sep = "-")
+    beta.a <- data.frame(r, b)
+  } else {
+    beta.a <- beta
+  }
+
+  beta <- beta.a
+
+  anno.row <- NULL
+  anno.col <- NULL
+  mat.plot <- NULL
+  main <- NULL
+  showRownames <- NULL
+
+  if (dim(data.frame(rrbs))[1] > 0) {
+    overlap <- suppressWarnings(findOverlaps(subject = GRanges(beta), query = rrbs, minoverlap = minOverlap))
+    r1 <- data.frame(GRanges(beta)[overlap@to, ], stringsAsFactors = F)
+    r2 <- data.frame(rrbs[overlap@from], stringsAsFactors = F)
+    r <- cbind(r1, r2)
+
+    if (dim(data.frame(r))[1] > 0) {
+      r$ID <- paste0(as.character(r$seqnames), "-", r$start, "-", r$end, "(", r$geneNames, ")")
+      r <- r[!duplicated(r$ID), ]
+      rownames(r) <- r$ID
+      r <- r[, -ncol(r)]
+
+      anno.row <- data.frame(r[, c(4, 8:11)])
+      anno.col <- data.frame(pData(bs)[, pCols], stringsAsFactors = F)
+
+      s <- colnames(data.frame(rrbs))[grep("methRatio", colnames(data.frame(rrbs)))]
+      df <- data.frame(ID = s, Age = "", Group = "RRBS")
+      rownames(df) <- df$ID
+      anno.col <- rbind(anno.col, df[, -1])
+
+      g1 <- unique(anno.col$Group)[1]
+      g2 <- unique(anno.col$Group)[2]
+      g3 <- unique(anno.col$Group)[3]
+
+      mat <- r
+      mat1 <- mat[, rownames(anno.col)[anno.col$Group == g1]]
+      mat2 <- mat[, rownames(anno.col)[anno.col$Group == g2]]
+      mat3 <- mat[, rownames(anno.col)[anno.col$Group == g3]]
+      mat.plot <- data.frame(mat1, mat2, mat3)
+
+      main <- "DMRs beta values (aggregated) + RRBS"
+      showRownames <- TRUE
+    } else {
+      anno.row <- beta[, c(4, 8:11)]
+      anno.col <- data.frame(pData(bs)[, pCols], stringsAsFactors = F)
+
+      g1 <- unique(anno.col$Group)[1]
+      g2 <- unique(anno.col$Group)[2]
+
+      mat <- beta[, 12:ncol(beta)]
+      mat1 <- mat[, rownames(anno.col)[anno.col$Group == g1]]
+      mat2 <- mat[, rownames(anno.col)[anno.col$Group == g2]]
+      mat.plot <- data.frame(mat1, mat2)
+
+      if (aggregateRegions) {
+        main <- "DMRs beta values (aggregated)"
+      } else {
+        main <- "DMRs beta values (not aggregated)"
+      }
+
+      showRownames <- FALSE
+    }
+  } else {
+    anno.row <- beta[, c(4, 8:11)]
+    anno.col <- data.frame(pData(bs)[, pCols], stringsAsFactors = F)
+
+    g1 <- unique(anno.col$Group)[1]
+    g2 <- unique(anno.col$Group)[2]
+
+    mat <- beta[, 12:ncol(beta)]
+    mat1 <- mat[, rownames(anno.col)[anno.col$Group == g1]]
+    mat2 <- mat[, rownames(anno.col)[anno.col$Group == g2]]
+    mat.plot <- data.frame(mat1, mat2)
+
+    if (aggregateRegions) {
+      main <- "DMRs beta values (aggregated)"
+    } else {
+      main <- "DMRs beta values (not aggregated)"
+    }
+
+    showRownames <- FALSE
+  }
+
+  pheatmap(
+    mat = mat.plot, color = viridis(n = 100), cluster_cols = F,
+    show_rownames = showRownames, show_colnames = F,
+    cluster_rows = F, annotation_row = anno.row,
+    annotation_col = anno.col, border_color = NA,
+    main = main
+  )
+}
+```
+
+
+# Histograms of `p-values` {.tabset .tabset-pills}
+
+## HighFat vs CTRL
+```{r, message=FALSE, warning=FALSE, fig.align='center', fig.height=5, fig.width=6}
+plot_hist(dmr = hf_ctrl)
+```
+
+## LowProtein vs CTRL
+```{r, message=FALSE, warning=FALSE, fig.align='center', fig.height=5, fig.width=6}
+plot_hist(dmr = lp_ctrl)
+```
+
+## LowProtein vs HighFat
+```{r, message=FALSE, warning=FALSE, fig.align='center', fig.height=5, fig.width=6}
+plot_hist(dmr = lp_hf)
+```
+
+
+
+# DMR tables {.tabset .tabset-pills}
+
+## HighFat vs CTRL
+```{r, message=FALSE, warning=FALSE}
+make_DT(hf_ctrl)
+```
+
+## LowProtein vs CTRL
+```{r, message=FALSE, warning=FALSE}
+make_DT(lp_ctrl)
+```
+
+## LowProtein vs HighFat
+```{r, message=FALSE, warning=FALSE}
+make_DT(lp_hf)
+```
+
+
+# DMR plots {.tabset .tabset-pills}
+
+## HighFat vs CTRL {.tabset .tabset-dropdown}
+```{r, results='asis', message=FALSE, warning=FALSE}
+plot_regions(dmr = hf_ctrl, regions = 1:5, groupsCol = "Group", anno = annoTrack)
+```
+
+## LowProtein vs CTRL {.tabset .tabset-dropdown}
+```{r, results='asis', message=FALSE, warning=FALSE}
+plot_regions(dmr = lp_ctrl, regions = 1:5, groupsCol = "Group", anno = annoTrack)
+```
+
+## LowProtein vs HighFat {.tabset .tabset-dropdown}
+```{r, results='asis', message=FALSE, warning=FALSE}
+plot_regions(dmr = lp_hf, regions = 1:5, groupsCol = "Group", anno = annoTrack)
+```
+
+
+# Heatmap of `Beta` values
+
+## HighFat vs CTRL {.tabset .tabset-dropdown}
+### Aggregated
+```{r, results='asis', message=FALSE, warning=FALSE, fig.align='center', fig.height=8, fig.width=8}
+plot_heatmap_regions(
+  dmrs = hf_ctrl$dmr, bs = hf_ctrl$bs,
+  cutoff = 0.05, cutoffCol = "pval",
+  aggregateRegions = T, aggrFun = "mean", pCols = 1:2,
+  rrbs = NULL, minOverlap = 1000
+)
+```
+
+### Aggregated + RRBS
+```{r, results='asis', message=FALSE, warning=FALSE, fig.align='center', fig.height=8, fig.width=8}
+plot_heatmap_regions(
+  dmrs = hf_ctrl$dmr, bs = hf_ctrl$bs,
+  cutoff = 0.05, cutoffCol = "pval",
+  aggregateRegions = T, aggrFun = "mean", pCols = 1:2,
+  rrbs = final.rrbs, minOverlap = 1000
+)
+```
+
+### Not aggregated
+```{r, results='asis', message=FALSE, warning=FALSE, fig.align='center', fig.height=8, fig.width=8}
+plot_heatmap_regions(
+  dmrs = hf_ctrl$dmr, bs = hf_ctrl$bs,
+  cutoff = 0.05, cutoffCol = "pval",
+  aggregateRegions = F, aggrFun = "mean", pCols = 1:2,
+  rrbs = NULL, minOverlap = 1000
+)
+```
+
+
+## LowProtein vs CTRL {.tabset .tabset-dropdown}
+### Aggregated
+```{r, results='asis', message=FALSE, warning=FALSE, fig.align='center', fig.height=8, fig.width=8}
+plot_heatmap_regions(
+  dmrs = lp_ctrl$dmr, bs = lp_ctrl$bs,
+  cutoff = 0.05, cutoffCol = "pval",
+  aggregateRegions = T, aggrFun = "mean", pCols = 1:2,
+  rrbs = NULL, minOverlap = 1000
+)
+```
+
+### Aggregated + RRBS
+```{r, results='asis', message=FALSE, warning=FALSE, fig.align='center', fig.height=8, fig.width=8}
+plot_heatmap_regions(
+  dmrs = lp_ctrl$dmr, bs = lp_ctrl$bs,
+  cutoff = 0.05, cutoffCol = "pval",
+  aggregateRegions = T, aggrFun = "mean", pCols = 1:2,
+  rrbs = final.rrbs, minOverlap = 1000
+)
+```
+
+### Not aggregated
+```{r, results='asis', message=FALSE, warning=FALSE, fig.align='center', fig.height=8, fig.width=8}
+plot_heatmap_regions(
+  dmrs = lp_ctrl$dmr, bs = lp_ctrl$bs,
+  cutoff = 0.05, cutoffCol = "pval",
+  aggregateRegions = F, aggrFun = "mean", pCols = 1:2,
+  rrbs = NULL, minOverlap = 1000
+)
+```
+
+
+## LowProtein vs HighFat {.tabset .tabset-dropdown}
+### Aggregated
+```{r, results='asis', message=FALSE, warning=FALSE, fig.align='center', fig.height=8, fig.width=8}
+plot_heatmap_regions(
+  dmrs = lp_hf$dmr, bs = lp_hf$bs,
+  cutoff = 0.05, cutoffCol = "pval",
+  aggregateRegions = T, aggrFun = "mean", pCols = 1:2,
+  rrbs = NULL, minOverlap = 1000
+)
+```
+
+### Aggregated + RRBS
+```{r, results='asis', message=FALSE, warning=FALSE, fig.align='center', fig.height=8, fig.width=8}
+plot_heatmap_regions(
+  dmrs = lp_hf$dmr, bs = lp_hf$bs,
+  cutoff = 0.05, cutoffCol = "pval",
+  aggregateRegions = T, aggrFun = "mean", pCols = 1:2,
+  rrbs = final.rrbs, minOverlap = 1000
+)
+```
+
+### Not aggregated
+```{r, results='asis', message=FALSE, warning=FALSE, fig.align='center', fig.height=8, fig.width=8}
+plot_heatmap_regions(
+  dmrs = lp_hf$dmr, bs = lp_hf$bs,
+  cutoff = 0.05, cutoffCol = "pval",
+  aggregateRegions = F, aggrFun = "mean", pCols = 1:2,
+  rrbs = NULL, minOverlap = 1000
+)
+```
+
+
+# SessionInfo
+```{r}
+devtools::session_info()
+```

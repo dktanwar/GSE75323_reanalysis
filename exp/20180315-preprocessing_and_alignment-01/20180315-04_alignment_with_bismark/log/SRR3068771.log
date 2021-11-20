@@ -1,0 +1,1053 @@
+
+
+          Bismark - Bisulfite Mapper and Methylation Caller.
+
+                       Bismark Version: v0.17.0
+        Copyright 2010-15 Felix Krueger, Babraham Bioinformatics
+              www.bioinformatics.babraham.ac.uk/projects/
+
+
+Run started at: 1528610568
+Path to Bowtie 2 specified as: bowtie2
+Bowtie seems to be working fine (tested command 'bowtie2 --version' [2.3.0])
+Output format is BAM (default)
+Alignments will be written out in BAM format. Samtools found here: '/home/ubuntu/softwares/miniconda2/bin/samtools'
+Reference genome folder provided is ./input/mm10/	(absolute path is '/mnt/dkt/genomes/ucsc/mm10/)'
+FastQ format assumed (by default)
+
+Input files to be analysed (in current folder '/mnt/dkt/projets/rando_cell_2015/exp/20180315-preprocessing_and_alignment-01/20180315-04_alignment_with_bismark'):
+./input/SRR3068771_1_paired.fastq.gz
+./input/SRR3068771_2_paired.fastq.gz
+Library is assumed to be strand-specific (directional), alignments to strands complementary to the original top or bottom strands will be ignored (i.e. not performed!)
+Output will be written into the directory: /mnt/dkt/projets/rando_cell_2015/exp/20180315-preprocessing_and_alignment-01/20180315-04_alignment_with_bismark/output/SRR3068771/
+
+Using temp directory: ./output/SRR3068771
+Temporary files will be written into the directory: /mnt/dkt/projets/rando_cell_2015/exp/20180315-preprocessing_and_alignment-01/20180315-04_alignment_with_bismark/output/SRR3068771/
+Running Bismark Parallel version. Number of parallel instances to be spawned: 8
+
+Current working directory is: /mnt/dkt/projets/rando_cell_2015/exp/20180315-preprocessing_and_alignment-01/20180315-04_alignment_with_bismark
+
+Now reading in and storing sequence information of the genome specified in: /mnt/dkt/genomes/ucsc/mm10/
+
+chr chr1 (195471971 bp)
+chr chr10 (130694993 bp)
+chr chr11 (122082543 bp)
+chr chr12 (120129022 bp)
+chr chr13 (120421639 bp)
+chr chr14 (124902244 bp)
+chr chr15 (104043685 bp)
+chr chr16 (98207768 bp)
+chr chr17 (94987271 bp)
+chr chr18 (90702639 bp)
+chr chr19 (61431566 bp)
+chr chr1_GL456210_random (169725 bp)
+chr chr1_GL456211_random (241735 bp)
+chr chr1_GL456212_random (153618 bp)
+chr chr1_GL456213_random (39340 bp)
+chr chr1_GL456221_random (206961 bp)
+chr chr2 (182113224 bp)
+chr chr3 (160039680 bp)
+chr chr4 (156508116 bp)
+chr chr4_GL456216_random (66673 bp)
+chr chr4_JH584292_random (14945 bp)
+chr chr4_GL456350_random (227966 bp)
+chr chr4_JH584293_random (207968 bp)
+chr chr4_JH584294_random (191905 bp)
+chr chr4_JH584295_random (1976 bp)
+chr chr5 (151834684 bp)
+chr chr5_JH584296_random (199368 bp)
+chr chr5_JH584297_random (205776 bp)
+chr chr5_JH584298_random (184189 bp)
+chr chr5_GL456354_random (195993 bp)
+chr chr5_JH584299_random (953012 bp)
+chr chr6 (149736546 bp)
+chr chr7 (145441459 bp)
+chr chr7_GL456219_random (175968 bp)
+chr chr8 (129401213 bp)
+chr chr9 (124595110 bp)
+chr chrM (16299 bp)
+chr chrX (171031299 bp)
+chr chrX_GL456233_random (336933 bp)
+chr chrY (91744698 bp)
+chr chrY_JH584300_random (182347 bp)
+chr chrY_JH584301_random (259875 bp)
+chr chrY_JH584302_random (155838 bp)
+chr chrY_JH584303_random (158099 bp)
+chr chrUn_GL456239 (40056 bp)
+chr chrUn_GL456367 (42057 bp)
+chr chrUn_GL456378 (31602 bp)
+chr chrUn_GL456381 (25871 bp)
+chr chrUn_GL456382 (23158 bp)
+chr chrUn_GL456383 (38659 bp)
+chr chrUn_GL456385 (35240 bp)
+chr chrUn_GL456390 (24668 bp)
+chr chrUn_GL456392 (23629 bp)
+chr chrUn_GL456393 (55711 bp)
+chr chrUn_GL456394 (24323 bp)
+chr chrUn_GL456359 (22974 bp)
+chr chrUn_GL456360 (31704 bp)
+chr chrUn_GL456396 (21240 bp)
+chr chrUn_GL456372 (28664 bp)
+chr chrUn_GL456387 (24685 bp)
+chr chrUn_GL456389 (28772 bp)
+chr chrUn_GL456370 (26764 bp)
+chr chrUn_GL456379 (72385 bp)
+chr chrUn_GL456366 (47073 bp)
+chr chrUn_GL456368 (20208 bp)
+chr chrUn_JH584304 (114452 bp)
+
+
+Paired-end alignments will be performed
+=======================================
+
+The provided filenames for paired-end alignments are ./input/SRR3068771_1_paired.fastq.gz and ./input/SRR3068771_2_paired.fastq.gz
+
+Paired-end alignments will be performed
+=======================================
+
+The provided filenames for paired-end alignments are ./input/SRR3068771_1_paired.fastq.gz and ./input/SRR3068771_2_paired.fastq.gz
+
+Paired-end alignments will be performed
+=======================================
+
+The provided filenames for paired-end alignments are ./input/SRR3068771_1_paired.fastq.gz and ./input/SRR3068771_2_paired.fastq.gz
+
+Paired-end alignments will be performed
+=======================================
+
+The provided filenames for paired-end alignments are ./input/SRR3068771_1_paired.fastq.gz and ./input/SRR3068771_2_paired.fastq.gz
+
+Paired-end alignments will be performed
+=======================================
+
+The provided filenames for paired-end alignments are ./input/SRR3068771_1_paired.fastq.gz and ./input/SRR3068771_2_paired.fastq.gz
+
+Paired-end alignments will be performed
+=======================================
+
+The provided filenames for paired-end alignments are ./input/SRR3068771_1_paired.fastq.gz and ./input/SRR3068771_2_paired.fastq.gz
+
+Paired-end alignments will be performed
+=======================================
+
+The provided filenames for paired-end alignments are ./input/SRR3068771_1_paired.fastq.gz and ./input/SRR3068771_2_paired.fastq.gz
+
+Paired-end alignments will be performed
+=======================================
+
+The provided filenames for paired-end alignments are ./input/SRR3068771_1_paired.fastq.gz and ./input/SRR3068771_2_paired.fastq.gz
+Finished subdividing ./input/SRR3068771_1_paired.fastq.gz for PID: 0 and offset 4
+
+Finished subdividing ./input/SRR3068771_1_paired.fastq.gz for PID: 0 and offset 3
+
+Finished subdividing ./input/SRR3068771_1_paired.fastq.gz for PID: 0 and offset 6
+
+Finished subdividing ./input/SRR3068771_1_paired.fastq.gz for PID: 0 and offset 2
+
+Finished subdividing ./input/SRR3068771_1_paired.fastq.gz for PID: 0 and offset 1
+
+Finished subdividing ./input/SRR3068771_1_paired.fastq.gz for PID: 0 and offset 5
+
+Using the subset file >/mnt/dkt/projets/rando_cell_2015/exp/20180315-preprocessing_and_alignment-01/20180315-04_alignment_with_bismark/output/SRR3068771/SRR3068771_1_paired.fastq.gz.temp.1< as new in-file 1 (instead of >./input/SRR3068771_1_paired.fastq.gz<)
+Using the subset file >/mnt/dkt/projets/rando_cell_2015/exp/20180315-preprocessing_and_alignment-01/20180315-04_alignment_with_bismark/output/SRR3068771/SRR3068771_1_paired.fastq.gz.temp.4< as new in-file 1 (instead of >./input/SRR3068771_1_paired.fastq.gz<)
+Using the subset file >/mnt/dkt/projets/rando_cell_2015/exp/20180315-preprocessing_and_alignment-01/20180315-04_alignment_with_bismark/output/SRR3068771/SRR3068771_1_paired.fastq.gz.temp.2< as new in-file 1 (instead of >./input/SRR3068771_1_paired.fastq.gz<)
+Using the subset file >/mnt/dkt/projets/rando_cell_2015/exp/20180315-preprocessing_and_alignment-01/20180315-04_alignment_with_bismark/output/SRR3068771/SRR3068771_1_paired.fastq.gz.temp.6< as new in-file 1 (instead of >./input/SRR3068771_1_paired.fastq.gz<)
+Finished subdividing ./input/SRR3068771_1_paired.fastq.gz for PID: 6384 and offset 8
+
+Using the subset file >/mnt/dkt/projets/rando_cell_2015/exp/20180315-preprocessing_and_alignment-01/20180315-04_alignment_with_bismark/output/SRR3068771/SRR3068771_1_paired.fastq.gz.temp.5< as new in-file 1 (instead of >./input/SRR3068771_1_paired.fastq.gz<)
+Using the subset file >/mnt/dkt/projets/rando_cell_2015/exp/20180315-preprocessing_and_alignment-01/20180315-04_alignment_with_bismark/output/SRR3068771/SRR3068771_1_paired.fastq.gz.temp.3< as new in-file 1 (instead of >./input/SRR3068771_1_paired.fastq.gz<)
+Using the subset file >/mnt/dkt/projets/rando_cell_2015/exp/20180315-preprocessing_and_alignment-01/20180315-04_alignment_with_bismark/output/SRR3068771/SRR3068771_1_paired.fastq.gz.temp.8< as new in-file 1 (instead of >./input/SRR3068771_1_paired.fastq.gz<)
+Finished subdividing ./input/SRR3068771_1_paired.fastq.gz for PID: 0 and offset 7
+
+Using the subset file >/mnt/dkt/projets/rando_cell_2015/exp/20180315-preprocessing_and_alignment-01/20180315-04_alignment_with_bismark/output/SRR3068771/SRR3068771_1_paired.fastq.gz.temp.7< as new in-file 1 (instead of >./input/SRR3068771_1_paired.fastq.gz<)
+Finished subdividing ./input/SRR3068771_2_paired.fastq.gz for PID: 6384 and offset 8
+
+Finished subdividing ./input/SRR3068771_2_paired.fastq.gz for PID: 0 and offset 2
+
+Finished subdividing ./input/SRR3068771_2_paired.fastq.gz for PID: 0 and offset 3
+
+Finished subdividing ./input/SRR3068771_2_paired.fastq.gz for PID: 0 and offset 5
+
+Using the subset file >/mnt/dkt/projets/rando_cell_2015/exp/20180315-preprocessing_and_alignment-01/20180315-04_alignment_with_bismark/output/SRR3068771/SRR3068771_2_paired.fastq.gz.temp.2< as new in-file 2 (instead of >./input/SRR3068771_2_paired.fastq.gz<)
+Finished subdividing ./input/SRR3068771_2_paired.fastq.gz for PID: 0 and offset 1
+
+Input files are in FastQ format
+Using the subset file >/mnt/dkt/projets/rando_cell_2015/exp/20180315-preprocessing_and_alignment-01/20180315-04_alignment_with_bismark/output/SRR3068771/SRR3068771_2_paired.fastq.gz.temp.5< as new in-file 2 (instead of >./input/SRR3068771_2_paired.fastq.gz<)
+Finished subdividing ./input/SRR3068771_2_paired.fastq.gz for PID: 0 and offset 7
+
+Input files are in FastQ format
+Using the subset file >/mnt/dkt/projets/rando_cell_2015/exp/20180315-preprocessing_and_alignment-01/20180315-04_alignment_with_bismark/output/SRR3068771/SRR3068771_2_paired.fastq.gz.temp.3< as new in-file 2 (instead of >./input/SRR3068771_2_paired.fastq.gz<)
+Using the subset file >/mnt/dkt/projets/rando_cell_2015/exp/20180315-preprocessing_and_alignment-01/20180315-04_alignment_with_bismark/output/SRR3068771/SRR3068771_2_paired.fastq.gz.temp.8< as new in-file 2 (instead of >./input/SRR3068771_2_paired.fastq.gz<)
+Input files are in FastQ format
+Input files are in FastQ format
+Using the subset file >/mnt/dkt/projets/rando_cell_2015/exp/20180315-preprocessing_and_alignment-01/20180315-04_alignment_with_bismark/output/SRR3068771/SRR3068771_2_paired.fastq.gz.temp.1< as new in-file 2 (instead of >./input/SRR3068771_2_paired.fastq.gz<)
+Input files are in FastQ format
+Using the subset file >/mnt/dkt/projets/rando_cell_2015/exp/20180315-preprocessing_and_alignment-01/20180315-04_alignment_with_bismark/output/SRR3068771/SRR3068771_2_paired.fastq.gz.temp.7< as new in-file 2 (instead of >./input/SRR3068771_2_paired.fastq.gz<)
+Input files are in FastQ format
+Writing a C -> T converted version of the input file SRR3068771_1_paired.fastq.gz.temp.5 to /mnt/dkt/projets/rando_cell_2015/exp/20180315-preprocessing_and_alignment-01/20180315-04_alignment_with_bismark/output/SRR3068771/SRR3068771_1_paired.fastq.gz.temp.5_C_to_T.fastq
+Writing a C -> T converted version of the input file SRR3068771_1_paired.fastq.gz.temp.3 to /mnt/dkt/projets/rando_cell_2015/exp/20180315-preprocessing_and_alignment-01/20180315-04_alignment_with_bismark/output/SRR3068771/SRR3068771_1_paired.fastq.gz.temp.3_C_to_T.fastq
+Writing a C -> T converted version of the input file SRR3068771_1_paired.fastq.gz.temp.7 to /mnt/dkt/projets/rando_cell_2015/exp/20180315-preprocessing_and_alignment-01/20180315-04_alignment_with_bismark/output/SRR3068771/SRR3068771_1_paired.fastq.gz.temp.7_C_to_T.fastq
+Writing a C -> T converted version of the input file SRR3068771_1_paired.fastq.gz.temp.8 to /mnt/dkt/projets/rando_cell_2015/exp/20180315-preprocessing_and_alignment-01/20180315-04_alignment_with_bismark/output/SRR3068771/SRR3068771_1_paired.fastq.gz.temp.8_C_to_T.fastq
+Writing a C -> T converted version of the input file SRR3068771_1_paired.fastq.gz.temp.2 to /mnt/dkt/projets/rando_cell_2015/exp/20180315-preprocessing_and_alignment-01/20180315-04_alignment_with_bismark/output/SRR3068771/SRR3068771_1_paired.fastq.gz.temp.2_C_to_T.fastq
+Writing a C -> T converted version of the input file SRR3068771_1_paired.fastq.gz.temp.1 to /mnt/dkt/projets/rando_cell_2015/exp/20180315-preprocessing_and_alignment-01/20180315-04_alignment_with_bismark/output/SRR3068771/SRR3068771_1_paired.fastq.gz.temp.1_C_to_T.fastq
+Finished subdividing ./input/SRR3068771_2_paired.fastq.gz for PID: 0 and offset 4
+
+Using the subset file >/mnt/dkt/projets/rando_cell_2015/exp/20180315-preprocessing_and_alignment-01/20180315-04_alignment_with_bismark/output/SRR3068771/SRR3068771_2_paired.fastq.gz.temp.4< as new in-file 2 (instead of >./input/SRR3068771_2_paired.fastq.gz<)
+Input files are in FastQ format
+Writing a C -> T converted version of the input file SRR3068771_1_paired.fastq.gz.temp.4 to /mnt/dkt/projets/rando_cell_2015/exp/20180315-preprocessing_and_alignment-01/20180315-04_alignment_with_bismark/output/SRR3068771/SRR3068771_1_paired.fastq.gz.temp.4_C_to_T.fastq
+Finished subdividing ./input/SRR3068771_2_paired.fastq.gz for PID: 0 and offset 6
+
+Using the subset file >/mnt/dkt/projets/rando_cell_2015/exp/20180315-preprocessing_and_alignment-01/20180315-04_alignment_with_bismark/output/SRR3068771/SRR3068771_2_paired.fastq.gz.temp.6< as new in-file 2 (instead of >./input/SRR3068771_2_paired.fastq.gz<)
+Input files are in FastQ format
+Writing a C -> T converted version of the input file SRR3068771_1_paired.fastq.gz.temp.6 to /mnt/dkt/projets/rando_cell_2015/exp/20180315-preprocessing_and_alignment-01/20180315-04_alignment_with_bismark/output/SRR3068771/SRR3068771_1_paired.fastq.gz.temp.6_C_to_T.fastq
+
+Created C -> T converted version of the FastQ file SRR3068771_1_paired.fastq.gz.temp.3 (18592139 sequences in total)
+
+Writing a G -> A converted version of the input file SRR3068771_2_paired.fastq.gz.temp.3 to /mnt/dkt/projets/rando_cell_2015/exp/20180315-preprocessing_and_alignment-01/20180315-04_alignment_with_bismark/output/SRR3068771/SRR3068771_2_paired.fastq.gz.temp.3_G_to_A.fastq
+
+Created C -> T converted version of the FastQ file SRR3068771_1_paired.fastq.gz.temp.4 (18592139 sequences in total)
+
+Writing a G -> A converted version of the input file SRR3068771_2_paired.fastq.gz.temp.4 to /mnt/dkt/projets/rando_cell_2015/exp/20180315-preprocessing_and_alignment-01/20180315-04_alignment_with_bismark/output/SRR3068771/SRR3068771_2_paired.fastq.gz.temp.4_G_to_A.fastq
+
+Created C -> T converted version of the FastQ file SRR3068771_1_paired.fastq.gz.temp.8 (18592138 sequences in total)
+
+Writing a G -> A converted version of the input file SRR3068771_2_paired.fastq.gz.temp.8 to /mnt/dkt/projets/rando_cell_2015/exp/20180315-preprocessing_and_alignment-01/20180315-04_alignment_with_bismark/output/SRR3068771/SRR3068771_2_paired.fastq.gz.temp.8_G_to_A.fastq
+
+Created C -> T converted version of the FastQ file SRR3068771_1_paired.fastq.gz.temp.6 (18592138 sequences in total)
+
+Writing a G -> A converted version of the input file SRR3068771_2_paired.fastq.gz.temp.6 to /mnt/dkt/projets/rando_cell_2015/exp/20180315-preprocessing_and_alignment-01/20180315-04_alignment_with_bismark/output/SRR3068771/SRR3068771_2_paired.fastq.gz.temp.6_G_to_A.fastq
+
+Created C -> T converted version of the FastQ file SRR3068771_1_paired.fastq.gz.temp.7 (18592138 sequences in total)
+
+Writing a G -> A converted version of the input file SRR3068771_2_paired.fastq.gz.temp.7 to /mnt/dkt/projets/rando_cell_2015/exp/20180315-preprocessing_and_alignment-01/20180315-04_alignment_with_bismark/output/SRR3068771/SRR3068771_2_paired.fastq.gz.temp.7_G_to_A.fastq
+
+Created C -> T converted version of the FastQ file SRR3068771_1_paired.fastq.gz.temp.1 (18592139 sequences in total)
+
+Writing a G -> A converted version of the input file SRR3068771_2_paired.fastq.gz.temp.1 to /mnt/dkt/projets/rando_cell_2015/exp/20180315-preprocessing_and_alignment-01/20180315-04_alignment_with_bismark/output/SRR3068771/SRR3068771_2_paired.fastq.gz.temp.1_G_to_A.fastq
+
+Created C -> T converted version of the FastQ file SRR3068771_1_paired.fastq.gz.temp.5 (18592139 sequences in total)
+
+Writing a G -> A converted version of the input file SRR3068771_2_paired.fastq.gz.temp.5 to /mnt/dkt/projets/rando_cell_2015/exp/20180315-preprocessing_and_alignment-01/20180315-04_alignment_with_bismark/output/SRR3068771/SRR3068771_2_paired.fastq.gz.temp.5_G_to_A.fastq
+
+Created C -> T converted version of the FastQ file SRR3068771_1_paired.fastq.gz.temp.2 (18592139 sequences in total)
+
+Writing a G -> A converted version of the input file SRR3068771_2_paired.fastq.gz.temp.2 to /mnt/dkt/projets/rando_cell_2015/exp/20180315-preprocessing_and_alignment-01/20180315-04_alignment_with_bismark/output/SRR3068771/SRR3068771_2_paired.fastq.gz.temp.2_G_to_A.fastq
+
+Created G -> A converted version of the FastQ file SRR3068771_2_paired.fastq.gz.temp.3 (18592139 sequences in total)
+
+Input files are SRR3068771_1_paired.fastq.gz.temp.3_C_to_T.fastq and SRR3068771_2_paired.fastq.gz.temp.3_G_to_A.fastq (FastQ)
+Now running 2 instances of Bowtie 2 against the bisulfite genome of /mnt/dkt/genomes/ucsc/mm10/ with the specified options: -q --score-min L,0,-0.2 --ignore-quals --no-mixed --no-discordant --dovetail --maxins 500
+
+Now starting a Bowtie 2 paired-end alignment for CTread1GAread2CTgenome (reading in sequences from /mnt/dkt/projets/rando_cell_2015/exp/20180315-preprocessing_and_alignment-01/20180315-04_alignment_with_bismark/output/SRR3068771/SRR3068771_1_paired.fastq.gz.temp.3_C_to_T.fastq and /mnt/dkt/projets/rando_cell_2015/exp/20180315-preprocessing_and_alignment-01/20180315-04_alignment_with_bismark/output/SRR3068771/SRR3068771_2_paired.fastq.gz.temp.3_G_to_A.fastq, with the options: -q --score-min L,0,-0.2 --ignore-quals --no-mixed --no-discordant --dovetail --maxins 500 --norc))
+
+Created G -> A converted version of the FastQ file SRR3068771_2_paired.fastq.gz.temp.8 (18592138 sequences in total)
+
+Input files are SRR3068771_1_paired.fastq.gz.temp.8_C_to_T.fastq and SRR3068771_2_paired.fastq.gz.temp.8_G_to_A.fastq (FastQ)
+Now running 2 instances of Bowtie 2 against the bisulfite genome of /mnt/dkt/genomes/ucsc/mm10/ with the specified options: -q --score-min L,0,-0.2 --ignore-quals --no-mixed --no-discordant --dovetail --maxins 500
+
+Now starting a Bowtie 2 paired-end alignment for CTread1GAread2CTgenome (reading in sequences from /mnt/dkt/projets/rando_cell_2015/exp/20180315-preprocessing_and_alignment-01/20180315-04_alignment_with_bismark/output/SRR3068771/SRR3068771_1_paired.fastq.gz.temp.8_C_to_T.fastq and /mnt/dkt/projets/rando_cell_2015/exp/20180315-preprocessing_and_alignment-01/20180315-04_alignment_with_bismark/output/SRR3068771/SRR3068771_2_paired.fastq.gz.temp.8_G_to_A.fastq, with the options: -q --score-min L,0,-0.2 --ignore-quals --no-mixed --no-discordant --dovetail --maxins 500 --norc))
+
+Created G -> A converted version of the FastQ file SRR3068771_2_paired.fastq.gz.temp.4 (18592139 sequences in total)
+
+Input files are SRR3068771_1_paired.fastq.gz.temp.4_C_to_T.fastq and SRR3068771_2_paired.fastq.gz.temp.4_G_to_A.fastq (FastQ)
+Now running 2 instances of Bowtie 2 against the bisulfite genome of /mnt/dkt/genomes/ucsc/mm10/ with the specified options: -q --score-min L,0,-0.2 --ignore-quals --no-mixed --no-discordant --dovetail --maxins 500
+
+Now starting a Bowtie 2 paired-end alignment for CTread1GAread2CTgenome (reading in sequences from /mnt/dkt/projets/rando_cell_2015/exp/20180315-preprocessing_and_alignment-01/20180315-04_alignment_with_bismark/output/SRR3068771/SRR3068771_1_paired.fastq.gz.temp.4_C_to_T.fastq and /mnt/dkt/projets/rando_cell_2015/exp/20180315-preprocessing_and_alignment-01/20180315-04_alignment_with_bismark/output/SRR3068771/SRR3068771_2_paired.fastq.gz.temp.4_G_to_A.fastq, with the options: -q --score-min L,0,-0.2 --ignore-quals --no-mixed --no-discordant --dovetail --maxins 500 --norc))
+
+Created G -> A converted version of the FastQ file SRR3068771_2_paired.fastq.gz.temp.5 (18592139 sequences in total)
+
+Input files are SRR3068771_1_paired.fastq.gz.temp.5_C_to_T.fastq and SRR3068771_2_paired.fastq.gz.temp.5_G_to_A.fastq (FastQ)
+Now running 2 instances of Bowtie 2 against the bisulfite genome of /mnt/dkt/genomes/ucsc/mm10/ with the specified options: -q --score-min L,0,-0.2 --ignore-quals --no-mixed --no-discordant --dovetail --maxins 500
+
+Now starting a Bowtie 2 paired-end alignment for CTread1GAread2CTgenome (reading in sequences from /mnt/dkt/projets/rando_cell_2015/exp/20180315-preprocessing_and_alignment-01/20180315-04_alignment_with_bismark/output/SRR3068771/SRR3068771_1_paired.fastq.gz.temp.5_C_to_T.fastq and /mnt/dkt/projets/rando_cell_2015/exp/20180315-preprocessing_and_alignment-01/20180315-04_alignment_with_bismark/output/SRR3068771/SRR3068771_2_paired.fastq.gz.temp.5_G_to_A.fastq, with the options: -q --score-min L,0,-0.2 --ignore-quals --no-mixed --no-discordant --dovetail --maxins 500 --norc))
+
+Created G -> A converted version of the FastQ file SRR3068771_2_paired.fastq.gz.temp.1 (18592139 sequences in total)
+
+Input files are SRR3068771_1_paired.fastq.gz.temp.1_C_to_T.fastq and SRR3068771_2_paired.fastq.gz.temp.1_G_to_A.fastq (FastQ)
+Now running 2 instances of Bowtie 2 against the bisulfite genome of /mnt/dkt/genomes/ucsc/mm10/ with the specified options: -q --score-min L,0,-0.2 --ignore-quals --no-mixed --no-discordant --dovetail --maxins 500
+
+Now starting a Bowtie 2 paired-end alignment for CTread1GAread2CTgenome (reading in sequences from /mnt/dkt/projets/rando_cell_2015/exp/20180315-preprocessing_and_alignment-01/20180315-04_alignment_with_bismark/output/SRR3068771/SRR3068771_1_paired.fastq.gz.temp.1_C_to_T.fastq and /mnt/dkt/projets/rando_cell_2015/exp/20180315-preprocessing_and_alignment-01/20180315-04_alignment_with_bismark/output/SRR3068771/SRR3068771_2_paired.fastq.gz.temp.1_G_to_A.fastq, with the options: -q --score-min L,0,-0.2 --ignore-quals --no-mixed --no-discordant --dovetail --maxins 500 --norc))
+
+Created G -> A converted version of the FastQ file SRR3068771_2_paired.fastq.gz.temp.7 (18592138 sequences in total)
+
+Input files are SRR3068771_1_paired.fastq.gz.temp.7_C_to_T.fastq and SRR3068771_2_paired.fastq.gz.temp.7_G_to_A.fastq (FastQ)
+Now running 2 instances of Bowtie 2 against the bisulfite genome of /mnt/dkt/genomes/ucsc/mm10/ with the specified options: -q --score-min L,0,-0.2 --ignore-quals --no-mixed --no-discordant --dovetail --maxins 500
+
+Now starting a Bowtie 2 paired-end alignment for CTread1GAread2CTgenome (reading in sequences from /mnt/dkt/projets/rando_cell_2015/exp/20180315-preprocessing_and_alignment-01/20180315-04_alignment_with_bismark/output/SRR3068771/SRR3068771_1_paired.fastq.gz.temp.7_C_to_T.fastq and /mnt/dkt/projets/rando_cell_2015/exp/20180315-preprocessing_and_alignment-01/20180315-04_alignment_with_bismark/output/SRR3068771/SRR3068771_2_paired.fastq.gz.temp.7_G_to_A.fastq, with the options: -q --score-min L,0,-0.2 --ignore-quals --no-mixed --no-discordant --dovetail --maxins 500 --norc))
+
+Created G -> A converted version of the FastQ file SRR3068771_2_paired.fastq.gz.temp.2 (18592139 sequences in total)
+
+Input files are SRR3068771_1_paired.fastq.gz.temp.2_C_to_T.fastq and SRR3068771_2_paired.fastq.gz.temp.2_G_to_A.fastq (FastQ)
+Now running 2 instances of Bowtie 2 against the bisulfite genome of /mnt/dkt/genomes/ucsc/mm10/ with the specified options: -q --score-min L,0,-0.2 --ignore-quals --no-mixed --no-discordant --dovetail --maxins 500
+
+Now starting a Bowtie 2 paired-end alignment for CTread1GAread2CTgenome (reading in sequences from /mnt/dkt/projets/rando_cell_2015/exp/20180315-preprocessing_and_alignment-01/20180315-04_alignment_with_bismark/output/SRR3068771/SRR3068771_1_paired.fastq.gz.temp.2_C_to_T.fastq and /mnt/dkt/projets/rando_cell_2015/exp/20180315-preprocessing_and_alignment-01/20180315-04_alignment_with_bismark/output/SRR3068771/SRR3068771_2_paired.fastq.gz.temp.2_G_to_A.fastq, with the options: -q --score-min L,0,-0.2 --ignore-quals --no-mixed --no-discordant --dovetail --maxins 500 --norc))
+
+Created G -> A converted version of the FastQ file SRR3068771_2_paired.fastq.gz.temp.6 (18592138 sequences in total)
+
+Input files are SRR3068771_1_paired.fastq.gz.temp.6_C_to_T.fastq and SRR3068771_2_paired.fastq.gz.temp.6_G_to_A.fastq (FastQ)
+Now running 2 instances of Bowtie 2 against the bisulfite genome of /mnt/dkt/genomes/ucsc/mm10/ with the specified options: -q --score-min L,0,-0.2 --ignore-quals --no-mixed --no-discordant --dovetail --maxins 500
+
+Now starting a Bowtie 2 paired-end alignment for CTread1GAread2CTgenome (reading in sequences from /mnt/dkt/projets/rando_cell_2015/exp/20180315-preprocessing_and_alignment-01/20180315-04_alignment_with_bismark/output/SRR3068771/SRR3068771_1_paired.fastq.gz.temp.6_C_to_T.fastq and /mnt/dkt/projets/rando_cell_2015/exp/20180315-preprocessing_and_alignment-01/20180315-04_alignment_with_bismark/output/SRR3068771/SRR3068771_2_paired.fastq.gz.temp.6_G_to_A.fastq, with the options: -q --score-min L,0,-0.2 --ignore-quals --no-mixed --no-discordant --dovetail --maxins 500 --norc))
+Found first alignment:
+SRR3068771.4_4_length=100/1	77	*	0	0	*	*	0	0	AAAAAAAATTAAAGATAATTTAAAGAAGAAAAAGAGGAGGAGGGGAAGAAGGAGGTGGAAGAGGAGGAGGAAGAAGAAGGG	DDDDDDDDDD4DDBB>D>9BDB@DD9?DBD>D>A(@=6@A(;AD@99==>A?29?(9<5:><><2298<;2828>A>AA??	YT:Z:UP
+SRR3068771.4_4_length=100/2	141	*	0	0	*	*	0	0	TCTTCTTCTTCTTCTTCTTCTTCTTCTTCTTCTTCTTCTTCTTCTTCTTCTTCTTCCTTCTCCTCCTCCTCCCCTTCTTCTTCCTCCTCCTCTTCCACCT	@@@DDBDDD<F:DEBGGBFEGHCBFHBDFEGEBE@AC??BD9EF9?<?BF>DC*?DF>*BBFC@9D>B;)=B=B96=.7@4)7=3=?.)?@CC>3;(>A?	YT:Z:UP
+Now starting a Bowtie 2 paired-end alignment for CTread1GAread2GAgenome (reading in sequences from /mnt/dkt/projets/rando_cell_2015/exp/20180315-preprocessing_and_alignment-01/20180315-04_alignment_with_bismark/output/SRR3068771/SRR3068771_1_paired.fastq.gz.temp.3_C_to_T.fastq and /mnt/dkt/projets/rando_cell_2015/exp/20180315-preprocessing_and_alignment-01/20180315-04_alignment_with_bismark/output/SRR3068771/SRR3068771_2_paired.fastq.gz.temp.3_G_to_A.fastq, with the options: -q --score-min L,0,-0.2 --ignore-quals --no-mixed --no-discordant --dovetail --maxins 500 --nofw))
+Found first alignment:
+SRR3068771.6_6_length=100/1	99	chr16_CT_converted	4022304	42	96M	=	4022366	162	ATGTTGGTTGAAGGTTTGATTTTTTAGTGATGATAGTAGAAAGATGATTTATTTATTATATGTGTATATATTTGGTTTTGGTATGGGAGTGATGGG	BDD4BFACFAEFFE3BHEDHIFEIIE9?<<DAF>FF*9BDGEBAFEFBCEFEFGFAFFCAFCFA)7)@EFCEA33?=BD>6;@AB??;=;<:@@AB	AS:i:0	XN:i:0	XM:i:0	XO:i:0	XG:i:0	NM:i:0	MD:Z:96	YS:i:0	YT:Z:CP
+SRR3068771.6_6_length=100/2	147	chr16_CT_converted	4022366	42	100M	=	4022304	-162	TGTATATATTTGGTTTTGGTATGGGAGTGATGGGTTTTTGAAGGGAGTTTGAGTTAAAGTGTGGTGATGGGAGATGGAGTTTTATTGAGAGAGTAGTTTT	EDCDDDC>@DDDDBBECEEFDFFFGHHHHIJIHFJIJGGEAGFIHEGHEFIIEJIHF;HH@JIG<JJJJJJJIGHEIGGJJIGGIJIDHFBBFFDFFCCB	AS:i:0	XN:i:0	XM:i:0	XO:i:0	XG:i:0	NM:i:0	MD:Z:100	YS:i:0	YT:Z:CP
+Now starting a Bowtie 2 paired-end alignment for CTread1GAread2GAgenome (reading in sequences from /mnt/dkt/projets/rando_cell_2015/exp/20180315-preprocessing_and_alignment-01/20180315-04_alignment_with_bismark/output/SRR3068771/SRR3068771_1_paired.fastq.gz.temp.5_C_to_T.fastq and /mnt/dkt/projets/rando_cell_2015/exp/20180315-preprocessing_and_alignment-01/20180315-04_alignment_with_bismark/output/SRR3068771/SRR3068771_2_paired.fastq.gz.temp.5_G_to_A.fastq, with the options: -q --score-min L,0,-0.2 --ignore-quals --no-mixed --no-discordant --dovetail --maxins 500 --nofw))
+Found first alignment:
+SRR3068771.8_8_length=100/1	77	*	0	0	*	*	0	0	TATTTAAATTTTTTTTTAATTTAGATAGTTTGGTTATGATTTAGAGATTTGGAGTAAAGTTTATATAGATATGGTTGTTTAGGTGTGGTAGGGGATA	BDDADHH?F>BBHIFIG;FGII<?:DDDDBFGGF;DDHGAHIFHCIC@@DGE@;@EEHHH>;?CCECB;AACA1(5;2??@CCCB?@@2::?B&)5?	YT:Z:UP
+SRR3068771.8_8_length=100/2	141	*	0	0	*	*	0	0	AAAAACTCTTTTATTTTAAAACAAAATCTCACCCCATAAACCTAACTAATCTCAAACTCAAAAATCCACTAACTTCTACCTCTTAAATACAAAAATTCA	B@FFDFFD>+:?E>E<<EGIJIJIIIGIJJGIJJGIJIJII?BHIEBDGBFFGIIJG38<FHIJ@EAGIGHFHGHHHFFFFFFEAEEEEDDDCBDBDCD	YT:Z:UP
+Now starting a Bowtie 2 paired-end alignment for CTread1GAread2GAgenome (reading in sequences from /mnt/dkt/projets/rando_cell_2015/exp/20180315-preprocessing_and_alignment-01/20180315-04_alignment_with_bismark/output/SRR3068771/SRR3068771_1_paired.fastq.gz.temp.7_C_to_T.fastq and /mnt/dkt/projets/rando_cell_2015/exp/20180315-preprocessing_and_alignment-01/20180315-04_alignment_with_bismark/output/SRR3068771/SRR3068771_2_paired.fastq.gz.temp.7_G_to_A.fastq, with the options: -q --score-min L,0,-0.2 --ignore-quals --no-mixed --no-discordant --dovetail --maxins 500 --nofw))
+Found first alignment:
+SRR3068771.3_3_length=100/1	99	chr7_CT_converted	90633877	42	96M	=	90634011	234	TGAATAATAAAATTAATTTATAGGGTAAGATATAATATTGTTGTAATAAAGGAATAATTGTTATGGGGGTAAATAATTATTTTTTGATTGGATTTG	ABBD><BD4A:C:E:CFII@>,<FF+<<A2A<CC:C1C@DDFI;9??9B?BD999?DEAD?@BDCE<DD/:7;);?@BDA>@AA6>?>AA?,:AAA	AS:i:0	XN:i:0	XM:i:0	XO:i:0	XG:i:0	NM:i:0	MD:Z:96	YS:i:-6	YT:Z:CP
+SRR3068771.3_3_length=100/2	147	chr7_CT_converted	90634011	42	100M	=	90633877	-234	ATGGTTAGAGGATTATAGATTTTAGAGAAGTGTTTATTAGTGTTGTTTTGTTAAGTGGATATTTTATTAAATTGTTTTTTAAATATTTTTGTTTATATGT	DCA>;A@55;@66>;A>@B?7))>DHHFEE=E=D=.)=/(F=JIFBBFB?*HEEJIGHBG<D9?19D:**1)1?AGCDFIA<2+A+?8FFCBDB4DDB;?	AS:i:-6	XN:i:0	XM:i:1	XO:i:0	XG:i:0	NM:i:1	MD:Z:39T60	YS:i:0	YT:Z:CP
+Now starting a Bowtie 2 paired-end alignment for CTread1GAread2GAgenome (reading in sequences from /mnt/dkt/projets/rando_cell_2015/exp/20180315-preprocessing_and_alignment-01/20180315-04_alignment_with_bismark/output/SRR3068771/SRR3068771_1_paired.fastq.gz.temp.2_C_to_T.fastq and /mnt/dkt/projets/rando_cell_2015/exp/20180315-preprocessing_and_alignment-01/20180315-04_alignment_with_bismark/output/SRR3068771/SRR3068771_2_paired.fastq.gz.temp.2_G_to_A.fastq, with the options: -q --score-min L,0,-0.2 --ignore-quals --no-mixed --no-discordant --dovetail --maxins 500 --nofw))
+Found first alignment:
+SRR3068771.7_7_length=100/1	77	*	0	0	*	*	0	0	TTATGGTTTTAGGAAGGAGGAAGTGAGGGGTTTTATGTTTGTTTTGTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT	DDFFFHDHHHIJJGGHIEGHFHHAEFHHIJ?FHHFGIGIIJEHIJJJJJJIJFDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDB590-95><@	YT:Z:UP
+SRR3068771.7_7_length=100/2	141	*	0	0	*	*	0	0	CCCTAACTAAAACATTCATACATTTACAACTCAACTAATAATCTTAACTTCAATAAAATACATCAATAAACAACTATTACTAACAAACATCAAAAAAAAA	CCCFFFFFHHHHHJJJJJIJJJJIJJIJJJJJJJJIJJIJIJJJJJJIJIHIJJJJJJIIJJJJJJJJJJJJJJGIJIJJIJJHHHHFBBDCDEEDDDDD	YT:Z:UP
+Now starting a Bowtie 2 paired-end alignment for CTread1GAread2GAgenome (reading in sequences from /mnt/dkt/projets/rando_cell_2015/exp/20180315-preprocessing_and_alignment-01/20180315-04_alignment_with_bismark/output/SRR3068771/SRR3068771_1_paired.fastq.gz.temp.6_C_to_T.fastq and /mnt/dkt/projets/rando_cell_2015/exp/20180315-preprocessing_and_alignment-01/20180315-04_alignment_with_bismark/output/SRR3068771/SRR3068771_2_paired.fastq.gz.temp.6_G_to_A.fastq, with the options: -q --score-min L,0,-0.2 --ignore-quals --no-mixed --no-discordant --dovetail --maxins 500 --nofw))
+Found first alignment:
+SRR3068771.5_5_length=100/1	99	chr1_CT_converted	178090408	1	97M	=	178090439	131	TTTTTAAAGAATTAGTTTTTTGATTGGTTGATTTTTTGAATAGTTTTTTTTGTTTTTATTTGGTTGATTTTATTTTTGAGTTTGATTATTTTTTGTT	DDDDFHHHGHIIII@FEHEGIIGHGIB<DA>GHIGIIFCCFHEHGIIFGFC?BCCCB<CCECAA@@>@CCC>>CCDC-884>CA:@CCCDEECC>BA	AS:i:0	XS:i:-6	XN:i:0	XM:i:0	XO:i:0	XG:i:0	NM:i:0	MD:Z:97	YS:i:-6	YT:Z:CP
+SRR3068771.5_5_length=100/2	147	chr1_CT_converted	178090439	1	100M	=	178090408	-131	TTTTTTGAATAGTTTTTTTTGTTTTTATTTGGTTGATTTTATTTTTGAGTTTGATTATTTTTTGTTGTTTATTTTTTTTGGGTGAATGTGTTTTTTTTTT	DDDDDDDCCCA>DDDDDDDDDDDDDDCDDDBCC>4:CCC>8BDDCAA>>>C@>>DCBBDDDDB<B?ECHHAJIGIIJJIIIHGJIHGDB?HHFFFFDC@@	AS:i:-6	XS:i:0	XN:i:0	XM:i:1	XO:i:0	XG:i:0	NM:i:1	MD:Z:66T33	YS:i:0	YT:Z:CP
+Now starting a Bowtie 2 paired-end alignment for CTread1GAread2GAgenome (reading in sequences from /mnt/dkt/projets/rando_cell_2015/exp/20180315-preprocessing_and_alignment-01/20180315-04_alignment_with_bismark/output/SRR3068771/SRR3068771_1_paired.fastq.gz.temp.4_C_to_T.fastq and /mnt/dkt/projets/rando_cell_2015/exp/20180315-preprocessing_and_alignment-01/20180315-04_alignment_with_bismark/output/SRR3068771/SRR3068771_2_paired.fastq.gz.temp.4_G_to_A.fastq, with the options: -q --score-min L,0,-0.2 --ignore-quals --no-mixed --no-discordant --dovetail --maxins 500 --nofw))
+Found first alignment:
+SRR3068771.9_9_length=100/1	77	*	0	0	*	*	0	0	TTATAGTTGAAATTTTTAAATATTTTATTTTTTTTAGTTTTTTTTGTTATATATTATGTTTTAATGTGTGTATTTTTTATTTTTTGTGATTTTT	BDDFFAD?FFGIHEIIIGHHHHG<HGAAFHIIIIGFCDGHIIIDH:EECBCEAC>;>ADEE@>@CCBA(55;;@;>C=8:>@CCC3A?9CCDCC	YT:Z:UP
+SRR3068771.9_9_length=100/2	141	*	0	0	*	*	0	0	AAAAAACATAAAAAATAAAAAATACACACTAAAAAACCTAAAATATAACATAAAAACTAAAAATCACAAAAAATAAAAAATACACACATTAAAACATAAT	@@@DDFFFAFHDFIJJIJIJ>:CGGGDDGGGGIJJEHI;CFGGGGIJGHJGFHHHHF:BDFFEECEE?BBDDDBDCCDDDB@CCDDDDDDCCDDDDDDDA	YT:Z:UP
+Now starting a Bowtie 2 paired-end alignment for CTread1GAread2GAgenome (reading in sequences from /mnt/dkt/projets/rando_cell_2015/exp/20180315-preprocessing_and_alignment-01/20180315-04_alignment_with_bismark/output/SRR3068771/SRR3068771_1_paired.fastq.gz.temp.8_C_to_T.fastq and /mnt/dkt/projets/rando_cell_2015/exp/20180315-preprocessing_and_alignment-01/20180315-04_alignment_with_bismark/output/SRR3068771/SRR3068771_2_paired.fastq.gz.temp.8_G_to_A.fastq, with the options: -q --score-min L,0,-0.2 --ignore-quals --no-mixed --no-discordant --dovetail --maxins 500 --nofw))
+Found first alignment:
+SRR3068771.1_1_length=100/1	77	*	0	0	*	*	0	0	ATGTTTATTGTAGGATATGGAATATAGTAAGAAAATTGAAAATTATGGAAAATGAGTAATATTTATTTGATGTTTTGAAAAATGA	ADDDFHDFHIIFHIEHFIHIBFHFHF@EEHEEGCBBGHGFGBFG?FHIEB?DBGEFFHIIHGHIHGGIIFHGHEHGGCCADHEHC	YT:Z:UP
+SRR3068771.1_1_length=100/2	141	*	0	0	*	*	0	0	CTCCATTTTCCAAATCCTACAATATACATTTCTCATTTTTCACATTTTTCAATAATTTCATCATTTTTCAAAACATCAAATAAATATT	@@@FDEFFHHHHHGHBGHGIBHIJJJJ@HIJJJG@HHIJJFE9?DGGIIGI<?4?DGI9BFIEHIGGGB<F4BGGGIJJCHEGGIIII	YT:Z:UP
+Now starting a Bowtie 2 paired-end alignment for CTread1GAread2GAgenome (reading in sequences from /mnt/dkt/projets/rando_cell_2015/exp/20180315-preprocessing_and_alignment-01/20180315-04_alignment_with_bismark/output/SRR3068771/SRR3068771_1_paired.fastq.gz.temp.1_C_to_T.fastq and /mnt/dkt/projets/rando_cell_2015/exp/20180315-preprocessing_and_alignment-01/20180315-04_alignment_with_bismark/output/SRR3068771/SRR3068771_2_paired.fastq.gz.temp.1_G_to_A.fastq, with the options: -q --score-min L,0,-0.2 --ignore-quals --no-mixed --no-discordant --dovetail --maxins 500 --nofw))
+Found first alignment:
+SRR3068771.3_3_length=100/1	77	*	0	0	*	*	0	0	TGAATAATAAAATTAATTTATAGGGTAAGATATAATATTGTTGTAATAAAGGAATAATTGTTATGGGGGTAAATAATTATTTTTTGATTGGATTTG	ABBD><BD4A:C:E:CFII@>,<FF+<<A2A<CC:C1C@DDFI;9??9B?BD999?DEAD?@BDCE<DD/:7;);?@BDA>@AA6>?>AA?,:AAA	YT:Z:UP
+SRR3068771.3_3_length=100/2	141	*	0	0	*	*	0	0	ACATATAAACAAAAATATTTAAAAAACAATTTAATAAAATATCCACTTAACAAAACAACACTAATAAACACTTCTCTAAAATCTATAATCCTCTAACCAT	?;BDD4BDBCFF8?+A+2<AIFDCGA?1)1**:D91?9D<GBHGIJEEH*?BFBBFIJ=F(/=).=D=E=EEFHHD>))7?B@>A;>66@;55@A;>ACD	YT:Z:UP
+Found first alignment:
+SRR3068771.4_4_length=100/1	83	chr17_GA_converted	15793198	42	81M	=	15793127	-152	CCCTTCTTCTTCCTCCTCCTCTTCCACCTCCTTCTTCCCCTCCTCCTCTTTTTCTTCTTTAAATTATCTTTAATTTTTTTT	??AA>A>8282;<8922<><>:5<9(?92?A>==99@DA;(A@6=@(A>D>DBD?9DD@BDB9>D>BBDD4DDDDDDDDDD	AS:i:0	XN:i:0	XM:i:0	XO:i:0	XG:i:0	NM:i:0	MD:Z:81	YS:i:0	YT:Z:CP
+SRR3068771.4_4_length=100/2	163	chr17_GA_converted	15793127	42	100M	=	15793198	152	TCTTCTTCTTCTTCTTCTTCTTCTTCTTCTTCTTCTTCTTCTTCTTCTTCTTCTTCCTTCTCCTCCTCCTCCCCTTCTTCTTCCTCCTCCTCTTCCACCT	@@@DDBDDD<F:DEBGGBFEGHCBFHBDFEGEBE@AC??BD9EF9?<?BF>DC*?DF>*BBFC@9D>B;)=B=B96=.7@4)7=3=?.)?@CC>3;(>A?	AS:i:0	XN:i:0	XM:i:0	XO:i:0	XG:i:0	NM:i:0	MD:Z:100	YS:i:0	YT:Z:CP
+Found first alignment:
+SRR3068771.9_9_length=100/1	77	*	0	0	*	*	0	0	TTATAGTTGAAATTTTTAAATATTTTATTTTTTTTAGTTTTTTTTGTTATATATTATGTTTTAATGTGTGTATTTTTTATTTTTTGTGATTTTT	BDDFFAD?FFGIHEIIIGHHHHG<HGAAFHIIIIGFCDGHIIIDH:EECBCEAC>;>ADEE@>@CCBA(55;;@;>C=8:>@CCC3A?9CCDCC	YT:Z:UP
+SRR3068771.9_9_length=100/2	141	*	0	0	*	*	0	0	AAAAAACATAAAAAATAAAAAATACACACTAAAAAACCTAAAATATAACATAAAAACTAAAAATCACAAAAAATAAAAAATACACACATTAAAACATAAT	@@@DDFFFAFHDFIJJIJIJ>:CGGGDDGGGGIJJEHI;CFGGGGIJGHJGFHHHHF:BDFFEECEE?BBDDDBDCCDDDB@CCDDDDDDCCDDDDDDDA	YT:Z:UP
+Found first alignment:
+SRR3068771.6_6_length=100/1	77	*	0	0	*	*	0	0	ATGTTGGTTGAAGGTTTGATTTTTTAGTGATGATAGTAGAAAGATGATTTATTTATTATATGTGTATATATTTGGTTTTGGTATGGGAGTGATGGG	BDD4BFACFAEFFE3BHEDHIFEIIE9?<<DAF>FF*9BDGEBAFEFBCEFEFGFAFFCAFCFA)7)@EFCEA33?=BD>6;@AB??;=;<:@@AB	YT:Z:UP
+SRR3068771.6_6_length=100/2	141	*	0	0	*	*	0	0	AAAACTACTCTCTCAATAAAACTCCATCTCCCATCACCACACTTTAACTCAAACTCCCTTCAAAAACCCATCACTCCCATACCAAAACCAAATATATACA	BCCFFDFFBBFHDIJIGGIJJGGIEHGIJJJJJJJ<GIJ@HH;FHIJEIIFEHGEHIFGAEGGJIJFHIJIHHHHGFFFDFEECEBBDDDD@>CDDDCDE	YT:Z:UP
+Found first alignment:
+SRR3068771.7_7_length=100/1	83	chr6_GA_converted	125397975	1	94M	=	125397881	-188	AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAACAAACATAAAACCCCTCACTTCCTCCTTCCTAAAACCATAA	@<>59-095BDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDFJIJJJJJJIHEJIIGIGFHHF?JIHHFEAHHFHGEIHGGJJIHHHDHFFFDD	AS:i:-6	XS:i:-6	XN:i:0	XM:i:1	XO:i:0	XG:i:0	NM:i:1	MD:Z:53T40	YS:i:0	YT:Z:CP
+SRR3068771.7_7_length=100/2	163	chr6_GA_converted	125397881	1	100M	=	125397975	188	CCCTAACTAAAACATTCATACATTTACAACTCAACTAATAATCTTAACTTCAATAAAATACATCAATAAACAACTATTACTAACAAACATCAAAAAAAAA	CCCFFFFFHHHHHJJJJJIJJJJIJJIJJJJJJJJIJJIJIJJJJJJIJIHIJJJJJJIIJJJJJJJJJJJJJJGIJIJJIJJHHHHFBBDCDEEDDDDD	AS:i:0	XS:i:0	XN:i:0	XM:i:0	XO:i:0	XG:i:0	NM:i:0	MD:Z:100	YS:i:-6	YT:Z:CP
+Found first alignment:
+SRR3068771.5_5_length=100/1	83	chr1_GA_converted	4443228	7	97M	=	4443194	-131	AACAAAAAATAATCAAACTCAAAAATAAAATCAACCAAATAAAAACAAAAAAAACTATTCAAAAAATCAACCAATCAAAAAACTAATTCTTTAAAAA	AB>CCEEDCCC@:AC>488-CDCC>>CCC@>@@AACECC<BCCCB?CFGFIIGHEHFCCFIIGIHG>AD<BIGHGIIGEHEF@IIIIHGHHHFDDDD	AS:i:0	XS:i:0	XN:i:0	XM:i:0	XO:i:0	XG:i:0	NM:i:0	MD:Z:97	YS:i:-6	YT:Z:CP
+SRR3068771.5_5_length=100/2	163	chr1_GA_converted	4443194	7	100M	=	4443228	131	AAAAAAAAAACACATTCACCCAAAAAAAATAAACAACAAAAAATAATCAAACTCAAAAATAAAATCAACCAAATAAAAACAAAAAAAACTATTCAAAAAA	@@CDFFFFHH?BDGHIJGHIIIJJIIGIJAHHCE?B<BDDDDBBCD>>@C>>>AACDDB8>CCC:4>CCBDDDCDDDDDDDDDDDDDD>ACCCDDDDDDD	AS:i:-6	XS:i:-12	XN:i:0	XM:i:1	XO:i:0	XG:i:0	NM:i:1	MD:Z:12A87	YS:i:0	YT:Z:CP
+Found first alignment:
+SRR3068771.8_8_length=100/1	83	chr5_GA_converted	123338027	42	97M	=	123337925	-199	TATCCCCTACCACACCTAAACAACCATATCTATATAAACTTTACTCCAAATCTCTAAATCATAACCAAACTATCTAAATTAAAAAAAAATTTAAATA	?5)&B?::2@@?BCCC@??2;5(1ACAA;BCECC?;>HHHEE@;@EGD@@CICHFIHAGHDD;FGGFBDDDD:?<IIGF;GIFIHBB>F?HHDADDB	AS:i:-6	XN:i:0	XM:i:1	XO:i:0	XG:i:0	NM:i:1	MD:Z:3A93	YS:i:0	YT:Z:CP
+SRR3068771.8_8_length=100/2	163	chr5_GA_converted	123337925	42	99M	=	123338027	199	AAAAACTCTTTTATTTTAAAACAAAATCTCACCCCATAAACCTAACTAATCTCAAACTCAAAAATCCACTAACTTCTACCTCTTAAATACAAAAATTCA	B@FFDFFD>+:?E>E<<EGIJIJIIIGIJJGIJJGIJIJII?BHIEBDGBFFGIIJG38<FHIJ@EAGIGHFHGHHHFFFFFFEAEEEEDDDCBDBDCD	AS:i:0	XN:i:0	XM:i:0	XO:i:0	XG:i:0	NM:i:0	MD:Z:99	YS:i:-6	YT:Z:CP
+
+>>> Writing bisulfite mapping results to SRR3068771_1_paired.fastq.gz.temp.5_bismark_bt2_pe.bam <<<
+
+
+>>> Writing bisulfite mapping results to SRR3068771_1_paired.fastq.gz.temp.8_bismark_bt2_pe.bam <<<
+
+
+>>> Writing bisulfite mapping results to SRR3068771_1_paired.fastq.gz.temp.4_bismark_bt2_pe.bam <<<
+
+
+>>> Writing bisulfite mapping results to SRR3068771_1_paired.fastq.gz.temp.3_bismark_bt2_pe.bam <<<
+
+
+>>> Writing bisulfite mapping results to SRR3068771_1_paired.fastq.gz.temp.7_bismark_bt2_pe.bam <<<
+
+
+>>> Writing bisulfite mapping results to SRR3068771_1_paired.fastq.gz.temp.6_bismark_bt2_pe.bam <<<
+
+
+>>> Writing bisulfite mapping results to SRR3068771_1_paired.fastq.gz.temp.2_bismark_bt2_pe.bam <<<
+
+
+Reading in the sequence files /mnt/dkt/projets/rando_cell_2015/exp/20180315-preprocessing_and_alignment-01/20180315-04_alignment_with_bismark/output/SRR3068771/SRR3068771_1_paired.fastq.gz.temp.5 and /mnt/dkt/projets/rando_cell_2015/exp/20180315-preprocessing_and_alignment-01/20180315-04_alignment_with_bismark/output/SRR3068771/SRR3068771_2_paired.fastq.gz.temp.5
+
+Reading in the sequence files /mnt/dkt/projets/rando_cell_2015/exp/20180315-preprocessing_and_alignment-01/20180315-04_alignment_with_bismark/output/SRR3068771/SRR3068771_1_paired.fastq.gz.temp.8 and /mnt/dkt/projets/rando_cell_2015/exp/20180315-preprocessing_and_alignment-01/20180315-04_alignment_with_bismark/output/SRR3068771/SRR3068771_2_paired.fastq.gz.temp.8
+
+Reading in the sequence files /mnt/dkt/projets/rando_cell_2015/exp/20180315-preprocessing_and_alignment-01/20180315-04_alignment_with_bismark/output/SRR3068771/SRR3068771_1_paired.fastq.gz.temp.3 and /mnt/dkt/projets/rando_cell_2015/exp/20180315-preprocessing_and_alignment-01/20180315-04_alignment_with_bismark/output/SRR3068771/SRR3068771_2_paired.fastq.gz.temp.3
+
+Reading in the sequence files /mnt/dkt/projets/rando_cell_2015/exp/20180315-preprocessing_and_alignment-01/20180315-04_alignment_with_bismark/output/SRR3068771/SRR3068771_1_paired.fastq.gz.temp.2 and /mnt/dkt/projets/rando_cell_2015/exp/20180315-preprocessing_and_alignment-01/20180315-04_alignment_with_bismark/output/SRR3068771/SRR3068771_2_paired.fastq.gz.temp.2
+
+Reading in the sequence files /mnt/dkt/projets/rando_cell_2015/exp/20180315-preprocessing_and_alignment-01/20180315-04_alignment_with_bismark/output/SRR3068771/SRR3068771_1_paired.fastq.gz.temp.7 and /mnt/dkt/projets/rando_cell_2015/exp/20180315-preprocessing_and_alignment-01/20180315-04_alignment_with_bismark/output/SRR3068771/SRR3068771_2_paired.fastq.gz.temp.7
+
+Reading in the sequence files /mnt/dkt/projets/rando_cell_2015/exp/20180315-preprocessing_and_alignment-01/20180315-04_alignment_with_bismark/output/SRR3068771/SRR3068771_1_paired.fastq.gz.temp.6 and /mnt/dkt/projets/rando_cell_2015/exp/20180315-preprocessing_and_alignment-01/20180315-04_alignment_with_bismark/output/SRR3068771/SRR3068771_2_paired.fastq.gz.temp.6
+
+Reading in the sequence files /mnt/dkt/projets/rando_cell_2015/exp/20180315-preprocessing_and_alignment-01/20180315-04_alignment_with_bismark/output/SRR3068771/SRR3068771_1_paired.fastq.gz.temp.4 and /mnt/dkt/projets/rando_cell_2015/exp/20180315-preprocessing_and_alignment-01/20180315-04_alignment_with_bismark/output/SRR3068771/SRR3068771_2_paired.fastq.gz.temp.4
+Found first alignment:
+SRR3068771.1_1_length=100/1	77	*	0	0	*	*	0	0	ATGTTTATTGTAGGATATGGAATATAGTAAGAAAATTGAAAATTATGGAAAATGAGTAATATTTATTTGATGTTTTGAAAAATGA	ADDDFHDFHIIFHIEHFIHIBFHFHF@EEHEEGCBBGHGFGBFG?FHIEB?DBGEFFHIIHGHIHGGIIFHGHEHGGCCADHEHC	YT:Z:UP
+SRR3068771.1_1_length=100/2	141	*	0	0	*	*	0	0	CTCCATTTTCCAAATCCTACAATATACATTTCTCATTTTTCACATTTTTCAATAATTTCATCATTTTTCAAAACATCAAATAAATATT	@@@FDEFFHHHHHGHBGHGIBHIJJJJ@HIJJJG@HHIJJFE9?DGGIIGI<?4?DGI9BFIEHIGGGB<F4BGGGIJJCHEGGIIII	YT:Z:UP
+
+>>> Writing bisulfite mapping results to SRR3068771_1_paired.fastq.gz.temp.1_bismark_bt2_pe.bam <<<
+
+
+Reading in the sequence files /mnt/dkt/projets/rando_cell_2015/exp/20180315-preprocessing_and_alignment-01/20180315-04_alignment_with_bismark/output/SRR3068771/SRR3068771_1_paired.fastq.gz.temp.1 and /mnt/dkt/projets/rando_cell_2015/exp/20180315-preprocessing_and_alignment-01/20180315-04_alignment_with_bismark/output/SRR3068771/SRR3068771_2_paired.fastq.gz.temp.1
+Processed 1000000 sequence pairs so far
+Processed 1000000 sequence pairs so far
+Processed 1000000 sequence pairs so far
+Processed 1000000 sequence pairs so far
+Processed 1000000 sequence pairs so far
+Processed 1000000 sequence pairs so far
+Processed 1000000 sequence pairs so far
+Processed 1000000 sequence pairs so far
+Processed 2000000 sequence pairs so far
+Processed 2000000 sequence pairs so far
+Processed 2000000 sequence pairs so far
+Processed 2000000 sequence pairs so far
+Processed 2000000 sequence pairs so far
+Processed 2000000 sequence pairs so far
+Processed 2000000 sequence pairs so far
+Processed 2000000 sequence pairs so far
+Processed 3000000 sequence pairs so far
+Processed 3000000 sequence pairs so far
+Processed 3000000 sequence pairs so far
+Processed 3000000 sequence pairs so far
+Processed 3000000 sequence pairs so far
+Processed 3000000 sequence pairs so far
+Processed 3000000 sequence pairs so far
+Processed 3000000 sequence pairs so far
+Processed 4000000 sequence pairs so far
+Processed 4000000 sequence pairs so far
+Processed 4000000 sequence pairs so far
+Processed 4000000 sequence pairs so far
+Processed 4000000 sequence pairs so far
+Processed 4000000 sequence pairs so far
+Processed 4000000 sequence pairs so far
+Processed 4000000 sequence pairs so far
+Processed 5000000 sequence pairs so far
+Processed 5000000 sequence pairs so far
+Processed 5000000 sequence pairs so far
+Processed 5000000 sequence pairs so far
+Processed 5000000 sequence pairs so far
+Processed 5000000 sequence pairs so far
+Processed 5000000 sequence pairs so far
+Processed 5000000 sequence pairs so far
+Processed 6000000 sequence pairs so far
+Processed 6000000 sequence pairs so far
+Processed 6000000 sequence pairs so far
+Processed 6000000 sequence pairs so far
+Processed 6000000 sequence pairs so far
+Processed 6000000 sequence pairs so far
+Processed 6000000 sequence pairs so far
+Processed 6000000 sequence pairs so far
+Chromosomal sequence could not be extracted for	SRR3068771.55938327_55938327_length=100	chrUn_JH584304	114353
+Processed 7000000 sequence pairs so far
+Processed 7000000 sequence pairs so far
+Processed 7000000 sequence pairs so far
+Processed 7000000 sequence pairs so far
+Processed 7000000 sequence pairs so far
+Processed 7000000 sequence pairs so far
+Processed 7000000 sequence pairs so far
+Processed 7000000 sequence pairs so far
+Processed 8000000 sequence pairs so far
+Processed 8000000 sequence pairs so far
+Processed 8000000 sequence pairs so far
+Processed 8000000 sequence pairs so far
+Processed 8000000 sequence pairs so far
+Processed 8000000 sequence pairs so far
+Processed 8000000 sequence pairs so far
+Processed 8000000 sequence pairs so far
+Processed 9000000 sequence pairs so far
+Processed 9000000 sequence pairs so far
+Processed 9000000 sequence pairs so far
+Processed 9000000 sequence pairs so far
+Processed 9000000 sequence pairs so far
+Processed 9000000 sequence pairs so far
+Processed 9000000 sequence pairs so far
+Processed 9000000 sequence pairs so far
+Processed 10000000 sequence pairs so far
+Processed 10000000 sequence pairs so far
+Processed 10000000 sequence pairs so far
+Processed 10000000 sequence pairs so far
+Processed 10000000 sequence pairs so far
+Processed 10000000 sequence pairs so far
+Processed 10000000 sequence pairs so far
+Processed 10000000 sequence pairs so far
+Processed 11000000 sequence pairs so far
+Processed 11000000 sequence pairs so far
+Processed 11000000 sequence pairs so far
+Processed 11000000 sequence pairs so far
+Processed 11000000 sequence pairs so far
+Processed 11000000 sequence pairs so far
+Processed 11000000 sequence pairs so far
+Processed 11000000 sequence pairs so far
+Processed 12000000 sequence pairs so far
+Processed 12000000 sequence pairs so far
+Processed 12000000 sequence pairs so far
+Processed 12000000 sequence pairs so far
+Processed 12000000 sequence pairs so far
+Processed 12000000 sequence pairs so far
+Processed 12000000 sequence pairs so far
+Processed 12000000 sequence pairs so far
+Processed 13000000 sequence pairs so far
+Processed 13000000 sequence pairs so far
+Processed 13000000 sequence pairs so far
+Processed 13000000 sequence pairs so far
+Processed 13000000 sequence pairs so far
+Processed 13000000 sequence pairs so far
+Processed 13000000 sequence pairs so far
+Processed 13000000 sequence pairs so far
+Processed 14000000 sequence pairs so far
+Processed 14000000 sequence pairs so far
+Processed 14000000 sequence pairs so far
+Processed 14000000 sequence pairs so far
+Processed 14000000 sequence pairs so far
+Processed 14000000 sequence pairs so far
+Processed 14000000 sequence pairs so far
+Processed 14000000 sequence pairs so far
+Processed 15000000 sequence pairs so far
+Processed 15000000 sequence pairs so far
+Processed 15000000 sequence pairs so far
+Processed 15000000 sequence pairs so far
+Processed 15000000 sequence pairs so far
+Processed 15000000 sequence pairs so far
+Processed 15000000 sequence pairs so far
+Processed 15000000 sequence pairs so far
+Processed 16000000 sequence pairs so far
+Processed 16000000 sequence pairs so far
+Processed 16000000 sequence pairs so far
+Processed 16000000 sequence pairs so far
+Processed 16000000 sequence pairs so far
+Processed 16000000 sequence pairs so far
+Processed 16000000 sequence pairs so far
+Processed 16000000 sequence pairs so far
+Processed 17000000 sequence pairs so far
+Processed 17000000 sequence pairs so far
+Processed 17000000 sequence pairs so far
+Processed 17000000 sequence pairs so far
+Processed 17000000 sequence pairs so far
+Processed 17000000 sequence pairs so far
+Processed 17000000 sequence pairs so far
+Processed 17000000 sequence pairs so far
+Chromosomal sequence could not be extracted for	SRR3068771.145089322_145089322_length=100	chrUn_JH584304	114355
+Processed 18000000 sequence pairs so far
+Processed 18000000 sequence pairs so far
+Processed 18000000 sequence pairs so far
+Processed 18000000 sequence pairs so far
+Processed 18000000 sequence pairs so far
+Processed 18000000 sequence pairs so far
+Processed 18000000 sequence pairs so far
+Processed 18000000 sequence pairs so far
+18592138 reads; of these:
+  18592138 (100.00%) were paired; of these:
+    12179687 (65.51%) aligned concordantly 0 times
+    3594886 (19.34%) aligned concordantly exactly 1 time
+    2817565 (15.15%) aligned concordantly >1 times
+34.49% overall alignment rate
+18592138 reads; of these:
+  18592138 (100.00%) were paired; of these:
+    12901285 (69.39%) aligned concordantly 0 times
+    3465744 (18.64%) aligned concordantly exactly 1 time
+    2225109 (11.97%) aligned concordantly >1 times
+30.61% overall alignment rate
+Processed 18592138 sequences in total
+
+
+Successfully deleted the temporary files /mnt/dkt/projets/rando_cell_2015/exp/20180315-preprocessing_and_alignment-01/20180315-04_alignment_with_bismark/output/SRR3068771/SRR3068771_1_paired.fastq.gz.temp.7_C_to_T.fastq and /mnt/dkt/projets/rando_cell_2015/exp/20180315-preprocessing_and_alignment-01/20180315-04_alignment_with_bismark/output/SRR3068771/SRR3068771_2_paired.fastq.gz.temp.7_G_to_A.fastq
+
+Final Alignment report
+======================
+Sequence pairs analysed in total:	18592138
+Number of paired-end alignments with a unique best hit:	7999622
+Mapping efficiency:	43.0%
+
+Sequence pairs with no alignments under any condition:	8808362
+Sequence pairs did not map uniquely:	1784154
+Sequence pairs which were discarded because genomic sequence could not be extracted:	0
+
+Number of sequence pairs with unique best (first) alignment came from the bowtie output:
+CT/GA/CT:	4477388	((converted) top strand)
+GA/CT/CT:	0	(complementary to (converted) top strand)
+GA/CT/GA:	0	(complementary to (converted) bottom strand)
+CT/GA/GA:	3522234	((converted) bottom strand)
+
+Number of alignments to (merely theoretical) complementary strands being rejected in total:	0
+
+Final Cytosine Methylation Report
+=================================
+Total number of C's analysed:	290841565
+
+Total methylated C's in CpG context:	13168385
+Total methylated C's in CHG context:	130928
+Total methylated C's in CHH context:	532921
+Total methylated C's in Unknown context:	0
+
+Total unmethylated C's in CpG context:	9873064
+Total unmethylated C's in CHG context:	72863055
+Total unmethylated C's in CHH context:	194273212
+Total unmethylated C's in Unknown context:	115
+
+C methylated in CpG context:	57.2%
+C methylated in CHG context:	0.2%
+C methylated in CHH context:	0.3%
+C methylated in unknown context (CN or CHN):	0.0%
+
+
+18592139 reads; of these:
+  18592139 (100.00%) were paired; of these:
+    12180373 (65.51%) aligned concordantly 0 times
+    3597938 (19.35%) aligned concordantly exactly 1 time
+    2813828 (15.13%) aligned concordantly >1 times
+34.49% overall alignment rate
+18592139 reads; of these:
+  18592139 (100.00%) were paired; of these:
+    12904316 (69.41%) aligned concordantly 0 times
+    3464340 (18.63%) aligned concordantly exactly 1 time
+    2223483 (11.96%) aligned concordantly >1 times
+30.59% overall alignment rate
+Processed 18592139 sequences in total
+
+
+Successfully deleted the temporary files /mnt/dkt/projets/rando_cell_2015/exp/20180315-preprocessing_and_alignment-01/20180315-04_alignment_with_bismark/output/SRR3068771/SRR3068771_1_paired.fastq.gz.temp.1_C_to_T.fastq and /mnt/dkt/projets/rando_cell_2015/exp/20180315-preprocessing_and_alignment-01/20180315-04_alignment_with_bismark/output/SRR3068771/SRR3068771_2_paired.fastq.gz.temp.1_G_to_A.fastq
+
+Final Alignment report
+======================
+Sequence pairs analysed in total:	18592139
+Number of paired-end alignments with a unique best hit:	8000362
+Mapping efficiency:	43.0%
+
+Sequence pairs with no alignments under any condition:	8809651
+Sequence pairs did not map uniquely:	1782126
+Sequence pairs which were discarded because genomic sequence could not be extracted:	0
+
+Number of sequence pairs with unique best (first) alignment came from the bowtie output:
+CT/GA/CT:	4479323	((converted) top strand)
+GA/CT/CT:	0	(complementary to (converted) top strand)
+GA/CT/GA:	0	(complementary to (converted) bottom strand)
+CT/GA/GA:	3521039	((converted) bottom strand)
+
+Number of alignments to (merely theoretical) complementary strands being rejected in total:	0
+
+Final Cytosine Methylation Report
+=================================
+Total number of C's analysed:	290949279
+
+Total methylated C's in CpG context:	13182247
+Total methylated C's in CHG context:	130057
+Total methylated C's in CHH context:	531671
+Total methylated C's in Unknown context:	0
+
+Total unmethylated C's in CpG context:	9858358
+Total unmethylated C's in CHG context:	72885433
+Total unmethylated C's in CHH context:	194361513
+Total unmethylated C's in Unknown context:	115
+
+C methylated in CpG context:	57.2%
+C methylated in CHG context:	0.2%
+C methylated in CHH context:	0.3%
+C methylated in unknown context (CN or CHN):	0.0%
+
+
+18592138 reads; of these:
+  18592138 (100.00%) were paired; of these:
+    12177017 (65.50%) aligned concordantly 0 times
+    3598908 (19.36%) aligned concordantly exactly 1 time
+    2816213 (15.15%) aligned concordantly >1 times
+34.50% overall alignment rate
+18592138 reads; of these:
+  18592138 (100.00%) were paired; of these:
+    12907465 (69.42%) aligned concordantly 0 times
+    3460078 (18.61%) aligned concordantly exactly 1 time
+    2224595 (11.97%) aligned concordantly >1 times
+30.58% overall alignment rate
+Processed 18592138 sequences in total
+
+
+Successfully deleted the temporary files /mnt/dkt/projets/rando_cell_2015/exp/20180315-preprocessing_and_alignment-01/20180315-04_alignment_with_bismark/output/SRR3068771/SRR3068771_1_paired.fastq.gz.temp.6_C_to_T.fastq and /mnt/dkt/projets/rando_cell_2015/exp/20180315-preprocessing_and_alignment-01/20180315-04_alignment_with_bismark/output/SRR3068771/SRR3068771_2_paired.fastq.gz.temp.6_G_to_A.fastq
+
+Final Alignment report
+======================
+Sequence pairs analysed in total:	18592138
+Number of paired-end alignments with a unique best hit:	7996587
+Mapping efficiency:	43.0%
+
+Sequence pairs with no alignments under any condition:	8811080
+Sequence pairs did not map uniquely:	1784471
+Sequence pairs which were discarded because genomic sequence could not be extracted:	0
+
+Number of sequence pairs with unique best (first) alignment came from the bowtie output:
+CT/GA/CT:	4480446	((converted) top strand)
+GA/CT/CT:	0	(complementary to (converted) top strand)
+GA/CT/GA:	0	(complementary to (converted) bottom strand)
+CT/GA/GA:	3516141	((converted) bottom strand)
+
+Number of alignments to (merely theoretical) complementary strands being rejected in total:	0
+
+Final Cytosine Methylation Report
+=================================
+Total number of C's analysed:	290744430
+
+Total methylated C's in CpG context:	13171649
+Total methylated C's in CHG context:	130468
+Total methylated C's in CHH context:	533025
+Total methylated C's in Unknown context:	2
+
+Total unmethylated C's in CpG context:	9872236
+Total unmethylated C's in CHG context:	72825219
+Total unmethylated C's in CHH context:	194211833
+Total unmethylated C's in Unknown context:	137
+
+C methylated in CpG context:	57.2%
+C methylated in CHG context:	0.2%
+C methylated in CHH context:	0.3%
+C methylated in unknown context (CN or CHN):	1.4%
+
+
+18592139 reads; of these:
+  18592139 (100.00%) were paired; of these:
+    12180914 (65.52%) aligned concordantly 0 times
+    3594605 (19.33%) aligned concordantly exactly 1 time
+    2816620 (15.15%) aligned concordantly >1 times
+34.48% overall alignment rate
+18592139 reads; of these:
+  18592139 (100.00%) were paired; of these:
+    12900947 (69.39%) aligned concordantly 0 times
+    3465149 (18.64%) aligned concordantly exactly 1 time
+    2226043 (11.97%) aligned concordantly >1 times
+30.61% overall alignment rate
+Processed 18592139 sequences in total
+
+
+Successfully deleted the temporary files /mnt/dkt/projets/rando_cell_2015/exp/20180315-preprocessing_and_alignment-01/20180315-04_alignment_with_bismark/output/SRR3068771/SRR3068771_1_paired.fastq.gz.temp.2_C_to_T.fastq and /mnt/dkt/projets/rando_cell_2015/exp/20180315-preprocessing_and_alignment-01/20180315-04_alignment_with_bismark/output/SRR3068771/SRR3068771_2_paired.fastq.gz.temp.2_G_to_A.fastq
+
+Final Alignment report
+======================
+Sequence pairs analysed in total:	18592139
+Number of paired-end alignments with a unique best hit:	8000282
+Mapping efficiency:	43.0%
+
+Sequence pairs with no alignments under any condition:	8808223
+Sequence pairs did not map uniquely:	1783634
+Sequence pairs which were discarded because genomic sequence could not be extracted:	0
+
+Number of sequence pairs with unique best (first) alignment came from the bowtie output:
+CT/GA/CT:	4476633	((converted) top strand)
+GA/CT/CT:	0	(complementary to (converted) top strand)
+GA/CT/GA:	0	(complementary to (converted) bottom strand)
+CT/GA/GA:	3523649	((converted) bottom strand)
+
+Number of alignments to (merely theoretical) complementary strands being rejected in total:	0
+
+Final Cytosine Methylation Report
+=================================
+Total number of C's analysed:	290870832
+
+Total methylated C's in CpG context:	13177246
+Total methylated C's in CHG context:	130395
+Total methylated C's in CHH context:	531243
+Total methylated C's in Unknown context:	1
+
+Total unmethylated C's in CpG context:	9863700
+Total unmethylated C's in CHG context:	72877867
+Total unmethylated C's in CHH context:	194290381
+Total unmethylated C's in Unknown context:	115
+
+C methylated in CpG context:	57.2%
+C methylated in CHG context:	0.2%
+C methylated in CHH context:	0.3%
+C methylated in unknown context (CN or CHN):	0.9%
+
+
+18592139 reads; of these:
+  18592139 (100.00%) were paired; of these:
+    12175033 (65.48%) aligned concordantly 0 times
+    3597857 (19.35%) aligned concordantly exactly 1 time
+    2819249 (15.16%) aligned concordantly >1 times
+34.52% overall alignment rate
+18592139 reads; of these:
+  18592139 (100.00%) were paired; of these:
+    12902461 (69.40%) aligned concordantly 0 times
+    3460916 (18.61%) aligned concordantly exactly 1 time
+    2228762 (11.99%) aligned concordantly >1 times
+30.60% overall alignment rate
+Processed 18592139 sequences in total
+
+
+Successfully deleted the temporary files /mnt/dkt/projets/rando_cell_2015/exp/20180315-preprocessing_and_alignment-01/20180315-04_alignment_with_bismark/output/SRR3068771/SRR3068771_1_paired.fastq.gz.temp.4_C_to_T.fastq and /mnt/dkt/projets/rando_cell_2015/exp/20180315-preprocessing_and_alignment-01/20180315-04_alignment_with_bismark/output/SRR3068771/SRR3068771_2_paired.fastq.gz.temp.4_G_to_A.fastq
+
+Final Alignment report
+======================
+Sequence pairs analysed in total:	18592139
+Number of paired-end alignments with a unique best hit:	7997787
+Mapping efficiency:	43.0%
+
+Sequence pairs with no alignments under any condition:	8807576
+Sequence pairs did not map uniquely:	1786776
+Sequence pairs which were discarded because genomic sequence could not be extracted:	0
+
+Number of sequence pairs with unique best (first) alignment came from the bowtie output:
+CT/GA/CT:	4480367	((converted) top strand)
+GA/CT/CT:	0	(complementary to (converted) top strand)
+GA/CT/GA:	0	(complementary to (converted) bottom strand)
+CT/GA/GA:	3517420	((converted) bottom strand)
+
+Number of alignments to (merely theoretical) complementary strands being rejected in total:	0
+
+Final Cytosine Methylation Report
+=================================
+Total number of C's analysed:	290835079
+
+Total methylated C's in CpG context:	13170213
+Total methylated C's in CHG context:	130270
+Total methylated C's in CHH context:	532509
+Total methylated C's in Unknown context:	1
+
+Total unmethylated C's in CpG context:	9872343
+Total unmethylated C's in CHG context:	72849658
+Total unmethylated C's in CHH context:	194280086
+Total unmethylated C's in Unknown context:	106
+
+C methylated in CpG context:	57.2%
+C methylated in CHG context:	0.2%
+C methylated in CHH context:	0.3%
+C methylated in unknown context (CN or CHN):	0.9%
+
+
+18592138 reads; of these:
+  18592138 (100.00%) were paired; of these:
+    12179315 (65.51%) aligned concordantly 0 times
+    3596451 (19.34%) aligned concordantly exactly 1 time
+    2816372 (15.15%) aligned concordantly >1 times
+34.49% overall alignment rate
+18592138 reads; of these:
+  18592138 (100.00%) were paired; of these:
+    12903096 (69.40%) aligned concordantly 0 times
+    3463577 (18.63%) aligned concordantly exactly 1 time
+    2225465 (11.97%) aligned concordantly >1 times
+30.60% overall alignment rate
+Processed 18592138 sequences in total
+
+
+Successfully deleted the temporary files /mnt/dkt/projets/rando_cell_2015/exp/20180315-preprocessing_and_alignment-01/20180315-04_alignment_with_bismark/output/SRR3068771/SRR3068771_1_paired.fastq.gz.temp.8_C_to_T.fastq and /mnt/dkt/projets/rando_cell_2015/exp/20180315-preprocessing_and_alignment-01/20180315-04_alignment_with_bismark/output/SRR3068771/SRR3068771_2_paired.fastq.gz.temp.8_G_to_A.fastq
+
+Final Alignment report
+======================
+Sequence pairs analysed in total:	18592138
+Number of paired-end alignments with a unique best hit:	7997468
+Mapping efficiency:	43.0%
+
+Sequence pairs with no alignments under any condition:	8808369
+Sequence pairs did not map uniquely:	1786301
+Sequence pairs which were discarded because genomic sequence could not be extracted:	1
+
+Number of sequence pairs with unique best (first) alignment came from the bowtie output:
+CT/GA/CT:	4476933	((converted) top strand)
+GA/CT/CT:	0	(complementary to (converted) top strand)
+GA/CT/GA:	0	(complementary to (converted) bottom strand)
+CT/GA/GA:	3520534	((converted) bottom strand)
+
+Number of alignments to (merely theoretical) complementary strands being rejected in total:	0
+
+Final Cytosine Methylation Report
+=================================
+Total number of C's analysed:	290814951
+
+Total methylated C's in CpG context:	13162828
+Total methylated C's in CHG context:	131125
+Total methylated C's in CHH context:	531744
+Total methylated C's in Unknown context:	0
+
+Total unmethylated C's in CpG context:	9865381
+Total unmethylated C's in CHG context:	72849867
+Total unmethylated C's in CHH context:	194274006
+Total unmethylated C's in Unknown context:	103
+
+C methylated in CpG context:	57.2%
+C methylated in CHG context:	0.2%
+C methylated in CHH context:	0.3%
+C methylated in unknown context (CN or CHN):	0.0%
+
+
+Now waiting for all child processes to complete
+18592139 reads; of these:
+  18592139 (100.00%) were paired; of these:
+    12181727 (65.52%) aligned concordantly 0 times
+    3594270 (19.33%) aligned concordantly exactly 1 time
+    2816142 (15.15%) aligned concordantly >1 times
+34.48% overall alignment rate
+18592139 reads; of these:
+  18592139 (100.00%) were paired; of these:
+    12902822 (69.40%) aligned concordantly 0 times
+    3463623 (18.63%) aligned concordantly exactly 1 time
+    2225694 (11.97%) aligned concordantly >1 times
+30.60% overall alignment rate
+Processed 18592139 sequences in total
+
+
+Successfully deleted the temporary files /mnt/dkt/projets/rando_cell_2015/exp/20180315-preprocessing_and_alignment-01/20180315-04_alignment_with_bismark/output/SRR3068771/SRR3068771_1_paired.fastq.gz.temp.3_C_to_T.fastq and /mnt/dkt/projets/rando_cell_2015/exp/20180315-preprocessing_and_alignment-01/20180315-04_alignment_with_bismark/output/SRR3068771/SRR3068771_2_paired.fastq.gz.temp.3_G_to_A.fastq
+
+Final Alignment report
+======================
+Sequence pairs analysed in total:	18592139
+Number of paired-end alignments with a unique best hit:	7996663
+Mapping efficiency:	43.0%
+
+Sequence pairs with no alignments under any condition:	8810901
+Sequence pairs did not map uniquely:	1784575
+Sequence pairs which were discarded because genomic sequence could not be extracted:	0
+
+Number of sequence pairs with unique best (first) alignment came from the bowtie output:
+CT/GA/CT:	4476553	((converted) top strand)
+GA/CT/CT:	0	(complementary to (converted) top strand)
+GA/CT/GA:	0	(complementary to (converted) bottom strand)
+CT/GA/GA:	3520110	((converted) bottom strand)
+
+Number of alignments to (merely theoretical) complementary strands being rejected in total:	0
+
+Final Cytosine Methylation Report
+=================================
+Total number of C's analysed:	290741016
+
+Total methylated C's in CpG context:	13169831
+Total methylated C's in CHG context:	130367
+Total methylated C's in CHH context:	532814
+Total methylated C's in Unknown context:	0
+
+Total unmethylated C's in CpG context:	9871561
+Total unmethylated C's in CHG context:	72851983
+Total unmethylated C's in CHH context:	194184460
+Total unmethylated C's in Unknown context:	98
+
+C methylated in CpG context:	57.2%
+C methylated in CHG context:	0.2%
+C methylated in CHH context:	0.3%
+C methylated in unknown context (CN or CHN):	0.0%
+
+
+18592139 reads; of these:
+  18592139 (100.00%) were paired; of these:
+    12179218 (65.51%) aligned concordantly 0 times
+    3595816 (19.34%) aligned concordantly exactly 1 time
+    2817105 (15.15%) aligned concordantly >1 times
+34.49% overall alignment rate
+18592139 reads; of these:
+  18592139 (100.00%) were paired; of these:
+    12899535 (69.38%) aligned concordantly 0 times
+    3465529 (18.64%) aligned concordantly exactly 1 time
+    2227075 (11.98%) aligned concordantly >1 times
+30.62% overall alignment rate
+Processed 18592139 sequences in total
+
+
+Successfully deleted the temporary files /mnt/dkt/projets/rando_cell_2015/exp/20180315-preprocessing_and_alignment-01/20180315-04_alignment_with_bismark/output/SRR3068771/SRR3068771_1_paired.fastq.gz.temp.5_C_to_T.fastq and /mnt/dkt/projets/rando_cell_2015/exp/20180315-preprocessing_and_alignment-01/20180315-04_alignment_with_bismark/output/SRR3068771/SRR3068771_2_paired.fastq.gz.temp.5_G_to_A.fastq
+
+Final Alignment report
+======================
+Sequence pairs analysed in total:	18592139
+Number of paired-end alignments with a unique best hit:	8000531
+Mapping efficiency:	43.0%
+
+Sequence pairs with no alignments under any condition:	8806797
+Sequence pairs did not map uniquely:	1784811
+Sequence pairs which were discarded because genomic sequence could not be extracted:	1
+
+Number of sequence pairs with unique best (first) alignment came from the bowtie output:
+CT/GA/CT:	4477280	((converted) top strand)
+GA/CT/CT:	0	(complementary to (converted) top strand)
+GA/CT/GA:	0	(complementary to (converted) bottom strand)
+CT/GA/GA:	3523250	((converted) bottom strand)
+
+Number of alignments to (merely theoretical) complementary strands being rejected in total:	0
+
+Final Cytosine Methylation Report
+=================================
+Total number of C's analysed:	290903301
+
+Total methylated C's in CpG context:	13180878
+Total methylated C's in CHG context:	130660
+Total methylated C's in CHH context:	532457
+Total methylated C's in Unknown context:	1
+
+Total unmethylated C's in CpG context:	9878484
+Total unmethylated C's in CHG context:	72877883
+Total unmethylated C's in CHH context:	194302939
+Total unmethylated C's in Unknown context:	116
+
+C methylated in CpG context:	57.2%
+C methylated in CHG context:	0.2%
+C methylated in CHH context:	0.3%
+C methylated in unknown context (CN or CHN):	0.9%
+
+
+
+
+Right, cleaning up now...
+
+Deleting temporary sequence files...
+/mnt/dkt/projets/rando_cell_2015/exp/20180315-preprocessing_and_alignment-01/20180315-04_alignment_with_bismark/output/SRR3068771/SRR3068771_1_paired.fastq.gz.temp.1	/mnt/dkt/projets/rando_cell_2015/exp/20180315-preprocessing_and_alignment-01/20180315-04_alignment_with_bismark/output/SRR3068771/SRR3068771_2_paired.fastq.gz.temp.1	/mnt/dkt/projets/rando_cell_2015/exp/20180315-preprocessing_and_alignment-01/20180315-04_alignment_with_bismark/output/SRR3068771/SRR3068771_1_paired.fastq.gz.temp.2	/mnt/dkt/projets/rando_cell_2015/exp/20180315-preprocessing_and_alignment-01/20180315-04_alignment_with_bismark/output/SRR3068771/SRR3068771_2_paired.fastq.gz.temp.2	/mnt/dkt/projets/rando_cell_2015/exp/20180315-preprocessing_and_alignment-01/20180315-04_alignment_with_bismark/output/SRR3068771/SRR3068771_1_paired.fastq.gz.temp.3	/mnt/dkt/projets/rando_cell_2015/exp/20180315-preprocessing_and_alignment-01/20180315-04_alignment_with_bismark/output/SRR3068771/SRR3068771_2_paired.fastq.gz.temp.3	/mnt/dkt/projets/rando_cell_2015/exp/20180315-preprocessing_and_alignment-01/20180315-04_alignment_with_bismark/output/SRR3068771/SRR3068771_1_paired.fastq.gz.temp.4	/mnt/dkt/projets/rando_cell_2015/exp/20180315-preprocessing_and_alignment-01/20180315-04_alignment_with_bismark/output/SRR3068771/SRR3068771_2_paired.fastq.gz.temp.4	/mnt/dkt/projets/rando_cell_2015/exp/20180315-preprocessing_and_alignment-01/20180315-04_alignment_with_bismark/output/SRR3068771/SRR3068771_1_paired.fastq.gz.temp.5	/mnt/dkt/projets/rando_cell_2015/exp/20180315-preprocessing_and_alignment-01/20180315-04_alignment_with_bismark/output/SRR3068771/SRR3068771_2_paired.fastq.gz.temp.5	/mnt/dkt/projets/rando_cell_2015/exp/20180315-preprocessing_and_alignment-01/20180315-04_alignment_with_bismark/output/SRR3068771/SRR3068771_1_paired.fastq.gz.temp.6	/mnt/dkt/projets/rando_cell_2015/exp/20180315-preprocessing_and_alignment-01/20180315-04_alignment_with_bismark/output/SRR3068771/SRR3068771_2_paired.fastq.gz.temp.6	/mnt/dkt/projets/rando_cell_2015/exp/20180315-preprocessing_and_alignment-01/20180315-04_alignment_with_bismark/output/SRR3068771/SRR3068771_1_paired.fastq.gz.temp.7	/mnt/dkt/projets/rando_cell_2015/exp/20180315-preprocessing_and_alignment-01/20180315-04_alignment_with_bismark/output/SRR3068771/SRR3068771_2_paired.fastq.gz.temp.7	/mnt/dkt/projets/rando_cell_2015/exp/20180315-preprocessing_and_alignment-01/20180315-04_alignment_with_bismark/output/SRR3068771/SRR3068771_1_paired.fastq.gz.temp.8	/mnt/dkt/projets/rando_cell_2015/exp/20180315-preprocessing_and_alignment-01/20180315-04_alignment_with_bismark/output/SRR3068771/SRR3068771_2_paired.fastq.gz.temp.8	
+
+Now merging BAM files SRR3068771_1_paired.fastq.gz.temp.1_bismark_bt2_pe.bam SRR3068771_1_paired.fastq.gz.temp.2_bismark_bt2_pe.bam SRR3068771_1_paired.fastq.gz.temp.3_bismark_bt2_pe.bam SRR3068771_1_paired.fastq.gz.temp.4_bismark_bt2_pe.bam SRR3068771_1_paired.fastq.gz.temp.5_bismark_bt2_pe.bam SRR3068771_1_paired.fastq.gz.temp.6_bismark_bt2_pe.bam SRR3068771_1_paired.fastq.gz.temp.7_bismark_bt2_pe.bam SRR3068771_1_paired.fastq.gz.temp.8_bismark_bt2_pe.bam into >>> SRR3068771_1_paired_bismark_bt2_pe.bam <<<
+Merging from file >> SRR3068771_1_paired.fastq.gz.temp.1_bismark_bt2_pe.bam <<
+Merging from file >> SRR3068771_1_paired.fastq.gz.temp.2_bismark_bt2_pe.bam <<
+Merging from file >> SRR3068771_1_paired.fastq.gz.temp.3_bismark_bt2_pe.bam <<
+Merging from file >> SRR3068771_1_paired.fastq.gz.temp.4_bismark_bt2_pe.bam <<
+Merging from file >> SRR3068771_1_paired.fastq.gz.temp.5_bismark_bt2_pe.bam <<
+Merging from file >> SRR3068771_1_paired.fastq.gz.temp.6_bismark_bt2_pe.bam <<
+Merging from file >> SRR3068771_1_paired.fastq.gz.temp.7_bismark_bt2_pe.bam <<
+Merging from file >> SRR3068771_1_paired.fastq.gz.temp.8_bismark_bt2_pe.bam <<
+
+Deleting temporary BAM files...
+/mnt/dkt/projets/rando_cell_2015/exp/20180315-preprocessing_and_alignment-01/20180315-04_alignment_with_bismark/output/SRR3068771/SRR3068771_1_paired.fastq.gz.temp.1_bismark_bt2_pe.bam	/mnt/dkt/projets/rando_cell_2015/exp/20180315-preprocessing_and_alignment-01/20180315-04_alignment_with_bismark/output/SRR3068771/SRR3068771_1_paired.fastq.gz.temp.2_bismark_bt2_pe.bam	/mnt/dkt/projets/rando_cell_2015/exp/20180315-preprocessing_and_alignment-01/20180315-04_alignment_with_bismark/output/SRR3068771/SRR3068771_1_paired.fastq.gz.temp.3_bismark_bt2_pe.bam	/mnt/dkt/projets/rando_cell_2015/exp/20180315-preprocessing_and_alignment-01/20180315-04_alignment_with_bismark/output/SRR3068771/SRR3068771_1_paired.fastq.gz.temp.4_bismark_bt2_pe.bam	/mnt/dkt/projets/rando_cell_2015/exp/20180315-preprocessing_and_alignment-01/20180315-04_alignment_with_bismark/output/SRR3068771/SRR3068771_1_paired.fastq.gz.temp.5_bismark_bt2_pe.bam	/mnt/dkt/projets/rando_cell_2015/exp/20180315-preprocessing_and_alignment-01/20180315-04_alignment_with_bismark/output/SRR3068771/SRR3068771_1_paired.fastq.gz.temp.6_bismark_bt2_pe.bam	/mnt/dkt/projets/rando_cell_2015/exp/20180315-preprocessing_and_alignment-01/20180315-04_alignment_with_bismark/output/SRR3068771/SRR3068771_1_paired.fastq.gz.temp.7_bismark_bt2_pe.bam	/mnt/dkt/projets/rando_cell_2015/exp/20180315-preprocessing_and_alignment-01/20180315-04_alignment_with_bismark/output/SRR3068771/SRR3068771_1_paired.fastq.gz.temp.8_bismark_bt2_pe.bam	
+
+Writing report to /mnt/dkt/projets/rando_cell_2015/exp/20180315-preprocessing_and_alignment-01/20180315-04_alignment_with_bismark/output/SRR3068771/SRR3068771_1_paired_bismark_bt2_PE_report.txt
+Now merging temporary reports SRR3068771_1_paired.fastq.gz.temp.1_bismark_bt2_PE_report.txt SRR3068771_1_paired.fastq.gz.temp.2_bismark_bt2_PE_report.txt SRR3068771_1_paired.fastq.gz.temp.3_bismark_bt2_PE_report.txt SRR3068771_1_paired.fastq.gz.temp.4_bismark_bt2_PE_report.txt SRR3068771_1_paired.fastq.gz.temp.5_bismark_bt2_PE_report.txt SRR3068771_1_paired.fastq.gz.temp.6_bismark_bt2_PE_report.txt SRR3068771_1_paired.fastq.gz.temp.7_bismark_bt2_PE_report.txt SRR3068771_1_paired.fastq.gz.temp.8_bismark_bt2_PE_report.txt into >>> /mnt/dkt/projets/rando_cell_2015/exp/20180315-preprocessing_and_alignment-01/20180315-04_alignment_with_bismark/output/SRR3068771/SRR3068771_1_paired_bismark_bt2_PE_report.txt <<<
+Merging from file >> SRR3068771_1_paired.fastq.gz.temp.1_bismark_bt2_PE_report.txt <<
+Merging from file >> SRR3068771_1_paired.fastq.gz.temp.2_bismark_bt2_PE_report.txt <<
+Merging from file >> SRR3068771_1_paired.fastq.gz.temp.3_bismark_bt2_PE_report.txt <<
+Merging from file >> SRR3068771_1_paired.fastq.gz.temp.4_bismark_bt2_PE_report.txt <<
+Merging from file >> SRR3068771_1_paired.fastq.gz.temp.5_bismark_bt2_PE_report.txt <<
+Merging from file >> SRR3068771_1_paired.fastq.gz.temp.6_bismark_bt2_PE_report.txt <<
+Merging from file >> SRR3068771_1_paired.fastq.gz.temp.7_bismark_bt2_PE_report.txt <<
+Merging from file >> SRR3068771_1_paired.fastq.gz.temp.8_bismark_bt2_PE_report.txt <<
+
+Printing a final merged alignment report for all individual sub-reports
+
+Final Alignment report
+======================
+Sequence pairs analysed in total:	148737109
+Number of paired-end alignments with a unique best hit:	63989302
+Mapping efficiency:	43.0%
+
+Sequence pairs with no alignments under any condition:	70470959
+Sequence pairs did not map uniquely:	14276848
+Sequence pairs which were discarded because genomic sequence could not be extracted:	2
+
+Number of sequence pairs with unique best (first) alignment came from the bowtie output:
+CT/GA/CT:	35824923	((converted) top strand)
+GA/CT/CT:	0	(complementary to (converted) top strand)
+GA/CT/GA:	0	(complementary to (converted) bottom strand)
+CT/GA/GA:	28164377	((converted) bottom strand)
+
+Number of alignments to (merely theoretical) complementary strands being rejected in total:	0
+
+Final Cytosine Methylation Report
+=================================
+Total number of C's analysed:	2326700453
+
+Total methylated C's in CpG context:	105383277
+Total methylated C's in CHG context:	1044270
+Total methylated C's in CHH context:	4258384
+Total methylated C's in Unknown context:	5
+
+Total unmethylated C's in CpG context:	78955127
+Total unmethylated C's in CHG context:	582880965
+Total unmethylated C's in CHH context:	1554178430
+Total unmethylated C's in Unknown context:	905
+
+C methylated in CpG context:	57.2%
+C methylated in CHG context:	0.2%
+C methylated in CHH context:	0.3%
+C methylated in unknown context (CN or CHN):	0.5%
+
+
+Deleting temporary report files...
+SRR3068771_1_paired.fastq.gz.temp.1_bismark_bt2_PE_report.txt	SRR3068771_1_paired.fastq.gz.temp.2_bismark_bt2_PE_report.txt	SRR3068771_1_paired.fastq.gz.temp.3_bismark_bt2_PE_report.txt	SRR3068771_1_paired.fastq.gz.temp.4_bismark_bt2_PE_report.txt	SRR3068771_1_paired.fastq.gz.temp.5_bismark_bt2_PE_report.txt	SRR3068771_1_paired.fastq.gz.temp.6_bismark_bt2_PE_report.txt	SRR3068771_1_paired.fastq.gz.temp.7_bismark_bt2_PE_report.txt	SRR3068771_1_paired.fastq.gz.temp.8_bismark_bt2_PE_report.txt	
+
+Bismark completed in 1d 8h 5m 55s
+
+====================
+Bismark run complete
+====================
+

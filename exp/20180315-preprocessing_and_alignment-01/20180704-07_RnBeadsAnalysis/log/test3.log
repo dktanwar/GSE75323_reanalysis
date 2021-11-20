@@ -1,0 +1,1302 @@
+2018-07-12 07:25:00     1.0  STATUS STARTED Setting up Multicore
+2018-07-12 07:25:00     1.0    INFO     Using 31 cores
+2018-07-12 07:25:00     1.0  STATUS COMPLETED Setting up Multicore
+
+2018-07-12 07:25:01     1.0  STATUS STARTED RnBeads Pipeline
+2018-07-12 07:25:01     1.0    INFO     Initialized report index and saved to index.html
+2018-07-12 07:25:01     1.0  STATUS     STARTED Loading Data
+2018-07-12 07:25:01     1.0    INFO         Number of cores: 31
+2018-07-12 07:25:01     1.0    INFO         Loading data of type "bs.bed.dir"
+2018-07-12 07:25:01     1.0  STATUS         STARTED Performing loading test
+2018-07-12 07:25:01     1.0    INFO             The first 10000 rows will be read from each data file
+2018-07-12 07:25:01     1.0    INFO             No column with file names specified: will try to find one
+2018-07-12 07:25:01     1.0  STATUS             STARTED Loading Data From BED Files
+2018-07-12 07:25:03     1.0  STATUS                 STARTED Automatically parsing the provided sample annotation file
+2018-07-12 07:25:03     1.0  STATUS                     Potential file names found in column 4 of the supplied annotation table
+2018-07-12 07:25:03     1.0  STATUS                 COMPLETED Automatically parsing the provided sample annotation file
+2018-07-12 07:25:03     1.0    INFO                 Reading BED file: ./input/SRX1485695.bismark.cov.gz
+2018-07-12 07:25:03     1.0    INFO                 Reading BED file: ./input/SRX1485696.bismark.cov.gz
+2018-07-12 07:25:04     1.0    INFO                 Reading BED file: ./input/SRX1485697.bismark.cov.gz
+2018-07-12 07:25:04     1.0    INFO                 Reading BED file: ./input/SRX1485698.bismark.cov.gz
+2018-07-12 07:25:04     1.0    INFO                 Reading BED file: ./input/SRX1485699.bismark.cov.gz
+2018-07-12 07:25:05     1.0    INFO                 Reading BED file: ./input/SRX1485700.bismark.cov.gz
+2018-07-12 07:25:05     1.0    INFO                 Reading BED file: ./input/SRX1485701.bismark.cov.gz
+2018-07-12 07:25:05     1.0    INFO                 Reading BED file: ./input/SRX1485702.bismark.cov.gz
+2018-07-12 07:25:05     1.0    INFO                 Reading BED file: ./input/SRX1485703.bismark.cov.gz
+2018-07-12 07:25:05     1.0    INFO                 Reading BED file: ./input/SRX1485704.bismark.cov.gz
+2018-07-12 07:25:05     1.0    INFO                 Reading BED file: ./input/SRX1485705.bismark.cov.gz
+2018-07-12 07:25:05     1.0    INFO                 Reading BED file: ./input/SRX1485706.bismark.cov.gz
+2018-07-12 07:25:05     1.0    INFO                 Reading BED file: ./input/SRX1485707.bismark.cov.gz
+2018-07-12 07:25:06     1.0    INFO                 Reading BED file: ./input/SRX1485708.bismark.cov.gz
+2018-07-12 07:25:06     1.0    INFO                 Reading BED file: ./input/SRX1485709.bismark.cov.gz
+2018-07-12 07:25:06     1.0    INFO                 Reading BED file: ./input/SRX1485710.bismark.cov.gz
+2018-07-12 07:25:06     1.0  STATUS                 Read 16 BED files
+2018-07-12 07:25:07     1.0  STATUS                 Matched chromosomes and strands to annotation
+2018-07-12 07:25:07     1.0  STATUS                 Checked for the presence of sites and coverage
+2018-07-12 07:25:07     1.1  STATUS                 Initialized meth/covg matrices
+2018-07-12 07:25:08     1.1  STATUS                 Combined a data matrix with 137779 sites and 16 samples
+2018-07-12 07:25:08     1.1  STATUS                 Processed all BED files
+2018-07-12 07:25:08     1.1  STATUS                 STARTED Creating RnBiseqSet object
+2018-07-12 07:25:08     1.1    INFO                     Inferring strand information from annotation enabled
+2018-07-12 07:26:07     4.1  STATUS                     Matched 135887 of 137779 methylation sites to the annotation
+2018-07-12 07:26:07     4.1  STATUS                     Checking site coverage
+2018-07-12 07:26:08     4.1  STATUS                     Creating methylation matrix
+2018-07-12 07:26:08     4.1  STATUS                     Creating coverage matrix
+2018-07-12 07:26:08     4.1  STATUS                     Creating object
+2018-07-12 07:26:08     4.1  STATUS                     Summarizing strand methylation
+2018-07-12 07:26:49     4.0  STATUS                     Summarizing tiling methylation
+2018-07-12 07:26:51     4.0  STATUS                     Summarizing genes methylation
+2018-07-12 07:26:52     4.0  STATUS                     Summarizing promoters methylation
+2018-07-12 07:26:52     4.0  STATUS                     Summarizing cpgislands methylation
+2018-07-12 07:26:52     4.0  STATUS                 COMPLETED Creating RnBiseqSet object
+2018-07-12 07:26:52     4.0  STATUS             COMPLETED Loading Data From BED Files
+2018-07-12 07:26:52     4.0  STATUS             STARTED Checking the loaded object
+2018-07-12 07:26:52     4.0    INFO                 Checking the supplied RnBiseqSet object
+2018-07-12 07:26:53     4.2    INFO                 The object contains information for 98877 methylation sites
+2018-07-12 07:26:53     4.2    INFO                 The object contains information for 16 samples
+2018-07-12 07:26:53     4.2    INFO                 The object contains 1462393 missing methylation values
+2018-07-12 07:26:53     4.2    INFO                 Methylation values are within the expected range
+2018-07-12 07:26:53     4.2    INFO                 The object contains coverage information
+2018-07-12 07:26:53     4.2    INFO                 Coverage values are within the expected range
+2018-07-12 07:26:53     4.2    INFO                 The object loaded during the loading test is valid
+2018-07-12 07:26:53     4.2  STATUS             COMPLETED Checking the loaded object
+2018-07-12 07:26:53     4.2  STATUS         COMPLETED Performing loading test
+2018-07-12 07:26:53     4.2    INFO         No column with file names specified: will try to find one
+2018-07-12 07:26:54     4.2  STATUS         STARTED Loading Data From BED Files
+2018-07-12 07:26:54     4.2  STATUS             STARTED Automatically parsing the provided sample annotation file
+2018-07-12 07:26:54     4.2  STATUS                 Potential file names found in column 4 of the supplied annotation table
+2018-07-12 07:26:54     4.2  STATUS             COMPLETED Automatically parsing the provided sample annotation file
+2018-07-12 07:26:54     4.2    INFO             Reading BED file: ./input/SRX1485695.bismark.cov.gz
+2018-07-12 07:29:17     5.1    INFO             Reading BED file: ./input/SRX1485696.bismark.cov.gz
+2018-07-12 07:31:50     5.9    INFO             Reading BED file: ./input/SRX1485697.bismark.cov.gz
+2018-07-12 07:34:26     5.8    INFO             Reading BED file: ./input/SRX1485698.bismark.cov.gz
+2018-07-12 07:36:52     5.9    INFO             Reading BED file: ./input/SRX1485699.bismark.cov.gz
+2018-07-12 07:37:51     5.1    INFO             Reading BED file: ./input/SRX1485700.bismark.cov.gz
+2018-07-12 07:38:56     5.4    INFO             Reading BED file: ./input/SRX1485701.bismark.cov.gz
+2018-07-12 07:39:35     4.6    INFO             Reading BED file: ./input/SRX1485702.bismark.cov.gz
+2018-07-12 07:40:28     5.4    INFO             Reading BED file: ./input/SRX1485703.bismark.cov.gz
+2018-07-12 07:41:25     5.7    INFO             Reading BED file: ./input/SRX1485704.bismark.cov.gz
+2018-07-12 07:42:15     4.9    INFO             Reading BED file: ./input/SRX1485705.bismark.cov.gz
+2018-07-12 07:43:12     5.7    INFO             Reading BED file: ./input/SRX1485706.bismark.cov.gz
+2018-07-12 07:44:27     5.4    INFO             Reading BED file: ./input/SRX1485707.bismark.cov.gz
+2018-07-12 07:45:13     5.5    INFO             Reading BED file: ./input/SRX1485708.bismark.cov.gz
+2018-07-12 07:46:26     5.5    INFO             Reading BED file: ./input/SRX1485709.bismark.cov.gz
+2018-07-12 07:47:05     4.7    INFO             Reading BED file: ./input/SRX1485710.bismark.cov.gz
+2018-07-12 07:48:00     4.5  STATUS             Read 16 BED files
+2018-07-12 07:53:22     7.6  STATUS             Matched chromosomes and strands to annotation
+2018-07-12 07:53:25     6.8  STATUS             Checked for the presence of sites and coverage
+2018-07-12 07:53:55     8.8  STATUS             Initialized meth/covg matrices
+2018-07-12 07:55:57    10.5  STATUS             Combined a data matrix with 43941294 sites and 16 samples
+2018-07-12 07:55:57    10.5  STATUS             Processed all BED files
+2018-07-12 07:55:57    10.5  STATUS             STARTED Creating RnBiseqSet object
+2018-07-12 07:56:02     9.6    INFO                 Removed 44284 sites with unknown chromosomes
+2018-07-12 07:56:02    10.4    INFO                 Inferring strand information from annotation enabled
+2018-07-12 07:57:20    10.4  STATUS                 Matched 41038284 of 43941294 methylation sites to the annotation
+2018-07-12 07:57:20    10.4  STATUS                 Checking site coverage
+2018-07-12 07:59:05    17.5  STATUS                 Creating methylation matrix
+2018-07-12 08:01:12    10.6  STATUS                 Creating coverage matrix
+2018-07-12 08:03:20    12.1  STATUS                 Creating object
+2018-07-12 08:03:20    12.1  STATUS                 Summarizing strand methylation
+2018-07-12 08:31:35    10.9  STATUS                 Summarizing tiling methylation
+2018-07-12 08:35:20    15.9  STATUS                 Summarizing genes methylation
+2018-07-12 08:36:36    17.6  STATUS                 Summarizing promoters methylation
+2018-07-12 08:37:41    14.4  STATUS                 Summarizing cpgislands methylation
+2018-07-12 08:38:33    19.2  STATUS             COMPLETED Creating RnBiseqSet object
+2018-07-12 08:38:33    19.2  STATUS         COMPLETED Loading Data From BED Files
+2018-07-12 08:38:33    19.2  STATUS         Loaded data from ./input
+2018-07-12 08:40:06    19.9  STATUS         Predicted gender for the loaded samples
+2018-07-12 08:40:06    19.9  STATUS         Added data loading section to the report
+2018-07-12 08:40:06    19.9  STATUS         Loaded 16 samples and 21118032 sites
+2018-07-12 08:40:06    19.9    INFO         Output object is of type RnBiseqSet
+2018-07-12 08:40:06    19.9  STATUS     COMPLETED Loading Data
+2018-07-12 08:43:13    19.9    INFO     Initialized report index and saved to index.html
+2018-07-12 08:43:13    19.9  STATUS     STARTED Quality Control
+2018-07-12 08:43:13    19.9    INFO         Number of cores: 31
+2018-07-12 08:43:13    19.9  STATUS         STARTED Preparing Quality Control Information
+2018-07-12 08:43:13    19.9  STATUS         COMPLETED Preparing Quality Control Information
+2018-07-12 08:43:13    19.9  STATUS         STARTED Quality Control Section
+2018-07-12 12:02:58    18.7  STATUS             Added sequencing coverage histograms
+2018-07-12 12:07:55    19.0  STATUS             Added sample coverage section
+2018-07-12 12:23:24    55.7  STATUS             Added sequencing coverage violin plots
+2018-07-12 12:24:47    39.5  STATUS         COMPLETED Quality Control Section
+2018-07-12 12:27:03    28.9  STATUS     COMPLETED Quality Control
+2018-07-12 12:27:03    28.9    INFO     Initialized report index and saved to index.html
+2018-07-12 12:27:03    28.9  STATUS     STARTED Preprocessing
+2018-07-12 12:27:03    28.9    INFO         Number of cores: 31
+2018-07-12 12:27:03    28.9 WARNING         filtering.greedycut disabled for non-array datasets.
+2018-07-12 12:27:03    28.9  STATUS         STARTED Filtering Procedures
+2018-07-12 12:27:15    29.2  STATUS             STARTED Removal of SNP-enriched Sites
+2018-07-12 12:27:15    29.3  STATUS                 Removed 1819265 sites using SNP criterion "3"
+2018-07-12 12:27:17    29.3  STATUS                 Saved removed sites to /mnt/IM/DKT/projets/rando_cell_2015/exp/20180315-preprocessing_and_alignment-01/20180704-07_RnBeadsAnalysis/output/RnBeads_Analysis/preprocessing_data/removed_sites_snp.csv
+2018-07-12 12:27:17    29.3  STATUS                 Added a corresponding section to the report
+2018-07-12 12:27:17    29.3  STATUS             COMPLETED Removal of SNP-enriched Sites
+2018-07-12 12:27:18    29.3  STATUS             Retained 16 samples and 19298767 sites
+2018-07-12 12:27:18    29.3  STATUS         COMPLETED Filtering Procedures
+2018-07-12 12:27:18    29.3  STATUS         STARTED Summary of Filtering Procedures
+2018-07-12 12:27:55    32.5  STATUS             Created summary table of removed sites, samples and unreliable measurements
+2018-07-12 12:27:59    32.5  STATUS             Added summary table of removed and retained items
+2018-07-12 12:28:03    32.8    INFO             Subsampling 200000 sites for plotting density distributions
+2018-07-12 12:28:06    32.8  STATUS             Constructed sequences of removed and retained methylation values
+2018-07-12 12:28:17    32.8  STATUS             Added comparison between removed and retained beta values
+2018-07-12 12:28:17    32.8  STATUS         COMPLETED Summary of Filtering Procedures
+2018-07-12 12:28:17    32.8  STATUS         STARTED Manipulating the object
+2018-07-12 12:36:13    19.6  STATUS             Removed 1819265 sites (probes)
+2018-07-12 12:36:13    19.6    INFO             Retained 19298767 sites and 16 samples
+2018-07-12 12:36:13    19.6  STATUS         COMPLETED Manipulating the object
+2018-07-12 12:36:13    19.6    INFO         Imputation was skipped, data set may still contain missing methylation values
+2018-07-12 12:36:13    19.6  STATUS     COMPLETED Preprocessing
+2018-07-12 12:38:59    19.6    INFO     Initialized report index and saved to index.html
+2018-07-12 12:38:59    19.6  STATUS     STARTED Tracks and Tables
+2018-07-12 12:39:00    19.6    INFO         Number of cores: 31
+2018-07-12 12:39:00    19.6  STATUS         STARTED Generating Tracks and Tables
+2018-07-12 12:39:00    19.6  STATUS             STARTED Exporting sites
+2018-07-12 12:39:00    19.6  STATUS                 STARTED Creating BED Files
+2018-07-12 12:39:00    19.6  STATUS                     Converting to GRangesList
+2018-07-12 12:42:05    29.5  STATUS                     Exporting sample SRX1485699
+2018-07-12 12:43:17    25.1  STATUS                     Exporting sample SRX1485700
+2018-07-12 12:44:28    29.0  STATUS                     Exporting sample SRX1485701
+2018-07-12 12:45:41    34.2  STATUS                     Exporting sample SRX1485702
+2018-07-12 12:46:55    26.2  STATUS                     Exporting sample SRX1485703
+2018-07-12 12:47:47    29.1  STATUS                     Exporting sample SRX1485704
+2018-07-12 12:48:42    33.4  STATUS                     Exporting sample SRX1485705
+2018-07-12 12:49:25    26.7  STATUS                     Exporting sample SRX1485706
+2018-07-12 12:50:14    29.3  STATUS                     Exporting sample SRX1485707
+2018-07-12 12:51:05    33.2  STATUS                     Exporting sample SRX1485708
+2018-07-12 12:51:54    27.5  STATUS                     Exporting sample SRX1485709
+2018-07-12 12:52:44    30.5  STATUS                     Exporting sample SRX1485710
+2018-07-12 12:53:41    35.3  STATUS                     Exporting sample SRX1485695
+2018-07-12 12:54:28    29.7  STATUS                     Exporting sample SRX1485696
+2018-07-12 12:55:24    33.9  STATUS                     Exporting sample SRX1485697
+2018-07-12 12:56:09    29.9  STATUS                     Exporting sample SRX1485698
+2018-07-12 12:56:58    33.1  STATUS                 COMPLETED Creating BED Files
+2018-07-12 12:56:58    33.1  STATUS                 STARTED Creating Track Hub -- bigBed
+2018-07-12 12:56:58    33.1    INFO                     Using /home/ubuntu/R/x86_64-pc-linux-gnu-library/3.4/RnBeads/bin/linux_x86.64/bedToBigBed
+2018-07-12 12:56:59    33.1  STATUS                     STARTED Conversion to BED
+2018-07-12 13:15:55    28.5  STATUS                     COMPLETED Conversion to BED
+2018-07-12 13:15:55    28.5  STATUS                     STARTED Creating Track Hub
+2018-07-12 13:22:21    28.5  STATUS                     COMPLETED Creating Track Hub
+2018-07-12 13:22:22    28.5  STATUS                 COMPLETED Creating Track Hub -- bigBed
+2018-07-12 13:22:22    28.5  STATUS                 STARTED Creating UCSC Track Hub -- bigWig
+2018-07-12 13:22:22    28.5    INFO                     Using /home/ubuntu/R/x86_64-pc-linux-gnu-library/3.4/RnBeads/bin/linux_x86.64/bedGraphToBigWig
+2018-07-12 13:22:22    28.5  STATUS                     STARTED Conversion to bedGraph
+2018-07-12 13:30:38    29.7  STATUS                     COMPLETED Conversion to bedGraph
+2018-07-12 13:30:38    29.7  STATUS                     STARTED Creating Track Hub
+2018-07-12 13:36:18    29.7  STATUS                     COMPLETED Creating Track Hub
+2018-07-12 13:36:18    29.7  STATUS                 COMPLETED Creating UCSC Track Hub -- bigWig
+2018-07-12 13:36:18    29.7  STATUS             COMPLETED Exporting sites
+2018-07-12 13:36:18    29.7  STATUS         COMPLETED Generating Tracks and Tables
+2018-07-12 13:36:18    29.7  STATUS         STARTED Writing export report
+2018-07-12 13:40:52    21.1  STATUS         COMPLETED Writing export report
+2018-07-12 13:40:52    21.1  STATUS     COMPLETED Tracks and Tables
+2018-07-12 13:40:52    21.1    INFO     Initialized report index and saved to index.html
+2018-07-12 13:40:52    21.1  STATUS     STARTED Exploratory Analysis
+2018-07-12 13:40:52    21.1    INFO         Number of cores: 31
+2018-07-12 13:40:52    21.1  STATUS         Designed color mappings for probe type and CGI status
+2018-07-12 13:47:10    18.5  STATUS         STARTED Dimension Reduction Techniques
+2018-07-12 13:47:12    18.5  STATUS             STARTED MDS
+2018-07-12 13:47:13    18.5  STATUS                 Calculated MDS coordinates using manhattan distance
+2018-07-12 13:47:13    18.5  STATUS                 Calculated MDS coordinates using euclidean distance
+2018-07-12 13:47:13    18.5  STATUS             COMPLETED MDS
+2018-07-12 13:47:13    18.5  STATUS             STARTED PCA
+2018-07-12 13:47:13    18.5    INFO                 Removed 8759 loci ( genes ) because they contain missing values
+2018-07-12 13:47:13    18.5  STATUS             STARTED MDS
+2018-07-12 13:47:13    18.5  STATUS             COMPLETED PCA
+2018-07-12 13:47:13    18.5  STATUS                 Calculated MDS coordinates using manhattan distance
+2018-07-12 13:47:13    18.5  STATUS                 Calculated MDS coordinates using euclidean distance
+2018-07-12 13:47:13    18.5  STATUS             COMPLETED MDS
+2018-07-12 13:47:13    18.5  STATUS             STARTED PCA
+2018-07-12 13:47:13    18.5    INFO                 Removed 6171 loci ( promoters ) because they contain missing values
+2018-07-12 13:47:14    18.5  STATUS             STARTED MDS
+2018-07-12 13:47:14    18.5  STATUS                 Calculated MDS coordinates using manhattan distance
+2018-07-12 13:47:14    18.5  STATUS                 Calculated MDS coordinates using euclidean distance
+2018-07-12 13:47:14    18.5  STATUS             COMPLETED MDS
+2018-07-12 13:47:14    18.5  STATUS             STARTED PCA
+2018-07-12 13:47:14    18.5    INFO                 Removed 835 loci ( cpgislands ) because they contain missing values
+2018-07-12 13:47:14    18.5  STATUS             COMPLETED PCA
+2018-07-12 13:47:14    18.5  STATUS             COMPLETED PCA
+2018-07-12 13:47:15    18.5  STATUS             STARTED MDS
+2018-07-12 13:47:16    18.5  STATUS                 Calculated MDS coordinates using manhattan distance
+2018-07-12 13:47:17    18.5  STATUS                 Calculated MDS coordinates using euclidean distance
+2018-07-12 13:47:17    18.5  STATUS             COMPLETED MDS
+2018-07-12 13:47:17    18.5  STATUS             STARTED PCA
+2018-07-12 13:47:17    18.5    INFO                 Removed 44036 loci ( tiling ) because they contain missing values
+2018-07-12 13:47:20    18.5  STATUS             COMPLETED PCA
+2018-07-12 13:48:23    23.1  STATUS             STARTED MDS
+2018-07-12 13:48:57    23.1  STATUS                 Calculated MDS coordinates using manhattan distance
+2018-07-12 13:49:31    23.1  STATUS                 Calculated MDS coordinates using euclidean distance
+2018-07-12 13:49:31    23.1  STATUS             COMPLETED MDS
+2018-07-12 13:49:31    23.1  STATUS             STARTED PCA
+2018-07-12 13:49:33    23.1    INFO                 Removed 16952605 loci ( sites ) because they contain missing values
+2018-07-12 13:49:41    23.1  STATUS             COMPLETED PCA
+2018-07-12 13:49:43    18.5    INFO             Mapping 10 traits to point colors and types
+2018-07-12 15:40:11    18.5    INFO             Principal components that explain at least 95 % of the total variance: 12
+2018-07-12 15:40:11    18.5    INFO             Saved percentage of total variance to pca_variance_explained_1.csv
+2018-07-12 15:40:13    18.5    INFO             Principal components that explain at least 95 % of the total variance: 11
+2018-07-12 15:40:13    18.5    INFO             Saved percentage of total variance to pca_variance_explained_2.csv
+2018-07-12 15:40:15    18.5    INFO             Principal components that explain at least 95 % of the total variance: 11
+2018-07-12 15:40:15    18.5    INFO             Saved percentage of total variance to pca_variance_explained_3.csv
+2018-07-12 15:40:17    18.5    INFO             Principal components that explain at least 95 % of the total variance: 11
+2018-07-12 15:40:17    18.5    INFO             Saved percentage of total variance to pca_variance_explained_4.csv
+2018-07-12 15:40:19    18.5    INFO             Principal components that explain at least 95 % of the total variance: 9
+2018-07-12 15:40:19    18.5    INFO             Saved percentage of total variance to pca_variance_explained_5.csv
+2018-07-12 15:40:21    18.5  STATUS             Created scatter plots and CDFs summarizing the reduced dimensional representations
+2018-07-12 15:40:21    18.5  STATUS         COMPLETED Dimension Reduction Techniques
+2018-07-12 15:40:21    18.5  STATUS         STARTED Tests for Associations
+2018-07-12 15:40:21    18.5    INFO             Testing the following traits for associations: Age; Group; Group3; Group2; Group1; Age4; Age3; Age2; Age1; Predicted Male Probability; Predicted Gender
+2018-07-12 15:40:21    18.5  STATUS             Created 10000 sample permutations
+2018-07-12 15:40:47    18.5  STATUS             Computed correlations between principal components and traits.
+2018-07-12 15:40:47    18.5  STATUS             Computed pairwise correlations between traits.
+2018-07-12 15:40:47    18.5  STATUS         COMPLETED Tests for Associations
+2018-07-12 15:42:13    23.1  STATUS         STARTED Methylation Value Distributions - Sample Groups
+2018-07-12 15:42:14    23.1    INFO             processing beta_density_samples_1_1
+2018-07-12 15:42:15    23.1    INFO             processing beta_density_samples_1_2
+2018-07-12 15:42:15    23.1    INFO             Density estimation ( all samples--tiling ): Groupwise retained observations after missing value removal: all:8192605/8449904
+2018-07-12 15:42:15    23.1    INFO             processing beta_density_samples_1_3
+2018-07-12 15:42:15    23.1    INFO             Density estimation ( all samples--genes ): Groupwise retained observations after missing value removal: all:593475/642960
+2018-07-12 15:42:15    23.1    INFO             Density estimation ( all samples--genes ): Groupwise retained observations after subsampling: all:100000/593475
+2018-07-12 15:42:16    23.1    INFO             Density estimation ( all samples--tiling ): Groupwise retained observations after subsampling: all:100000/8192605
+2018-07-12 15:42:16    23.1    INFO             processing beta_density_samples_1_4
+2018-07-12 15:42:16    23.1    INFO             Density estimation ( all samples--promoters ): Groupwise retained observations after missing value removal: all:649192/684896
+2018-07-12 15:42:16    23.1    INFO             Density estimation ( all samples--promoters ): Groupwise retained observations after subsampling: all:100000/649192
+2018-07-12 15:42:16    23.1    INFO             processing beta_density_samples_1_5
+2018-07-12 15:42:16    23.1    INFO             Density estimation ( all samples--cpgislands ): Groupwise retained observations after missing value removal: all:252759/255216
+2018-07-12 15:42:16    23.1    INFO             Density estimation ( all samples--cpgislands ): Groupwise retained observations after subsampling: all:100000/252759
+2018-07-12 15:42:17    23.1    INFO             processing beta_density_samples_2_1
+2018-07-12 15:42:18    23.1    INFO             processing beta_density_samples_2_2
+2018-07-12 15:42:19    23.1    INFO             Density estimation ( Age--tiling ): Groupwise retained observations after missing value removal: 10 weeks:2030709/2112476; 12 weeks:3084816/3168714; 13.5 weeks:1544141/1584357; 13 weeks:1532939/1584357
+2018-07-12 15:42:19    23.1    INFO             processing beta_density_samples_2_3
+2018-07-12 15:42:19    23.1    INFO             Density estimation ( Age--genes ): Groupwise retained observations after missing value removal: 10 weeks:144659/160740; 12 weeks:225441/241110; 13.5 weeks:112440/120555; 13 weeks:110935/120555
+2018-07-12 15:42:19    23.1    INFO             Density estimation ( Age--genes ): Groupwise retained observations after subsampling: 10 weeks:97500/144659; 12 weeks:151946/225441; 13.5 weeks:75784/112440; 13 weeks:74770/110935
+2018-07-12 15:42:20    23.1    INFO             processing beta_density_samples_7_4
+2018-07-12 15:42:20    23.1    INFO             processing beta_density_samples_7_3
+2018-07-12 15:42:20    23.1    INFO             Density estimation ( Age--tiling ): Groupwise retained observations after subsampling: 10 weeks:99148/2030709; 12 weeks:150615/3084816; 13.5 weeks:75392/1544141; 13 weeks:74845/1532939
+2018-07-12 15:42:20    23.1    INFO             Density estimation ( Age4--promoters ): Groupwise retained observations after missing value removal: 10 weeks:159823/171224; 12 weeks:245370/256836; 13 weeks:121350/128418
+2018-07-12 15:42:20    23.1    INFO             Density estimation ( Age4--genes ): Groupwise retained observations after missing value removal: 10 weeks:144659/160740; 12 weeks:225441/241110; 13 weeks:110935/120555
+2018-07-12 15:42:20    23.1    INFO             Density estimation ( Age4--genes ): Groupwise retained observations after subsampling: 10 weeks:90217/144659; 12 weeks:140597/225441; 13 weeks:69185/110935
+2018-07-12 15:42:20    23.1    INFO             processing beta_density_samples_2_4
+2018-07-12 15:42:20    23.1    INFO             Density estimation ( Age4--promoters ): Groupwise retained observations after subsampling: 10 weeks:91060/159823; 12 weeks:139801/245370; 13 weeks:69140/121350
+2018-07-12 15:42:21    23.1    INFO             Density estimation ( Age--promoters ): Groupwise retained observations after missing value removal: 10 weeks:159823/171224; 12 weeks:245370/256836; 13.5 weeks:122649/128418; 13 weeks:121350/128418
+2018-07-12 15:42:21    23.1    INFO             Density estimation ( Age--promoters ): Groupwise retained observations after subsampling: 10 weeks:98475/159823; 12 weeks:151185/245370; 13.5 weeks:75570/122649; 13 weeks:74770/121350
+2018-07-12 15:42:21    23.1    INFO             processing beta_density_samples_7_5
+2018-07-12 15:42:21    23.1    INFO             Density estimation ( Age4--cpgislands ): Groupwise retained observations after missing value removal: 10 weeks:62866/63804; 12 weeks:95015/95706; 13 weeks:47354/47853
+2018-07-12 15:42:22    23.1    INFO             processing beta_density_samples_2_5
+2018-07-12 15:42:22    23.1    INFO             Density estimation ( Age--cpgislands ): Groupwise retained observations after missing value removal: 10 weeks:62866/63804; 12 weeks:95015/95706; 13.5 weeks:47524/47853; 13 weeks:47354/47853
+2018-07-12 15:42:23    23.1    INFO             processing beta_density_samples_3_1
+2018-07-12 15:42:23    23.1    INFO             processing beta_density_samples_8_1
+2018-07-12 15:42:24    23.1    INFO             processing beta_density_samples_3_2
+2018-07-12 15:42:25    23.1    INFO             processing beta_density_samples_3_3
+2018-07-12 15:42:25    23.1    INFO             Density estimation ( Group--tiling ): Groupwise retained observations after missing value removal: control:3122232/3168714; high fat:2542280/2640595; low protein:2528093/2640595
+2018-07-12 15:42:25    23.1    INFO             Density estimation ( Group--genes ): Groupwise retained observations after missing value removal: control:231901/241110; high fat:182170/200925; low protein:179404/200925
+2018-07-12 15:42:26    23.1    INFO             Density estimation ( Group--genes ): Groupwise retained observations after subsampling: control:117225/231901; high fat:92086/182170; low protein:90688/179404
+2018-07-12 15:42:27    23.1    INFO             processing beta_density_samples_3_4
+2018-07-12 15:42:27    23.1    INFO             Density estimation ( Group--promoters ): Groupwise retained observations after missing value removal: control:249880/256836; high fat:200665/214030; low protein:198647/214030
+2018-07-12 15:42:27    23.1    INFO             Density estimation ( Group--promoters ): Groupwise retained observations after subsampling: control:115473/249880; high fat:92730/200665; low protein:91797/198647
+2018-07-12 15:42:27    23.1    INFO             Density estimation ( Group--tiling ): Groupwise retained observations after subsampling: control:114331/3122232; high fat:93094/2542280; low protein:92575/2528093
+2018-07-12 15:42:28    23.1    INFO             processing beta_density_samples_3_5
+2018-07-12 15:42:28    23.1    INFO             Density estimation ( Group--cpgislands ): Groupwise retained observations after missing value removal: control:95120/95706; high fat:78932/79755; low protein:78707/79755
+2018-07-12 15:42:29    23.1    INFO             processing beta_density_samples_4_1
+2018-07-12 15:42:30    23.1    INFO             processing beta_density_samples_4_2
+2018-07-12 15:42:32    23.1    INFO             processing beta_density_samples_4_3
+2018-07-12 15:42:32    23.1    INFO             Density estimation ( Group3--genes ): Groupwise retained observations after missing value removal: high fat:182170/200925; low protein:179404/200925
+2018-07-12 15:42:33    23.1    INFO             Density estimation ( Group3--genes ): Groupwise retained observations after subsampling: high fat:100765/182170; low protein:99235/179404
+2018-07-12 15:42:34    23.1    INFO             processing beta_density_samples_4_4
+2018-07-12 15:42:34    23.1    INFO             Density estimation ( Group3--promoters ): Groupwise retained observations after missing value removal: high fat:200665/214030; low protein:198647/214030
+2018-07-12 15:42:34    23.1    INFO             Density estimation ( Group3--promoters ): Groupwise retained observations after subsampling: high fat:100505/200665; low protein:99495/198647
+2018-07-12 15:42:34    23.1    INFO             Density estimation ( Group3--tiling ): Groupwise retained observations after missing value removal: high fat:2542280/2640595; low protein:2528093/2640595
+2018-07-12 15:42:35    23.1    INFO             processing beta_density_samples_4_5
+2018-07-12 15:42:35    23.1    INFO             Density estimation ( Group3--cpgislands ): Groupwise retained observations after missing value removal: high fat:78932/79755; low protein:78707/79755
+2018-07-12 15:42:37    23.1    INFO             processing beta_density_samples_5_1
+2018-07-12 15:42:38    23.1    INFO             Density estimation ( Group3--tiling ): Groupwise retained observations after subsampling: high fat:100280/2542280; low protein:99720/2528093
+2018-07-12 15:42:38    23.1    INFO             processing beta_density_samples_5_2
+2018-07-12 15:42:40    23.1    INFO             processing beta_density_samples_5_3
+2018-07-12 15:42:41    23.1    INFO             Density estimation ( Group2--genes ): Groupwise retained observations after missing value removal: control:231901/241110; low protein:179404/200925
+2018-07-12 15:42:42    23.1    INFO             Density estimation ( Group2--genes ): Groupwise retained observations after subsampling: control:112764/231901; low protein:87236/179404
+2018-07-12 15:42:43    23.1    INFO             Density estimation ( Group2--tiling ): Groupwise retained observations after missing value removal: control:3122232/3168714; low protein:2528093/2640595
+2018-07-12 15:42:43    23.1    INFO             processing beta_density_samples_5_4
+2018-07-12 15:42:44    23.1    INFO             Density estimation ( Group2--promoters ): Groupwise retained observations after missing value removal: control:249880/256836; low protein:198647/214030
+2018-07-12 15:42:45    23.1    INFO             Density estimation ( Group2--promoters ): Groupwise retained observations after subsampling: control:111423/249880; low protein:88577/198647
+2018-07-12 15:42:46    23.1    INFO             processing beta_density_samples_5_5
+2018-07-12 15:42:46    23.1    INFO             Density estimation ( Group2--cpgislands ): Groupwise retained observations after missing value removal: control:95120/95706; low protein:78707/79755
+2018-07-12 15:42:48    23.1    INFO             Density estimation ( Group2--tiling ): Groupwise retained observations after subsampling: control:110515/3122232; low protein:89485/2528093
+2018-07-12 15:42:48    23.1    INFO             processing beta_density_samples_6_1
+2018-07-12 15:42:51    23.1    INFO             processing beta_density_samples_6_2
+2018-07-12 15:42:54    23.1    INFO             processing beta_density_samples_6_3
+2018-07-12 15:42:55    23.1    INFO             processing beta_density_samples_9_1
+2018-07-12 15:42:55    23.1    INFO             Density estimation ( Group1--genes ): Groupwise retained observations after missing value removal: control:231901/241110; high fat:182170/200925
+2018-07-12 15:42:56    23.1    INFO             Density estimation ( Group1--genes ): Groupwise retained observations after subsampling: control:112010/231901; high fat:87990/182170
+2018-07-12 15:42:57    23.1    INFO             Density estimation ( Group1--tiling ): Groupwise retained observations after missing value removal: control:3122232/3168714; high fat:2542280/2640595
+2018-07-12 15:42:58    23.1    INFO             processing beta_density_samples_6_4
+2018-07-12 15:42:58    23.1    INFO             processing beta_density_samples_8_4
+2018-07-12 15:42:59    23.1    INFO             Density estimation ( Age3--promoters ): Groupwise retained observations after missing value removal: 10 weeks:159823/171224; 12 weeks:245370/256836; 13.5 weeks:122649/128418
+2018-07-12 15:42:59    23.1    INFO             Density estimation ( Group1--promoters ): Groupwise retained observations after missing value removal: control:249880/256836; high fat:200665/214030
+2018-07-12 15:43:00    23.1    INFO             processing beta_density_samples_8_3
+2018-07-12 15:43:00    23.1    INFO             Density estimation ( Group1--promoters ): Groupwise retained observations after subsampling: control:110923/249880; high fat:89077/200665
+2018-07-12 15:43:00    23.1    INFO             Density estimation ( Age3--promoters ): Groupwise retained observations after subsampling: 10 weeks:90836/159823; 12 weeks:139457/245370; 13.5 weeks:69708/122649
+2018-07-12 15:43:01    23.1    INFO             Density estimation ( Age3--genes ): Groupwise retained observations after missing value removal: 10 weeks:144659/160740; 12 weeks:225441/241110; 13.5 weeks:112440/120555
+2018-07-12 15:43:01    23.1    INFO             processing beta_density_samples_6_5
+2018-07-12 15:43:02    23.1    INFO             Density estimation ( Age3--genes ): Groupwise retained observations after subsampling: 10 weeks:89936/144659; 12 weeks:140159/225441; 13.5 weeks:69905/112440
+2018-07-12 15:43:02    23.1    INFO             Density estimation ( Group1--cpgislands ): Groupwise retained observations after missing value removal: control:95120/95706; high fat:78932/79755
+2018-07-12 15:43:03    23.1    INFO             Density estimation ( Group1--tiling ): Groupwise retained observations after subsampling: control:110238/3122232; high fat:89762/2542280
+2018-07-12 15:43:05    23.1    INFO             processing beta_density_samples_7_1
+2018-07-12 15:43:06    23.1    INFO             processing beta_density_samples_8_5
+2018-07-12 15:43:07    23.1    INFO             Density estimation ( Age3--cpgislands ): Groupwise retained observations after missing value removal: 10 weeks:62866/63804; 12 weeks:95015/95706; 13.5 weeks:47524/47853
+2018-07-12 15:43:08    23.1    INFO             processing beta_density_samples_9_3
+2018-07-12 15:43:08    23.1    INFO             Density estimation ( Age2--genes ): Groupwise retained observations after missing value removal: 10 weeks:144659/160740; 13.5 weeks:112440/120555; 13 weeks:110935/120555
+2018-07-12 15:43:08    23.1    INFO             processing beta_density_samples_9_4
+2018-07-12 15:43:08    23.1    INFO             Density estimation ( Age2--genes ): Groupwise retained observations after subsampling: 10 weeks:117918/144659; 13.5 weeks:91655/112440; 13 weeks:90428/110935
+2018-07-12 15:43:08    23.1    INFO             Density estimation ( Age2--promoters ): Groupwise retained observations after missing value removal: 10 weeks:159823/171224; 13.5 weeks:122649/128418; 13 weeks:121350/128418
+2018-07-12 15:43:08    23.1    INFO             Density estimation ( Age2--promoters ): Groupwise retained observations after subsampling: 10 weeks:118733/159823; 13.5 weeks:91116/122649; 13 weeks:90151/121350
+2018-07-12 15:43:10    23.1    INFO             processing beta_density_samples_10_5
+2018-07-12 15:43:10    23.1    INFO             processing beta_density_samples_10_1
+2018-07-12 15:43:11    23.1    INFO             Density estimation ( Age1--cpgislands ): Groupwise retained observations after missing value removal: 12 weeks:95015/95706; 13.5 weeks:47524/47853; 13 weeks:47354/47853
+2018-07-12 15:43:11    23.1    INFO             processing beta_density_samples_10_4
+2018-07-12 15:43:12    23.1    INFO             Density estimation ( Age1--promoters ): Groupwise retained observations after missing value removal: 12 weeks:245370/256836; 13.5 weeks:122649/128418; 13 weeks:121350/128418
+2018-07-12 15:43:13    23.1    INFO             processing beta_density_samples_9_5
+2018-07-12 15:43:13    23.1    INFO             Density estimation ( Age2--cpgislands ): Groupwise retained observations after missing value removal: 10 weeks:62866/63804; 13.5 weeks:47524/47853; 13 weeks:47354/47853
+2018-07-12 15:43:14    23.1    INFO             Density estimation ( Age1--promoters ): Groupwise retained observations after subsampling: 12 weeks:150420/245370; 13.5 weeks:75188/122649; 13 weeks:74392/121350
+2018-07-12 15:43:15    23.1    INFO             processing beta_density_samples_11_1
+2018-07-12 15:43:33    23.1    INFO             processing beta_density_samples_10_3
+2018-07-12 15:43:34    23.1    INFO             Density estimation ( Age1--genes ): Groupwise retained observations after missing value removal: 12 weeks:225441/241110; 13.5 weeks:112440/120555; 13 weeks:110935/120555
+2018-07-12 15:43:34    23.1    INFO             Density estimation ( Age1--genes ): Groupwise retained observations after subsampling: 12 weeks:150690/225441; 13.5 weeks:75158/112440; 13 weeks:74152/110935
+2018-07-12 15:43:35    23.1    INFO             processing beta_density_samples_11_3
+2018-07-12 15:43:35    23.1    INFO             processing beta_density_samples_11_4
+2018-07-12 15:43:36    23.1    INFO             Density estimation ( Predicted Gender--genes ): Groupwise retained observations after missing value removal: female:178554/200925; male:414921/442035
+2018-07-12 15:43:36    23.1    INFO             Density estimation ( Predicted Gender--promoters ): Groupwise retained observations after missing value removal: female:198001/214030; male:451191/470866
+2018-07-12 15:43:36    23.1    INFO             processing beta_density_samples_11_5
+2018-07-12 15:43:36    23.1    INFO             Density estimation ( Predicted Gender--cpgislands ): Groupwise retained observations after missing value removal: female:78654/79755; male:174105/175461
+2018-07-12 15:43:37    23.1    INFO             Density estimation ( Predicted Gender--genes ): Groupwise retained observations after subsampling: female:60172/178554; male:139828/414921
+2018-07-12 15:43:37    23.1    INFO             Density estimation ( Predicted Gender--cpgislands ): Groupwise retained observations after subsampling: female:62236/78654; male:137764/174105
+2018-07-12 15:43:37    23.1    INFO             Density estimation ( Predicted Gender--promoters ): Groupwise retained observations after subsampling: female:60999/198001; male:139001/451191
+2018-07-12 15:44:58    24.3    INFO             Density estimation ( all samples--sites ): Groupwise retained observations after missing value removal: all:211163816/308780272
+2018-07-12 15:45:14    20.8    INFO             Density estimation ( Age--sites ): Groupwise retained observations after missing value removal: 10 weeks:43836219/77195068; 12 weeks:85812838/115792602; 13.5 weeks:42130670/57896301; 13 weeks:39384089/57896301
+2018-07-12 15:45:21    20.8    INFO             Density estimation ( Group--sites ): Groupwise retained observations after missing value removal: control:99054991/115792602; high fat:58714856/96493835; low protein:53393969/96493835
+2018-07-12 15:45:48    24.6    INFO             Density estimation ( Group2--sites ): Groupwise retained observations after missing value removal: control:99054991/115792602; low protein:53393969/96493835
+2018-07-12 15:45:48    22.4    INFO             Density estimation ( Predicted Gender--sites ): Groupwise retained observations after missing value removal: female:51630282/96493835; male:159533534/212286437
+2018-07-12 15:45:52    23.0    INFO             Density estimation ( Age3--sites ): Groupwise retained observations after missing value removal: 10 weeks:43836219/77195068; 12 weeks:85812838/115792602; 13.5 weeks:42130670/57896301
+2018-07-12 15:45:54    24.8    INFO             Density estimation ( Group3--sites ): Groupwise retained observations after missing value removal: high fat:58714856/96493835; low protein:53393969/96493835
+2018-07-12 15:45:58    24.6    INFO             Density estimation ( Group1--sites ): Groupwise retained observations after missing value removal: control:99054991/115792602; high fat:58714856/96493835
+2018-07-12 15:46:12    22.1    INFO             Density estimation ( Age--sites ): Groupwise retained observations after subsampling: 10 weeks:83037/43836219; 12 weeks:162552/85812838; 13.5 weeks:79807/42130670; 13 weeks:74604/39384089
+2018-07-12 15:46:13    25.4    INFO             Density estimation ( all samples--sites ): Groupwise retained observations after subsampling: all:100000/211163816
+2018-07-12 15:46:16    23.4    INFO             Density estimation ( Group--sites ): Groupwise retained observations after subsampling: control:140727/99054991; high fat:83416/58714856; low protein:75857/53393969
+2018-07-12 15:46:18    23.5    INFO             Density estimation ( Age1--sites ): Groupwise retained observations after missing value removal: 12 weeks:85812838/115792602; 13.5 weeks:42130670/57896301; 13 weeks:39384089/57896301
+2018-07-12 15:46:18    23.0    INFO             Density estimation ( Age4--sites ): Groupwise retained observations after missing value removal: 10 weeks:43836219/77195068; 12 weeks:85812838/115792602; 13 weeks:39384089/57896301
+2018-07-12 15:46:25    25.4    INFO             processing beta_density_samples_7_2
+2018-07-12 15:46:28    25.4    INFO             Density estimation ( Age4--tiling ): Groupwise retained observations after missing value removal: 10 weeks:2030709/2112476; 12 weeks:3084816/3168714; 13 weeks:1532939/1584357
+2018-07-12 15:46:30    25.4    INFO             Density estimation ( Age4--tiling ): Groupwise retained observations after subsampling: 10 weeks:91632/2030709; 12 weeks:139197/3084816; 13 weeks:69171/1532939
+2018-07-12 15:46:32    24.2    INFO             Density estimation ( Age2--sites ): Groupwise retained observations after missing value removal: 10 weeks:43836219/77195068; 13.5 weeks:42130670/57896301; 13 weeks:39384089/57896301
+2018-07-12 15:46:38    24.0    INFO             Density estimation ( Predicted Gender--sites ): Groupwise retained observations after subsampling: female:48901/51630282; male:151099/159533534
+2018-07-12 15:46:39    25.4    INFO             Density estimation ( Group2--sites ): Groupwise retained observations after subsampling: control:129952/99054991; low protein:70048/53393969
+2018-07-12 15:46:40    23.4    INFO             processing beta_density_samples_9_2
+2018-07-12 15:46:41    20.8    INFO             processing beta_density_samples_8_2
+2018-07-12 15:46:42    20.8    INFO             Density estimation ( Age3--tiling ): Groupwise retained observations after missing value removal: 10 weeks:2030709/2112476; 12 weeks:3084816/3168714; 13.5 weeks:1544141/1584357
+2018-07-12 15:46:44    20.8    INFO             Density estimation ( Age3--tiling ): Groupwise retained observations after subsampling: 10 weeks:91478/2030709; 12 weeks:138963/3084816; 13.5 weeks:69559/1544141
+2018-07-12 15:46:46    20.8    INFO             Density estimation ( Age2--tiling ): Groupwise retained observations after missing value removal: 10 weeks:2030709/2112476; 13.5 weeks:1544141/1584357; 13 weeks:1532939/1584357
+2018-07-12 15:46:48    25.6    INFO             Density estimation ( Group3--sites ): Groupwise retained observations after subsampling: high fat:104746/58714856; low protein:95254/53393969
+2018-07-12 15:46:48    23.2    INFO             Density estimation ( Age3--sites ): Groupwise retained observations after subsampling: 10 weeks:76557/43836219; 12 weeks:149865/85812838; 13.5 weeks:73578/42130670
+2018-07-12 15:46:49    20.8    INFO             Density estimation ( Age2--tiling ): Groupwise retained observations after subsampling: 10 weeks:119271/2030709; 13.5 weeks:90693/1544141; 13 weeks:90035/1532939
+2018-07-12 15:46:54    25.4    INFO             processing beta_density_samples_11_2
+2018-07-12 15:46:56    25.4    INFO             Density estimation ( Predicted Gender--tiling ): Groupwise retained observations after missing value removal: female:2522030/2640595; male:5670575/5809309
+2018-07-12 15:46:57    25.4    INFO             Density estimation ( Group1--sites ): Groupwise retained observations after subsampling: control:125569/99054991; high fat:74431/58714856
+2018-07-12 15:46:59    24.6    INFO             Density estimation ( Predicted Gender--tiling ): Groupwise retained observations after subsampling: female:61568/2522030; male:138432/5670575
+2018-07-12 15:47:02    23.0    INFO             Density estimation ( Age1--sites ): Groupwise retained observations after subsampling: 12 weeks:153853/85812838; 13.5 weeks:75536/42130670; 13 weeks:70611/39384089
+2018-07-12 15:47:02    25.6    INFO             processing beta_density_samples_10_2
+2018-07-12 15:47:04    23.2    INFO             Density estimation ( Age4--sites ): Groupwise retained observations after subsampling: 10 weeks:77801/43836219; 12 weeks:152301/85812838; 13 weeks:69899/39384089
+2018-07-12 15:47:05    24.8    INFO             Density estimation ( Age1--tiling ): Groupwise retained observations after missing value removal: 12 weeks:3084816/3168714; 13.5 weeks:1544141/1584357; 13 weeks:1532939/1584357
+2018-07-12 15:47:07    24.8    INFO             Density estimation ( Age1--tiling ): Groupwise retained observations after subsampling: 12 weeks:150188/3084816; 13.5 weeks:75179/1544141; 13 weeks:74633/1532939
+2018-07-12 15:47:12    25.5    INFO             Density estimation ( Age2--sites ): Groupwise retained observations after subsampling: 10 weeks:104912/43836219; 13.5 weeks:100830/42130670; 13 weeks:94257/39384089
+2018-07-12 15:47:17    23.1  STATUS         COMPLETED Methylation Value Distributions - Sample Groups
+2018-07-12 15:47:17    23.1  STATUS         STARTED Methylation Value Distributions - Site Categories
+2018-07-12 15:48:02    27.6    INFO             Density estimation ( CGI Relation--all samples ): Groupwise retained observations after missing value removal: Open Sea:195303602/289351104; Shelf:1222025/1619888; Shore:1348908/1803232; Island:13289281/16006048
+2018-07-12 15:48:09    27.6    INFO             Density estimation ( CGI Relation--all samples ): Groupwise retained observations after subsampling: Open Sea:369957/195303602; Shelf:2315/1222025; Shore:2555/1348908; Island:25173/13289281
+2018-07-12 15:48:20    23.1    INFO             Density estimation ( CGI Relation--10 weeks (based on Age) ): Groupwise retained observations after missing value removal: Open Sea:40342260/72337776; Shelf:260151/404972; Shore:285344/450808; Island:2948464/4001512
+2018-07-12 15:48:21    23.1    INFO             Density estimation ( CGI Relation--10 weeks (based on Age) ): Groupwise retained observations after subsampling: Open Sea:368118/40342260; Shelf:2374/260151; Shore:2604/285344; Island:26904/2948464
+2018-07-12 15:48:32    23.1    INFO             Density estimation ( CGI Relation--12 weeks (based on Age) ): Groupwise retained observations after missing value removal: Open Sea:79511188/108506664; Shelf:491317/607458; Shore:543059/676212; Island:5267274/6002268
+2018-07-12 15:48:34    23.5    INFO             Density estimation ( CGI Relation--12 weeks (based on Age) ): Groupwise retained observations after subsampling: Open Sea:370626/79511188; Shelf:2290/491317; Shore:2531/543059; Island:24552/5267274
+2018-07-12 15:48:42    24.0    INFO             Density estimation ( CGI Relation--13.5 weeks (based on Age) ): Groupwise retained observations after missing value removal: Open Sea:38984013/54253332; Shelf:243310/303729; Shore:269487/338106; Island:2633860/3001134
+2018-07-12 15:48:42    24.0    INFO             Density estimation ( CGI Relation--13.5 weeks (based on Age) ): Groupwise retained observations after subsampling: Open Sea:370125/38984013; Shelf:2310/243310; Shore:2559/269487; Island:25007/2633860
+2018-07-12 15:48:52    20.8    INFO             Density estimation ( CGI Relation--13 weeks (based on Age) ): Groupwise retained observations after missing value removal: Open Sea:36466141/54253332; Shelf:227247/303729; Shore:251018/338106; Island:2439683/3001134
+2018-07-12 15:48:53    20.8    INFO             Density estimation ( CGI Relation--13 weeks (based on Age) ): Groupwise retained observations after subsampling: Open Sea:370364/36466141; Shelf:2308/227247; Shore:2549/251018; Island:24778/2439683
+2018-07-12 15:49:04    21.8    INFO             Density estimation ( CGI Relation--control (based on Group) ): Groupwise retained observations after missing value removal: Open Sea:92420261/108506664; Shelf:537613/607458; Shore:596447/676212; Island:5500670/6002268
+2018-07-12 15:49:05    22.1    INFO             Density estimation ( CGI Relation--control (based on Group) ): Groupwise retained observations after subsampling: Open Sea:373208/92420261; Shelf:2171/537613; Shore:2409/596447; Island:22213/5500670
+2018-07-12 15:49:15    23.2    INFO             Density estimation ( CGI Relation--high fat (based on Group) ): Groupwise retained observations after missing value removal: Open Sea:53974479/90422220; Shelf:355680/506215; Shore:391591/563510; Island:3993106/5001890
+2018-07-12 15:49:17    23.2    INFO             Density estimation ( CGI Relation--high fat (based on Group) ): Groupwise retained observations after subsampling: Open Sea:367706/53974479; Shelf:2423/355680; Shore:2668/391591; Island:27203/3993106
+2018-07-12 15:49:29    25.3    INFO             Density estimation ( CGI Relation--low protein (based on Group) ): Groupwise retained observations after missing value removal: Open Sea:48908862/90422220; Shelf:328732/506215; Shore:360870/563510; Island:3795505/5001890
+2018-07-12 15:49:31    22.9    INFO             Density estimation ( CGI Relation--low protein (based on Group) ): Groupwise retained observations after subsampling: Open Sea:366400/48908862; Shelf:2463/328732; Shore:2703/360870; Island:28434/3795505
+2018-07-12 15:49:41    22.9    INFO             Density estimation ( CGI Relation--high fat (based on Group3) ): Groupwise retained observations after missing value removal: Open Sea:53974479/90422220; Shelf:355680/506215; Shore:391591/563510; Island:3993106/5001890
+2018-07-12 15:49:43    23.9    INFO             Density estimation ( CGI Relation--high fat (based on Group3) ): Groupwise retained observations after subsampling: Open Sea:367706/53974479; Shelf:2423/355680; Shore:2668/391591; Island:27203/3993106
+2018-07-12 15:49:54    25.4    INFO             Density estimation ( CGI Relation--low protein (based on Group3) ): Groupwise retained observations after missing value removal: Open Sea:48908862/90422220; Shelf:328732/506215; Shore:360870/563510; Island:3795505/5001890
+2018-07-12 15:49:56    26.4    INFO             Density estimation ( CGI Relation--low protein (based on Group3) ): Groupwise retained observations after subsampling: Open Sea:366400/48908862; Shelf:2463/328732; Shore:2703/360870; Island:28434/3795505
+2018-07-12 15:50:07    23.7    INFO             Density estimation ( CGI Relation--control (based on Group2) ): Groupwise retained observations after missing value removal: Open Sea:92420261/108506664; Shelf:537613/607458; Shore:596447/676212; Island:5500670/6002268
+2018-07-12 15:50:08    24.0    INFO             Density estimation ( CGI Relation--control (based on Group2) ): Groupwise retained observations after subsampling: Open Sea:373208/92420261; Shelf:2171/537613; Shore:2409/596447; Island:22213/5500670
+2018-07-12 15:50:19    25.8    INFO             Density estimation ( CGI Relation--low protein (based on Group2) ): Groupwise retained observations after missing value removal: Open Sea:48908862/90422220; Shelf:328732/506215; Shore:360870/563510; Island:3795505/5001890
+2018-07-12 15:50:20    25.8    INFO             Density estimation ( CGI Relation--low protein (based on Group2) ): Groupwise retained observations after subsampling: Open Sea:366400/48908862; Shelf:2463/328732; Shore:2703/360870; Island:28434/3795505
+2018-07-12 15:50:29    25.8    INFO             Density estimation ( CGI Relation--control (based on Group1) ): Groupwise retained observations after missing value removal: Open Sea:92420261/108506664; Shelf:537613/607458; Shore:596447/676212; Island:5500670/6002268
+2018-07-12 15:50:33    20.8    INFO             Density estimation ( CGI Relation--control (based on Group1) ): Groupwise retained observations after subsampling: Open Sea:373208/92420261; Shelf:2171/537613; Shore:2409/596447; Island:22213/5500670
+2018-07-12 15:50:44    22.9    INFO             Density estimation ( CGI Relation--high fat (based on Group1) ): Groupwise retained observations after missing value removal: Open Sea:53974479/90422220; Shelf:355680/506215; Shore:391591/563510; Island:3993106/5001890
+2018-07-12 15:50:44    23.3    INFO             Density estimation ( CGI Relation--high fat (based on Group1) ): Groupwise retained observations after subsampling: Open Sea:367706/53974479; Shelf:2423/355680; Shore:2668/391591; Island:27203/3993106
+2018-07-12 15:50:53    24.1    INFO             Density estimation ( CGI Relation--10 weeks (based on Age4) ): Groupwise retained observations after missing value removal: Open Sea:40342260/72337776; Shelf:260151/404972; Shore:285344/450808; Island:2948464/4001512
+2018-07-12 15:50:54    24.1    INFO             Density estimation ( CGI Relation--10 weeks (based on Age4) ): Groupwise retained observations after subsampling: Open Sea:368118/40342260; Shelf:2374/260151; Shore:2604/285344; Island:26904/2948464
+2018-07-12 15:51:09    23.4    INFO             Density estimation ( CGI Relation--12 weeks (based on Age4) ): Groupwise retained observations after missing value removal: Open Sea:79511188/108506664; Shelf:491317/607458; Shore:543059/676212; Island:5267274/6002268
+2018-07-12 15:51:11    23.4    INFO             Density estimation ( CGI Relation--12 weeks (based on Age4) ): Groupwise retained observations after subsampling: Open Sea:370626/79511188; Shelf:2290/491317; Shore:2531/543059; Island:24552/5267274
+2018-07-12 15:51:20    23.4    INFO             Density estimation ( CGI Relation--13 weeks (based on Age4) ): Groupwise retained observations after missing value removal: Open Sea:36466141/54253332; Shelf:227247/303729; Shore:251018/338106; Island:2439683/3001134
+2018-07-12 15:51:20    23.4    INFO             Density estimation ( CGI Relation--13 weeks (based on Age4) ): Groupwise retained observations after subsampling: Open Sea:370364/36466141; Shelf:2308/227247; Shore:2549/251018; Island:24778/2439683
+2018-07-12 15:51:28    23.4    INFO             Density estimation ( CGI Relation--10 weeks (based on Age3) ): Groupwise retained observations after missing value removal: Open Sea:40342260/72337776; Shelf:260151/404972; Shore:285344/450808; Island:2948464/4001512
+2018-07-12 15:51:29    23.4    INFO             Density estimation ( CGI Relation--10 weeks (based on Age3) ): Groupwise retained observations after subsampling: Open Sea:368118/40342260; Shelf:2374/260151; Shore:2604/285344; Island:26904/2948464
+2018-07-12 15:51:40    25.1    INFO             Density estimation ( CGI Relation--12 weeks (based on Age3) ): Groupwise retained observations after missing value removal: Open Sea:79511188/108506664; Shelf:491317/607458; Shore:543059/676212; Island:5267274/6002268
+2018-07-12 15:51:41    25.1    INFO             Density estimation ( CGI Relation--12 weeks (based on Age3) ): Groupwise retained observations after subsampling: Open Sea:370626/79511188; Shelf:2290/491317; Shore:2531/543059; Island:24552/5267274
+2018-07-12 15:51:48    25.1    INFO             Density estimation ( CGI Relation--13.5 weeks (based on Age3) ): Groupwise retained observations after missing value removal: Open Sea:38984013/54253332; Shelf:243310/303729; Shore:269487/338106; Island:2633860/3001134
+2018-07-12 15:51:49    25.1    INFO             Density estimation ( CGI Relation--13.5 weeks (based on Age3) ): Groupwise retained observations after subsampling: Open Sea:370125/38984013; Shelf:2310/243310; Shore:2559/269487; Island:25007/2633860
+2018-07-12 15:51:57    24.8    INFO             Density estimation ( CGI Relation--10 weeks (based on Age2) ): Groupwise retained observations after missing value removal: Open Sea:40342260/72337776; Shelf:260151/404972; Shore:285344/450808; Island:2948464/4001512
+2018-07-12 15:51:58    24.8    INFO             Density estimation ( CGI Relation--10 weeks (based on Age2) ): Groupwise retained observations after subsampling: Open Sea:368118/40342260; Shelf:2374/260151; Shore:2604/285344; Island:26904/2948464
+2018-07-12 15:52:04    24.8    INFO             Density estimation ( CGI Relation--13.5 weeks (based on Age2) ): Groupwise retained observations after missing value removal: Open Sea:38984013/54253332; Shelf:243310/303729; Shore:269487/338106; Island:2633860/3001134
+2018-07-12 15:52:05    24.8    INFO             Density estimation ( CGI Relation--13.5 weeks (based on Age2) ): Groupwise retained observations after subsampling: Open Sea:370125/38984013; Shelf:2310/243310; Shore:2559/269487; Island:25007/2633860
+2018-07-12 15:52:12    24.8    INFO             Density estimation ( CGI Relation--13 weeks (based on Age2) ): Groupwise retained observations after missing value removal: Open Sea:36466141/54253332; Shelf:227247/303729; Shore:251018/338106; Island:2439683/3001134
+2018-07-12 15:52:13    24.8    INFO             Density estimation ( CGI Relation--13 weeks (based on Age2) ): Groupwise retained observations after subsampling: Open Sea:370364/36466141; Shelf:2308/227247; Shore:2549/251018; Island:24778/2439683
+2018-07-12 15:52:25    27.3    INFO             Density estimation ( CGI Relation--12 weeks (based on Age1) ): Groupwise retained observations after missing value removal: Open Sea:79511188/108506664; Shelf:491317/607458; Shore:543059/676212; Island:5267274/6002268
+2018-07-12 15:52:29    23.4    INFO             Density estimation ( CGI Relation--12 weeks (based on Age1) ): Groupwise retained observations after subsampling: Open Sea:370626/79511188; Shelf:2290/491317; Shore:2531/543059; Island:24552/5267274
+2018-07-12 15:52:36    23.4    INFO             Density estimation ( CGI Relation--13.5 weeks (based on Age1) ): Groupwise retained observations after missing value removal: Open Sea:38984013/54253332; Shelf:243310/303729; Shore:269487/338106; Island:2633860/3001134
+2018-07-12 15:52:37    23.4    INFO             Density estimation ( CGI Relation--13.5 weeks (based on Age1) ): Groupwise retained observations after subsampling: Open Sea:370125/38984013; Shelf:2310/243310; Shore:2559/269487; Island:25007/2633860
+2018-07-12 15:52:44    23.4    INFO             Density estimation ( CGI Relation--13 weeks (based on Age1) ): Groupwise retained observations after missing value removal: Open Sea:36466141/54253332; Shelf:227247/303729; Shore:251018/338106; Island:2439683/3001134
+2018-07-12 15:52:44    23.4    INFO             Density estimation ( CGI Relation--13 weeks (based on Age1) ): Groupwise retained observations after subsampling: Open Sea:370364/36466141; Shelf:2308/227247; Shore:2549/251018; Island:24778/2439683
+2018-07-12 15:52:57    25.5    INFO             Density estimation ( CGI Relation--female (based on Predicted Gender) ): Groupwise retained observations after missing value removal: Open Sea:47303638/90422220; Shelf:319188/506215; Shore:350214/563510; Island:3657242/5001890
+2018-07-12 15:52:58    25.5    INFO             Density estimation ( CGI Relation--female (based on Predicted Gender) ): Groupwise retained observations after subsampling: Open Sea:366480/47303638; Shelf:2473/319188; Shore:2713/350214; Island:28334/3657242
+2018-07-12 15:53:20    25.5    INFO             Density estimation ( CGI Relation--male (based on Predicted Gender) ): Groupwise retained observations after missing value removal: Open Sea:147999964/198928884; Shelf:902837/1113673; Shore:998694/1239722; Island:9632039/11004158
+2018-07-12 15:53:24    27.0    INFO             Density estimation ( CGI Relation--male (based on Predicted Gender) ): Groupwise retained observations after subsampling: Open Sea:371082/147999964; Shelf:2264/902837; Shore:2504/998694; Island:24151/9632039
+2018-07-12 15:53:27    27.0  STATUS         COMPLETED Methylation Value Distributions - Site Categories
+2018-07-12 15:53:27    27.0  STATUS         STARTED Sample Clustering
+2018-07-12 15:53:27    27.0  STATUS             STARTED Agglomerative Hierarchical Clustering
+2018-07-12 15:55:30    23.1  STATUS                 Performed clustering on sites using correlation as a distance metric
+2018-07-12 15:56:00    23.1  STATUS                 Performed clustering on sites using manhattan as a distance metric
+2018-07-12 15:56:28    23.1  STATUS                 Performed clustering on sites using euclidean as a distance metric
+2018-07-12 15:56:31    23.1  STATUS                 Performed clustering on tiling using correlation as a distance metric
+2018-07-12 15:56:32    23.1  STATUS                 Performed clustering on tiling using manhattan as a distance metric
+2018-07-12 15:56:32    23.1  STATUS                 Performed clustering on tiling using euclidean as a distance metric
+2018-07-12 15:56:33    23.1  STATUS                 Performed clustering on genes using correlation as a distance metric
+2018-07-12 15:56:33    23.1  STATUS                 Performed clustering on genes using manhattan as a distance metric
+2018-07-12 15:56:33    23.1  STATUS                 Performed clustering on genes using euclidean as a distance metric
+2018-07-12 15:56:33    23.1  STATUS                 Performed clustering on promoters using correlation as a distance metric
+2018-07-12 15:56:33    23.1  STATUS                 Performed clustering on promoters using manhattan as a distance metric
+2018-07-12 15:56:33    23.1  STATUS                 Performed clustering on promoters using euclidean as a distance metric
+2018-07-12 15:56:33    23.1  STATUS                 Performed clustering on cpgislands using correlation as a distance metric
+2018-07-12 15:56:33    23.1  STATUS                 Performed clustering on cpgislands using manhattan as a distance metric
+2018-07-12 15:56:33    23.1  STATUS                 Performed clustering on cpgislands using euclidean as a distance metric
+2018-07-12 15:56:33    23.1  STATUS             COMPLETED Agglomerative Hierarchical Clustering
+2018-07-12 15:57:10    27.7  STATUS             STARTED Clustering Section
+2018-07-12 15:57:14    27.7  STATUS                 STARTED Generating Heatmaps
+2018-07-12 15:57:15    27.7  STATUS                     STARTED Region type: sites
+2018-07-12 16:05:31    23.1 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage average . Discarding row dendrogram
+2018-07-12 16:05:42    23.1 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage average . Discarding row dendrogram
+2018-07-12 16:05:53    23.1 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage average . Discarding row dendrogram
+2018-07-12 16:06:16    23.1 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage average . Discarding row dendrogram
+2018-07-12 16:06:27    23.1 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage average . Discarding row dendrogram
+2018-07-12 16:06:39    23.1 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage average . Discarding row dendrogram
+2018-07-12 16:06:54    23.1 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage average . Discarding row dendrogram
+2018-07-12 16:07:07    23.1 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage average . Discarding row dendrogram
+2018-07-12 16:07:18    23.1 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage average . Discarding row dendrogram
+2018-07-12 16:07:29    23.1 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage average . Discarding row dendrogram
+2018-07-12 16:07:40    23.1 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage average . Discarding row dendrogram
+2018-07-12 16:07:53    23.1 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage average . Discarding row dendrogram
+2018-07-12 16:08:05    23.1 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage average . Discarding row dendrogram
+2018-07-12 16:08:17    23.1 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage average . Discarding row dendrogram
+2018-07-12 16:08:29    23.1 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage average . Discarding row dendrogram
+2018-07-12 16:08:42    23.1 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage average . Discarding row dendrogram
+2018-07-12 16:08:54    23.1 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage average . Discarding row dendrogram
+2018-07-12 16:09:05    23.1 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage average . Discarding row dendrogram
+2018-07-12 16:09:17    23.1 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage average . Discarding row dendrogram
+2018-07-12 16:09:29    23.1 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage average . Discarding row dendrogram
+2018-07-12 16:09:40    23.1 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage complete . Discarding row dendrogram
+2018-07-12 16:09:51    23.1 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage complete . Discarding row dendrogram
+2018-07-12 16:10:03    23.1 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage complete . Discarding row dendrogram
+2018-07-12 16:10:14    23.1 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage complete . Discarding row dendrogram
+2018-07-12 16:10:27    23.1 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage complete . Discarding row dendrogram
+2018-07-12 16:10:38    23.1 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage complete . Discarding row dendrogram
+2018-07-12 16:10:52    23.1 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage complete . Discarding row dendrogram
+2018-07-12 16:11:03    23.1 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage complete . Discarding row dendrogram
+2018-07-12 16:11:15    23.1 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage complete . Discarding row dendrogram
+2018-07-12 16:11:27    23.1 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage complete . Discarding row dendrogram
+2018-07-12 16:11:39    23.1 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage complete . Discarding row dendrogram
+2018-07-12 16:11:54    23.1 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage complete . Discarding row dendrogram
+2018-07-12 16:12:06    23.1 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage complete . Discarding row dendrogram
+2018-07-12 16:12:21    23.1 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage complete . Discarding row dendrogram
+2018-07-12 16:12:32    23.1 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage complete . Discarding row dendrogram
+2018-07-12 16:12:43    23.1 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage complete . Discarding row dendrogram
+2018-07-12 16:13:06    23.1 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage complete . Discarding row dendrogram
+2018-07-12 16:13:17    23.1 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage complete . Discarding row dendrogram
+2018-07-12 16:13:29    23.1 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage complete . Discarding row dendrogram
+2018-07-12 16:13:43    23.1 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage complete . Discarding row dendrogram
+2018-07-12 16:13:57    23.1 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage median . Discarding row dendrogram
+2018-07-12 16:14:08    23.1 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage median . Discarding row dendrogram
+2018-07-12 16:14:19    23.1 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage median . Discarding row dendrogram
+2018-07-12 16:14:30    23.1 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage median . Discarding row dendrogram
+2018-07-12 16:14:43    23.1 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage median . Discarding row dendrogram
+2018-07-12 16:14:54    23.1 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage median . Discarding row dendrogram
+2018-07-12 16:15:06    23.1 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage median . Discarding row dendrogram
+2018-07-12 16:15:18    23.1 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage median . Discarding row dendrogram
+2018-07-12 16:15:31    23.1 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage median . Discarding row dendrogram
+2018-07-12 16:15:43    23.1 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage median . Discarding row dendrogram
+2018-07-12 16:15:55    23.1 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage median . Discarding row dendrogram
+2018-07-12 16:16:07    23.1 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage median . Discarding row dendrogram
+2018-07-12 16:16:18    23.1 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage median . Discarding row dendrogram
+2018-07-12 16:16:29    23.1 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage median . Discarding row dendrogram
+2018-07-12 16:16:41    23.1 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage median . Discarding row dendrogram
+2018-07-12 16:16:52    23.1 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage median . Discarding row dendrogram
+2018-07-12 16:17:03    23.1 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage median . Discarding row dendrogram
+2018-07-12 16:17:15    23.1 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage median . Discarding row dendrogram
+2018-07-12 16:17:27    23.1 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage median . Discarding row dendrogram
+2018-07-12 16:17:39    23.1 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage median . Discarding row dendrogram
+2018-07-12 16:17:52    23.1 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage average . Discarding row dendrogram
+2018-07-12 16:18:03    23.1 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage average . Discarding row dendrogram
+2018-07-12 16:18:14    23.1 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage average . Discarding row dendrogram
+2018-07-12 16:18:26    23.1 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage average . Discarding row dendrogram
+2018-07-12 16:18:38    23.1 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage average . Discarding row dendrogram
+2018-07-12 16:18:50    23.1 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage average . Discarding row dendrogram
+2018-07-12 16:19:02    23.1 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage average . Discarding row dendrogram
+2018-07-12 16:19:15    23.1 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage average . Discarding row dendrogram
+2018-07-12 16:19:26    23.1 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage average . Discarding row dendrogram
+2018-07-12 16:19:37    23.1 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage average . Discarding row dendrogram
+2018-07-12 16:19:48    23.1 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage average . Discarding row dendrogram
+2018-07-12 16:20:00    23.1 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage average . Discarding row dendrogram
+2018-07-12 16:20:12    23.1 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage average . Discarding row dendrogram
+2018-07-12 16:20:26    23.1 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage average . Discarding row dendrogram
+2018-07-12 16:20:38    23.1 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage average . Discarding row dendrogram
+2018-07-12 16:20:50    23.1 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage average . Discarding row dendrogram
+2018-07-12 16:21:02    23.1 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage average . Discarding row dendrogram
+2018-07-12 16:21:14    23.1 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage average . Discarding row dendrogram
+2018-07-12 16:21:25    23.1 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage average . Discarding row dendrogram
+2018-07-12 16:21:36    23.1 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage average . Discarding row dendrogram
+2018-07-12 16:21:48    23.1 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage complete . Discarding row dendrogram
+2018-07-12 16:22:00    23.1 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage complete . Discarding row dendrogram
+2018-07-12 16:22:11    23.1 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage complete . Discarding row dendrogram
+2018-07-12 16:22:22    23.1 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage complete . Discarding row dendrogram
+2018-07-12 16:22:33    23.1 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage complete . Discarding row dendrogram
+2018-07-12 16:22:45    23.1 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage complete . Discarding row dendrogram
+2018-07-12 16:22:57    23.1 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage complete . Discarding row dendrogram
+2018-07-12 16:23:09    23.1 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage complete . Discarding row dendrogram
+2018-07-12 16:23:20    23.1 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage complete . Discarding row dendrogram
+2018-07-12 16:23:31    23.1 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage complete . Discarding row dendrogram
+2018-07-12 16:23:42    23.1 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage complete . Discarding row dendrogram
+2018-07-12 16:23:56    23.1 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage complete . Discarding row dendrogram
+2018-07-12 16:24:07    23.1 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage complete . Discarding row dendrogram
+2018-07-12 16:24:20    23.1 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage complete . Discarding row dendrogram
+2018-07-12 16:24:32    23.1 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage complete . Discarding row dendrogram
+2018-07-12 16:24:45    23.1 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage complete . Discarding row dendrogram
+2018-07-12 16:24:59    23.1 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage complete . Discarding row dendrogram
+2018-07-12 16:25:11    23.1 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage complete . Discarding row dendrogram
+2018-07-12 16:25:22    23.1 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage complete . Discarding row dendrogram
+2018-07-12 16:25:34    23.1 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage complete . Discarding row dendrogram
+2018-07-12 16:25:57    23.1 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage median . Discarding row dendrogram
+2018-07-12 16:26:08    23.1 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage median . Discarding row dendrogram
+2018-07-12 16:26:20    23.1 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage median . Discarding row dendrogram
+2018-07-12 16:26:34    23.1 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage median . Discarding row dendrogram
+2018-07-12 16:26:47    23.1 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage median . Discarding row dendrogram
+2018-07-12 16:26:59    23.1 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage median . Discarding row dendrogram
+2018-07-12 16:27:10    23.1 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage median . Discarding row dendrogram
+2018-07-12 16:27:21    23.1 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage median . Discarding row dendrogram
+2018-07-12 16:27:34    23.1 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage median . Discarding row dendrogram
+2018-07-12 16:27:46    23.1 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage median . Discarding row dendrogram
+2018-07-12 16:27:58    23.1 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage median . Discarding row dendrogram
+2018-07-12 16:28:10    23.1 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage median . Discarding row dendrogram
+2018-07-12 16:28:23    23.1 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage median . Discarding row dendrogram
+2018-07-12 16:28:35    23.1 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage median . Discarding row dendrogram
+2018-07-12 16:28:47    23.1 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage median . Discarding row dendrogram
+2018-07-12 16:28:58    23.1 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage median . Discarding row dendrogram
+2018-07-12 16:29:10    23.1 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage median . Discarding row dendrogram
+2018-07-12 16:29:22    23.1 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage median . Discarding row dendrogram
+2018-07-12 16:29:33    23.1 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage median . Discarding row dendrogram
+2018-07-12 16:29:45    23.1 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage median . Discarding row dendrogram
+2018-07-12 16:29:56    23.1  STATUS                     COMPLETED Region type: sites
+2018-07-12 16:29:56    23.1  STATUS                     STARTED Region type: tiling
+2018-07-12 16:37:47    23.1 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage average . Discarding row dendrogram
+2018-07-12 16:38:10    23.1 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage average . Discarding row dendrogram
+2018-07-12 16:38:21    23.1 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage average . Discarding row dendrogram
+2018-07-12 16:38:34    23.1 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage average . Discarding row dendrogram
+2018-07-12 16:38:48    23.1 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage average . Discarding row dendrogram
+2018-07-12 16:39:00    23.1 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage average . Discarding row dendrogram
+2018-07-12 16:39:11    23.1 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage average . Discarding row dendrogram
+2018-07-12 16:39:22    23.1 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage average . Discarding row dendrogram
+2018-07-12 16:39:33    23.1 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage average . Discarding row dendrogram
+2018-07-12 16:39:46    23.1 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage average . Discarding row dendrogram
+2018-07-12 16:39:58    23.1 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage average . Discarding row dendrogram
+2018-07-12 16:40:09    23.1 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage average . Discarding row dendrogram
+2018-07-12 16:40:21    23.1 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage average . Discarding row dendrogram
+2018-07-12 16:40:33    23.1 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage average . Discarding row dendrogram
+2018-07-12 16:40:47    23.1 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage average . Discarding row dendrogram
+2018-07-12 16:40:58    23.1 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage average . Discarding row dendrogram
+2018-07-12 16:41:09    23.1 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage average . Discarding row dendrogram
+2018-07-12 16:41:21    23.1 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage average . Discarding row dendrogram
+2018-07-12 16:41:44    23.1 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage average . Discarding row dendrogram
+2018-07-12 16:41:56    23.1 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage average . Discarding row dendrogram
+2018-07-12 16:42:07    23.1 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage complete . Discarding row dendrogram
+2018-07-12 16:42:21    23.1 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage complete . Discarding row dendrogram
+2018-07-12 16:42:35    23.1 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage complete . Discarding row dendrogram
+2018-07-12 16:42:46    23.1 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage complete . Discarding row dendrogram
+2018-07-12 16:42:58    23.1 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage complete . Discarding row dendrogram
+2018-07-12 16:43:09    23.1 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage complete . Discarding row dendrogram
+2018-07-12 16:43:22    23.1 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage complete . Discarding row dendrogram
+2018-07-12 16:43:34    23.1 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage complete . Discarding row dendrogram
+2018-07-12 16:43:46    23.1 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage complete . Discarding row dendrogram
+2018-07-12 16:43:58    23.1 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage complete . Discarding row dendrogram
+2018-07-12 16:44:10    23.1 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage complete . Discarding row dendrogram
+2018-07-12 16:44:23    23.1 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage complete . Discarding row dendrogram
+2018-07-12 16:44:35    23.1 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage complete . Discarding row dendrogram
+2018-07-12 16:44:46    23.1 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage complete . Discarding row dendrogram
+2018-07-12 16:44:57    23.1 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage complete . Discarding row dendrogram
+2018-07-12 16:45:09    23.1 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage complete . Discarding row dendrogram
+2018-07-12 16:45:20    23.1 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage complete . Discarding row dendrogram
+2018-07-12 16:45:32    23.1 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage complete . Discarding row dendrogram
+2018-07-12 16:45:43    23.1 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage complete . Discarding row dendrogram
+2018-07-12 16:45:55    23.1 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage complete . Discarding row dendrogram
+2018-07-12 16:46:07    23.1 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage median . Discarding row dendrogram
+2018-07-12 16:46:20    23.1 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage median . Discarding row dendrogram
+2018-07-12 16:46:32    23.1 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage median . Discarding row dendrogram
+2018-07-12 16:46:43    23.1 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage median . Discarding row dendrogram
+2018-07-12 16:46:55    23.1 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage median . Discarding row dendrogram
+2018-07-12 16:47:06    23.1 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage median . Discarding row dendrogram
+2018-07-12 16:47:17    23.1 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage median . Discarding row dendrogram
+2018-07-12 16:47:30    23.1 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage median . Discarding row dendrogram
+2018-07-12 16:47:43    23.1 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage median . Discarding row dendrogram
+2018-07-12 16:47:56    23.1 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage median . Discarding row dendrogram
+2018-07-12 16:48:08    23.1 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage median . Discarding row dendrogram
+2018-07-12 16:48:19    23.1 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage median . Discarding row dendrogram
+2018-07-12 16:48:31    23.1 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage median . Discarding row dendrogram
+2018-07-12 16:48:44    23.1 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage median . Discarding row dendrogram
+2018-07-12 16:48:59    23.1 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage median . Discarding row dendrogram
+2018-07-12 16:49:12    23.1 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage median . Discarding row dendrogram
+2018-07-12 16:49:23    23.1 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage median . Discarding row dendrogram
+2018-07-12 16:49:34    23.1 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage median . Discarding row dendrogram
+2018-07-12 16:49:46    23.1 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage median . Discarding row dendrogram
+2018-07-12 16:49:57    23.1 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage median . Discarding row dendrogram
+2018-07-12 16:50:08    23.1 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage average . Discarding row dendrogram
+2018-07-12 16:50:20    23.1 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage average . Discarding row dendrogram
+2018-07-12 16:50:31    23.1 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage average . Discarding row dendrogram
+2018-07-12 16:50:43    23.1 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage average . Discarding row dendrogram
+2018-07-12 16:50:57    23.1 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage average . Discarding row dendrogram
+2018-07-12 16:51:09    23.1 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage average . Discarding row dendrogram
+2018-07-12 16:51:21    23.1 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage average . Discarding row dendrogram
+2018-07-12 16:51:33    23.1 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage average . Discarding row dendrogram
+2018-07-12 16:51:44    23.1 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage average . Discarding row dendrogram
+2018-07-12 16:51:57    23.1 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage average . Discarding row dendrogram
+2018-07-12 16:52:09    23.1 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage average . Discarding row dendrogram
+2018-07-12 16:52:20    23.1 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage average . Discarding row dendrogram
+2018-07-12 16:52:34    23.1 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage average . Discarding row dendrogram
+2018-07-12 16:52:45    23.1 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage average . Discarding row dendrogram
+2018-07-12 16:52:56    23.1 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage average . Discarding row dendrogram
+2018-07-12 16:53:08    23.1 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage average . Discarding row dendrogram
+2018-07-12 16:53:31    23.1 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage average . Discarding row dendrogram
+2018-07-12 16:53:43    23.1 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage average . Discarding row dendrogram
+2018-07-12 16:53:55    23.1 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage average . Discarding row dendrogram
+2018-07-12 16:54:09    23.1 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage average . Discarding row dendrogram
+2018-07-12 16:54:21    23.1 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage complete . Discarding row dendrogram
+2018-07-12 16:54:32    23.1 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage complete . Discarding row dendrogram
+2018-07-12 16:54:43    23.1 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage complete . Discarding row dendrogram
+2018-07-12 16:54:55    23.1 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage complete . Discarding row dendrogram
+2018-07-12 16:55:07    23.1 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage complete . Discarding row dendrogram
+2018-07-12 16:55:19    23.1 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage complete . Discarding row dendrogram
+2018-07-12 16:55:31    23.1 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage complete . Discarding row dendrogram
+2018-07-12 16:55:43    23.1 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage complete . Discarding row dendrogram
+2018-07-12 16:55:56    23.1 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage complete . Discarding row dendrogram
+2018-07-12 16:56:08    23.1 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage complete . Discarding row dendrogram
+2018-07-12 16:56:20    23.1 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage complete . Discarding row dendrogram
+2018-07-12 16:56:31    23.1 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage complete . Discarding row dendrogram
+2018-07-12 16:56:43    23.1 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage complete . Discarding row dendrogram
+2018-07-12 16:56:54    23.1 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage complete . Discarding row dendrogram
+2018-07-12 16:57:06    23.1 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage complete . Discarding row dendrogram
+2018-07-12 16:57:17    23.1 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage complete . Discarding row dendrogram
+2018-07-12 16:57:28    23.1 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage complete . Discarding row dendrogram
+2018-07-12 16:57:41    23.1 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage complete . Discarding row dendrogram
+2018-07-12 16:57:53    23.1 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage complete . Discarding row dendrogram
+2018-07-12 16:58:05    23.1 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage complete . Discarding row dendrogram
+2018-07-12 16:58:17    23.1 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage median . Discarding row dendrogram
+2018-07-12 16:58:28    23.1 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage median . Discarding row dendrogram
+2018-07-12 16:58:40    23.1 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage median . Discarding row dendrogram
+2018-07-12 16:58:52    23.1 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage median . Discarding row dendrogram
+2018-07-12 16:59:03    23.1 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage median . Discarding row dendrogram
+2018-07-12 16:59:15    23.1 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage median . Discarding row dendrogram
+2018-07-12 16:59:28    23.1 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage median . Discarding row dendrogram
+2018-07-12 16:59:42    23.1 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage median . Discarding row dendrogram
+2018-07-12 16:59:53    23.1 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage median . Discarding row dendrogram
+2018-07-12 17:00:05    23.1 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage median . Discarding row dendrogram
+2018-07-12 17:00:17    23.1 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage median . Discarding row dendrogram
+2018-07-12 17:00:29    23.1 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage median . Discarding row dendrogram
+2018-07-12 17:00:45    23.1 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage median . Discarding row dendrogram
+2018-07-12 17:00:56    23.1 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage median . Discarding row dendrogram
+2018-07-12 17:01:07    23.1 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage median . Discarding row dendrogram
+2018-07-12 17:01:19    23.1 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage median . Discarding row dendrogram
+2018-07-12 17:01:31    23.1 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage median . Discarding row dendrogram
+2018-07-12 17:01:43    23.1 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage median . Discarding row dendrogram
+2018-07-12 17:01:54    23.1 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage median . Discarding row dendrogram
+2018-07-12 17:02:05    23.1 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage median . Discarding row dendrogram
+2018-07-12 17:02:17    23.1  STATUS                     COMPLETED Region type: tiling
+2018-07-12 17:02:17    23.1  STATUS                     STARTED Region type: genes
+2018-07-12 17:10:32    23.1 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage average . Discarding row dendrogram
+2018-07-12 17:10:44    23.1 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage average . Discarding row dendrogram
+2018-07-12 17:10:55    23.1 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage average . Discarding row dendrogram
+2018-07-12 17:11:07    23.1 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage average . Discarding row dendrogram
+2018-07-12 17:11:30    23.1 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage average . Discarding row dendrogram
+2018-07-12 17:11:42    23.1 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage average . Discarding row dendrogram
+2018-07-12 17:11:54    23.1 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage average . Discarding row dendrogram
+2018-07-12 17:12:09    23.1 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage average . Discarding row dendrogram
+2018-07-12 17:12:22    23.1 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage average . Discarding row dendrogram
+2018-07-12 17:12:34    23.1 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage average . Discarding row dendrogram
+2018-07-12 17:12:45    23.1 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage average . Discarding row dendrogram
+2018-07-12 17:12:57    23.1 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage average . Discarding row dendrogram
+2018-07-12 17:13:09    23.1 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage average . Discarding row dendrogram
+2018-07-12 17:13:21    23.1 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage average . Discarding row dendrogram
+2018-07-12 17:13:34    23.1 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage average . Discarding row dendrogram
+2018-07-12 17:13:46    23.1 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage average . Discarding row dendrogram
+2018-07-12 17:13:58    23.1 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage average . Discarding row dendrogram
+2018-07-12 17:14:10    23.1 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage average . Discarding row dendrogram
+2018-07-12 17:14:22    23.1 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage average . Discarding row dendrogram
+2018-07-12 17:14:34    23.1 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage average . Discarding row dendrogram
+2018-07-12 17:14:46    23.1 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage complete . Discarding row dendrogram
+2018-07-12 17:14:57    23.1 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage complete . Discarding row dendrogram
+2018-07-12 17:15:08    23.1 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage complete . Discarding row dendrogram
+2018-07-12 17:15:20    23.1 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage complete . Discarding row dendrogram
+2018-07-12 17:15:32    23.1 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage complete . Discarding row dendrogram
+2018-07-12 17:15:44    23.1 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage complete . Discarding row dendrogram
+2018-07-12 17:15:55    23.1 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage complete . Discarding row dendrogram
+2018-07-12 17:16:07    23.1 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage complete . Discarding row dendrogram
+2018-07-12 17:16:19    23.1 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage complete . Discarding row dendrogram
+2018-07-12 17:16:32    23.1 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage complete . Discarding row dendrogram
+2018-07-12 17:16:43    23.1 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage complete . Discarding row dendrogram
+2018-07-12 17:16:55    23.1 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage complete . Discarding row dendrogram
+2018-07-12 17:17:06    23.1 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage complete . Discarding row dendrogram
+2018-07-12 17:17:19    23.1 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage complete . Discarding row dendrogram
+2018-07-12 17:17:32    23.1 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage complete . Discarding row dendrogram
+2018-07-12 17:17:45    23.1 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage complete . Discarding row dendrogram
+2018-07-12 17:17:56    23.1 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage complete . Discarding row dendrogram
+2018-07-12 17:18:08    23.1 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage complete . Discarding row dendrogram
+2018-07-12 17:18:20    23.1 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage complete . Discarding row dendrogram
+2018-07-12 17:18:33    23.1 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage complete . Discarding row dendrogram
+2018-07-12 17:18:49    23.1 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage median . Discarding row dendrogram
+2018-07-12 17:19:00    23.1 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage median . Discarding row dendrogram
+2018-07-12 17:19:12    23.1 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage median . Discarding row dendrogram
+2018-07-12 17:19:23    23.1 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage median . Discarding row dendrogram
+2018-07-12 17:19:35    23.1 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage median . Discarding row dendrogram
+2018-07-12 17:19:46    23.1 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage median . Discarding row dendrogram
+2018-07-12 17:19:58    23.1 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage median . Discarding row dendrogram
+2018-07-12 17:20:09    23.1 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage median . Discarding row dendrogram
+2018-07-12 17:20:22    23.1 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage median . Discarding row dendrogram
+2018-07-12 17:20:34    23.1 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage median . Discarding row dendrogram
+2018-07-12 17:20:46    23.1 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage median . Discarding row dendrogram
+2018-07-12 17:20:58    23.1 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage median . Discarding row dendrogram
+2018-07-12 17:21:22    23.1 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage median . Discarding row dendrogram
+2018-07-12 17:21:33    23.1 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage median . Discarding row dendrogram
+2018-07-12 17:21:45    23.1 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage median . Discarding row dendrogram
+2018-07-12 17:22:01    23.1 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage median . Discarding row dendrogram
+2018-07-12 17:22:13    23.1 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage median . Discarding row dendrogram
+2018-07-12 17:22:24    23.1 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage median . Discarding row dendrogram
+2018-07-12 17:22:36    23.1 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage median . Discarding row dendrogram
+2018-07-12 17:22:47    23.1 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage median . Discarding row dendrogram
+2018-07-12 17:23:00    23.1 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage average . Discarding row dendrogram
+2018-07-12 17:23:12    23.1 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage average . Discarding row dendrogram
+2018-07-12 17:23:24    23.1 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage average . Discarding row dendrogram
+2018-07-12 17:23:36    23.1 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage average . Discarding row dendrogram
+2018-07-12 17:23:49    23.1 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage average . Discarding row dendrogram
+2018-07-12 17:24:01    23.1 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage average . Discarding row dendrogram
+2018-07-12 17:24:13    23.1 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage average . Discarding row dendrogram
+2018-07-12 17:24:24    23.1 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage average . Discarding row dendrogram
+2018-07-12 17:24:36    23.1 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage average . Discarding row dendrogram
+2018-07-12 17:24:47    23.1 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage average . Discarding row dendrogram
+2018-07-12 17:24:59    23.1 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage average . Discarding row dendrogram
+2018-07-12 17:25:10    23.1 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage average . Discarding row dendrogram
+2018-07-12 17:25:22    23.1 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage average . Discarding row dendrogram
+2018-07-12 17:25:33    23.1 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage average . Discarding row dendrogram
+2018-07-12 17:25:45    23.1 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage average . Discarding row dendrogram
+2018-07-12 17:25:58    23.1 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage average . Discarding row dendrogram
+2018-07-12 17:26:10    23.1 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage average . Discarding row dendrogram
+2018-07-12 17:26:21    23.1 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage average . Discarding row dendrogram
+2018-07-12 17:26:33    23.1 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage average . Discarding row dendrogram
+2018-07-12 17:26:45    23.1 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage average . Discarding row dendrogram
+2018-07-12 17:26:57    23.1 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage complete . Discarding row dendrogram
+2018-07-12 17:27:09    23.1 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage complete . Discarding row dendrogram
+2018-07-12 17:27:22    23.1 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage complete . Discarding row dendrogram
+2018-07-12 17:27:34    23.1 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage complete . Discarding row dendrogram
+2018-07-12 17:27:46    23.1 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage complete . Discarding row dendrogram
+2018-07-12 17:27:58    23.1 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage complete . Discarding row dendrogram
+2018-07-12 17:28:10    23.1 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage complete . Discarding row dendrogram
+2018-07-12 17:28:22    23.1 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage complete . Discarding row dendrogram
+2018-07-12 17:28:37    23.1 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage complete . Discarding row dendrogram
+2018-07-12 17:28:49    23.1 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage complete . Discarding row dendrogram
+2018-07-12 17:29:00    23.1 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage complete . Discarding row dendrogram
+2018-07-12 17:29:12    23.1 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage complete . Discarding row dendrogram
+2018-07-12 17:29:23    23.1 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage complete . Discarding row dendrogram
+2018-07-12 17:29:35    23.1 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage complete . Discarding row dendrogram
+2018-07-12 17:29:46    23.1 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage complete . Discarding row dendrogram
+2018-07-12 17:29:58    23.1 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage complete . Discarding row dendrogram
+2018-07-12 17:30:09    23.1 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage complete . Discarding row dendrogram
+2018-07-12 17:30:20    23.1 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage complete . Discarding row dendrogram
+2018-07-12 17:30:34    23.1 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage complete . Discarding row dendrogram
+2018-07-12 17:30:47    23.1 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage complete . Discarding row dendrogram
+2018-07-12 17:30:59    23.1 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage median . Discarding row dendrogram
+2018-07-12 17:31:11    23.1 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage median . Discarding row dendrogram
+2018-07-12 17:31:23    23.1 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage median . Discarding row dendrogram
+2018-07-12 17:31:36    23.1 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage median . Discarding row dendrogram
+2018-07-12 17:31:48    23.1 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage median . Discarding row dendrogram
+2018-07-12 17:31:59    23.1 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage median . Discarding row dendrogram
+2018-07-12 17:32:11    23.1 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage median . Discarding row dendrogram
+2018-07-12 17:32:22    23.1 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage median . Discarding row dendrogram
+2018-07-12 17:32:35    23.1 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage median . Discarding row dendrogram
+2018-07-12 17:32:51    23.1 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage median . Discarding row dendrogram
+2018-07-12 17:33:03    23.1 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage median . Discarding row dendrogram
+2018-07-12 17:33:15    23.1 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage median . Discarding row dendrogram
+2018-07-12 17:33:27    23.1 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage median . Discarding row dendrogram
+2018-07-12 17:33:51    23.1 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage median . Discarding row dendrogram
+2018-07-12 17:34:02    23.1 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage median . Discarding row dendrogram
+2018-07-12 17:34:14    23.1 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage median . Discarding row dendrogram
+2018-07-12 17:34:29    23.1 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage median . Discarding row dendrogram
+2018-07-12 17:34:41    23.1 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage median . Discarding row dendrogram
+2018-07-12 17:34:53    23.1 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage median . Discarding row dendrogram
+2018-07-12 17:35:05    23.1 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage median . Discarding row dendrogram
+2018-07-12 17:35:17    23.1  STATUS                     COMPLETED Region type: genes
+2018-07-12 17:35:17    23.1  STATUS                     STARTED Region type: promoters
+2018-07-12 17:43:14    20.8 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage average . Discarding row dendrogram
+2018-07-12 17:43:25    20.8 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage average . Discarding row dendrogram
+2018-07-12 17:43:48    20.8 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage average . Discarding row dendrogram
+2018-07-12 17:44:00    20.8 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage average . Discarding row dendrogram
+2018-07-12 17:44:12    20.8 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage average . Discarding row dendrogram
+2018-07-12 17:44:26    20.8 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage average . Discarding row dendrogram
+2018-07-12 17:44:37    20.8 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage average . Discarding row dendrogram
+2018-07-12 17:44:49    20.8 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage average . Discarding row dendrogram
+2018-07-12 17:45:01    20.8 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage average . Discarding row dendrogram
+2018-07-12 17:45:12    20.8 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage average . Discarding row dendrogram
+2018-07-12 17:45:24    20.8 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage average . Discarding row dendrogram
+2018-07-12 17:45:36    20.8 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage average . Discarding row dendrogram
+2018-07-12 17:45:48    20.8 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage average . Discarding row dendrogram
+2018-07-12 17:46:00    20.8 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage average . Discarding row dendrogram
+2018-07-12 17:46:12    20.8 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage average . Discarding row dendrogram
+2018-07-12 17:46:23    20.8 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage average . Discarding row dendrogram
+2018-07-12 17:46:34    20.8 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage average . Discarding row dendrogram
+2018-07-12 17:46:46    20.8 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage average . Discarding row dendrogram
+2018-07-12 17:46:58    20.8 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage average . Discarding row dendrogram
+2018-07-12 17:47:09    20.8 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage average . Discarding row dendrogram
+2018-07-12 17:47:20    20.8 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage complete . Discarding row dendrogram
+2018-07-12 17:47:31    20.8 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage complete . Discarding row dendrogram
+2018-07-12 17:47:44    20.8 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage complete . Discarding row dendrogram
+2018-07-12 17:47:55    20.8 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage complete . Discarding row dendrogram
+2018-07-12 17:48:06    20.8 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage complete . Discarding row dendrogram
+2018-07-12 17:48:18    20.8 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage complete . Discarding row dendrogram
+2018-07-12 17:48:41    20.8 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage complete . Discarding row dendrogram
+2018-07-12 17:48:53    20.8 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage complete . Discarding row dendrogram
+2018-07-12 17:49:04    20.8 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage complete . Discarding row dendrogram
+2018-07-12 17:49:18    20.8 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage complete . Discarding row dendrogram
+2018-07-12 17:49:30    20.8 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage complete . Discarding row dendrogram
+2018-07-12 17:49:42    20.8 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage complete . Discarding row dendrogram
+2018-07-12 17:49:53    20.8 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage complete . Discarding row dendrogram
+2018-07-12 17:50:04    20.8 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage complete . Discarding row dendrogram
+2018-07-12 17:50:16    20.8 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage complete . Discarding row dendrogram
+2018-07-12 17:50:29    20.8 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage complete . Discarding row dendrogram
+2018-07-12 17:50:41    20.8 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage complete . Discarding row dendrogram
+2018-07-12 17:50:52    20.8 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage complete . Discarding row dendrogram
+2018-07-12 17:51:04    20.8 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage complete . Discarding row dendrogram
+2018-07-12 17:51:16    20.8 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage complete . Discarding row dendrogram
+2018-07-12 17:51:28    20.8 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage median . Discarding row dendrogram
+2018-07-12 17:51:39    20.8 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage median . Discarding row dendrogram
+2018-07-12 17:51:50    20.8 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage median . Discarding row dendrogram
+2018-07-12 17:52:01    20.8 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage median . Discarding row dendrogram
+2018-07-12 17:52:12    20.8 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage median . Discarding row dendrogram
+2018-07-12 17:52:24    20.8 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage median . Discarding row dendrogram
+2018-07-12 17:52:35    20.8 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage median . Discarding row dendrogram
+2018-07-12 17:52:47    20.8 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage median . Discarding row dendrogram
+2018-07-12 17:52:58    20.8 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage median . Discarding row dendrogram
+2018-07-12 17:53:10    20.8 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage median . Discarding row dendrogram
+2018-07-12 17:53:22    20.8 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage median . Discarding row dendrogram
+2018-07-12 17:53:33    20.8 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage median . Discarding row dendrogram
+2018-07-12 17:53:44    20.8 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage median . Discarding row dendrogram
+2018-07-12 17:53:55    20.8 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage median . Discarding row dendrogram
+2018-07-12 17:54:06    20.8 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage median . Discarding row dendrogram
+2018-07-12 17:54:18    20.8 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage median . Discarding row dendrogram
+2018-07-12 17:54:31    20.8 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage median . Discarding row dendrogram
+2018-07-12 17:54:43    20.8 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage median . Discarding row dendrogram
+2018-07-12 17:54:54    20.8 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage median . Discarding row dendrogram
+2018-07-12 17:55:05    20.8 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage median . Discarding row dendrogram
+2018-07-12 17:55:17    20.8 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage average . Discarding row dendrogram
+2018-07-12 17:55:29    20.8 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage average . Discarding row dendrogram
+2018-07-12 17:55:44    20.8 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage average . Discarding row dendrogram
+2018-07-12 17:55:56    20.8 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage average . Discarding row dendrogram
+2018-07-12 17:56:06    20.8 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage average . Discarding row dendrogram
+2018-07-12 17:56:18    20.8 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage average . Discarding row dendrogram
+2018-07-12 17:56:30    20.8 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage average . Discarding row dendrogram
+2018-07-12 17:56:41    20.8 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage average . Discarding row dendrogram
+2018-07-12 17:56:52    20.8 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage average . Discarding row dendrogram
+2018-07-12 17:57:03    20.8 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage average . Discarding row dendrogram
+2018-07-12 17:57:14    20.8 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage average . Discarding row dendrogram
+2018-07-12 17:57:26    20.8 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage average . Discarding row dendrogram
+2018-07-12 17:57:39    20.8 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage average . Discarding row dendrogram
+2018-07-12 17:57:50    20.8 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage average . Discarding row dendrogram
+2018-07-12 17:58:02    20.8 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage average . Discarding row dendrogram
+2018-07-12 17:58:14    20.8 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage average . Discarding row dendrogram
+2018-07-12 17:58:26    20.8 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage average . Discarding row dendrogram
+2018-07-12 17:58:38    20.8 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage average . Discarding row dendrogram
+2018-07-12 17:58:49    20.8 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage average . Discarding row dendrogram
+2018-07-12 17:58:59    20.8 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage average . Discarding row dendrogram
+2018-07-12 17:59:11    20.8 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage complete . Discarding row dendrogram
+2018-07-12 17:59:22    20.8 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage complete . Discarding row dendrogram
+2018-07-12 17:59:34    20.8 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage complete . Discarding row dendrogram
+2018-07-12 17:59:48    20.8 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage complete . Discarding row dendrogram
+2018-07-12 17:59:59    20.8 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage complete . Discarding row dendrogram
+2018-07-12 18:00:11    20.8 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage complete . Discarding row dendrogram
+2018-07-12 18:00:22    20.8 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage complete . Discarding row dendrogram
+2018-07-12 18:00:44    20.8 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage complete . Discarding row dendrogram
+2018-07-12 18:00:55    20.8 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage complete . Discarding row dendrogram
+2018-07-12 18:01:07    20.8 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage complete . Discarding row dendrogram
+2018-07-12 18:01:21    20.8 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage complete . Discarding row dendrogram
+2018-07-12 18:01:33    20.8 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage complete . Discarding row dendrogram
+2018-07-12 18:01:44    20.8 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage complete . Discarding row dendrogram
+2018-07-12 18:01:56    20.8 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage complete . Discarding row dendrogram
+2018-07-12 18:02:07    20.8 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage complete . Discarding row dendrogram
+2018-07-12 18:02:19    20.8 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage complete . Discarding row dendrogram
+2018-07-12 18:02:31    20.8 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage complete . Discarding row dendrogram
+2018-07-12 18:02:42    20.8 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage complete . Discarding row dendrogram
+2018-07-12 18:02:54    20.8 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage complete . Discarding row dendrogram
+2018-07-12 18:03:06    20.8 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage complete . Discarding row dendrogram
+2018-07-12 18:03:17    20.8 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage median . Discarding row dendrogram
+2018-07-12 18:03:28    20.8 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage median . Discarding row dendrogram
+2018-07-12 18:03:40    20.8 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage median . Discarding row dendrogram
+2018-07-12 18:03:52    20.8 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage median . Discarding row dendrogram
+2018-07-12 18:04:03    20.8 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage median . Discarding row dendrogram
+2018-07-12 18:04:14    20.8 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage median . Discarding row dendrogram
+2018-07-12 18:04:25    20.8 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage median . Discarding row dendrogram
+2018-07-12 18:04:36    20.8 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage median . Discarding row dendrogram
+2018-07-12 18:04:48    20.8 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage median . Discarding row dendrogram
+2018-07-12 18:04:59    20.8 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage median . Discarding row dendrogram
+2018-07-12 18:05:11    20.8 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage median . Discarding row dendrogram
+2018-07-12 18:05:23    20.8 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage median . Discarding row dendrogram
+2018-07-12 18:05:35    20.8 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage median . Discarding row dendrogram
+2018-07-12 18:05:46    20.8 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage median . Discarding row dendrogram
+2018-07-12 18:05:58    20.8 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage median . Discarding row dendrogram
+2018-07-12 18:06:08    20.8 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage median . Discarding row dendrogram
+2018-07-12 18:06:21    20.8 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage median . Discarding row dendrogram
+2018-07-12 18:06:34    20.8 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage median . Discarding row dendrogram
+2018-07-12 18:06:47    20.8 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage median . Discarding row dendrogram
+2018-07-12 18:06:58    20.8 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage median . Discarding row dendrogram
+2018-07-12 18:07:09    20.8  STATUS                     COMPLETED Region type: promoters
+2018-07-12 18:07:09    20.8  STATUS                     STARTED Region type: cpgislands
+2018-07-12 18:14:40    20.8 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage average . Discarding row dendrogram
+2018-07-12 18:14:51    20.8 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage average . Discarding row dendrogram
+2018-07-12 18:15:02    20.8 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage average . Discarding row dendrogram
+2018-07-12 18:15:14    20.8 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage average . Discarding row dendrogram
+2018-07-12 18:15:37    20.8 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage average . Discarding row dendrogram
+2018-07-12 18:15:49    20.8 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage average . Discarding row dendrogram
+2018-07-12 18:16:00    20.8 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage average . Discarding row dendrogram
+2018-07-12 18:16:14    20.8 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage average . Discarding row dendrogram
+2018-07-12 18:16:27    20.8 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage average . Discarding row dendrogram
+2018-07-12 18:16:38    20.8 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage average . Discarding row dendrogram
+2018-07-12 18:16:49    20.8 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage average . Discarding row dendrogram
+2018-07-12 18:17:01    20.8 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage average . Discarding row dendrogram
+2018-07-12 18:17:14    20.8 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage average . Discarding row dendrogram
+2018-07-12 18:17:25    20.8 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage average . Discarding row dendrogram
+2018-07-12 18:17:37    20.8 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage average . Discarding row dendrogram
+2018-07-12 18:17:48    20.8 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage average . Discarding row dendrogram
+2018-07-12 18:18:01    20.8 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage average . Discarding row dendrogram
+2018-07-12 18:18:13    20.8 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage average . Discarding row dendrogram
+2018-07-12 18:18:24    20.8 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage average . Discarding row dendrogram
+2018-07-12 18:18:36    20.8 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage average . Discarding row dendrogram
+2018-07-12 18:18:47    20.8 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage complete . Discarding row dendrogram
+2018-07-12 18:18:59    20.8 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage complete . Discarding row dendrogram
+2018-07-12 18:19:10    20.8 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage complete . Discarding row dendrogram
+2018-07-12 18:19:21    20.8 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage complete . Discarding row dendrogram
+2018-07-12 18:19:32    20.8 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage complete . Discarding row dendrogram
+2018-07-12 18:19:43    20.8 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage complete . Discarding row dendrogram
+2018-07-12 18:19:55    20.8 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage complete . Discarding row dendrogram
+2018-07-12 18:20:07    20.8 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage complete . Discarding row dendrogram
+2018-07-12 18:20:19    20.8 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage complete . Discarding row dendrogram
+2018-07-12 18:20:30    20.8 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage complete . Discarding row dendrogram
+2018-07-12 18:20:41    20.8 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage complete . Discarding row dendrogram
+2018-07-12 18:20:53    20.8 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage complete . Discarding row dendrogram
+2018-07-12 18:21:04    20.8 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage complete . Discarding row dendrogram
+2018-07-12 18:21:16    20.8 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage complete . Discarding row dendrogram
+2018-07-12 18:21:29    20.8 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage complete . Discarding row dendrogram
+2018-07-12 18:21:42    20.8 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage complete . Discarding row dendrogram
+2018-07-12 18:21:53    20.8 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage complete . Discarding row dendrogram
+2018-07-12 18:22:04    20.8 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage complete . Discarding row dendrogram
+2018-07-12 18:22:16    20.8 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage complete . Discarding row dendrogram
+2018-07-12 18:22:28    20.8 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage complete . Discarding row dendrogram
+2018-07-12 18:22:44    20.8 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage median . Discarding row dendrogram
+2018-07-12 18:22:55    20.8 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage median . Discarding row dendrogram
+2018-07-12 18:23:06    20.8 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage median . Discarding row dendrogram
+2018-07-12 18:23:17    20.8 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage median . Discarding row dendrogram
+2018-07-12 18:23:29    20.8 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage median . Discarding row dendrogram
+2018-07-12 18:23:41    20.8 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage median . Discarding row dendrogram
+2018-07-12 18:23:52    20.8 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage median . Discarding row dendrogram
+2018-07-12 18:24:03    20.8 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage median . Discarding row dendrogram
+2018-07-12 18:24:14    20.8 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage median . Discarding row dendrogram
+2018-07-12 18:24:25    20.8 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage median . Discarding row dendrogram
+2018-07-12 18:24:38    20.8 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage median . Discarding row dendrogram
+2018-07-12 18:24:50    20.8 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage median . Discarding row dendrogram
+2018-07-12 18:25:02    20.8 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage median . Discarding row dendrogram
+2018-07-12 18:25:14    20.8 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage median . Discarding row dendrogram
+2018-07-12 18:25:25    20.8 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage median . Discarding row dendrogram
+2018-07-12 18:25:39    20.8 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage median . Discarding row dendrogram
+2018-07-12 18:25:51    20.8 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage median . Discarding row dendrogram
+2018-07-12 18:26:02    20.8 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage median . Discarding row dendrogram
+2018-07-12 18:26:14    20.8 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage median . Discarding row dendrogram
+2018-07-12 18:26:37    20.8 WARNING                         Could not cluster rows of the heatmap with method manhattan and linkage median . Discarding row dendrogram
+2018-07-12 18:26:48    20.8 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage average . Discarding row dendrogram
+2018-07-12 18:27:00    20.8 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage average . Discarding row dendrogram
+2018-07-12 18:27:14    20.8 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage average . Discarding row dendrogram
+2018-07-12 18:27:27    20.8 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage average . Discarding row dendrogram
+2018-07-12 18:27:39    20.8 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage average . Discarding row dendrogram
+2018-07-12 18:27:50    20.8 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage average . Discarding row dendrogram
+2018-07-12 18:28:01    20.8 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage average . Discarding row dendrogram
+2018-07-12 18:28:14    20.8 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage average . Discarding row dendrogram
+2018-07-12 18:28:26    20.8 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage average . Discarding row dendrogram
+2018-07-12 18:28:37    20.8 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage average . Discarding row dendrogram
+2018-07-12 18:28:49    20.8 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage average . Discarding row dendrogram
+2018-07-12 18:29:01    20.8 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage average . Discarding row dendrogram
+2018-07-12 18:29:13    20.8 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage average . Discarding row dendrogram
+2018-07-12 18:29:24    20.8 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage average . Discarding row dendrogram
+2018-07-12 18:29:36    20.8 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage average . Discarding row dendrogram
+2018-07-12 18:29:47    20.8 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage average . Discarding row dendrogram
+2018-07-12 18:29:58    20.8 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage average . Discarding row dendrogram
+2018-07-12 18:30:10    20.8 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage average . Discarding row dendrogram
+2018-07-12 18:30:21    20.8 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage average . Discarding row dendrogram
+2018-07-12 18:30:32    20.8 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage average . Discarding row dendrogram
+2018-07-12 18:30:44    20.8 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage complete . Discarding row dendrogram
+2018-07-12 18:30:55    20.8 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage complete . Discarding row dendrogram
+2018-07-12 18:31:07    20.8 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage complete . Discarding row dendrogram
+2018-07-12 18:31:19    20.8 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage complete . Discarding row dendrogram
+2018-07-12 18:31:30    20.8 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage complete . Discarding row dendrogram
+2018-07-12 18:31:42    20.8 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage complete . Discarding row dendrogram
+2018-07-12 18:31:53    20.8 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage complete . Discarding row dendrogram
+2018-07-12 18:32:05    20.8 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage complete . Discarding row dendrogram
+2018-07-12 18:32:17    20.8 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage complete . Discarding row dendrogram
+2018-07-12 18:32:29    20.8 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage complete . Discarding row dendrogram
+2018-07-12 18:32:41    20.8 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage complete . Discarding row dendrogram
+2018-07-12 18:32:53    20.8 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage complete . Discarding row dendrogram
+2018-07-12 18:33:04    20.8 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage complete . Discarding row dendrogram
+2018-07-12 18:33:16    20.8 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage complete . Discarding row dendrogram
+2018-07-12 18:33:28    20.8 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage complete . Discarding row dendrogram
+2018-07-12 18:33:44    20.8 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage complete . Discarding row dendrogram
+2018-07-12 18:33:56    20.8 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage complete . Discarding row dendrogram
+2018-07-12 18:34:07    20.8 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage complete . Discarding row dendrogram
+2018-07-12 18:34:18    20.8 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage complete . Discarding row dendrogram
+2018-07-12 18:34:29    20.8 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage complete . Discarding row dendrogram
+2018-07-12 18:34:40    20.8 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage median . Discarding row dendrogram
+2018-07-12 18:34:52    20.8 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage median . Discarding row dendrogram
+2018-07-12 18:35:03    20.8 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage median . Discarding row dendrogram
+2018-07-12 18:35:14    20.8 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage median . Discarding row dendrogram
+2018-07-12 18:35:25    20.8 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage median . Discarding row dendrogram
+2018-07-12 18:35:39    20.8 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage median . Discarding row dendrogram
+2018-07-12 18:35:51    20.8 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage median . Discarding row dendrogram
+2018-07-12 18:36:02    20.8 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage median . Discarding row dendrogram
+2018-07-12 18:36:14    20.8 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage median . Discarding row dendrogram
+2018-07-12 18:36:26    20.8 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage median . Discarding row dendrogram
+2018-07-12 18:36:39    20.8 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage median . Discarding row dendrogram
+2018-07-12 18:36:50    20.8 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage median . Discarding row dendrogram
+2018-07-12 18:37:01    20.8 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage median . Discarding row dendrogram
+2018-07-12 18:37:12    20.8 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage median . Discarding row dendrogram
+2018-07-12 18:37:24    20.8 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage median . Discarding row dendrogram
+2018-07-12 18:37:36    20.8 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage median . Discarding row dendrogram
+2018-07-12 18:37:49    20.8 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage median . Discarding row dendrogram
+2018-07-12 18:38:02    20.8 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage median . Discarding row dendrogram
+2018-07-12 18:38:14    20.8 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage median . Discarding row dendrogram
+2018-07-12 18:38:25    20.8 WARNING                         Could not cluster rows of the heatmap with method euclidean and linkage median . Discarding row dendrogram
+2018-07-12 18:38:37    20.8  STATUS                     COMPLETED Region type: cpgislands
+2018-07-12 18:38:38    20.8  STATUS                     Created 1350 heatmaps based on the clustering results
+2018-07-12 18:38:38    20.8  STATUS                 COMPLETED Generating Heatmaps
+2018-07-12 18:38:38    20.8  STATUS                 STARTED Adding Color Legends
+2018-07-12 18:44:35    20.8  STATUS                 COMPLETED Adding Color Legends
+2018-07-12 18:44:35    20.8  STATUS                 STARTED Estimating Optimal Numbers of Clusters
+2018-07-12 18:45:17    20.8  STATUS                     Estimated number of clusters based on mean silhouette value
+2018-07-12 18:45:17    20.8  STATUS                 COMPLETED Estimating Optimal Numbers of Clusters
+2018-07-12 18:45:17    20.8  STATUS                 STARTED Overlapping Clusters with Sample Traits
+2018-07-12 18:45:17    20.8  STATUS                     Computed adjusted rand indices and saved to exploratory_analysis_data/adjusted_rand_indices_1.csv
+2018-07-12 18:45:17    20.8  STATUS                     Computed adjusted rand indices and saved to exploratory_analysis_data/adjusted_rand_indices_2.csv
+2018-07-12 18:45:17    20.8  STATUS                     Computed adjusted rand indices and saved to exploratory_analysis_data/adjusted_rand_indices_3.csv
+2018-07-12 18:45:18    20.8  STATUS                     Computed adjusted rand indices and saved to exploratory_analysis_data/adjusted_rand_indices_4.csv
+2018-07-12 18:45:18    20.8  STATUS                     Computed adjusted rand indices and saved to exploratory_analysis_data/adjusted_rand_indices_5.csv
+2018-07-12 18:45:56    20.8  STATUS                 COMPLETED Overlapping Clusters with Sample Traits
+2018-07-12 18:45:56    20.8  STATUS             COMPLETED Clustering Section
+2018-07-12 18:45:56    20.8  STATUS         COMPLETED Sample Clustering
+2018-07-12 18:45:56    20.8  STATUS         STARTED Drawing regional methylation profiles
+2018-07-12 18:45:56    20.8  STATUS             STARTED Creating a Corresponding Section in the Report
+2018-07-12 18:47:00    21.4    INFO                 Subsampling 100000 of 32033497 site occurences (region type: tiling )
+2018-07-12 18:47:00    21.5  STATUS                 Plotting region profiles for region tiling and column all samples ...
+2018-07-12 18:48:03    25.4  STATUS                 Plotting region profiles for region tiling and column Age ...
+2018-07-12 18:50:14    23.1  STATUS                 Plotting region profiles for region tiling and column Group ...
+2018-07-12 18:51:59    25.4  STATUS                 Plotting region profiles for region tiling and column Group3 ...
+2018-07-12 18:53:08    27.7  STATUS                 Plotting region profiles for region tiling and column Group2 ...
+2018-07-12 18:54:11    25.4  STATUS                 Plotting region profiles for region tiling and column Group1 ...
+2018-07-12 18:55:20    18.5  STATUS                 Plotting region profiles for region tiling and column Age4 ...
+2018-07-12 18:56:55    23.1  STATUS                 Plotting region profiles for region tiling and column Age3 ...
+2018-07-12 18:58:34    23.1  STATUS                 Plotting region profiles for region tiling and column Age2 ...
+2018-07-12 19:00:06    23.1  STATUS                 Plotting region profiles for region tiling and column Age1 ...
+2018-07-12 19:01:43    23.1  STATUS                 Plotting region profiles for region tiling and column Predicted Gender ...
+2018-07-12 19:03:49    19.4    INFO                 Subsampling 100000 of 17271409 site occurences (region type: genes )
+2018-07-12 19:03:49    19.5  STATUS                 Plotting region profiles for region genes and column all samples ...
+2018-07-12 19:04:52    23.1  STATUS                 Plotting region profiles for region genes and column Age ...
+2018-07-12 19:07:03    23.1  STATUS                 Plotting region profiles for region genes and column Group ...
+2018-07-12 19:08:47    23.1  STATUS                 Plotting region profiles for region genes and column Group3 ...
+2018-07-12 19:09:52    25.4  STATUS                 Plotting region profiles for region genes and column Group2 ...
+2018-07-12 19:11:04    23.1  STATUS                 Plotting region profiles for region genes and column Group1 ...
+2018-07-12 19:12:19    18.5  STATUS                 Plotting region profiles for region genes and column Age4 ...
+2018-07-12 19:14:15    23.1  STATUS                 Plotting region profiles for region genes and column Age3 ...
+2018-07-12 19:16:15    18.5  STATUS                 Plotting region profiles for region genes and column Age2 ...
+2018-07-12 19:18:05    23.1  STATUS                 Plotting region profiles for region genes and column Age1 ...
+2018-07-12 19:20:01    23.1  STATUS                 Plotting region profiles for region genes and column Predicted Gender ...
+2018-07-12 19:22:14    18.5    INFO                 Subsampling 100000 of 2404703 site occurences (region type: promoters )
+2018-07-12 19:22:14    18.5  STATUS                 Plotting region profiles for region promoters and column all samples ...
+2018-07-12 19:23:17    18.5  STATUS                 Plotting region profiles for region promoters and column Age ...
+2018-07-12 19:25:44    23.1  STATUS                 Plotting region profiles for region promoters and column Group ...
+2018-07-12 19:27:46    23.1  STATUS                 Plotting region profiles for region promoters and column Group3 ...
+2018-07-12 19:29:05    23.1  STATUS                 Plotting region profiles for region promoters and column Group2 ...
+2018-07-12 19:30:29    23.1  STATUS                 Plotting region profiles for region promoters and column Group1 ...
+2018-07-12 19:31:52    23.1  STATUS                 Plotting region profiles for region promoters and column Age4 ...
+2018-07-12 19:33:35    23.1  STATUS                 Plotting region profiles for region promoters and column Age3 ...
+2018-07-12 19:35:18    23.1  STATUS                 Plotting region profiles for region promoters and column Age2 ...
+2018-07-12 19:36:52    23.1  STATUS                 Plotting region profiles for region promoters and column Age1 ...
+2018-07-12 19:38:32    18.5  STATUS                 Plotting region profiles for region promoters and column Predicted Gender ...
+2018-07-12 19:40:38    18.5    INFO                 Subsampling 100000 of 1178453 site occurences (region type: cpgislands )
+2018-07-12 19:40:38    18.5  STATUS                 Plotting region profiles for region cpgislands and column all samples ...
+2018-07-12 19:41:42    18.5  STATUS                 Plotting region profiles for region cpgislands and column Age ...
+2018-07-12 19:44:14    23.1  STATUS                 Plotting region profiles for region cpgislands and column Group ...
+2018-07-12 19:46:17    23.1  STATUS                 Plotting region profiles for region cpgislands and column Group3 ...
+2018-07-12 19:47:40    23.1  STATUS                 Plotting region profiles for region cpgislands and column Group2 ...
+2018-07-12 19:49:04    23.1  STATUS                 Plotting region profiles for region cpgislands and column Group1 ...
+2018-07-12 19:50:31    23.1  STATUS                 Plotting region profiles for region cpgislands and column Age4 ...
+2018-07-12 19:52:34    18.5  STATUS                 Plotting region profiles for region cpgislands and column Age3 ...
+2018-07-12 19:54:28    23.1  STATUS                 Plotting region profiles for region cpgislands and column Age2 ...
+2018-07-12 19:56:24    23.1  STATUS                 Plotting region profiles for region cpgislands and column Age1 ...
+2018-07-12 19:58:22    23.1  STATUS                 Plotting region profiles for region cpgislands and column Predicted Gender ...
+2018-07-12 19:59:55    23.1  STATUS             COMPLETED Creating a Corresponding Section in the Report
+2018-07-12 19:59:55    23.1  STATUS         COMPLETED Drawing regional methylation profiles
+2018-07-12 19:59:55    23.1  STATUS     COMPLETED Exploratory Analysis
+2018-07-12 19:59:56    23.1    INFO     Initialized report index and saved to index.html
+2018-07-12 19:59:56    23.1  STATUS     STARTED Differential Methylation
+2018-07-12 19:59:56    23.1    INFO         Number of cores: 31
+2018-07-12 19:59:56    23.1  STATUS         STARTED Analysis
+2018-07-12 19:59:56    23.1    INFO             Using 0 permutation tests
+2018-07-12 19:59:56    23.1    INFO             Using columns: barcode,Age,Group,Sample_ID,Group3,Group2,Group1,Age4,Age3,Age2,Age1,Predicted Male Probability,Predicted Gender
+2018-07-12 19:59:56    23.1    INFO             Using region types: tiling,genes,promoters,cpgislands
+2018-07-12 19:59:56    23.1  STATUS             STARTED Retrieving comparison info
+2018-07-12 19:59:56    23.1  STATUS             COMPLETED Retrieving comparison info
+2018-07-12 19:59:56    23.1  STATUS             STARTED Computing differential methylation tables
+2018-07-12 19:59:56    23.1  STATUS                 STARTED Comparing: 10 weeks vs. non.10 weeks (based on Age)
+2018-07-12 19:59:56    23.1  STATUS                     STARTED Computing Differential Methylation Table
+2018-07-12 20:00:36    24.9    INFO                         Conducting differential analysis using limma
+2018-07-12 20:51:05    23.9    INFO                         2941820 p-values are NA. They are treated as 1 in FDR adjustment
+2018-07-12 20:54:04    31.1  STATUS                     COMPLETED Computing Differential Methylation Table
+2018-07-12 20:54:39    29.7  STATUS                     STARTED Computing Differential Methylation Tables (Region Level)
+2018-07-12 22:06:28    22.8    INFO                         2307 p-values are NA. They are treated as 1 in FDR adjustment
+2018-07-12 22:06:29    22.8  STATUS                         Computed table for tiling
+2018-07-12 22:22:06    22.8    INFO                         282 p-values are NA. They are treated as 1 in FDR adjustment
+2018-07-12 22:22:06    22.8  STATUS                         Computed table for genes
+2018-07-12 22:34:17    22.8    INFO                         296 p-values are NA. They are treated as 1 in FDR adjustment
+2018-07-12 22:34:17    22.8  STATUS                         Computed table for promoters
+2018-07-12 22:41:36    22.8    INFO                         11 p-values are NA. They are treated as 1 in FDR adjustment
+2018-07-12 22:41:36    22.8  STATUS                         Computed table for cpgislands
+2018-07-12 22:41:36    22.8  STATUS                     COMPLETED Computing Differential Methylation Tables (Region Level)
+2018-07-12 22:41:37    22.8  STATUS                 COMPLETED Comparing: 10 weeks vs. non.10 weeks (based on Age)
+2018-07-12 22:41:37    22.8  STATUS                 STARTED Comparing: 12 weeks vs. non.12 weeks (based on Age)
+2018-07-12 22:41:37    22.8  STATUS                     STARTED Computing Differential Methylation Table
+2018-07-12 22:43:08    27.4    INFO                         Conducting differential analysis using limma
+2018-07-13 00:40:25    34.8    INFO                         257881 p-values are NA. They are treated as 1 in FDR adjustment
+2018-07-13 00:43:17    25.9  STATUS                     COMPLETED Computing Differential Methylation Table
+2018-07-13 00:43:51    36.3  STATUS                     STARTED Computing Differential Methylation Tables (Region Level)
+2018-07-13 02:01:18    19.9    INFO                         471 p-values are NA. They are treated as 1 in FDR adjustment
+2018-07-13 02:01:19    19.9  STATUS                         Computed table for tiling
+2018-07-13 02:11:31    22.2    INFO                         Too many p-values to combine --> using subsampling
+2018-07-13 02:16:35    19.9    INFO                         68 p-values are NA. They are treated as 1 in FDR adjustment
+2018-07-13 02:16:36    19.9  STATUS                         Computed table for genes
+2018-07-13 02:28:34    19.9    INFO                         92 p-values are NA. They are treated as 1 in FDR adjustment
+2018-07-13 02:28:34    19.9  STATUS                         Computed table for promoters
+2018-07-13 02:35:47    19.9    INFO                         1 p-values are NA. They are treated as 1 in FDR adjustment
+2018-07-13 02:35:47    19.9  STATUS                         Computed table for cpgislands
+2018-07-13 02:35:47    19.9  STATUS                     COMPLETED Computing Differential Methylation Tables (Region Level)
+2018-07-13 02:35:47    19.9  STATUS                 COMPLETED Comparing: 12 weeks vs. non.12 weeks (based on Age)
+2018-07-13 02:35:47    19.9  STATUS                 STARTED Comparing: 13.5 weeks vs. non.13.5 weeks (based on Age)
+2018-07-13 02:35:47    19.9  STATUS                     STARTED Computing Differential Methylation Table
+2018-07-13 02:37:07    33.3    INFO                         Conducting differential analysis using limma
+2018-07-13 04:34:53    25.1    INFO                         531253 p-values are NA. They are treated as 1 in FDR adjustment
+2018-07-13 04:37:45    34.1  STATUS                     COMPLETED Computing Differential Methylation Table
+2018-07-13 04:38:24    29.7  STATUS                     STARTED Computing Differential Methylation Tables (Region Level)
+2018-07-13 06:09:14    22.8    INFO                         704 p-values are NA. They are treated as 1 in FDR adjustment
+2018-07-13 06:09:14    22.8  STATUS                         Computed table for tiling
+2018-07-13 06:24:45    22.8    INFO                         73 p-values are NA. They are treated as 1 in FDR adjustment
+2018-07-13 06:24:45    22.8  STATUS                         Computed table for genes
+2018-07-13 06:36:38    22.8    INFO                         92 p-values are NA. They are treated as 1 in FDR adjustment
+2018-07-13 06:36:38    22.8  STATUS                         Computed table for promoters
+2018-07-13 06:43:40    22.8    INFO                         1 p-values are NA. They are treated as 1 in FDR adjustment
+2018-07-13 06:43:40    22.8  STATUS                         Computed table for cpgislands
+2018-07-13 06:43:40    22.8  STATUS                     COMPLETED Computing Differential Methylation Tables (Region Level)
+2018-07-13 06:43:40    22.8  STATUS                 COMPLETED Comparing: 13.5 weeks vs. non.13.5 weeks (based on Age)
+2018-07-13 06:43:40    22.8  STATUS                 STARTED Comparing: 13 weeks vs. non.13 weeks (based on Age)
+2018-07-13 06:43:40    22.8  STATUS                     STARTED Computing Differential Methylation Table
+2018-07-13 06:44:58    33.8    INFO                         Conducting differential analysis using limma
+2018-07-13 08:43:34    34.8    INFO                         320026 p-values are NA. They are treated as 1 in FDR adjustment
+2018-07-13 08:46:26    33.8  STATUS                     COMPLETED Computing Differential Methylation Table
+2018-07-13 08:47:02    29.9  STATUS                     STARTED Computing Differential Methylation Tables (Region Level)
+2018-07-13 10:14:41    23.0    INFO                         656 p-values are NA. They are treated as 1 in FDR adjustment
+2018-07-13 10:14:42    23.0  STATUS                         Computed table for tiling
+2018-07-13 10:29:11    19.5    INFO                         77 p-values are NA. They are treated as 1 in FDR adjustment
+2018-07-13 10:29:11    19.5  STATUS                         Computed table for genes
+2018-07-13 10:40:33    19.5    INFO                         119 p-values are NA. They are treated as 1 in FDR adjustment
+2018-07-13 10:40:34    19.5  STATUS                         Computed table for promoters
+2018-07-13 10:47:01    19.5    INFO                         2 p-values are NA. They are treated as 1 in FDR adjustment
+2018-07-13 10:47:01    19.5  STATUS                         Computed table for cpgislands
+2018-07-13 10:47:02    19.5  STATUS                     COMPLETED Computing Differential Methylation Tables (Region Level)
+2018-07-13 10:47:02    19.5  STATUS                 COMPLETED Comparing: 13 weeks vs. non.13 weeks (based on Age)
+2018-07-13 10:47:02    19.5  STATUS                 STARTED Comparing: control vs. non.control (based on Group)
+2018-07-13 10:47:02    19.5  STATUS                     STARTED Computing Differential Methylation Table
+2018-07-13 10:48:25    33.3    INFO                         Conducting differential analysis using limma
+2018-07-13 12:45:42    25.1    INFO                         1759370 p-values are NA. They are treated as 1 in FDR adjustment
+2018-07-13 12:48:30    31.6  STATUS                     COMPLETED Computing Differential Methylation Table
+2018-07-13 12:49:10    29.2  STATUS                     STARTED Computing Differential Methylation Tables (Region Level)
+2018-07-13 14:21:48    18.8    INFO                         1836 p-values are NA. They are treated as 1 in FDR adjustment
+2018-07-13 14:21:48    18.8  STATUS                         Computed table for tiling
+2018-07-13 14:31:36    22.0    INFO                         Too many p-values to combine --> using subsampling
+2018-07-13 14:36:54    18.9    INFO                         211 p-values are NA. They are treated as 1 in FDR adjustment
+2018-07-13 14:36:54    18.9  STATUS                         Computed table for genes
+2018-07-13 14:48:42    19.1    INFO                         276 p-values are NA. They are treated as 1 in FDR adjustment
+2018-07-13 14:48:42    19.1  STATUS                         Computed table for promoters
+2018-07-13 14:55:55    19.1    INFO                         9 p-values are NA. They are treated as 1 in FDR adjustment
+2018-07-13 14:55:55    19.1  STATUS                         Computed table for cpgislands
+2018-07-13 14:55:55    19.1  STATUS                     COMPLETED Computing Differential Methylation Tables (Region Level)
+2018-07-13 14:55:56    19.1  STATUS                 COMPLETED Comparing: control vs. non.control (based on Group)
+2018-07-13 14:55:56    19.1  STATUS                 STARTED Comparing: high fat vs. non.high fat (based on Group)
+2018-07-13 14:55:56    19.1  STATUS                     STARTED Computing Differential Methylation Table
+2018-07-13 14:57:27    23.4    INFO                         Conducting differential analysis using limma
+2018-07-13 16:53:57    31.2    INFO                         2591558 p-values are NA. They are treated as 1 in FDR adjustment
+2018-07-13 16:56:40    31.0  STATUS                     COMPLETED Computing Differential Methylation Table
+2018-07-13 16:57:16    29.9  STATUS                     STARTED Computing Differential Methylation Tables (Region Level)
+2018-07-13 18:19:48    23.0    INFO                         2201 p-values are NA. They are treated as 1 in FDR adjustment
+2018-07-13 18:19:48    23.0  STATUS                         Computed table for tiling
+2018-07-13 18:28:44    24.8    INFO                         Too many p-values to combine --> using subsampling
+2018-07-13 18:34:47    23.0    INFO                         270 p-values are NA. They are treated as 1 in FDR adjustment
+2018-07-13 18:34:47    23.0  STATUS                         Computed table for genes
+2018-07-13 18:46:03    19.5    INFO                         283 p-values are NA. They are treated as 1 in FDR adjustment
+2018-07-13 18:46:03    19.5  STATUS                         Computed table for promoters
+2018-07-13 18:52:40    19.5    INFO                         10 p-values are NA. They are treated as 1 in FDR adjustment
+2018-07-13 18:52:41    19.5  STATUS                         Computed table for cpgislands
+2018-07-13 18:52:41    19.5  STATUS                     COMPLETED Computing Differential Methylation Tables (Region Level)
+2018-07-13 18:52:41    19.5  STATUS                 COMPLETED Comparing: high fat vs. non.high fat (based on Group)
+2018-07-13 18:52:41    19.5  STATUS                 STARTED Comparing: low protein vs. non.low protein (based on Group)
+2018-07-13 18:52:41    19.5  STATUS                     STARTED Computing Differential Methylation Table
+2018-07-13 18:53:59    31.0    INFO                         Conducting differential analysis using limma
+2018-07-13 20:53:41    31.5    INFO                         3041261 p-values are NA. They are treated as 1 in FDR adjustment
+2018-07-13 20:56:24    31.3  STATUS                     COMPLETED Computing Differential Methylation Table
+2018-07-13 20:57:09    30.3  STATUS                     STARTED Computing Differential Methylation Tables (Region Level)
+2018-07-13 22:18:28    20.0    INFO                         1934 p-values are NA. They are treated as 1 in FDR adjustment
+2018-07-13 22:18:29    20.0  STATUS                         Computed table for tiling
+2018-07-13 22:32:04    20.0    INFO                         302 p-values are NA. They are treated as 1 in FDR adjustment
+2018-07-13 22:32:04    20.0  STATUS                         Computed table for genes
+2018-07-13 22:43:17    20.0    INFO                         257 p-values are NA. They are treated as 1 in FDR adjustment
+2018-07-13 22:43:17    20.0  STATUS                         Computed table for promoters
+2018-07-13 22:50:05    20.0    INFO                         13 p-values are NA. They are treated as 1 in FDR adjustment
+2018-07-13 22:50:05    20.0  STATUS                         Computed table for cpgislands
+2018-07-13 22:50:05    20.0  STATUS                     COMPLETED Computing Differential Methylation Tables (Region Level)
+2018-07-13 22:50:05    20.0  STATUS                 COMPLETED Comparing: low protein vs. non.low protein (based on Group)
+2018-07-13 22:50:05    20.0  STATUS                 STARTED Comparing: high fat vs. low protein (based on Group3)
+2018-07-13 22:50:05    20.0  STATUS                     STARTED Computing Differential Methylation Table
+2018-07-13 22:51:21    29.2    INFO                         Conducting differential analysis using limma
+2018-07-14 00:34:57    31.6    INFO                         3879240 p-values are NA. They are treated as 1 in FDR adjustment
+2018-07-14 00:36:46    34.7  STATUS                     COMPLETED Computing Differential Methylation Table
+2018-07-14 00:37:23    30.0  STATUS                     STARTED Computing Differential Methylation Tables (Region Level)
+2018-07-14 02:06:06    19.6    INFO                         2604 p-values are NA. They are treated as 1 in FDR adjustment
+2018-07-14 02:06:06    19.6  STATUS                         Computed table for tiling
+2018-07-14 02:15:19    19.7    INFO                         Too many p-values to combine --> using subsampling
+Error in { : task 20045 failed - "cannot allocate vector of size 8.0 Gb"
+Calls: rnb.run.analysis ... computeDiffTab.default.region -> %dopar% -> <Anonymous>
+In addition: There were 50 or more warnings (use warnings() to see the first 50)
+Execution halted

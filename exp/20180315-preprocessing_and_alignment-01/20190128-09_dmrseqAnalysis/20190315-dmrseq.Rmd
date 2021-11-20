@@ -1,0 +1,176 @@
+---
+title: "Differential methylation analysis (DMRs)"
+author: "Deepak Tanwar"
+date: "<b>Created on:</b> 2019-03-14 <br> <b>Updated on:</b> `r Sys.Date()`"
+output:
+  rmdformats::readthedown:
+    highlight: tango
+    self_contained: true
+    thumbnails: true
+    lightbox: true
+    gallery: false
+    keep_md: no
+    number_sections: no
+    fig_width: 8
+    fig_height: 8
+    fig_caption: true
+    df_print: paged
+    code_folding: show
+    # toc: true
+    # toc_depth: 5
+  fontsize: 12pt
+  geometry: margin=1in
+  documentclass: article
+# bibliography: references.bib
+link-citations: yes
+---
+
+# Packages required
+
+```{r, warning=F, message=F}
+library(dmrseq)
+library(DT)
+library(readr)
+library(forcats)
+```
+
+# Method description
+In dmrseq, the methylation data are smoothed and then analyzes using generalized least squares model. Biological variability and correlation between neighbouring loci is taken into account.
+
+
+# Annotation
+```{r}
+anno <- read.csv("./input/annotationRnBeads.csv", stringsAsFactors = F, row.names = 1)
+anno$sampleID <- gsub(pattern = "-", replacement = "_", x = anno$sampleID)
+rownames(anno) <- anno$sampleID
+```
+
+# Input files
+Read in input files and create a `BSseq` object.
+
+# Data
+```{r}
+bismarkBSseq <- read.bismark(
+  files = paste0("./input/", anno$filename_bed),
+  colData = anno,
+  rmZeroCov = TRUE,
+  strandCollapse = FALSE,
+  verbose = TRUE,
+  BPPARAM = BiocParallel::MulticoreParam(workers = 16)
+)
+```
+
+# DMRs analysis
+
+## Function
+```{r}
+perform_dmr <- function(bs, group = "Group", coVariate = NULL,
+                        filterCol = NULL, filterColVals = NULL,
+                        filt.loci = 0.4, nParallel = 2, revGroup = F) {
+  bs.f <- NULL
+  if (!is.null(filterCol)) {
+    sample.idx <- which(pData(bs)[, filterCol] %in% c(filterColVals))
+    bs.e <- bs[, sample.idx]
+    bs.f <- bs.e[,which(!is.na(pData(bs.e)[, group]))]
+  } else {
+    bs.e <- bs
+    bs.f <- bs.e[,which(!is.na(pData(bs.e)[, group]))]
+  }
+
+  g <- sort(unique(pData(bs.f)[,group]))
+  
+  loci.p <- floor((ncol(bs.f) * filt.loci) / 2)
+  loci.idx <- which(rowSums(getCoverage(bs.f[, pData(bs.f)[, group] == g[1]], type = "Cov") > 0) >= loci.p &
+    rowSums(getCoverage(bs.f[, pData(bs.f)[, group] == g[2]], type = "Cov") > 0) >= loci.p)
+
+  bs.g <- bs.f[loci.idx, ]
+  
+  if(revGroup) pData(bs.g)[, group] <- fct_rev(pData(bs.g)[, group])
+
+  dmr <- dmrseq(
+    bs = bs.g,
+    testCovariate = group,
+    BPPARAM = BiocParallel::MulticoreParam(workers = nParallel),
+    minNumRegion = 10,
+    adjustCovariate = coVariate,
+    cutoff = 0.1
+  )
+  r <- list(bs = bs.g, dmr = dmr)
+  return(r)
+}
+```
+
+
+## High-fat vs CTRL
+```{r, message=FALSE, warning=FALSE}
+dmr.hf.c <- perform_dmr(bs = bismarkBSseq, group = "Group1")
+saveRDS(object = dmr.hf.c, file = "./output/dmr_highFat_vs_ctrl.rds")
+```
+
+<!-- ## High-fat vs CTRL [Covariate adjustment for age] -->
+<!-- ```{r, message=FALSE, warning=FALSE} -->
+<!-- dmr.hf.c.A <- perform_dmr(bs = bismarkBSseq, group = "Group1", coVariate = "Age") -->
+<!-- saveRDS(object = dmr.hf.c.A, file = "./output/dmr_highFat_vs_ctrl_covar_age.rds") -->
+<!-- ``` -->
+
+
+## Low-protein vs CTRL
+```{r, message=FALSE, warning=FALSE}
+dmr.lp.c <- perform_dmr(bs = bismarkBSseq, group = "Group2")
+saveRDS(object = dmr.lp.c, file = "./output/dmr_lowProtein_vs_ctrl.rds")
+```
+
+<!-- ## Low-protein vs CTRL [Covariate adjustment for age] -->
+<!-- ```{r, message=FALSE, warning=FALSE} -->
+<!-- dmr.lp.c.A <- perform_dmr(bs = bismarkBSseq, group = "Group2", coVariate = "Age") -->
+<!-- saveRDS(object = dmr.lp.c.A, file = "./output/dmr_lowProtein_vs_ctrl_covar_age.rds") -->
+<!-- ``` -->
+
+
+## Low-protein vs High-fat
+```{r, message=FALSE, warning=FALSE}
+dmr.lp.hf <- perform_dmr(bs = bismarkBSseq, group = "Group3", revGroup = T)
+saveRDS(object = dmr.lp.hf, file = "./output/dmr_lowProtein_vs_highFat.rds")
+```
+
+<!-- ## Low-protein vs High-fat [Covariate adjustment for age] -->
+<!-- ```{r, message=FALSE, warning=FALSE} -->
+<!-- dmr.lp.hf.A <- perform_dmr(bs = bismarkBSseq, group = "Group3", coVariate = "Age", revGroup = T) -->
+<!-- saveRDS(object = dmr.lp.hf.A, file = "./output/dmr_lowProtein_vs_highFat_covar_age.rds") -->
+<!-- ``` -->
+
+
+<!-- # SaveImage -->
+<!-- ```{r} -->
+<!-- save.image(file = "output/20190315-dmrseq_analysis.RData", compress = T) -->
+<!-- ``` -->
+
+<!-- # DMR Table -->
+<!-- Identified DMRs with q-value not higher than 0.05. -->
+<!-- ```{r} -->
+<!-- datatable( -->
+<!--   dmr.nc, -->
+<!--   rownames = F, -->
+<!--   filter = "top", extensions = c("Buttons", "ColReorder"), options = list( -->
+<!--     pageLength = 10, -->
+<!--     buttons = c("copy", "csv", "excel", "pdf", "print"), -->
+<!--     colReorder = list(realtime = FALSE), -->
+<!--     dom = "fltBip" -->
+<!--   ) -->
+<!-- ) -->
+<!-- ``` -->
+
+
+# SessionInfo
+```{r}
+devtools::session_info()
+```
+
+
+```{r test, echo=F, eval=F}
+dmr <- readRDS("output/dmr_lowProtein_vs_highFat.rds")
+
+annoTrack <- getAnnot("mm10")
+
+plotDMRs(dmr$bs, regions=dmr$dmr[1:10,], testCovariate="Group3",annoTrack=annoTrack)
+```

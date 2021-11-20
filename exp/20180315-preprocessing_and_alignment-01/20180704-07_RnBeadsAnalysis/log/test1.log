@@ -1,0 +1,387 @@
+2018-07-08 07:28:36     1.0  STATUS STARTED Setting up Multicore
+2018-07-08 07:28:37     1.0    INFO     Using 31 cores
+2018-07-08 07:28:37     1.0  STATUS COMPLETED Setting up Multicore
+
+2018-07-08 07:28:40     1.0  STATUS STARTED RnBeads Pipeline
+2018-07-08 07:28:40     1.0    INFO     Initialized report index and saved to index.html
+2018-07-08 07:28:40     1.0  STATUS     STARTED Loading Data
+2018-07-08 07:28:40     1.0    INFO         Number of cores: 31
+2018-07-08 07:28:41     1.0    INFO         Loading data of type "bs.bed.dir"
+2018-07-08 07:28:41     1.0  STATUS         STARTED Performing loading test
+2018-07-08 07:28:41     1.0    INFO             The first 10000 rows will be read from each data file
+2018-07-08 07:28:41     1.0    INFO             No column with file names specified: will try to find one
+2018-07-08 07:28:41     1.0  STATUS             STARTED Loading Data From BED Files
+2018-07-08 07:28:42     1.0  STATUS                 STARTED Automatically parsing the provided sample annotation file
+2018-07-08 07:28:42     1.0  STATUS                     Potential file names found in column 4 of the supplied annotation table
+2018-07-08 07:28:42     1.0  STATUS                 COMPLETED Automatically parsing the provided sample annotation file
+2018-07-08 07:28:42     1.0    INFO                 Reading BED file: ./input/SRX1485695.bismark.cov.gz
+2018-07-08 07:28:43     1.0    INFO                 Reading BED file: ./input/SRX1485696.bismark.cov.gz
+2018-07-08 07:28:43     1.0    INFO                 Reading BED file: ./input/SRX1485697.bismark.cov.gz
+2018-07-08 07:28:43     1.0    INFO                 Reading BED file: ./input/SRX1485698.bismark.cov.gz
+2018-07-08 07:28:43     1.0    INFO                 Reading BED file: ./input/SRX1485699.bismark.cov.gz
+2018-07-08 07:28:44     1.0    INFO                 Reading BED file: ./input/SRX1485700.bismark.cov.gz
+2018-07-08 07:28:44     1.0    INFO                 Reading BED file: ./input/SRX1485701.bismark.cov.gz
+2018-07-08 07:28:44     1.0    INFO                 Reading BED file: ./input/SRX1485702.bismark.cov.gz
+2018-07-08 07:28:44     1.0    INFO                 Reading BED file: ./input/SRX1485703.bismark.cov.gz
+2018-07-08 07:28:44     1.0    INFO                 Reading BED file: ./input/SRX1485704.bismark.cov.gz
+2018-07-08 07:28:44     1.0    INFO                 Reading BED file: ./input/SRX1485705.bismark.cov.gz
+2018-07-08 07:28:45     1.0    INFO                 Reading BED file: ./input/SRX1485706.bismark.cov.gz
+2018-07-08 07:28:45     1.0    INFO                 Reading BED file: ./input/SRX1485707.bismark.cov.gz
+2018-07-08 07:28:45     1.0    INFO                 Reading BED file: ./input/SRX1485708.bismark.cov.gz
+2018-07-08 07:28:45     1.0    INFO                 Reading BED file: ./input/SRX1485709.bismark.cov.gz
+2018-07-08 07:28:45     1.0    INFO                 Reading BED file: ./input/SRX1485710.bismark.cov.gz
+2018-07-08 07:28:45     1.0  STATUS                 Read 16 BED files
+2018-07-08 07:28:46     1.1  STATUS                 Matched chromosomes and strands to annotation
+2018-07-08 07:28:46     1.1  STATUS                 Checked for the presence of sites and coverage
+2018-07-08 07:28:46     1.1  STATUS                 Initialized meth/covg matrices
+2018-07-08 07:28:47     1.1  STATUS                 Combined a data matrix with 137779 sites and 16 samples
+2018-07-08 07:28:47     1.1  STATUS                 Processed all BED files
+2018-07-08 07:28:47     1.1  STATUS                 STARTED Creating RnBiseqSet object
+2018-07-08 07:28:47     1.1    INFO                     Inferring strand information from annotation enabled
+2018-07-08 07:29:44     3.6  STATUS                     Matched 135887 of 137779 methylation sites to the annotation
+2018-07-08 07:29:44     3.6  STATUS                     Checking site coverage
+2018-07-08 07:29:45     3.6  STATUS                     Creating methylation matrix
+2018-07-08 07:29:45     3.6  STATUS                     Creating coverage matrix
+2018-07-08 07:29:45     3.9  STATUS                     Creating object
+2018-07-08 07:29:45     3.9  STATUS                     Summarizing strand methylation
+2018-07-08 07:30:27     4.0  STATUS                     Summarizing tiling methylation
+2018-07-08 07:30:29     4.0  STATUS                     Summarizing genes methylation
+2018-07-08 07:30:30     4.0  STATUS                     Summarizing promoters methylation
+2018-07-08 07:30:30     4.0  STATUS                     Summarizing cpgislands methylation
+2018-07-08 07:30:30     4.0  STATUS                 COMPLETED Creating RnBiseqSet object
+2018-07-08 07:30:30     4.0  STATUS             COMPLETED Loading Data From BED Files
+2018-07-08 07:30:30     4.0  STATUS             STARTED Checking the loaded object
+2018-07-08 07:30:30     4.0    INFO                 Checking the supplied RnBiseqSet object
+2018-07-08 07:30:30     4.0    INFO                 The object contains information for 98877 methylation sites
+2018-07-08 07:30:30     4.0    INFO                 The object contains information for 16 samples
+2018-07-08 07:30:30     4.0    INFO                 The object contains 1462393 missing methylation values
+2018-07-08 07:30:31     4.0    INFO                 Methylation values are within the expected range
+2018-07-08 07:30:31     4.0    INFO                 The object contains coverage information
+2018-07-08 07:30:31     4.1    INFO                 Coverage values are within the expected range
+2018-07-08 07:30:31     4.1    INFO                 The object loaded during the loading test is valid
+2018-07-08 07:30:31     4.1  STATUS             COMPLETED Checking the loaded object
+2018-07-08 07:30:31     4.1  STATUS         COMPLETED Performing loading test
+2018-07-08 07:30:31     4.1    INFO         No column with file names specified: will try to find one
+2018-07-08 07:30:31     4.1  STATUS         STARTED Loading Data From BED Files
+2018-07-08 07:30:32     4.0  STATUS             STARTED Automatically parsing the provided sample annotation file
+2018-07-08 07:30:32     4.0  STATUS                 Potential file names found in column 4 of the supplied annotation table
+2018-07-08 07:30:32     4.0  STATUS             COMPLETED Automatically parsing the provided sample annotation file
+2018-07-08 07:30:32     4.0    INFO             Reading BED file: ./input/SRX1485695.bismark.cov.gz
+2018-07-08 07:32:56     5.6    INFO             Reading BED file: ./input/SRX1485696.bismark.cov.gz
+2018-07-08 07:35:32     4.9    INFO             Reading BED file: ./input/SRX1485697.bismark.cov.gz
+2018-07-08 07:38:11     5.7    INFO             Reading BED file: ./input/SRX1485698.bismark.cov.gz
+2018-07-08 07:40:35     5.6    INFO             Reading BED file: ./input/SRX1485699.bismark.cov.gz
+2018-07-08 07:41:34     5.5    INFO             Reading BED file: ./input/SRX1485700.bismark.cov.gz
+2018-07-08 07:42:44     4.3    INFO             Reading BED file: ./input/SRX1485701.bismark.cov.gz
+2018-07-08 07:43:24     5.5    INFO             Reading BED file: ./input/SRX1485702.bismark.cov.gz
+2018-07-08 07:44:17     4.3    INFO             Reading BED file: ./input/SRX1485703.bismark.cov.gz
+2018-07-08 07:45:14     4.9    INFO             Reading BED file: ./input/SRX1485704.bismark.cov.gz
+2018-07-08 07:46:03     5.2    INFO             Reading BED file: ./input/SRX1485705.bismark.cov.gz
+2018-07-08 07:47:00     4.4    INFO             Reading BED file: ./input/SRX1485706.bismark.cov.gz
+2018-07-08 07:48:13     5.3    INFO             Reading BED file: ./input/SRX1485707.bismark.cov.gz
+2018-07-08 07:48:58     5.0    INFO             Reading BED file: ./input/SRX1485708.bismark.cov.gz
+2018-07-08 07:50:13     5.3    INFO             Reading BED file: ./input/SRX1485709.bismark.cov.gz
+2018-07-08 07:50:53     4.6    INFO             Reading BED file: ./input/SRX1485710.bismark.cov.gz
+2018-07-08 07:51:49     5.3  STATUS             Read 16 BED files
+2018-07-08 07:57:23     7.0  STATUS             Matched chromosomes and strands to annotation
+2018-07-08 07:57:24     7.8  STATUS             Checked for the presence of sites and coverage
+2018-07-08 07:57:54     9.5  STATUS             Initialized meth/covg matrices
+2018-07-08 08:00:00    10.8  STATUS             Combined a data matrix with 43941294 sites and 16 samples
+2018-07-08 08:00:00    10.8  STATUS             Processed all BED files
+2018-07-08 08:00:00    10.8  STATUS             STARTED Creating RnBiseqSet object
+2018-07-08 08:00:04    10.1    INFO                 Removed 44284 sites with unknown chromosomes
+2018-07-08 08:00:05     9.3    INFO                 Inferring strand information from annotation enabled
+2018-07-08 08:01:26    10.8  STATUS                 Matched 41038284 of 43941294 methylation sites to the annotation
+2018-07-08 08:01:26    10.8  STATUS                 Checking site coverage
+2018-07-08 08:03:09    11.4  STATUS                 Creating methylation matrix
+2018-07-08 08:04:59    13.5  STATUS                 Creating coverage matrix
+2018-07-08 08:06:59    12.1  STATUS                 Creating object
+2018-07-08 08:06:59    12.1  STATUS                 Summarizing strand methylation
+2018-07-08 08:35:25    11.0  STATUS                 Summarizing tiling methylation
+2018-07-08 08:38:56    13.3  STATUS                 Summarizing genes methylation
+2018-07-08 08:39:57    13.0  STATUS                 Summarizing promoters methylation
+2018-07-08 08:40:45    13.8  STATUS                 Summarizing cpgislands methylation
+2018-07-08 08:41:28    13.2  STATUS             COMPLETED Creating RnBiseqSet object
+2018-07-08 08:41:28    13.2  STATUS         COMPLETED Loading Data From BED Files
+2018-07-08 08:41:28    13.2  STATUS         Loaded data from ./input
+2018-07-08 08:42:48    16.3  STATUS         Predicted gender for the loaded samples
+2018-07-08 08:42:48    16.3  STATUS         Added data loading section to the report
+2018-07-08 08:42:48    16.3  STATUS         Loaded 16 samples and 21118032 sites
+2018-07-08 08:42:48    16.3    INFO         Output object is of type RnBiseqSet
+2018-07-08 08:42:48    16.3  STATUS     COMPLETED Loading Data
+2018-07-08 08:45:56    16.3    INFO     Initialized report index and saved to index.html
+2018-07-08 08:45:56    16.3  STATUS     STARTED Quality Control
+2018-07-08 08:45:56    16.3    INFO         Number of cores: 31
+2018-07-08 08:45:56    16.3  STATUS         STARTED Preparing Quality Control Information
+2018-07-08 08:45:56    16.3  STATUS         COMPLETED Preparing Quality Control Information
+2018-07-08 08:45:56    16.3  STATUS         STARTED Quality Control Section
+2018-07-08 12:01:23    21.4  STATUS             Added sequencing coverage histograms
+2018-07-08 12:06:13    19.1  STATUS             Added sample coverage section
+2018-07-08 12:19:36    60.7  STATUS             Added sequencing coverage violin plots
+2018-07-08 12:20:53    64.1  STATUS         COMPLETED Quality Control Section
+2018-07-08 12:22:50    69.0  STATUS     COMPLETED Quality Control
+2018-07-08 12:22:50    69.0    INFO     Initialized report index and saved to index.html
+2018-07-08 12:22:50    69.0  STATUS     STARTED Preprocessing
+2018-07-08 12:22:50    69.0    INFO         Number of cores: 31
+2018-07-08 12:22:50    69.0  STATUS         STARTED Filtering Procedures
+2018-07-08 12:23:01    73.4  STATUS             STARTED Removal of SNP-enriched Sites
+2018-07-08 12:23:02    73.6  STATUS                 Removed 1819265 sites using SNP criterion "3"
+2018-07-08 12:23:05    63.7  STATUS                 Saved removed sites to /mnt/IM/DKT/projets/rando_cell_2015/exp/20180315-preprocessing_and_alignment-01/20180704-07_RnBeadsAnalysis/output/RnBeads_Analysis/preprocessing_data/removed_sites_snp.csv
+2018-07-08 12:23:05    63.7  STATUS                 Added a corresponding section to the report
+2018-07-08 12:23:05    63.7  STATUS             COMPLETED Removal of SNP-enriched Sites
+2018-07-08 12:23:05    63.7  STATUS             Retained 16 samples and 19298767 sites
+2018-07-08 12:23:05    63.7  STATUS         COMPLETED Filtering Procedures
+2018-07-08 12:23:05    63.7  STATUS         STARTED Summary of Filtering Procedures
+2018-07-08 12:23:38    67.5  STATUS             Created summary table of removed sites, samples and unreliable measurements
+2018-07-08 12:23:43    67.5  STATUS             Added summary table of removed and retained items
+2018-07-08 12:23:47    67.7    INFO             Subsampling 2000000 sites for plotting density distributions
+2018-07-08 12:23:54    70.3  STATUS             Constructed sequences of removed and retained methylation values
+2018-07-08 12:24:13    71.4  STATUS             Added comparison between removed and retained beta values
+2018-07-08 12:24:13    71.4  STATUS         COMPLETED Summary of Filtering Procedures
+2018-07-08 12:24:13    71.4  STATUS         STARTED Manipulating the object
+2018-07-08 12:31:42    24.1  STATUS             Removed 1819265 sites (probes)
+2018-07-08 12:31:42    24.1    INFO             Retained 19298767 sites and 16 samples
+2018-07-08 12:31:42    24.1  STATUS         COMPLETED Manipulating the object
+2018-07-08 12:31:42    24.1    INFO         Imputation was skipped, data set may still contain missing methylation values
+2018-07-08 12:31:42    24.1  STATUS     COMPLETED Preprocessing
+2018-07-08 12:34:25    24.1    INFO     Initialized report index and saved to index.html
+2018-07-08 12:34:25    24.1  STATUS     STARTED Tracks and Tables
+2018-07-08 12:34:25    24.1    INFO         Number of cores: 31
+2018-07-08 12:34:25    24.1  STATUS         STARTED Generating Tracks and Tables
+2018-07-08 12:34:25    24.1  STATUS             STARTED Exporting sites
+2018-07-08 12:34:25    24.1  STATUS                 STARTED Creating BED Files
+2018-07-08 12:34:26    24.1  STATUS                     Converting to GRangesList
+2018-07-08 12:37:50    49.4  STATUS                     Exporting sample SRX1485699
+2018-07-08 12:39:02    54.6  STATUS                     Exporting sample SRX1485700
+2018-07-08 12:40:18    31.2  STATUS                     Exporting sample SRX1485701
+2018-07-08 12:41:29    34.2  STATUS                     Exporting sample SRX1485702
+2018-07-08 12:42:40    39.4  STATUS                     Exporting sample SRX1485703
+2018-07-08 12:43:33    43.4  STATUS                     Exporting sample SRX1485704
+2018-07-08 12:44:29    47.9  STATUS                     Exporting sample SRX1485705
+2018-07-08 12:45:13    51.9  STATUS                     Exporting sample SRX1485706
+2018-07-08 12:46:03    56.5  STATUS                     Exporting sample SRX1485707
+2018-07-08 12:46:56    32.2  STATUS                     Exporting sample SRX1485708
+2018-07-08 12:47:41    32.2  STATUS                     Exporting sample SRX1485709
+2018-07-08 12:48:30    36.6  STATUS                     Exporting sample SRX1485710
+2018-07-08 12:49:27    41.4  STATUS                     Exporting sample SRX1485695
+2018-07-08 12:50:13    45.8  STATUS                     Exporting sample SRX1485696
+2018-07-08 12:51:11    50.6  STATUS                     Exporting sample SRX1485697
+2018-07-08 12:51:55    54.7  STATUS                     Exporting sample SRX1485698
+2018-07-08 12:52:45    59.4  STATUS                 COMPLETED Creating BED Files
+2018-07-08 12:52:45    59.4  STATUS                 STARTED Creating Track Hub -- bigBed
+2018-07-08 12:52:46    59.4    INFO                     Using /home/ubuntu/R/x86_64-pc-linux-gnu-library/3.4/RnBeads/bin/linux_x86.64/bedToBigBed
+2018-07-08 12:52:46    59.4  STATUS                     STARTED Conversion to BED
+2018-07-08 13:12:04    28.3  STATUS                     COMPLETED Conversion to BED
+2018-07-08 13:12:04    28.3  STATUS                     STARTED Creating Track Hub
+2018-07-08 13:18:24    28.3  STATUS                     COMPLETED Creating Track Hub
+2018-07-08 13:18:24    28.3  STATUS                 COMPLETED Creating Track Hub -- bigBed
+2018-07-08 13:18:24    28.3  STATUS                 STARTED Creating UCSC Track Hub -- bigWig
+2018-07-08 13:18:25    28.3    INFO                     Using /home/ubuntu/R/x86_64-pc-linux-gnu-library/3.4/RnBeads/bin/linux_x86.64/bedGraphToBigWig
+2018-07-08 13:18:25    28.3  STATUS                     STARTED Conversion to bedGraph
+2018-07-08 13:26:40    33.8  STATUS                     COMPLETED Conversion to bedGraph
+2018-07-08 13:26:40    33.8  STATUS                     STARTED Creating Track Hub
+2018-07-08 13:32:17    33.8  STATUS                     COMPLETED Creating Track Hub
+2018-07-08 13:32:17    33.8  STATUS                 COMPLETED Creating UCSC Track Hub -- bigWig
+2018-07-08 13:32:17    33.8  STATUS             COMPLETED Exporting sites
+2018-07-08 13:32:17    33.8  STATUS         COMPLETED Generating Tracks and Tables
+2018-07-08 13:32:17    33.8  STATUS         STARTED Writing export report
+2018-07-08 13:37:34    37.8  STATUS         COMPLETED Writing export report
+2018-07-08 13:37:34    37.8  STATUS     COMPLETED Tracks and Tables
+2018-07-08 13:37:34    37.8    INFO     Initialized report index and saved to index.html
+2018-07-08 13:37:34    37.8  STATUS     STARTED Exploratory Analysis
+2018-07-08 13:37:34    37.8    INFO         Number of cores: 31
+2018-07-08 13:37:35    37.8  STATUS         Designed color mappings for probe type and CGI status
+2018-07-08 13:44:02    18.7  STATUS         STARTED Dimension Reduction Techniques
+2018-07-08 13:44:03    18.7  STATUS             STARTED MDS
+2018-07-08 13:44:03    18.7  STATUS                 Calculated MDS coordinates using manhattan distance
+2018-07-08 13:44:04    18.7  STATUS                 Calculated MDS coordinates using euclidean distance
+2018-07-08 13:44:04    18.7  STATUS             COMPLETED MDS
+2018-07-08 13:44:04    18.7  STATUS             STARTED PCA
+2018-07-08 13:44:04    18.7    INFO                 Removed 8759 loci ( genes ) because they contain missing values
+2018-07-08 13:44:04    18.7  STATUS             COMPLETED PCA
+2018-07-08 13:44:04    18.7  STATUS             STARTED MDS
+2018-07-08 13:44:04    18.7  STATUS                 Calculated MDS coordinates using manhattan distance
+2018-07-08 13:44:04    18.7  STATUS                 Calculated MDS coordinates using euclidean distance
+2018-07-08 13:44:04    18.7  STATUS             COMPLETED MDS
+2018-07-08 13:44:04    18.7  STATUS             STARTED PCA
+2018-07-08 13:44:04    18.7    INFO                 Removed 6171 loci ( promoters ) because they contain missing values
+2018-07-08 13:44:04    18.7  STATUS             STARTED MDS
+2018-07-08 13:44:04    18.7  STATUS                 Calculated MDS coordinates using manhattan distance
+2018-07-08 13:44:04    18.7  STATUS             COMPLETED PCA
+2018-07-08 13:44:04    18.7  STATUS                 Calculated MDS coordinates using euclidean distance
+2018-07-08 13:44:04    18.7  STATUS             COMPLETED MDS
+2018-07-08 13:44:04    18.7  STATUS             STARTED PCA
+2018-07-08 13:44:04    18.7    INFO                 Removed 835 loci ( cpgislands ) because they contain missing values
+2018-07-08 13:44:05    18.7  STATUS             COMPLETED PCA
+2018-07-08 13:44:06    18.7  STATUS             STARTED MDS
+2018-07-08 13:44:06    18.7  STATUS                 Calculated MDS coordinates using manhattan distance
+2018-07-08 13:44:07    18.7  STATUS                 Calculated MDS coordinates using euclidean distance
+2018-07-08 13:44:07    18.7  STATUS             COMPLETED MDS
+2018-07-08 13:44:07    18.7  STATUS             STARTED PCA
+2018-07-08 13:44:07    18.7    INFO                 Removed 44036 loci ( tiling ) because they contain missing values
+2018-07-08 13:44:09    18.7  STATUS             COMPLETED PCA
+2018-07-08 13:44:58    23.3  STATUS             STARTED MDS
+2018-07-08 13:45:27    23.3  STATUS                 Calculated MDS coordinates using manhattan distance
+2018-07-08 13:45:56    23.3  STATUS                 Calculated MDS coordinates using euclidean distance
+2018-07-08 13:45:56    23.3  STATUS             COMPLETED MDS
+2018-07-08 13:45:56    23.3  STATUS             STARTED PCA
+2018-07-08 13:45:58    23.3    INFO                 Removed 16952605 loci ( sites ) because they contain missing values
+2018-07-08 13:46:05    23.3  STATUS             COMPLETED PCA
+2018-07-08 13:46:06    18.7    INFO             Mapping 10 traits to point colors and types
+2018-07-08 15:11:25    18.7    INFO             Principal components that explain at least 95 % of the total variance: 12
+2018-07-08 15:11:25    18.7    INFO             Saved percentage of total variance to pca_variance_explained_1.csv
+2018-07-08 15:11:28    18.7    INFO             Principal components that explain at least 95 % of the total variance: 11
+2018-07-08 15:11:28    18.7    INFO             Saved percentage of total variance to pca_variance_explained_2.csv
+2018-07-08 15:11:30    18.7    INFO             Principal components that explain at least 95 % of the total variance: 11
+2018-07-08 15:11:30    18.7    INFO             Saved percentage of total variance to pca_variance_explained_3.csv
+2018-07-08 15:11:32    18.7    INFO             Principal components that explain at least 95 % of the total variance: 11
+2018-07-08 15:11:32    18.7    INFO             Saved percentage of total variance to pca_variance_explained_4.csv
+2018-07-08 15:11:33    18.7    INFO             Principal components that explain at least 95 % of the total variance: 9
+2018-07-08 15:11:33    18.7    INFO             Saved percentage of total variance to pca_variance_explained_5.csv
+2018-07-08 15:11:35    18.7  STATUS             Created scatter plots and CDFs summarizing the reduced dimensional representations
+2018-07-08 15:11:35    18.7  STATUS         COMPLETED Dimension Reduction Techniques
+2018-07-08 15:11:35    18.7  STATUS         STARTED Tests for Associations
+2018-07-08 15:11:35    18.7    INFO             Testing the following traits for associations: Age; Group; Group3; Group2; Group1; Age4; Age3; Age2; Age1; Predicted Male Probability; Predicted Gender
+2018-07-08 15:11:35    18.7  STATUS             Created 10000 sample permutations
+2018-07-08 15:12:07    18.7  STATUS             Computed correlations between principal components and traits.
+2018-07-08 15:12:07    18.7  STATUS             Computed pairwise correlations between traits.
+2018-07-08 15:12:07    18.7  STATUS         COMPLETED Tests for Associations
+2018-07-08 15:13:15    25.6  STATUS         STARTED Methylation Value Distributions - Sample Groups
+2018-07-08 15:13:16    25.6    INFO             processing beta_density_samples_1_1
+2018-07-08 15:13:16    25.6    INFO             processing beta_density_samples_1_2
+2018-07-08 15:13:16    25.6    INFO             processing beta_density_samples_1_3
+2018-07-08 15:13:17    25.6    INFO             Density estimation ( all samples--genes ): Groupwise retained observations after missing value removal: all:593475/642960
+2018-07-08 15:13:17    25.6    INFO             Density estimation ( all samples--tiling ): Groupwise retained observations after missing value removal: all:8192605/8449904
+2018-07-08 15:13:17    25.6    INFO             processing beta_density_samples_1_4
+2018-07-08 15:13:17    25.6    INFO             Density estimation ( all samples--promoters ): Groupwise retained observations after missing value removal: all:649192/684896
+2018-07-08 15:13:18    25.6    INFO             processing beta_density_samples_1_5
+2018-07-08 15:13:18    25.6    INFO             Density estimation ( all samples--cpgislands ): Groupwise retained observations after missing value removal: all:252759/255216
+2018-07-08 15:13:19    25.6    INFO             processing beta_density_samples_2_1
+2018-07-08 15:13:20    25.6    INFO             processing beta_density_samples_2_2
+2018-07-08 15:13:21    25.6    INFO             processing beta_density_samples_2_3
+2018-07-08 15:13:21    25.6    INFO             Density estimation ( Age--genes ): Groupwise retained observations after missing value removal: 10 weeks:144659/160740; 12 weeks:225441/241110; 13.5 weeks:112440/120555; 13 weeks:110935/120555
+2018-07-08 15:13:23    25.6    INFO             Density estimation ( Age--tiling ): Groupwise retained observations after missing value removal: 10 weeks:2030709/2112476; 12 weeks:3084816/3168714; 13.5 weeks:1544141/1584357; 13 weeks:1532939/1584357
+2018-07-08 15:13:23    25.6    INFO             processing beta_density_samples_2_4
+2018-07-08 15:13:23    25.6    INFO             Density estimation ( Age--promoters ): Groupwise retained observations after missing value removal: 10 weeks:159823/171224; 12 weeks:245370/256836; 13.5 weeks:122649/128418; 13 weeks:121350/128418
+2018-07-08 15:13:24    25.6    INFO             processing beta_density_samples_2_5
+2018-07-08 15:13:24    25.6    INFO             Density estimation ( Age--cpgislands ): Groupwise retained observations after missing value removal: 10 weeks:62866/63804; 12 weeks:95015/95706; 13.5 weeks:47524/47853; 13 weeks:47354/47853
+2018-07-08 15:13:25    25.6    INFO             processing beta_density_samples_3_1
+2018-07-08 15:13:26    25.6    INFO             processing beta_density_samples_3_2
+2018-07-08 15:13:28    25.6    INFO             processing beta_density_samples_3_3
+2018-07-08 15:13:28    25.6    INFO             Density estimation ( Group--genes ): Groupwise retained observations after missing value removal: control:231901/241110; high fat:182170/200925; low protein:179404/200925
+2018-07-08 15:13:29    21.0    INFO             Density estimation ( all samples--tiling ): Groupwise retained observations after subsampling: all:1000000/8192605
+2018-07-08 15:13:29    25.6    INFO             processing beta_density_samples_3_4
+2018-07-08 15:13:30    25.6    INFO             Density estimation ( Group--promoters ): Groupwise retained observations after missing value removal: control:249880/256836; high fat:200665/214030; low protein:198647/214030
+2018-07-08 15:13:30    25.6    INFO             Density estimation ( Group--tiling ): Groupwise retained observations after missing value removal: control:3122232/3168714; high fat:2542280/2640595; low protein:2528093/2640595
+2018-07-08 15:13:31    25.6    INFO             processing beta_density_samples_3_5
+2018-07-08 15:13:31    25.6    INFO             Density estimation ( Group--cpgislands ): Groupwise retained observations after missing value removal: control:95120/95706; high fat:78932/79755; low protein:78707/79755
+2018-07-08 15:13:33    25.6    INFO             processing beta_density_samples_4_1
+2018-07-08 15:13:35    25.6    INFO             processing beta_density_samples_4_2
+2018-07-08 15:13:37    25.6    INFO             processing beta_density_samples_4_3
+2018-07-08 15:13:37    25.6    INFO             Density estimation ( Group3--genes ): Groupwise retained observations after missing value removal: high fat:182170/200925; low protein:179404/200925
+2018-07-08 15:13:38    25.6    INFO             processing beta_density_samples_4_4
+2018-07-08 15:13:39    25.6    INFO             Density estimation ( Group3--promoters ): Groupwise retained observations after missing value removal: high fat:200665/214030; low protein:198647/214030
+2018-07-08 15:13:39    25.6    INFO             Density estimation ( Group3--tiling ): Groupwise retained observations after missing value removal: high fat:2542280/2640595; low protein:2528093/2640595
+2018-07-08 15:13:41    25.6    INFO             processing beta_density_samples_4_5
+2018-07-08 15:13:41    25.6    INFO             Density estimation ( Group3--cpgislands ): Groupwise retained observations after missing value removal: high fat:78932/79755; low protein:78707/79755
+2018-07-08 15:13:43    25.6    INFO             processing beta_density_samples_5_1
+2018-07-08 15:13:44    21.0    INFO             processing beta_density_samples_8_1
+2018-07-08 15:13:45    25.6    INFO             processing beta_density_samples_5_2
+2018-07-08 15:13:47    25.6    INFO             processing beta_density_samples_5_3
+2018-07-08 15:13:48    25.6    INFO             Density estimation ( Group2--genes ): Groupwise retained observations after missing value removal: control:231901/241110; low protein:179404/200925
+2018-07-08 15:13:49    25.6    INFO             processing beta_density_samples_5_4
+2018-07-08 15:13:50    25.6    INFO             Density estimation ( Group2--promoters ): Groupwise retained observations after missing value removal: control:249880/256836; low protein:198647/214030
+2018-07-08 15:13:52    25.6    INFO             processing beta_density_samples_5_5
+2018-07-08 15:13:52    25.6    INFO             Density estimation ( Group2--cpgislands ): Groupwise retained observations after missing value removal: control:95120/95706; low protein:78707/79755
+2018-07-08 15:13:53    25.6    INFO             Density estimation ( Group2--tiling ): Groupwise retained observations after missing value removal: control:3122232/3168714; low protein:2528093/2640595
+2018-07-08 15:13:53    25.6    INFO             processing beta_density_samples_6_1
+2018-07-08 15:13:57    25.6    INFO             processing beta_density_samples_6_2
+2018-07-08 15:13:58    25.6    INFO             processing beta_density_samples_6_3
+2018-07-08 15:13:59    25.6    INFO             Density estimation ( Group1--genes ): Groupwise retained observations after missing value removal: control:231901/241110; high fat:182170/200925
+2018-07-08 15:14:00    25.6    INFO             processing beta_density_samples_6_4
+2018-07-08 15:14:01    21.0    INFO             Density estimation ( Age--tiling ): Groupwise retained observations after subsampling: 10 weeks:991484/2030709; 12 weeks:1506147/3084816; 13.5 weeks:753919/1544141; 13 weeks:748450/1532939
+2018-07-08 15:14:01    25.6    INFO             Density estimation ( Group1--promoters ): Groupwise retained observations after missing value removal: control:249880/256836; high fat:200665/214030
+2018-07-08 15:14:03    25.6    INFO             processing beta_density_samples_6_5
+2018-07-08 15:14:03    25.6    INFO             Density estimation ( Group1--tiling ): Groupwise retained observations after missing value removal: control:3122232/3168714; high fat:2542280/2640595
+2018-07-08 15:14:03    25.6    INFO             Density estimation ( Group1--cpgislands ): Groupwise retained observations after missing value removal: control:95120/95706; high fat:78932/79755
+2018-07-08 15:14:06    25.6    INFO             processing beta_density_samples_7_1
+2018-07-08 15:14:07    21.0    INFO             processing beta_density_samples_7_4
+2018-07-08 15:14:08    21.0    INFO             Density estimation ( Age4--promoters ): Groupwise retained observations after missing value removal: 10 weeks:159823/171224; 12 weeks:245370/256836; 13 weeks:121350/128418
+2018-07-08 15:14:16    21.0    INFO             processing beta_density_samples_7_5
+2018-07-08 15:14:17    21.0    INFO             Density estimation ( Age4--cpgislands ): Groupwise retained observations after missing value removal: 10 weeks:62866/63804; 12 weeks:95015/95706; 13 weeks:47354/47853
+2018-07-08 15:14:20    21.0    INFO             processing beta_density_samples_9_1
+2018-07-08 15:14:25    21.0    INFO             Density estimation ( Group--tiling ): Groupwise retained observations after subsampling: control:1143311/3122232; high fat:930942/2542280; low protein:925747/2528093
+2018-07-08 15:14:46    21.0    INFO             Density estimation ( Group3--tiling ): Groupwise retained observations after subsampling: high fat:1002798/2542280; low protein:997202/2528093
+2018-07-08 15:14:49    21.0    INFO             processing beta_density_samples_10_1
+2018-07-08 15:14:57    21.0    INFO             processing beta_density_samples_8_4
+2018-07-08 15:14:58    21.0    INFO             Density estimation ( Age3--promoters ): Groupwise retained observations after missing value removal: 10 weeks:159823/171224; 12 weeks:245370/256836; 13.5 weeks:122649/128418
+2018-07-08 15:14:59    21.0    INFO             processing beta_density_samples_9_4
+2018-07-08 15:15:01    21.0    INFO             Density estimation ( Age2--promoters ): Groupwise retained observations after missing value removal: 10 weeks:159823/171224; 13.5 weeks:122649/128418; 13 weeks:121350/128418
+2018-07-08 15:15:15    21.0    INFO             processing beta_density_samples_7_3
+2018-07-08 15:15:15    21.0    INFO             processing beta_density_samples_8_5
+2018-07-08 15:15:16    21.0    INFO             processing beta_density_samples_11_1
+2018-07-08 15:15:16    21.0    INFO             Density estimation ( Age3--cpgislands ): Groupwise retained observations after missing value removal: 10 weeks:62866/63804; 12 weeks:95015/95706; 13.5 weeks:47524/47853
+2018-07-08 15:15:17    21.0    INFO             Density estimation ( Age4--genes ): Groupwise retained observations after missing value removal: 10 weeks:144659/160740; 12 weeks:225441/241110; 13 weeks:110935/120555
+2018-07-08 15:15:17    21.0    INFO             Density estimation ( Group2--tiling ): Groupwise retained observations after subsampling: control:1105151/3122232; low protein:894849/2528093
+2018-07-08 15:15:18    21.0    INFO             processing beta_density_samples_10_5
+2018-07-08 15:15:18    21.0    INFO             Density estimation ( Age1--cpgislands ): Groupwise retained observations after missing value removal: 12 weeks:95015/95706; 13.5 weeks:47524/47853; 13 weeks:47354/47853
+2018-07-08 15:15:23    21.0    INFO             processing beta_density_samples_9_5
+2018-07-08 15:15:24    21.0    INFO             processing beta_density_samples_10_4
+2018-07-08 15:15:24    21.0    INFO             Density estimation ( Age2--cpgislands ): Groupwise retained observations after missing value removal: 10 weeks:62866/63804; 13.5 weeks:47524/47853; 13 weeks:47354/47853
+2018-07-08 15:15:25    21.0    INFO             Density estimation ( Age1--promoters ): Groupwise retained observations after missing value removal: 12 weeks:245370/256836; 13.5 weeks:122649/128418; 13 weeks:121350/128418
+2018-07-08 15:15:26    21.0    INFO             Density estimation ( Group1--tiling ): Groupwise retained observations after subsampling: control:1102383/3122232; high fat:897617/2542280
+2018-07-08 15:15:52    21.0    INFO             processing beta_density_samples_11_4
+2018-07-08 15:15:53    21.0    INFO             Density estimation ( Predicted Gender--promoters ): Groupwise retained observations after missing value removal: female:198001/214030; male:451191/470866
+2018-07-08 15:15:56    21.0    INFO             processing beta_density_samples_11_5
+2018-07-08 15:15:57    21.0    INFO             Density estimation ( Predicted Gender--cpgislands ): Groupwise retained observations after missing value removal: female:78654/79755; male:174105/175461
+2018-07-08 15:16:53    25.6    INFO             Density estimation ( all samples--sites ): Groupwise retained observations after missing value removal: all:211163816/308780272
+2018-07-08 15:17:00    21.0    INFO             processing beta_density_samples_10_3
+2018-07-08 15:17:01    21.0    INFO             Density estimation ( Age1--genes ): Groupwise retained observations after missing value removal: 12 weeks:225441/241110; 13.5 weeks:112440/120555; 13 weeks:110935/120555
+2018-07-08 15:17:08    21.0    INFO             processing beta_density_samples_11_3
+2018-07-08 15:17:08    21.0    INFO             Density estimation ( Predicted Gender--genes ): Groupwise retained observations after missing value removal: female:178554/200925; male:414921/442035
+2018-07-08 15:17:31    21.0    INFO             processing beta_density_samples_9_3
+2018-07-08 15:17:31    21.0    INFO             Density estimation ( Age2--genes ): Groupwise retained observations after missing value removal: 10 weeks:144659/160740; 13.5 weeks:112440/120555; 13 weeks:110935/120555
+2018-07-08 15:17:33    21.7    INFO             Density estimation ( Group--sites ): Groupwise retained observations after missing value removal: control:99054991/115792602; high fat:58714856/96493835; low protein:53393969/96493835
+2018-07-08 15:17:36    24.1    INFO             Density estimation ( Group3--sites ): Groupwise retained observations after missing value removal: high fat:58714856/96493835; low protein:53393969/96493835
+2018-07-08 15:17:36    21.0    INFO             Density estimation ( Age--sites ): Groupwise retained observations after missing value removal: 10 weeks:43836219/77195068; 12 weeks:85812838/115792602; 13.5 weeks:42130670/57896301; 13 weeks:39384089/57896301
+2018-07-08 15:17:39    24.0    INFO             Density estimation ( Group2--sites ): Groupwise retained observations after missing value removal: control:99054991/115792602; low protein:53393969/96493835
+2018-07-08 15:17:40    23.3    INFO             Density estimation ( Predicted Gender--sites ): Groupwise retained observations after missing value removal: female:51630282/96493835; male:159533534/212286437
+2018-07-08 15:17:41    24.0    INFO             Density estimation ( Group1--sites ): Groupwise retained observations after missing value removal: control:99054991/115792602; high fat:58714856/96493835
+2018-07-08 15:17:54    24.4    INFO             Density estimation ( Age1--sites ): Groupwise retained observations after missing value removal: 12 weeks:85812838/115792602; 13.5 weeks:42130670/57896301; 13 weeks:39384089/57896301
+2018-07-08 15:17:56    23.3    INFO             Density estimation ( Age4--sites ): Groupwise retained observations after missing value removal: 10 weeks:43836219/77195068; 12 weeks:85812838/115792602; 13 weeks:39384089/57896301
+2018-07-08 15:17:57    23.3    INFO             Density estimation ( Age3--sites ): Groupwise retained observations after missing value removal: 10 weeks:43836219/77195068; 12 weeks:85812838/115792602; 13.5 weeks:42130670/57896301
+2018-07-08 15:18:02    21.0    INFO             processing beta_density_samples_8_3
+2018-07-08 15:18:02    21.0    INFO             Density estimation ( Age3--genes ): Groupwise retained observations after missing value removal: 10 weeks:144659/160740; 12 weeks:225441/241110; 13.5 weeks:112440/120555
+2018-07-08 15:18:13    25.0    INFO             Density estimation ( Age2--sites ): Groupwise retained observations after missing value removal: 10 weeks:43836219/77195068; 13.5 weeks:42130670/57896301; 13 weeks:39384089/57896301
+2018-07-08 15:18:27    21.0    INFO             Density estimation ( Age--sites ): Groupwise retained observations after subsampling: 10 weeks:830374/43836219; 12 weeks:1625522/85812838; 13.5 weeks:798066/42130670; 13 weeks:746039/39384089
+2018-07-08 15:18:27    21.7    INFO             Density estimation ( Group--sites ): Groupwise retained observations after subsampling: control:1407272/99054991; high fat:834161/58714856; low protein:758567/53393969
+2018-07-08 15:18:34    23.3    INFO             Density estimation ( Predicted Gender--sites ): Groupwise retained observations after subsampling: female:489007/51630282; male:1510993/159533534
+2018-07-08 15:18:35    24.1    INFO             Density estimation ( Group3--sites ): Groupwise retained observations after subsampling: high fat:1047462/58714856; low protein:952538/53393969
+2018-07-08 15:18:44    24.9    INFO             Density estimation ( Age1--sites ): Groupwise retained observations after subsampling: 12 weeks:1538530/85812838; 13.5 weeks:755357/42130670; 13 weeks:706113/39384089
+2018-07-08 15:18:46    23.9    INFO             Density estimation ( Age4--sites ): Groupwise retained observations after subsampling: 10 weeks:778005/43836219; 12 weeks:1523006/85812838; 13 weeks:698989/39384089
+2018-07-08 15:18:47    23.9    INFO             Density estimation ( Age3--sites ): Groupwise retained observations after subsampling: 10 weeks:765566/43836219; 12 weeks:1498655/85812838; 13.5 weeks:735780/42130670
+2018-07-08 15:18:49    26.1    INFO             Density estimation ( Group1--sites ): Groupwise retained observations after subsampling: control:1255690/99054991; high fat:744310/58714856
+2018-07-08 15:18:49    26.1    INFO             Density estimation ( Group2--sites ): Groupwise retained observations after subsampling: control:1299517/99054991; low protein:700483/53393969
+2018-07-08 15:19:10    26.3    INFO             Density estimation ( Age2--sites ): Groupwise retained observations after subsampling: 10 weeks:1049124/43836219; 13.5 weeks:1008305/42130670; 13 weeks:942572/39384089
+2018-07-08 15:19:13    24.1    INFO             processing beta_density_samples_10_2
+2018-07-08 15:19:14    24.1    INFO             Density estimation ( Age1--tiling ): Groupwise retained observations after missing value removal: 12 weeks:3084816/3168714; 13.5 weeks:1544141/1584357; 13 weeks:1532939/1584357
+2018-07-08 15:19:18    24.1    INFO             Density estimation ( Age1--tiling ): Groupwise retained observations after subsampling: 12 weeks:1501883/3084816; 13.5 weeks:751785/1544141; 13 weeks:746331/1532939
+2018-07-08 15:19:21    21.0    INFO             processing beta_density_samples_9_2
+2018-07-08 15:19:22    21.0    INFO             Density estimation ( Age2--tiling ): Groupwise retained observations after missing value removal: 10 weeks:2030709/2112476; 13.5 weeks:1544141/1584357; 13 weeks:1532939/1584357
+2018-07-08 15:19:24    21.0    INFO             Density estimation ( Age2--tiling ): Groupwise retained observations after subsampling: 10 weeks:1192713/2030709; 13.5 weeks:906933/1544141; 13 weeks:900354/1532939
+2018-07-08 15:19:28    21.0    INFO             processing beta_density_samples_8_2
+2018-07-08 15:19:29    21.0    INFO             Density estimation ( Age3--tiling ): Groupwise retained observations after missing value removal: 10 weeks:2030709/2112476; 12 weeks:3084816/3168714; 13.5 weeks:1544141/1584357
+2018-07-08 15:19:31    24.0    INFO             processing beta_density_samples_11_2
+2018-07-08 15:19:32    24.0    INFO             Density estimation ( Predicted Gender--tiling ): Groupwise retained observations after missing value removal: female:2522030/2640595; male:5670575/5809309
+2018-07-08 15:19:32    21.0    INFO             Density estimation ( Age3--tiling ): Groupwise retained observations after subsampling: 10 weeks:914780/2030709; 12 weeks:1389626/3084816; 13.5 weeks:695594/1544141
+2018-07-08 15:19:33    24.0    INFO             Density estimation ( Predicted Gender--tiling ): Groupwise retained observations after subsampling: female:615685/2522030; male:1384315/5670575
+Error in rnb.add.figure(report, description, figure.plots, setting.names) : 
+  invalid value for report.plots
+Calls: rnb.run.analysis ... rnb.step.betadistribution.internal -> rnb.add.figure
+In addition: Warning messages:
+1: Removed 3287313 rows containing non-finite values (stat_ydensity). 
+2: Removed 3980 rows containing non-finite values (stat_density). 
+3: Removed 3980 rows containing non-finite values (stat_density). 
+4: Removed 1583 rows containing non-finite values (stat_density). 
+5: Removed 1583 rows containing non-finite values (stat_density). 
+Execution halted

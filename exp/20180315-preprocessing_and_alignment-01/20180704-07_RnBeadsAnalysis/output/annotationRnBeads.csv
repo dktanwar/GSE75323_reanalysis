@@ -1,0 +1,17 @@
+barcode,Age,Group,filename_bed,Group3,Group2,Group1,Age10,Age9,Age8,Age7,Age6,Age5,Age4,Age3,Age2,Age1,sampleID
+SRX1485699,13.5 weeks,control,SRX1485695.bismark.cov.gz,NA,control,control,NA,NA,13.5 weeks,NA,13.5 weeks,13.5 weeks,NA,13.5 weeks,13.5 weeks,13.5 weeks,control-13.5weeks-SRX1485699
+SRX1485700,12 weeks,control,SRX1485696.bismark.cov.gz,NA,control,control,12 weeks,NA,NA,12 weeks,12 weeks,NA,12 weeks,12 weeks,NA,12 weeks,control-12weeks-SRX1485700
+SRX1485701,13 weeks,control,SRX1485697.bismark.cov.gz,NA,control,control,NA,13 weeks,NA,13 weeks,NA,13 weeks,13 weeks,NA,13 weeks,13 weeks,control-13weeks-SRX1485701
+SRX1485702,12 weeks,control,SRX1485698.bismark.cov.gz,NA,control,control,12 weeks,NA,NA,12 weeks,12 weeks,NA,12 weeks,12 weeks,NA,12 weeks,control-12weeks-SRX1485702
+SRX1485703,13.5 weeks,low protein,SRX1485699.bismark.cov.gz,low protein,low protein,NA,NA,NA,13.5 weeks,NA,13.5 weeks,13.5 weeks,NA,13.5 weeks,13.5 weeks,13.5 weeks,lowprotein-13.5weeks-SRX1485703
+SRX1485704,12 weeks,low protein,SRX1485700.bismark.cov.gz,low protein,low protein,NA,12 weeks,NA,NA,12 weeks,12 weeks,NA,12 weeks,12 weeks,NA,12 weeks,lowprotein-12weeks-SRX1485704
+SRX1485705,13 weeks,low protein,SRX1485701.bismark.cov.gz,low protein,low protein,NA,NA,13 weeks,NA,13 weeks,NA,13 weeks,13 weeks,NA,13 weeks,13 weeks,lowprotein-13weeks-SRX1485705
+SRX1485706,12 weeks,low protein,SRX1485702.bismark.cov.gz,low protein,low protein,NA,12 weeks,NA,NA,12 weeks,12 weeks,NA,12 weeks,12 weeks,NA,12 weeks,lowprotein-12weeks-SRX1485706
+SRX1485707,13.5 weeks,high fat,SRX1485703.bismark.cov.gz,high fat,NA,high fat,NA,NA,13.5 weeks,NA,13.5 weeks,13.5 weeks,NA,13.5 weeks,13.5 weeks,13.5 weeks,highfat-13.5weeks-SRX1485707
+SRX1485708,12 weeks,high fat,SRX1485704.bismark.cov.gz,high fat,NA,high fat,12 weeks,NA,NA,12 weeks,12 weeks,NA,12 weeks,12 weeks,NA,12 weeks,highfat-12weeks-SRX1485708
+SRX1485709,13 weeks,high fat,SRX1485705.bismark.cov.gz,high fat,NA,high fat,NA,13 weeks,NA,13 weeks,NA,13 weeks,13 weeks,NA,13 weeks,13 weeks,highfat-13weeks-SRX1485709
+SRX1485710,12 weeks,high fat,SRX1485706.bismark.cov.gz,high fat,NA,high fat,12 weeks,NA,NA,12 weeks,12 weeks,NA,12 weeks,12 weeks,NA,12 weeks,highfat-12weeks-SRX1485710
+SRX1485695,10 weeks,control,SRX1485707.bismark.cov.gz,NA,control,control,10 weeks,10 weeks,10 weeks,NA,NA,NA,10 weeks,10 weeks,10 weeks,NA,control-10weeks-SRX1485695
+SRX1485696,10 weeks,control,SRX1485708.bismark.cov.gz,NA,control,control,10 weeks,10 weeks,10 weeks,NA,NA,NA,10 weeks,10 weeks,10 weeks,NA,control-10weeks-SRX1485696
+SRX1485697,10 weeks,low protein,SRX1485709.bismark.cov.gz,low protein,low protein,NA,10 weeks,10 weeks,10 weeks,NA,NA,NA,10 weeks,10 weeks,10 weeks,NA,lowprotein-10weeks-SRX1485697
+SRX1485698,10 weeks,high fat,SRX1485710.bismark.cov.gz,high fat,NA,high fat,10 weeks,10 weeks,10 weeks,NA,NA,NA,10 weeks,10 weeks,10 weeks,NA,highfat-10weeks-SRX1485698
